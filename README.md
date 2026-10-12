@@ -1,53 +1,135 @@
-# strategic-voting-polls-2RS
+<h1 align="center">French presidential polls, 2002–2022</h1>
 
-Empirical study of French presidential first-round polls (2002–2022), used to calibrate an
-agent-based model of strategic voting ([strategic-voting-abm-2RS](https://github.com/clarasalas/strategic-voting-abm-2RS)).
+<p align="center">
+Every first-round poll of the five French presidential elections from 2002 to 2022, collected from pinned
+sources, parsed into one table per source, and checked against the original documents.
+</p>
 
-## Status (12 October 2026)
+<p align="center"><sub>
+Paused on 5 October 2026, with the manual validation half done. <a href="#where-things-stand">Where things stand</a>
+and <a href="#next-steps">Next steps</a> say where to pick up.
+</sub></p>
 
-Paused since 5 October. Collection, parsing and thinning are done; the manual validation is partly
-done; nothing after it exists yet.
+## About
 
-| step | state |
+This is the poll data behind [strategic-voting-abm-2RS](https://github.com/clarasalas/strategic-voting-abm-2RS),
+an agent-based model of strategic voting in two-round elections: an empirical study of French presidential
+first-round polls, used to calibrate the model.
+
+The polls come from the French Wikipedia lists of polls for the five elections, from france-politique.fr for 2002
+and from NSPPolls for 2022. Every source is pinned (a Wikipedia revision, a git commit, a Wayback capture) and
+stored exactly as downloaded, so the parsing can be rerun offline and gives the same tables. The output is one row
+per poll × scenario × candidate.
+
+Three steps follow the parsing. Rolling polls are thinned, so that each interview counts at most once within a
+pollster's series for one client (Erikson and Wlezien). Where two sources cover the same election (2002 and 2022),
+they are compared share by share. And the points a program cannot settle go to worklists filled in by hand
+against the pollster's report or the Commission des sondages notice: the disagreements between sources, the
+client of overlapping polls, and a random sample of 30 Wikipedia polls per election.
+
+## Where things stand
+
+**Collection, parsing and thinning are done. The manual validation is partly done. Nothing after it exists yet.**
+
+| Step | State on 12 October 2026 |
 |---|---|
 | Collect and parse (notebook 01) | done: 746 Wikipedia polls (2002–2022), 98 france-politique (2002), 351 NSPPolls (2022) |
 | Candidate and pollster mappings (`config/`) | done, nothing unmapped |
 | Thin rolling polls (notebook 02) | done: drops 6 Wikipedia polls in 2017, 32 in 2022, and 121 NSPPolls polls |
-| Client lookups (`validation/flagged_clients.csv`) | done, 19 of 19 |
+| Client lookups ([`flagged_clients.csv`](validation/README.md)) | done, 19 of 19 |
 | Cross-source comparison (notebook 03) | run; 31 flagged overlaps (2002, 2022) resolved automatically |
-| Settle disagreements (`validation/crosscheck_disagreements.csv`) | **21 of 79** |
-| Spot check (`validation/spot_check_sample.csv`) | **0 of 150** |
+| Settle disagreements ([`crosscheck_disagreements.csv`](validation/README.md)) | **21 of 79** |
+| Spot check ([`spot_check_sample.csv`](validation/README.md)) | **0 of 150** |
 | Apply the validation answers to the tables | not started: no code reads them |
 | Final dataset, calibration statistics | not started: only `data/interim/` exists |
 
-### Where to pick up
+## Next steps
 
-1. **Look at the "neither" answers before settling more disagreements.** 15 of the 21 answers are
-   `neither`, and `notes` and `document_url` are empty on every row, so the values read in the document
-   are not recorded anywhere. Either write them in `notes`, or first check whether these rows are really
-   two wrong sources or a problem in how notebook 03 pairs scenarios (e.g. Elabe 1 July 2020, s2:
-   Baroin 12 in NSPPolls, Bertrand 12 on Wikipedia).
-2. **Finish `crosscheck_disagreements.csv`.** Left for 2022: Ifop 20, OpinionWay 9, Ipsos 8, Odoxa 1,
-   YouGov 1 (BVA, Cluster17, Elabe and Harris Interactive are done). All 19 rows for 2002 are left, and
-   they have no `document_to_use`: the original has to be found by hand.
-3. **Spot check.** The 2017 and 2022 rows all come with a link to the report or notice; 2002, 2007
-   and 2012 have none.
-4. **Decide how the answers are applied** (a corrections table read when building the final dataset?),
-   then build the final dataset and start the analysis.
+<details>
+<summary><strong>1 · Look at the "neither" answers first</strong></summary>
 
-How to fill in the worklists: [validation/README.md](validation/README.md).
+<br>
 
-### Loose ends
+15 of the 21 disagreements settled so far are answered `neither`, and `notes` and `document_url` are empty on
+every row, so the values read in the document are not recorded anywhere.
 
-* The results file is still pinned to the commit of strategic-voting-abm-2RS#24, which was merged on
-  2 October 2026: blank `results.commit` in `config/sources.yaml` and rerun notebook 01 to re-pin to `main`.
-* 32 of 1,862 scenarios have shares summing outside 98–102 (19 on the 2012 Wikipedia page; 4 in
-  NSPPolls, some summing to 0). Listed at the end of notebook 01, not investigated.
-* One parse error: a 2017 Wikipedia cell reading `640-646` (`data/interim/parse_errors.csv`).
-* 2022: OpinionWay's CNews releases overlap its *Les Echos* rolling releases, possibly one rolling
-  sample sold to two clients. To check against the Commission des sondages notices (end of notebook 02).
+Before settling more rows, either write those values in `notes`, or check whether these rows are really two wrong
+sources or a problem in how notebook 03 pairs scenarios. One to start from: Elabe, 1 July 2020, s2, where NSPPolls
+has Baroin at 12 and Wikipedia has Bertrand at 12.
 
-## Folder structure
+</details>
+
+<details>
+<summary><strong>2 · Finish the disagreements</strong></summary>
+
+<br>
+
+* **2022, 39 rows left**: Ifop 20, OpinionWay 9, Ipsos 8, Odoxa 1, YouGov 1. BVA, Cluster17, Elabe and Harris
+  Interactive are done.
+* **2002, all 19 rows left.** They have no `document_to_use`: the original has to be found by hand.
+
+How to fill in the file: [`validation/README.md`](validation/README.md).
+
+</details>
+
+<details>
+<summary><strong>3 · The spot check</strong></summary>
+
+<br>
+
+150 polls, none checked yet. The 2017 and 2022 rows all come with a link to the report or the notice; 2002, 2007
+and 2012 have none. The sample is drawn with a fixed seed and must not be redrawn.
+
+</details>
+
+<details>
+<summary><strong>4 · Apply the answers, then build the final dataset</strong></summary>
+
+<br>
+
+Nothing reads the worklists' answers yet, apart from the clients, which notebook 02 uses. To decide: how
+corrections are applied (a corrections table read when the final dataset is built?), which source is used for 2002
+and 2022, and what the final table looks like. The calibration statistics come after that.
+
+</details>
+
+<details>
+<summary><strong>5 · Loose ends</strong></summary>
+
+<br>
+
+* **The results file is pinned to a merged pull request.** It points to the commit of
+  [strategic-voting-abm-2RS#24](https://github.com/clarasalas/strategic-voting-abm-2RS/pull/24), merged on
+  2 October 2026. Blank `results.commit` in `config/sources.yaml` and rerun notebook 01 to re-pin to `main`.
+* **Share sums.** 32 of 1,862 scenarios have shares summing outside 98–102: 19 on the 2012 Wikipedia page, and 4
+  in NSPPolls, some summing to 0. They are listed at the end of notebook 01 and not investigated.
+* **One parse error**: a 2017 Wikipedia cell reading `640-646` (`data/interim/parse_errors.csv`).
+* **OpinionWay in 2022.** Its CNews releases overlap its *Les Echos* rolling releases, possibly one rolling sample
+  sold to two clients. To check against the Commission des sondages notices (end of notebook 02).
+
+</details>
+
+## Reproduce
+
+```bash
+pip install -r requirements.txt
+jupyter nbconvert --to notebook --execute --inplace notebooks/01_collect_and_parse.ipynb
+jupyter nbconvert --to notebook --execute --inplace notebooks/02_thin_rolling.ipynb
+jupyter nbconvert --to notebook --execute --inplace notebooks/03_cross_check.ipynb
+```
+
+Part 1 of notebook 01 needs the network. It downloads only what isn't already in `data/raw/`, so a rerun with
+everything cached makes no requests except to resolve pins left blank. Part 2 reads only `data/raw/` and can be
+run offline. Notebooks 02 and 03 read only `data/interim/` and `validation/`.
+
+If notebook 01 stops with "unmapped candidate names" or "unmapped pollster names", open `config/candidates.csv` or
+`config/institutes.csv`, fill in the empty columns for the listed rows, set `match` to `manual`, and rerun. Rows
+already filled are never overwritten, so hand edits persist. The same holds for the worklists in `validation/`.
+
+<details>
+<summary><strong>Repository layout</strong></summary>
+
+<br>
 
 ```
 config/
@@ -62,75 +144,48 @@ data/
     france_politique/   2002 page, live copy and Wayback copy
     nsppolls/           presidentielle.json at the pinned commit
     results/            FR-electoral_data.csv at the pinned commit
-  interim/              parsed tables (regenerated by the notebook)
+  interim/              parsed tables (regenerated by the notebooks)
     polls_wikipedia.csv, polls_france_politique.csv, polls_nsppolls.csv
     results.csv
     parse_errors.csv    cells that could not be parsed, with their raw contents
     thinning.csv        one row per poll: kept after removing rolling overlap, and why (notebook 02)
+    crosscheck_{2002,2022}_{polls,shares}.csv   poll matches and share-by-share verdicts (notebook 03)
+    flags_resolved.csv  flagged overlaps resolved from the other source (notebook 03)
 notebooks/
   01_collect_and_parse.ipynb
   02_thin_rolling.ipynb  removes sample overlap within a pollster/client series (Erikson & Wlezien)
   03_cross_check.ipynb   compares sources (2002, 2022), resolves flagged overlaps, draws the spot-check sample
 validation/             worklists filled in by hand; written once by notebook 03, never overwritten
+  README.md                      how to fill them in
   crosscheck_disagreements.csv   polls where two sources disagree: settle against the original document
-  flagged_clients.csv            overlapping polls (2017, one in 2022) whose client must be looked up
+  flagged_clients.csv            overlapping polls (2017, one pair in 2022) whose client must be looked up
   spot_check_sample.csv          30 random Wikipedia polls per election (seed in config/validation.yaml)
-src/polls/              functions used by the notebook (fetch, parsers, mapping, checks)
+src/polls/              functions used by the notebooks (fetch, parsers, mapping, thinning, checks)
 ```
 
-## Rerunning
+</details>
 
-```
-pip install -r requirements.txt
-jupyter nbconvert --to notebook --execute --inplace notebooks/01_collect_and_parse.ipynb
-jupyter nbconvert --to notebook --execute --inplace notebooks/02_thin_rolling.ipynb
-jupyter nbconvert --to notebook --execute --inplace notebooks/03_cross_check.ipynb
-```
+<details>
+<summary><strong>Output tables</strong></summary>
 
-Part 1 of the notebook needs the network. It downloads only what isn't already in `data/raw/`, so a
-rerun with everything cached makes no requests except to resolve pins left blank. Part 2 reads only
-`data/raw/` and can be run offline.
-
-If the notebook stops with "unmapped candidate names" or "unmapped pollster names", open
-`config/candidates.csv` or `config/institutes.csv`, fill in the empty columns for the listed rows, set
-`match` to `manual`, and rerun. Rows already filled are never overwritten, so hand edits persist.
-
-## Updating a pinned source
-
-Pins are only ever set when blank, never changed automatically.
-
-* **Wikipedia page**: set that year's `revision_id` (and `revision_timestamp`) to `null` in
-  `config/sources.yaml` to pin the current revision on the next run, or write a specific revision ID.
-* **NSPPolls / results file**: set `commit` to `null` (pins the latest commit: on `master` for NSPPolls,
-  the latest commit that modified the file for the results), or write a specific hash.
-  The results file is currently pinned to the commit of
-  [strategic-voting-abm-2RS#24](https://github.com/clarasalas/strategic-voting-abm-2RS/pull/24);
-  once it is merged, blank `commit` to re-pin to `main`.
-* **france-politique**: set `wayback_timestamp` to `null` and delete the local copy in
-  `data/raw/france_politique/` to download the page again and request a new Wayback capture.
-
-Old raw files stay in `data/raw/` and in the manifest; parsing uses only the files the current pins point to.
-
-## Output tables
+<br>
 
 One row per poll × scenario × candidate. Shares are in percent.
 
-Pollsters: `institute_raw` is the name as written in the source; `institute` is the pollster at the time,
-without partner names ("Ifop-Fiducial" → Ifop, "Cevipof Ipsos-Sopra Steria" → Ipsos); `institute_family`
-groups renamings of one company (Sofres, TNS Sofres, Kantar Sofres, Kantar Public → "Kantar (Sofres)";
-Louis Harris, LH2 → "LH2 (Louis Harris)"; Atlas Político → AtlasIntel). Harris Interactive is a separate
-company from Louis Harris/LH2. `poll_id` is built from `institute_raw`, so editing the mapping never
-changes ids.
+**Pollsters.** `institute_raw` is the name as written in the source; `institute` is the pollster at the time,
+without partner names ("Ifop-Fiducial" → Ifop, "Cevipof Ipsos-Sopra Steria" → Ipsos); `institute_family` groups
+renamings of one company (Sofres, TNS Sofres, Kantar Sofres, Kantar Public → "Kantar (Sofres)"; Louis Harris, LH2 →
+"LH2 (Louis Harris)"; Atlas Político → AtlasIntel). Harris Interactive is a separate company from Louis
+Harris/LH2. `poll_id` is built from `institute_raw`, so editing the mapping never changes ids.
 
-Columns beyond the base specification:
-`scenario_label` (NSPPolls hypothesis), `reported_date` (a single date when the source doesn't say
-whether it is the end of fieldwork or the publication date), `date_raw`, `share_upper_bound`,
-`candidate_column` (the source column, when the candidate is named inside the cell), `table_label`, and
-`source_poll_ref` (location in the source, or the NSPPolls poll id).
+**Columns beyond the base specification.** `scenario_label` (NSPPolls hypothesis), `reported_date` (a single date
+when the source doesn't say whether it is the end of fieldwork or the publication date), `date_raw`,
+`share_upper_bound`, `candidate_column` (the source column, when the candidate is named inside the cell),
+`table_label`, and `source_poll_ref` (location in the source, or the NSPPolls poll id).
 
-`share_status`:
+**`share_status`.**
 
-| value | meaning | share |
+| Value | Meaning | Share |
 |---|---|---|
 | `value` | a number | the number |
 | `not_tested` | candidate not in this scenario (`—`, `ns`) | null |
@@ -138,9 +193,59 @@ whether it is the end of fieldwork or the publication date), `date_raw`, `share_
 | `below_threshold` | `<0,5 %`, `<1 %` | null; bound in `share_upper_bound` |
 | `missing` | blank cell | null |
 
-The pseudo-candidate `__others__` is the aggregate "Autres" row of the IFOP tables on france-politique.
-On Wikipedia, the "Autres (candidats)" column lists extra named candidates and becomes ordinary
-candidate rows.
+The pseudo-candidate `__others__` is the aggregate "Autres" row of the IFOP tables on france-politique. On
+Wikipedia, the "Autres (candidats)" column lists extra named candidates and becomes ordinary candidate rows.
 
-`rolling` is true only where the source says so: the `rolling` field in NSPPolls and "(rolling)" after
-the pollster's name on the 2022 Wikipedia page. Otherwise it is null.
+**`rolling`** is true only where the source says so: the `rolling` field in NSPPolls and "(rolling)" after the
+pollster's name on the 2022 Wikipedia page. Otherwise it is null.
+
+**Thinning** deletes nothing from the poll tables: join `data/interim/thinning.csv` on `poll_id` and filter on
+`kept`.
+
+</details>
+
+<details>
+<summary><strong>Data sources</strong></summary>
+
+<br>
+
+* **Polls, 2002–2022**: the French Wikipedia lists of polls, at fixed revisions for
+  [2002](https://fr.wikipedia.org/w/index.php?oldid=236399441),
+  [2007](https://fr.wikipedia.org/w/index.php?oldid=233109259),
+  [2012](https://fr.wikipedia.org/w/index.php?oldid=238741176),
+  [2017](https://fr.wikipedia.org/w/index.php?oldid=239719711) and
+  [2022](https://fr.wikipedia.org/w/index.php?oldid=239942428).
+* **Polls, 2002**: [france-politique.fr](https://www.france-politique.fr/sondages-electoraux-presidentielle-2002.htm),
+  live copy and Wayback capture of 1 October 2026. It gives the client of each poll.
+* **Polls, 2022**: [NSPPolls](https://github.com/nsppolls/nsppolls), `presidentielle.json` at commit `ddcd5ce`. It
+  gives the client, the rolling flag and the Commission des sondages notice.
+* **Official first-round results**: `data/FR-electoral_data.csv` in
+  [strategic-voting-abm-2RS](https://github.com/clarasalas/strategic-voting-abm-2RS), at commit `8e99f86`.
+
+Pins are in `config/sources.yaml`; every download is logged with its SHA-256 in `data/raw/manifest.csv`.
+
+</details>
+
+<details>
+<summary><strong>Updating a pinned source</strong></summary>
+
+<br>
+
+Pins are only ever set when blank, never changed automatically.
+
+* **Wikipedia page**: set that year's `revision_id` (and `revision_timestamp`) to `null` in `config/sources.yaml`
+  to pin the current revision on the next run, or write a specific revision ID.
+* **NSPPolls / results file**: set `commit` to `null` (pins the latest commit: on `master` for NSPPolls, the
+  latest commit that modified the file for the results), or write a specific hash.
+* **france-politique**: set `wayback_timestamp` to `null` and delete the local copy in
+  `data/raw/france_politique/` to download the page again and request a new Wayback capture.
+
+Old raw files stay in `data/raw/` and in the manifest; parsing uses only the files the current pins point to.
+
+</details>
+
+---
+
+<sub>Clara Salas (ENS-PSL). Poll data for the agent-based model
+[strategic-voting-abm-2RS](https://github.com/clarasalas/strategic-voting-abm-2RS). Companion project on the
+geography of coordination: [strategic-voting-geo-2RS](https://github.com/clarasalas/strategic-voting-geo-2RS).</sub>
