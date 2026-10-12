@@ -1,0 +1,32 @@
+election,poll_id,institute,matched_poll,other_series,resolution
+2002,2002_wp_ifop_2002-02-22_1,Ifop,2002_fp_ifop_2002-02-22_1,Ifop | IFOP/Journal du Dimanche,independent poll (kept in the other source)
+2002,2002_wp_ifop_2002-02-23_1,Ifop,2002_fp_ifop_2002-02-23_1,Ifop | IFOP/L'Express,independent poll (kept in the other source)
+2002,2002_wp_ifop_2002-04-12_1,Ifop,2002_fp_ifop_2002-04-12_1,Ifop | IFOP/Journal du Dimanche,independent poll (kept in the other source)
+2002,2002_wp_ifop_2002-04-13_1,Ifop,2002_fp_ifop_2002-04-13_1,Ifop | IFOP/L'Express,independent poll (kept in the other source)
+2002,2002_wp_sofres_2002-03-15_1,Sofres,2002_fp_sofres_2002-03-15_1,Sofres | SOFRES/LCI/Politique Opinion,independent poll (kept in the other source)
+2002,2002_wp_sofres_2002-03-16_1,Sofres,2002_fp_sofres_2002-03-16_1,Sofres | SOFRES/Nouvel Observateur,independent poll (kept in the other source)
+2022,2022_wp_ipsos_2021-12-08_1,Ipsos,2022_nsp_ipsos_2021-12-08_1,"Ipsos | france info, le parisien",independent poll (kept in the other source)
+2022,2022_wp_ipsos_2021-12-13_1,Ipsos,2022_nsp_ipsos_2021-12-13_1,"Ipsos | cevipof, fondation jean jaures, le monde",independent poll (kept in the other source)
+2022,2022_wp_ipsos_2022-02-03_1,Ipsos,2022_nsp_ipsos_2022-02-03_1,"Ipsos | france info, le parisien",independent poll (kept in the other source)
+2022,2022_wp_ipsos_2022-02-07_1,Ipsos,2022_nsp_ipsos_2022-02-07_1,"Ipsos | cevipof, fondation jean jaures, le monde",independent poll (kept in the other source)
+2022,2022_wp_opinionway_2022-02-27_1,OpinionWay,2022_nsp_opinion-way_2022-02-27_1,OpinionWay | cnews,rolling release: dropped by thinning in the other source
+2022,2022_wp_opinionway_2022-02-28_1,OpinionWay,2022_nsp_opinion-way_2022-02-28_1,OpinionWay | cnews,independent poll (kept in the other source)
+2022,2022_wp_opinionway_2022-03-01_1,OpinionWay,2022_nsp_opinion-way_2022-03-01_2,OpinionWay | cnews,rolling release: dropped by thinning in the other source
+2022,2022_wp_opinionway_2022-03-02_1,OpinionWay,2022_nsp_opinion-way_2022-03-02_2,OpinionWay | cnews,independent poll (kept in the other source)
+2022,2022_wp_opinionway_2022-03-03_1,OpinionWay,2022_nsp_opinion-way_2022-03-04_1,"OpinionWay | kea partners, les echos, radio classique",rolling release: dropped by thinning in the other source
+2022,2022_wp_opinionway_2022-03-06_1,OpinionWay,2022_nsp_opinion-way_2022-03-06_1,OpinionWay | cnews,independent poll (kept in the other source)
+2022,2022_wp_opinionway_2022-03-07_1,OpinionWay,2022_nsp_opinion-way_2022-03-07_1,OpinionWay | cnews,rolling release: dropped by thinning in the other source
+2022,2022_wp_opinionway_2022-03-08_1,OpinionWay,2022_nsp_opinion-way_2022-03-08_1,OpinionWay | cnews,independent poll (kept in the other source)
+2022,2022_wp_opinionway_2022-03-13_1,OpinionWay,2022_nsp_opinion-way_2022-03-13_1,OpinionWay | cnews,independent poll (kept in the other source)
+2022,2022_wp_opinionway_2022-03-14_1,OpinionWay,2022_nsp_opinion-way_2022-03-14_1,OpinionWay | cnews,rolling release: dropped by thinning in the other source
+2022,2022_wp_opinionway_2022-03-15_1,OpinionWay,2022_nsp_opinion-way_2022-03-15_1,OpinionWay | cnews,independent poll (kept in the other source)
+2022,2022_wp_opinionway_2022-03-16_1,OpinionWay,2022_nsp_opinion-way_2022-03-16_1,OpinionWay | cnews,rolling release: dropped by thinning in the other source
+2022,2022_wp_opinionway_2022-03-17_1,OpinionWay,2022_nsp_opinion-way_2022-03-17_1,OpinionWay | cnews,independent poll (kept in the other source)
+2022,2022_wp_opinionway_2022-03-20_1,OpinionWay,2022_nsp_opinion-way_2022-03-20_1,OpinionWay | cnews,independent poll (kept in the other source)
+2022,2022_wp_opinionway_2022-03-21_1,OpinionWay,2022_nsp_opinion-way_2022-03-21_1,OpinionWay | cnews,rolling release: dropped by thinning in the other source
+2022,2022_wp_opinionway_2022-03-22_1,OpinionWay,2022_nsp_opinion-way_2022-03-22_1,OpinionWay | cnews,independent poll (kept in the other source)
+2022,2022_wp_opinionway_2022-03-23_1,OpinionWay,2022_nsp_opinion-way_2022-03-23_2,OpinionWay | cnews,rolling release: dropped by thinning in the other source
+2022,2022_wp_opinionway_2022-03-24_1,OpinionWay,2022_nsp_opinion-way_2022-03-24_2,OpinionWay | cnews,independent poll (kept in the other source)
+2022,2022_wp_opinionway_2022-04-05_1,OpinionWay,2022_nsp_opinion-way_2022-04-05_2,OpinionWay | cnews,independent poll (kept in the other source)
+2022,2022_wp_opinionway_2022-04-06_1,OpinionWay,2022_nsp_opinion-way_2022-04-06_1,"OpinionWay | kea partners, les echos, radio classique",rolling release: dropped by thinning in the other source
+2022,2022_wp_opinionway_2022-04-07_1,OpinionWay,2022_nsp_opinion-way_2022-04-07_1,OpinionWay | cnews,independent poll (kept in the other source)

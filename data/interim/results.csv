@@ -1,0 +1,62 @@
+election,party,candidate_raw,candidate,share,source,commit_hash
+2002,LO,Arlette Laguiller,Arlette Laguiller,5.72,results,8e99f86b819c889a681a7e5bf30a94e7d67abb7b
+2002,PT,Daniel Gluckstein,Daniel Gluckstein,0.47,results,8e99f86b819c889a681a7e5bf30a94e7d67abb7b
+2002,LCR,Olivier Besancenot,Olivier Besancenot,4.25,results,8e99f86b819c889a681a7e5bf30a94e7d67abb7b
+2002,PCF,Robert Hue,Robert Hue,3.37,results,8e99f86b819c889a681a7e5bf30a94e7d67abb7b
+2002,PS,Lionel Jospin,Lionel Jospin,16.18,results,8e99f86b819c889a681a7e5bf30a94e7d67abb7b
+2002,PRG,Christiane Taubira,Christiane Taubira,2.32,results,8e99f86b819c889a681a7e5bf30a94e7d67abb7b
+2002,LV,Noël Mamère,Noël Mamère,5.25,results,8e99f86b819c889a681a7e5bf30a94e7d67abb7b
+2002,MDC,Jean-Pierre Chevènement,Jean-Pierre Chevènement,5.33,results,8e99f86b819c889a681a7e5bf30a94e7d67abb7b
+2002,CAP21,Corinne Lepage,Corinne Lepage,1.88,results,8e99f86b819c889a681a7e5bf30a94e7d67abb7b
+2002,CPNT,Jean Saint-Josse,Jean Saint-Josse,4.23,results,8e99f86b819c889a681a7e5bf30a94e7d67abb7b
+2002,UDF,François Bayrou,François Bayrou,6.84,results,8e99f86b819c889a681a7e5bf30a94e7d67abb7b
+2002,DL,Alain Madelin,Alain Madelin,3.91,results,8e99f86b819c889a681a7e5bf30a94e7d67abb7b
+2002,RPR,Jacques Chirac,Jacques Chirac,19.88,results,8e99f86b819c889a681a7e5bf30a94e7d67abb7b
+2002,FRS,Christine Boutin,Christine Boutin,1.19,results,8e99f86b819c889a681a7e5bf30a94e7d67abb7b
+2002,FN,Jean-Marie Le Pen,Jean-Marie Le Pen,16.86,results,8e99f86b819c889a681a7e5bf30a94e7d67abb7b
+2002,MNR,Bruno Mégret,Bruno Mégret,2.34,results,8e99f86b819c889a681a7e5bf30a94e7d67abb7b
+2007,PT,Gérard Schivardi,Gérard Schivardi,0.34,results,8e99f86b819c889a681a7e5bf30a94e7d67abb7b
+2007,LO,Arlette Laguiller,Arlette Laguiller,1.33,results,8e99f86b819c889a681a7e5bf30a94e7d67abb7b
+2007,LCR,Olivier Besancenot,Olivier Besancenot,4.08,results,8e99f86b819c889a681a7e5bf30a94e7d67abb7b
+2007,PCF,Marie-George Buffet,Marie-George Buffet,1.93,results,8e99f86b819c889a681a7e5bf30a94e7d67abb7b
+2007,IND,José Bové,José Bové,1.32,results,8e99f86b819c889a681a7e5bf30a94e7d67abb7b
+2007,VERTS,Dominique Voynet,Dominique Voynet,1.57,results,8e99f86b819c889a681a7e5bf30a94e7d67abb7b
+2007,MPF,Philippe de Villiers,Philippe de Villiers,2.23,results,8e99f86b819c889a681a7e5bf30a94e7d67abb7b
+2007,PS,Ségolène Royal,Ségolène Royal,25.87,results,8e99f86b819c889a681a7e5bf30a94e7d67abb7b
+2007,CPNT,Frédéric Nihous,Frédéric Nihous,1.15,results,8e99f86b819c889a681a7e5bf30a94e7d67abb7b
+2007,UDF,François Bayrou,François Bayrou,18.57,results,8e99f86b819c889a681a7e5bf30a94e7d67abb7b
+2007,UMP,Nicolas Sarkozy,Nicolas Sarkozy,31.18,results,8e99f86b819c889a681a7e5bf30a94e7d67abb7b
+2007,FN,Jean-Marie Le Pen,Jean-Marie Le Pen,10.44,results,8e99f86b819c889a681a7e5bf30a94e7d67abb7b
+2012,LO,Nathalie Arthaud,Nathalie Arthaud,0.56,results,8e99f86b819c889a681a7e5bf30a94e7d67abb7b
+2012,NPA,Philippe Poutou,Philippe Poutou,1.15,results,8e99f86b819c889a681a7e5bf30a94e7d67abb7b
+2012,FI,Jean-Luc Mélenchon,Jean-Luc Mélenchon,11.1,results,8e99f86b819c889a681a7e5bf30a94e7d67abb7b
+2012,PS,François Hollande,François Hollande,28.63,results,8e99f86b819c889a681a7e5bf30a94e7d67abb7b
+2012,EELV,Eva Joly,Eva Joly,2.31,results,8e99f86b819c889a681a7e5bf30a94e7d67abb7b
+2012,MODEM,François Bayrou,François Bayrou,9.13,results,8e99f86b819c889a681a7e5bf30a94e7d67abb7b
+2012,UMP,Nicolas Sarkozy,Nicolas Sarkozy,27.18,results,8e99f86b819c889a681a7e5bf30a94e7d67abb7b
+2012,DLF,Nicolas Dupont-Aignan,Nicolas Dupont-Aignan,1.79,results,8e99f86b819c889a681a7e5bf30a94e7d67abb7b
+2012,FN,Marine Le Pen,Marine Le Pen,17.9,results,8e99f86b819c889a681a7e5bf30a94e7d67abb7b
+2012,SP,Jacques Cheminade,Jacques Cheminade,0.25,results,8e99f86b819c889a681a7e5bf30a94e7d67abb7b
+2017,LO,Nathalie Arthaud,Nathalie Arthaud,0.64,results,8e99f86b819c889a681a7e5bf30a94e7d67abb7b
+2017,NPA,Philippe Poutou,Philippe Poutou,1.09,results,8e99f86b819c889a681a7e5bf30a94e7d67abb7b
+2017,LFI,Jean-Luc Mélenchon,Jean-Luc Mélenchon,19.58,results,8e99f86b819c889a681a7e5bf30a94e7d67abb7b
+2017,PS,Benoît Hamon,Benoît Hamon,6.36,results,8e99f86b819c889a681a7e5bf30a94e7d67abb7b
+2017,RE,Emmanuel Macron,Emmanuel Macron,24.01,results,8e99f86b819c889a681a7e5bf30a94e7d67abb7b
+2017,RES,Jean Lassalle,Jean Lassalle,1.21,results,8e99f86b819c889a681a7e5bf30a94e7d67abb7b
+2017,LR,François Fillon,François Fillon,20.01,results,8e99f86b819c889a681a7e5bf30a94e7d67abb7b
+2017,DLF,Nicolas Dupont-Aignan,Nicolas Dupont-Aignan,4.7,results,8e99f86b819c889a681a7e5bf30a94e7d67abb7b
+2017,UPR,François Asselineau,François Asselineau,0.92,results,8e99f86b819c889a681a7e5bf30a94e7d67abb7b
+2017,RN,Marine Le Pen,Marine Le Pen,21.3,results,8e99f86b819c889a681a7e5bf30a94e7d67abb7b
+2017,SP,Jacques Cheminade,Jacques Cheminade,0.18,results,8e99f86b819c889a681a7e5bf30a94e7d67abb7b
+2022,NPA,Philippe Poutou,Philippe Poutou,0.77,results,8e99f86b819c889a681a7e5bf30a94e7d67abb7b
+2022,LO,Nathalie Arthaud,Nathalie Arthaud,0.56,results,8e99f86b819c889a681a7e5bf30a94e7d67abb7b
+2022,PCF,Fabien Roussel,Fabien Roussel,2.28,results,8e99f86b819c889a681a7e5bf30a94e7d67abb7b
+2022,LFI,Jean-Luc Mélenchon,Jean-Luc Mélenchon,21.95,results,8e99f86b819c889a681a7e5bf30a94e7d67abb7b
+2022,EELV,Yannick Jadot,Yannick Jadot,4.63,results,8e99f86b819c889a681a7e5bf30a94e7d67abb7b
+2022,PS,Anne Hidalgo,Anne Hidalgo,1.75,results,8e99f86b819c889a681a7e5bf30a94e7d67abb7b
+2022,RE,Emmanuel Macron,Emmanuel Macron,27.85,results,8e99f86b819c889a681a7e5bf30a94e7d67abb7b
+2022,LR,Valérie Pécresse,Valérie Pécresse,4.78,results,8e99f86b819c889a681a7e5bf30a94e7d67abb7b
+2022,RES,Jean Lassalle,Jean Lassalle,3.13,results,8e99f86b819c889a681a7e5bf30a94e7d67abb7b
+2022,DLF,Nicolas Dupont-Aignan,Nicolas Dupont-Aignan,2.06,results,8e99f86b819c889a681a7e5bf30a94e7d67abb7b
+2022,RN,Marine Le Pen,Marine Le Pen,23.15,results,8e99f86b819c889a681a7e5bf30a94e7d67abb7b
+2022,REC,Éric Zemmour,Éric Zemmour,7.07,results,8e99f86b819c889a681a7e5bf30a94e7d67abb7b

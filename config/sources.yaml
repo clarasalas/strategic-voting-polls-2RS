@@ -1,0 +1,39 @@
+# Pinned sources. A null pin is resolved (and written back here) on the next run
+# of notebooks/01_collect_and_parse.ipynb; existing pins are never changed automatically.
+wikipedia:
+  2002:
+    title: Liste de sondages sur l'élection présidentielle française de 2002
+    revision_id: 236399441
+    revision_timestamp: '2026-05-21T09:55:10Z'
+  2007:
+    title: Liste de sondages sur l'élection présidentielle française de 2007
+    revision_id: 233109259
+    revision_timestamp: '2026-02-07T23:06:55Z'
+  2012:
+    title: Liste de sondages sur l'élection présidentielle française de 2012
+    revision_id: 238741176
+    revision_timestamp: '2026-08-18T15:42:45Z'
+  2017:
+    title: Liste de sondages sur l'élection présidentielle française de 2017
+    revision_id: 239719711
+    revision_timestamp: '2026-09-22T09:05:11Z'
+  2022:
+    title: Liste de sondages sur l'élection présidentielle française de 2022
+    revision_id: 239942428
+    revision_timestamp: '2026-09-30T13:39:27Z'
+france_politique:
+  url: https://www.france-politique.fr/sondages-electoraux-presidentielle-2002.htm
+  filename: sondages-electoraux-presidentielle-2002.htm
+  wayback_timestamp: '20261001163732'
+nsppolls:
+  repo: nsppolls/nsppolls
+  path: presidentielle.json
+  commit: ddcd5ceef9839c7d3f46948ff85f41fc93f215ce
+  commit_date: '2022-05-23T17:20:34Z'
+results:
+  repo: clarasalas/strategic-voting-abm-2RS
+  path: data/FR-electoral_data.csv
+  commit: 8e99f86b819c889a681a7e5bf30a94e7d67abb7b
+  commit_date: '2026-10-01'
+  note: 'Pinned to PR #24 (fix-electoral-data) until merged; then blank `commit` to
+    re-pin to main.'

@@ -1,0 +1,39 @@
+institute_raw,institute,institute_family,match,sources
+Atlas Politico,Atlas Político,AtlasIntel,manual,wikipedia
+Atlasintel,AtlasIntel,AtlasIntel,manual,nsppolls
+BVA,BVA,BVA,manual,france_politique;nsppolls;wikipedia
+Cevipof Ipsos Sopra Steria,Ipsos,Ipsos,spelling,wikipedia
+Cevipof Ipsos-Sopra Steria,Ipsos,Ipsos,manual,wikipedia
+Cluster 17,Cluster17,Cluster17,spelling,wikipedia
+Cluster17,Cluster17,Cluster17,manual,nsppolls;wikipedia
+CSA,CSA,CSA,manual,france_politique;wikipedia
+Dedicated Research,Dedicated Research,Dedicated Research,manual,wikipedia
+Elabe,Elabe,Elabe,manual,nsppolls;wikipedia
+Future Thinking - SSI,Future Thinking - SSI,Future Thinking - SSI,manual,wikipedia
+Harris,Harris Interactive,Harris Interactive,manual,wikipedia
+Harris Interactive,Harris Interactive,Harris Interactive,manual,nsppolls;wikipedia
+Harris Interractive,Harris Interactive,Harris Interactive,manual,wikipedia
+IFOP,Ifop,Ifop,spelling,france_politique
+Ifop,Ifop,Ifop,manual,nsppolls;wikipedia
+Ifop-Fiducial,Ifop,Ifop,manual,wikipedia
+IPSOS,Ipsos,Ipsos,spelling,france_politique
+Ipsos,Ipsos,Ipsos,manual,nsppolls;wikipedia
+Ipsos Sopra Steria,Ipsos,Ipsos,manual,wikipedia
+Kantar,Kantar Public,Kantar (Sofres),manual,wikipedia
+Kantar Public,Kantar Public,Kantar (Sofres),manual,nsppolls
+Kantar Sofres,Kantar Sofres,Kantar (Sofres),manual,wikipedia
+Kantar Sofres - OnePoint,Kantar Sofres,Kantar (Sofres),manual,wikipedia
+Kantar Sofres-OnePoint,Kantar Sofres,Kantar (Sofres),spelling,wikipedia
+LH2,LH2,LH2 (Louis Harris),manual,wikipedia
+Louis Harris,Louis Harris,LH2 (Louis Harris),manual,france_politique;wikipedia
+Odoxa,Odoxa,Odoxa,manual,nsppolls;wikipedia
+Opinion Way,OpinionWay,OpinionWay,spelling,nsppolls;wikipedia
+OpinionWay,OpinionWay,OpinionWay,manual,wikipedia
+Opinionway,OpinionWay,OpinionWay,spelling,wikipedia
+Redfield & Wilton Strategies,Redfield & Wilton Strategies,Redfield & Wilton Strategies,manual,nsppolls
+Scan Research - Le Terrain,Scan Research - Le Terrain,Scan Research - Le Terrain,manual,wikipedia
+SOFRES,Sofres,Kantar (Sofres),spelling,france_politique
+Sofres,Sofres,Kantar (Sofres),manual,wikipedia
+TNS Sofres,TNS Sofres,Kantar (Sofres),manual,wikipedia
+YouGov,YouGov,YouGov,manual,nsppolls;wikipedia
+« Ipsos »,Ipsos,Ipsos,manual,wikipedia

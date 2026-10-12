@@ -1,0 +1,264 @@
+election,candidate_raw,candidate,match,sources
+2002,Alain Madelin,Alain Madelin,results,france_politique;results
+2002,Alain Madelin (DL),Alain Madelin,results,wikipedia
+2002,Antoine Waechter,Antoine Waechter,exact,france_politique
+2002,Arlette Laguiller,Arlette Laguiller,results,france_politique;results
+2002,Arlette Laguiller (LO),Arlette Laguiller,results,wikipedia
+2002,Autres,__others__,rule,france_politique
+2002,Brice Lalonde,Brice Lalonde,exact,france_politique
+2002,Bruno Mégret,Bruno Mégret,results,france_politique;results
+2002,Bruno Mégret (MNR),Bruno Mégret,results,wikipedia
+2002,Charles Pasqua,Charles Pasqua,exact,france_politique
+2002,Charles Pasqua (RPF),Charles Pasqua,exact,wikipedia
+2002,Christiane Taubira,Christiane Taubira,results,france_politique;results
+2002,Christiane Taubira (PRG),Christiane Taubira,results,wikipedia
+2002,Christine Boutin,Christine Boutin,results,france_politique;results
+2002,Christine Boutin (FRS),Christine Boutin,results,wikipedia
+2002,Corinne Lepage,Corinne Lepage,results,france_politique;results
+2002,Corinne Lepage (Cap21),Corinne Lepage,results,wikipedia
+2002,Daniel Gluckstein,Daniel Gluckstein,results,france_politique;results
+2002,Daniel Gluckstein (POI),Daniel Gluckstein,results,wikipedia
+2002,Dieudonné M'Bala M'Bala,Dieudonné M'Bala M'Bala,exact,france_politique
+2002,Dominique Voynet (LV),Dominique Voynet,results,wikipedia
+2002,François Bayrou,François Bayrou,results,france_politique;results
+2002,François Bayrou (UDF),François Bayrou,results,wikipedia
+2002,Jacques Chirac,Jacques Chirac,results,france_politique;results
+2002,Jacques Chirac (RPR),Jacques Chirac,results,wikipedia
+2002,Jean Saint-Josse,Jean Saint-Josse,results,france_politique;results
+2002,Jean Saint-Josse (CPNT),Jean Saint-Josse,results,wikipedia
+2002,Jean-Marie Le Pen,Jean-Marie Le Pen,results,france_politique;results
+2002,Jean-Marie Le Pen (FN),Jean-Marie Le Pen,results,wikipedia
+2002,Jean-Pierre Chevènement,Jean-Pierre Chevènement,results,france_politique;results
+2002,Jean-Pierre Chevènement (MDC),Jean-Pierre Chevènement,results,wikipedia
+2002,Lionel Jospin,Lionel Jospin,results,france_politique;results
+2002,Lionel Jospin (PS),Lionel Jospin,results,wikipedia
+2002,Noël Mamère,Noël Mamère,results,france_politique;results
+2002,Noël Mamère (LV),Noël Mamère,results,wikipedia
+2002,Noël Mamère*,Verts (Mamère/Voynet/Lipietz),manual,france_politique
+2002,Olivier Besancenot,Olivier Besancenot,results,france_politique;results
+2002,Olivier Besancenot (LCR),Olivier Besancenot,results,wikipedia
+2002,Philippe de Villiers (MPF),Philippe de Villiers,results,wikipedia
+2002,Pierre Larrouturou,Pierre Larrouturou,exact,france_politique
+2002,Robert Hue,Robert Hue,results,france_politique;results
+2002,Robert Hue (PCF),Robert Hue,results,wikipedia
+2007,Arlette Laguiller,Arlette Laguiller,results,results
+2007,Arlette Laguiller (LO),Arlette Laguiller,results,wikipedia
+2007,Dominique Voynet,Dominique Voynet,results,results
+2007,Dominique Voynet (LV),Dominique Voynet,results,wikipedia
+2007,François Bayrou,François Bayrou,results,results
+2007,François Bayrou (UDF),François Bayrou,results,wikipedia
+2007,François Hollande (PS),François Hollande,results,wikipedia
+2007,Frédéric Nihous,Frédéric Nihous,results,results
+2007,Frédéric Nihous (CPNT),Frédéric Nihous,results,wikipedia
+2007,Gérard Schivardi,Gérard Schivardi,results,results
+2007,Gérard Schivardi (PT),Gérard Schivardi,results,wikipedia
+2007,Jack Lang (PS),Jack Lang,exact,wikipedia
+2007,Jean-Marie Le Pen,Jean-Marie Le Pen,results,results
+2007,Jean-Marie Le Pen (FN),Jean-Marie Le Pen,results,wikipedia
+2007,José Bové,José Bové,results,results
+2007,José Bové (DVG),José Bové,results,wikipedia
+2007,Laurent Fabius (PS),Laurent Fabius,exact,wikipedia
+2007,Marie-George Buffet,Marie-George Buffet,results,results
+2007,Marie-George Buffet (PCF),Marie-George Buffet,results,wikipedia
+2007,Nicolas Hulot (SE),Nicolas Hulot,exact,wikipedia
+2007,Nicolas Sarkozy,Nicolas Sarkozy,results,results
+2007,Nicolas Sarkozy (UMP),Nicolas Sarkozy,results,wikipedia
+2007,Noël Mamère (LV),Noël Mamère,results,wikipedia
+2007,Olivier Besancenot,Olivier Besancenot,results,results
+2007,Olivier Besancenot (LCR),Olivier Besancenot,results,wikipedia
+2007,Philippe de Villiers,Philippe de Villiers,results,results
+2007,Philippe de Villiers (MPF),Philippe de Villiers,results,wikipedia
+2007,Ségolène Royal,Ségolène Royal,results,results
+2007,Ségolène Royal (PS),Ségolène Royal,results,wikipedia
+2012,Arlette Laguiller (LO),Arlette Laguiller,results,wikipedia
+2012,Arthaud,Nathalie Arthaud,surname,wikipedia
+2012,Aubry,Martine Aubry,surname,wikipedia
+2012,Bernard Tapie (PRG),Bernard Tapie,exact,wikipedia
+2012,Besancenot,Olivier Besancenot,surname,wikipedia
+2012,Candidat EELV,"[EELV, candidat non désigné]",manual,wikipedia
+2012,Christine Boutin (PCD),Christine Boutin,results,wikipedia
+2012,Corinne Lepage (Cap21),Corinne Lepage,results,wikipedia
+2012,Dominique Voynet (EELV),Dominique Voynet,results,wikipedia
+2012,Dominique de Villepin (RS),Dominique de Villepin,exact,wikipedia
+2012,Duflot,Cécile Duflot,surname,wikipedia
+2012,Eva Joly,Eva Joly,results,results
+2012,Eva Joly (EELV),Eva Joly,results,wikipedia
+2012,François Bayrou,François Bayrou,results,results
+2012,François Bayrou (MoDem),François Bayrou,results,wikipedia
+2012,François Hollande,François Hollande,results,results
+2012,François Hollande (PS),François Hollande,results,wikipedia
+2012,Frédéric Nihous (CPNT),Frédéric Nihous,results,wikipedia
+2012,Gérard Schivardi (PT),Gérard Schivardi,results,wikipedia
+2012,Hervé Morin (NC),Hervé Morin,exact,wikipedia
+2012,Hollande,François Hollande,surname,wikipedia
+2012,Hulot,Nicolas Hulot,surname,wikipedia
+2012,J-M. Le Pen,Jean-Marie Le Pen,initial+surname,wikipedia
+2012,Jacques Cheminade,Jacques Cheminade,results,results
+2012,Jacques Cheminade (S&P),Jacques Cheminade,results,wikipedia
+2012,Jean-Louis Borloo (PR),Jean-Louis Borloo,exact,wikipedia
+2012,Jean-Luc Mélenchon,Jean-Luc Mélenchon,results,results
+2012,Jean-Luc Mélenchon (FG),Jean-Luc Mélenchon,results,wikipedia
+2012,Jean-Pierre Chevènement (MRC),Jean-Pierre Chevènement,results,wikipedia
+2012,Joly,Eva Joly,surname,wikipedia
+2012,José Bové (SÉ),José Bové,results,wikipedia
+2012,M. Le Pen,Marine Le Pen,initial+surname,wikipedia
+2012,Marie-George Buffet (PCF),Marie-George Buffet,results,wikipedia
+2012,Marine Le Pen,Marine Le Pen,results,results
+2012,Marine Le Pen (FN),Marine Le Pen,results,wikipedia
+2012,Martine Aubry (PS),Martine Aubry,exact,wikipedia
+2012,Nathalie Arthaud,Nathalie Arthaud,results,results
+2012,Nathalie Arthaud (LO),Nathalie Arthaud,results,wikipedia
+2012,Nicolas Dupont-Aignan,Nicolas Dupont-Aignan,results,results
+2012,Nicolas Dupont-Aignan (DLR),Nicolas Dupont-Aignan,results,wikipedia
+2012,Nicolas Sarkozy,Nicolas Sarkozy,results,results
+2012,Nicolas Sarkozy (UMP),Nicolas Sarkozy,results,wikipedia
+2012,Olivier Besancenot (NPA),Olivier Besancenot,results,wikipedia
+2012,Philippe Poutou,Philippe Poutou,results,results
+2012,Philippe Poutou (NPA),Philippe Poutou,results,wikipedia
+2012,Philippe de Villiers (MPF),Philippe de Villiers,results,wikipedia
+2012,Poutou,Philippe Poutou,surname,wikipedia
+2012,Royal,Ségolène Royal,surname,wikipedia
+2012,Strauss-Kahn,Dominique Strauss-Kahn,manual,wikipedia
+2012,Ségolène Royal (PS),Ségolène Royal,results,wikipedia
+2017,Alain Juppé (LR),Alain Juppé,exact,wikipedia
+2017,Alain Juppé (UMP),Alain Juppé,exact,wikipedia
+2017,Alliot-Marie,Michèle Alliot-Marie,manual,wikipedia
+2017,Arnaud Montebourg (PS),Arnaud Montebourg,exact,wikipedia
+2017,Asselineau,François Asselineau,surname,wikipedia
+2017,Benoît Hamon,Benoît Hamon,results,results
+2017,Benoît Hamon (PS),Benoît Hamon,results,wikipedia
+2017,Bruno Le Maire (LR),Bruno Le Maire,exact,wikipedia
+2017,Cécile Duflot (EELV),Cécile Duflot,exact,wikipedia
+2017,Emmanuel Macron,Emmanuel Macron,results,results
+2017,Emmanuel Macron (DVG),Emmanuel Macron,results,wikipedia
+2017,Emmanuel Macron (EM),Emmanuel Macron,results,wikipedia
+2017,Emmanuel Macron (SE),Emmanuel Macron,results,wikipedia
+2017,Eva Joly (EELV),Eva Joly,results,wikipedia
+2017,François Asselineau,François Asselineau,results,results
+2017,François Asselineau (UPR),François Asselineau,results,wikipedia
+2017,François Bayrou (MoDem),François Bayrou,results,wikipedia
+2017,François Fillon,François Fillon,results,results
+2017,François Fillon (LR),François Fillon,results,wikipedia
+2017,François Fillon (UMP),François Fillon,results,wikipedia
+2017,François Hollande (PS),François Hollande,results,wikipedia
+2017,Guaino,Henri Guaino,manual,wikipedia
+2017,Jacques Cheminade,Jacques Cheminade,results,results
+2017,Jacques Cheminade (S&P),Jacques Cheminade,results,wikipedia
+2017,Jacques Cheminade (SP),Jacques Cheminade,results,wikipedia
+2017,Jean Lassalle,Jean Lassalle,results,results
+2017,Jean Lassalle (RES),Jean Lassalle,results,wikipedia
+2017,Jean-François Copé (UMP),Jean-François Copé,exact,wikipedia
+2017,Jean-Luc Mélenchon,Jean-Luc Mélenchon,results,results
+2017,Jean-Luc Mélenchon (FG),Jean-Luc Mélenchon,results,wikipedia
+2017,Jean-Luc Mélenchon (LFI),Jean-Luc Mélenchon,results,wikipedia
+2017,Juppé,Alain Juppé,surname,wikipedia
+2017,Larrouturou,Pierre Larrouturou,surname,wikipedia
+2017,Lassalle,Jean Lassalle,surname,wikipedia
+2017,Manuel Valls (PS),Manuel Valls,exact,wikipedia
+2017,Marchandise,Charlotte Marchandise,manual,wikipedia
+2017,Marine Le Pen,Marine Le Pen,results,results
+2017,Marine Le Pen (FN),Marine Le Pen,results,wikipedia
+2017,Martine Aubry (PS),Martine Aubry,exact,wikipedia
+2017,Nathalie Arthaud,Nathalie Arthaud,results,results
+2017,Nathalie Arthaud (LO),Nathalie Arthaud,results,wikipedia
+2017,Nicolas Dupont-Aignan,Nicolas Dupont-Aignan,results,results
+2017,Nicolas Dupont-Aignan (DLF),Nicolas Dupont-Aignan,results,wikipedia
+2017,Nicolas Dupont-Aignan (DLR),Nicolas Dupont-Aignan,results,wikipedia
+2017,Nicolas Hulot,Nicolas Hulot,exact,wikipedia
+2017,Nicolas Sarkozy (LR),Nicolas Sarkozy,results,wikipedia
+2017,Nicolas Sarkozy (UMP),Nicolas Sarkozy,results,wikipedia
+2017,Olivier Besancenot (NPA),Olivier Besancenot,results,wikipedia
+2017,Philippe Poutou,Philippe Poutou,results,results
+2017,Philippe Poutou (NPA),Philippe Poutou,results,wikipedia
+2017,Philippe de Villiers (MPF),Philippe de Villiers,results,wikipedia
+2017,Sylvia Pinel (PRG),Sylvia Pinel,exact,wikipedia
+2017,Vincent Peillon (PS),Vincent Peillon,exact,wikipedia
+2017,Yade,Rama Yade,manual,wikipedia
+2017,Yannick Jadot (EELV),Yannick Jadot,results,wikipedia
+2022,Anne Hidalgo,Anne Hidalgo,results,nsppolls;results
+2022,Arnaud Montebourg,Arnaud Montebourg,exact,nsppolls
+2022,Arthaud (LO),Nathalie Arthaud,hint,wikipedia
+2022,Arthaud (LO) + Poutou (NPA),"[extrême gauche, candidat non désigné]",manual,wikipedia
+2022,Asselineau,François Asselineau,surname,wikipedia
+2022,Asselineau (UPR),François Asselineau,hint,wikipedia
+2022,Barnier,Michel Barnier,surname,wikipedia
+2022,Baroin,François Baroin,surname,wikipedia
+2022,Bertrand,Xavier Bertrand,surname,wikipedia
+2022,Bruno Retailleau,Bruno Retailleau,exact,nsppolls
+2022,Candidat LR,"[LR, candidat non désigné]",manual,wikipedia
+2022,Candidat PS,"[PS, candidat non désigné]",manual,wikipedia
+2022,Candidat PS / DVG,"[PS/DVG, candidat non désigné]",manual,wikipedia
+2022,Cazeneuve,Bernard Cazeneuve,manual,wikipedia
+2022,Cheminade,Jacques Cheminade,surname,wikipedia
+2022,Cheminade (S&P),Jacques Cheminade,hint,wikipedia
+2022,Christiane Taubira,Christiane Taubira,results,nsppolls
+2022,Ciotti,Éric Ciotti,manual,wikipedia
+2022,Dati,Rachida Dati,surname,wikipedia
+2022,Denis Payre,Denis Payre,exact,nsppolls
+2022,Dupont-Aignan (DLF),Nicolas Dupont-Aignan,hint,wikipedia
+2022,Emmanuel Macron,Emmanuel Macron,results,nsppolls;results
+2022,Eric Ciotti,Éric Ciotti,manual,nsppolls
+2022,Eric Piolle,Éric Piolle,manual,nsppolls
+2022,Eric Zemmour,Éric Zemmour,results,nsppolls
+2022,Fabien Roussel,Fabien Roussel,results,nsppolls;results
+2022,Faure,Olivier Faure,surname,wikipedia
+2022,Fillon,François Fillon,surname,wikipedia
+2022,Florian Philippot,Florian Philippot,exact,nsppolls
+2022,François Asselineau,François Asselineau,results,nsppolls
+2022,François Baroin,François Baroin,exact,nsppolls
+2022,François Hollande,François Hollande,results,nsppolls
+2022,Hamon (G.s),Benoît Hamon,hint,wikipedia
+2022,Hidalgo,Anne Hidalgo,surname,wikipedia
+2022,Hidalgo (PS),Anne Hidalgo,hint,wikipedia
+2022,Hollande,François Hollande,surname,wikipedia
+2022,Hélène Thouy,Hélène Thouy,exact,nsppolls
+2022,Jacques Cheminade,Jacques Cheminade,results,nsppolls
+2022,Jadot (EELV),Yannick Jadot,hint,wikipedia
+2022,Jean Lassalle,Jean Lassalle,results,nsppolls;results
+2022,Jean-Christophe Lagarde,Jean-Christophe Lagarde,exact,nsppolls
+2022,Jean-Frédéric Poisson,Jean-Frédéric Poisson,exact,nsppolls
+2022,Jean-Luc Mélenchon,Jean-Luc Mélenchon,results,nsppolls;results
+2022,Juvin,Philippe Juvin,surname,wikipedia
+2022,Lagarde (UDI),Jean-Christophe Lagarde,hint,wikipedia
+2022,Lassalle (RES),Jean Lassalle,surname,wikipedia
+2022,Laurent Wauquiez,Laurent Wauquiez,exact,nsppolls
+2022,Le Pen (RN),Marine Le Pen,hint,wikipedia
+2022,Macron (LREM),Emmanuel Macron,hint,wikipedia
+2022,Marine Le Pen,Marine Le Pen,results,nsppolls;results
+2022,Michel Barnier,Michel Barnier,exact,nsppolls
+2022,Montebourg,Arnaud Montebourg,surname,wikipedia
+2022,Montebourg (DVG),Arnaud Montebourg,hint,wikipedia
+2022,Mélenchon (LFI),Jean-Luc Mélenchon,hint,wikipedia
+2022,Nathalie Arthaud,Nathalie Arthaud,results,nsppolls;results
+2022,Nicolas Dupont-Aignan,Nicolas Dupont-Aignan,results,nsppolls;results
+2022,Olivier Faure,Olivier Faure,exact,nsppolls
+2022,Payre,Denis Payre,surname,wikipedia
+2022,Philippe Juvin,Philippe Juvin,exact,nsppolls
+2022,Philippe Poutou,Philippe Poutou,results,nsppolls;results
+2022,Philippot (LP),Florian Philippot,surname,wikipedia
+2022,Piolle,Éric Piolle,manual,wikipedia
+2022,Poisson (VIA),Jean-Frédéric Poisson,surname,wikipedia
+2022,Poutou (NPA),Philippe Poutou,hint,wikipedia
+2022,Pécresse,Valérie Pécresse,surname,wikipedia
+2022,Pécresse (LR),Valérie Pécresse,hint,wikipedia
+2022,Rachida Dati,Rachida Dati,exact,nsppolls
+2022,Retailleau,Bruno Retailleau,surname,wikipedia
+2022,Rousseau,Sandrine Rousseau,surname,wikipedia
+2022,Roussel (PCF),Fabien Roussel,hint,wikipedia
+2022,Royal,Ségolène Royal,surname,wikipedia
+2022,Sandrine Rousseau,Sandrine Rousseau,exact,nsppolls
+2022,Ségolène Royal,Ségolène Royal,results,nsppolls
+2022,Taubira (DVG),Christiane Taubira,surname,wikipedia
+2022,Thouy,Hélène Thouy,surname,wikipedia
+2022,Thouy (PA),Hélène Thouy,hint,wikipedia
+2022,Valérie Pécresse,Valérie Pécresse,results,nsppolls;results
+2022,Wauquiez,Laurent Wauquiez,surname,wikipedia
+2022,Xavier Bertrand,Xavier Bertrand,exact,nsppolls
+2022,Yannick Jadot,Yannick Jadot,results,nsppolls;results
+2022,Zemmour,Éric Zemmour,surname,wikipedia
+2022,Zemmour (EXD),Éric Zemmour,hint,wikipedia
+2022,Zemmour (REC),Éric Zemmour,hint,wikipedia
+2022,[EE-LV],"[EELV, candidat non désigné]",manual,nsppolls
+2022,[Les Républicains],"[LR, candidat non désigné]",manual,nsppolls
+2022,[« ext. gauche »],"[extrême gauche, candidat non désigné]",manual,nsppolls
+2022,Éric Zemmour,Éric Zemmour,results,results

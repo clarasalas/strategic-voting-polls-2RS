@@ -1,0 +1,7 @@
+beautifulsoup4
+lxml
+pandas
+pyyaml
+requests
+jupyter
+nbconvert

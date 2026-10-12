@@ -1,0 +1,4 @@
+# Spot-check sample. The seed was fixed on 2026-10-02, before the sample was drawn.
+# Do not change it to get a different sample: that would make the draw a choice.
+seed: 20261002
+polls_per_election: 30
