@@ -2,7 +2,7 @@ I am checking a dataset of French presidential first-round voting-intention poll
 
 ## What counts as a good source, best first
 
-1. The **Commission des sondages notice** for the poll (notice PDF on commission-des-sondages.fr). Old links in the form `http://www.commission-des-sondages.fr/notices/files/notices/...` may have moved; search for the notice on the current site if they fail.
+1. The **Commission des sondages notice** for the poll (notice PDF on commission-des-sondages.fr). Old links in the form `http://www.commission-des-sondages.fr/notices/files/notices/...` are dead: the site has moved to `commission-des-sondages.fr/notices/medias/fichiers/...` (no `www`). Search for the notice on the current site instead of trying the old link.
 2. The **pollster's own report** (PDF or results page on the pollster's site: ifop.com, elabe.fr, harris-interactive.fr, ipsos.com/fr-fr, opinion-way.com, odoxa.fr, bva-xsight.com, csa.eu, kantarpublic.com / tns-sofres.com, lh2.fr, yougov.com/fr, cluster17.com, etc.).
 3. An **archived copy** of either of the above on the Wayback Machine (web.archive.org). Old pollster sites (TNS Sofres, LH2, Louis Harris, BVA, CSA) often survive only there.
 4. The **article of the client** (the newspaper, TV or radio that commissioned it) that publishes the full results table.
