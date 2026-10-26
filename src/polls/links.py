@@ -30,9 +30,9 @@ def read_found() -> pd.DataFrame:
         return found
     found = found.apply(lambda c: c.str.strip())
     found = found.drop_duplicates("poll_id", keep="last").set_index("poll_id")
-    ok = ~found["url"].str.lower().isin(["", "not_found"])
+    ok = found["url"].str.match(r"https?://")   # not_found, unrecorded, blank: no link
     found["link"] = found["url"].where(ok, "")
-    found["check"] = (found["source_type"] + " / " + found["matches"]).str.strip(" /").where(ok, "not_found")
+    found["check"] = (found["source_type"] + " / " + found["matches"]).str.strip(" /").where(ok, "no link: " + found["url"])
     archive = found.get("archive_url", pd.Series("", index=found.index))
     found["note"] = found["notes"] + ("" if archive is None else archive.map(lambda a: f" [archive: {a}]" if a else ""))
     return found
