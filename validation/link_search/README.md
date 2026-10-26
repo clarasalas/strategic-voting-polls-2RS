@@ -22,5 +22,5 @@ kept) and adds two columns: `link_check` (source type and the chatbot's own `mat
 
 The links still have to be opened and the verdicts filled in by hand: chatbots invent plausible URLs.
 
-`prompt_2012_retry.md` is a second pass for the 14 polls of 2012 that the first search did not reach. Save its
+`prompt_2012_retry.md` is a second pass for the 12 polls of 2012 that the first search did not reach. Save its
 answer as `found_2012_retry.csv`: when a poll appears in several files, the file that sorts last wins.
