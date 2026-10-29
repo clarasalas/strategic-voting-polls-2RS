@@ -29,61 +29,50 @@ client of overlapping polls, and a random sample of 30 Wikipedia polls per elect
 
 ## Where things stand
 
-**Collection, parsing and thinning are done. The manual validation is partly done. Nothing after it exists yet.**
+**Collection, parsing and thinning are done. The disagreements are settled; the spot check is not done yet. Nothing after it exists yet.**
 
-| Step | State on 12 October 2026 |
+| Step | State on 29 October 2026 |
 |---|---|
 | Collect and parse (notebook 01) | done: 746 Wikipedia polls (2002–2022), 98 france-politique (2002), 351 NSPPolls (2022) |
 | Candidate and pollster mappings (`config/`) | done, nothing unmapped |
 | Thin rolling polls (notebook 02) | done: drops 6 Wikipedia polls in 2017, 32 in 2022, and 121 NSPPolls polls |
 | Client lookups ([`flagged_clients.csv`](validation/README.md)) | done, 19 of 19 |
 | Cross-source comparison (notebook 03) | run; 31 flagged overlaps (2002, 2022) resolved automatically |
-| Settle disagreements ([`crosscheck_disagreements.csv`](validation/README.md)) | **21 of 79** |
-| Spot check ([`spot_check_sample.csv`](validation/README.md)) | **0 of 150** |
+| Settle disagreements ([`crosscheck_disagreements.csv`](validation/README.md)) | done, 79 of 79 |
+| Spot check ([`spot_check_sample.csv`](validation/README.md)) | **links found for 137 of 150; checks not started** |
 | Apply the validation answers to the tables | not started: no code reads them |
 | Final dataset, calibration statistics | not started: only `data/interim/` exists |
 
 ## Next steps
 
 <details>
-<summary><strong>1 · Look at the "neither" answers first</strong></summary>
+<summary><strong>1 · Disagreements: done</strong></summary>
 
 <br>
 
-15 of the 21 disagreements settled so far are answered `neither`, and `notes` and `document_url` are empty on
-every row, so the values read in the document are not recorded anywhere.
+All 79 rows are settled. In 2002: france-politique 14, Wikipedia 1, no document found 4. In 2022: NSPPolls 35,
+Wikipedia 23, no document found 2. No row is `neither`: the earlier `neither` answers came from dead links and
+were redone with the documents found by the link search ([`validation/link_search/`](validation/link_search/README.md)).
 
-Before settling more rows, either write those values in `notes`, or check whether these rows are really two wrong
-sources or a problem in how notebook 03 pairs scenarios. One to start from: Elabe, 1 July 2020, s2, where NSPPolls
-has Baroin at 12 and Wikipedia has Bertrand at 12.
+Two 2022 rows (Ifop 18–19 June 2020 s3, Ifop 2–8 April 2021 s8) name the source with the bigger error, and `notes`
+gives the one value that source also gets wrong. The code that applies the answers must read those notes.
 
 </details>
 
 <details>
-<summary><strong>2 · Finish the disagreements</strong></summary>
+<summary><strong>2 · The spot check</strong></summary>
 
 <br>
 
-* **2022, 39 rows left**: Ifop 20, OpinionWay 9, Ipsos 8, Odoxa 1, YouGov 1. BVA, Cluster17, Elabe and Harris
-  Interactive are done.
-* **2002, all 19 rows left.** They have no `document_to_use`: the original has to be found by hand.
-
-How to fill in the file: [`validation/README.md`](validation/README.md).
+150 polls, none checked yet (`sample_size_ok` is `NA` for 2002–2012: those sources give no sample size).
+`document_url` is filled in for 137; 13 have no document (2002: 5, 2007: 3, 2012: 5), and about 27 link to a
+commentary or a chart that shows only the leading candidates (`link_check` says `partly`). Mark the ones with no
+document `NA` rather than replacing them: the sample is drawn with a fixed seed and must not be redrawn.
 
 </details>
 
 <details>
-<summary><strong>3 · The spot check</strong></summary>
-
-<br>
-
-150 polls, none checked yet. The 2017 and 2022 rows all come with a link to the report or the notice; 2002, 2007
-and 2012 have none. The sample is drawn with a fixed seed and must not be redrawn.
-
-</details>
-
-<details>
-<summary><strong>4 · Apply the answers, then build the final dataset</strong></summary>
+<summary><strong>3 · Apply the answers, then build the final dataset</strong></summary>
 
 <br>
 
@@ -94,7 +83,7 @@ and 2022, and what the final table looks like. The calibration statistics come a
 </details>
 
 <details>
-<summary><strong>5 · Loose ends</strong></summary>
+<summary><strong>4 · Loose ends</strong></summary>
 
 <br>
 

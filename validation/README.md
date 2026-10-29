@@ -9,11 +9,11 @@ the pollster's report or the Commission des sondages notice.
 
 ## What is in here
 
-| File | What it holds | Filled in on 12 October 2026 |
+| File | What it holds | Filled in on 29 October 2026 |
 |---|---|---|
-| `crosscheck_disagreements.csv` | one row per scenario where two sources disagree | **21 of 79** |
+| `crosscheck_disagreements.csv` | one row per scenario where two sources disagree | 79 of 79, done |
 | `flagged_clients.csv` | overlapping polls by one pollster whose client Wikipedia doesn't give | 19 of 19, done |
-| `spot_check_sample.csv` | 30 random Wikipedia polls per election | **0 of 150** |
+| `spot_check_sample.csv` | 30 random Wikipedia polls per election | **0 of 150** (links found for 137) |
 
 `notebooks/03_cross_check.ipynb` never overwrites an existing worklist. On a rerun it only reports how many rows
 have answers and whether its own list of polls has changed. Files saved from a French-locale Excel, with `;` as
@@ -27,15 +27,11 @@ The sources compared are france-politique and Wikipedia for 2002, NSPPolls and W
 
 | Column | What to write |
 |---|---|
-| `correct_source` | `NSPPolls`, `Wikipedia` or `neither` (the values used so far); `france-politique` for 2002 |
-| `document_url` | the document actually read, if it is not `document_to_use` |
-| `notes` | for `neither`, the values in the document |
+| `correct_source` | `NSPPolls`, `Wikipedia`, `Fp` (france-politique, 2002), `neither`, or `NA` when no document was found |
+| `document_url` | the document actually read (filled in from the link search; `document_to_use` holds NSPPolls' old, mostly dead links) |
+| `notes` | for `neither`, the values in the document; when both sources are wrong but one is named, the other value it gets wrong |
 
-Rows are sorted by election, then pollster. Rows 20 to 40 are done: BVA, Cluster17, Elabe and Harris Interactive
-in 2022. The 19 rows for 2002 and the 2022 rows from Ifop onwards are not.
-
-**To settle first.** 15 of the 21 answers are `neither`, and none has a note, so the right values are not written
-down. See step 1 of [Next steps](../README.md#next-steps).
+Done: every row is answered. `link_check` and `link_notes` come from the link search (`link_search/`).
 
 ### `spot_check_sample.csv`
 
