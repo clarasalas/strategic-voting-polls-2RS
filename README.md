@@ -85,9 +85,19 @@ Corrections are in `notes`, in the format described in [`validation/README.md`](
 
 <br>
 
-Nothing reads the worklists' answers yet, apart from the clients, which notebook 02 uses. To decide: how
-corrections are applied (a corrections table read when the final dataset is built?), which source is used for 2002
-and 2022, and what the final table looks like. The calibration statistics come after that.
+Nothing reads the worklists' answers yet, apart from the clients, which notebook 02 uses.
+
+**Decided (2 November 2026):**
+
+* **2007 and 2012 stay as they are.** The dates stay publication dates and the missing small candidates are not
+  added, not even for the polls checked by hand: correcting half the polls would mix two standards in one table
+  and still leave the gap. These are reported as limits of the data.
+* **Sample size is the base of respondents giving a voting intention**, as Wikipedia gives it, since the shares
+  are percentages of that base. The full sample written in the spot check's `notes` is not used.
+
+**Still to decide:** how corrections are applied (a corrections table read when the final dataset is built?),
+which source is used for 2002 and 2022, and what the final table looks like. The calibration statistics come after
+that.
 
 </details>
 
