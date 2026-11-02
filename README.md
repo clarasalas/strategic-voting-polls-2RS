@@ -29,7 +29,7 @@ client of overlapping polls, and a random sample of 30 Wikipedia polls per elect
 
 ## Where things stand
 
-**Collection, parsing and thinning are done, and so is the manual validation. Nothing after it exists yet.**
+**Collection, parsing, thinning and the manual validation are done, and the final dataset is built (`data/final/`). The calibration statistics are next.**
 
 | Step | State on 2 November 2026 |
 |---|---|
@@ -40,8 +40,9 @@ client of overlapping polls, and a random sample of 30 Wikipedia polls per elect
 | Cross-source comparison (notebook 03) | run; 31 flagged overlaps (2002, 2022) resolved automatically |
 | Settle disagreements ([`crosscheck_disagreements.csv`](validation/README.md)) | done, 79 of 79 |
 | Spot check ([`spot_check_sample.csv`](validation/README.md)) | done, 150 of 150 (13 with no document) |
-| Apply the validation answers to the tables | not started: no code reads them |
-| Final dataset, calibration statistics | not started: only `data/interim/` exists |
+| Apply the validation answers to the tables | done (notebook 04): 127 corrections applied, 4 held for a check by hand |
+| Final dataset ([`data/final/polls.csv`](#final-dataset)) | done: 708 polls, 1,164 scenarios |
+| Calibration statistics | not started |
 
 ## Next steps
 
@@ -81,23 +82,35 @@ Corrections are in `notes`, in the format described in [`validation/README.md`](
 </details>
 
 <details>
-<summary><strong>3 · Apply the answers, then build the final dataset</strong></summary>
+<summary><strong>3 · Final dataset: four items to check by hand</strong></summary>
 
 <br>
 
-Nothing reads the worklists' answers yet, apart from the clients, which notebook 02 uses.
+Notebook 04 builds `data/final/polls.csv` (see [Final dataset](#final-dataset)). Decided on 2 November 2026:
 
-**Decided (2 November 2026):**
-
+* **Wikipedia is the base for every election**, so one source covers all five. For 2002 and 2022 the cross-check
+  corrections are applied to it; polls only france-politique or NSPPolls has are not added.
 * **2007 and 2012 stay as they are.** The dates stay publication dates and the missing small candidates are not
   added, not even for the polls checked by hand: correcting half the polls would mix two standards in one table
-  and still leave the gap. These are reported as limits of the data.
+  and still leave the gap. These are reported as limits of the data. The same goes for the Green candidate's name
+  before nomination (Mamère for Voynet or Lipietz in 2002).
 * **Sample size is the base of respondents giving a voting intention**, as Wikipedia gives it, since the shares
   are percentages of that base. The full sample written in the spot check's `notes` is not used.
+* **One-off errors are corrected**: wrong shares, candidates listed but not tested, and wrong dates where the data
+  has fieldwork dates (2002, 2017, 2022).
 
-**Still to decide:** how corrections are applied (a corrections table read when the final dataset is built?),
-which source is used for 2002 and 2022, and what the final table looks like. The calibration statistics come after
-that.
+Held until checked (`HELD` in `src/polls/final.py`):
+
+* **Ifop, June 2011**: Wikipedia seems to have Joly's and Chevènement's columns swapped in s1 (Chevènement 6.5,
+  Joly 1.5). The note's "s1 share: Joly 6.5" alone would make s1 sum to 105.
+* **CSA, 16–17 April 2012**: the note says Arthaud, Poutou, Cheminade and Dupont-Aignan are not in the document,
+  five days before the vote, when all ten candidates were known.
+* **YouGov, 4–7 April 2022**: the notice of 8 April gives 28–31 March, the dates of the other YouGov poll, whose
+  shares differ. The data keeps 4–7 April.
+* **Odoxa, April 2015, s2**: the note says Bayrou, not Juppé, is tested, but s2 lists both (Juppé 26, Bayrou 10).
+
+Not added: NSPPolls' extra scenario for Ifop, June 2020 (answered `NSPPolls`), which is a one-candidate fragment
+of its Bertrand hypothesis (Roussel 2); Wikipedia's scenario is right, as the answer for that poll's s3 says.
 
 </details>
 
@@ -124,11 +137,12 @@ pip install -r requirements.txt
 jupyter nbconvert --to notebook --execute --inplace notebooks/01_collect_and_parse.ipynb
 jupyter nbconvert --to notebook --execute --inplace notebooks/02_thin_rolling.ipynb
 jupyter nbconvert --to notebook --execute --inplace notebooks/03_cross_check.ipynb
+jupyter nbconvert --to notebook --execute --inplace notebooks/04_final_dataset.ipynb
 ```
 
 Part 1 of notebook 01 needs the network. It downloads only what isn't already in `data/raw/`, so a rerun with
 everything cached makes no requests except to resolve pins left blank. Part 2 reads only `data/raw/` and can be
-run offline. Notebooks 02 and 03 read only `data/interim/` and `validation/`.
+run offline. Notebooks 02 to 04 read only `data/interim/` and `validation/`.
 
 If notebook 01 stops with "unmapped candidate names" or "unmapped pollster names", open `config/candidates.csv` or
 `config/institutes.csv`, fill in the empty columns for the listed rows, set `match` to `manual`, and rerun. Rows
@@ -159,10 +173,14 @@ data/
     thinning.csv        one row per poll: kept after removing rolling overlap, and why (notebook 02)
     crosscheck_{2002,2022}_{polls,shares}.csv   poll matches and share-by-share verdicts (notebook 03)
     flags_resolved.csv  flagged overlaps resolved from the other source (notebook 03)
+  final/                the final dataset (notebook 04)
+    polls.csv           Wikipedia polls kept by thinning, with the validation applied
+    corrections.csv     every correction in the worklists, applied or not, with the reason
 notebooks/
   01_collect_and_parse.ipynb
   02_thin_rolling.ipynb  removes sample overlap within a pollster/client series (Erikson & Wlezien)
   03_cross_check.ipynb   compares sources (2002, 2022), resolves flagged overlaps, draws the spot-check sample
+  04_final_dataset.ipynb applies the validation and writes data/final/
 validation/             worklists filled in by hand; written once by notebook 03, never overwritten
   README.md                      how to fill them in
   crosscheck_disagreements.csv   polls where two sources disagree: settle against the original document
@@ -170,6 +188,29 @@ validation/             worklists filled in by hand; written once by notebook 03
   spot_check_sample.csv          30 random Wikipedia polls per election (seed in config/validation.yaml)
 src/polls/              functions used by the notebooks (fetch, parsers, mapping, thinning, checks)
 ```
+
+</details>
+
+<details>
+<summary><strong id="final-dataset">Final dataset</strong></summary>
+
+<br>
+
+`data/final/polls.csv`: one row per poll × scenario × candidate, Wikipedia polls only, thinned. Columns are those
+of the interim tables (below), plus:
+
+| Column | Meaning |
+|---|---|
+| `date` | `fieldwork_end`, or `reported_date` where the source gives no fieldwork (2007, 2012: publication date) |
+| `corrected` | the row was changed by the validation (see `corrections.csv`) |
+| `checked_against` | `other source` (matched in france-politique or NSPPolls), `original document` (spot check), both, or empty |
+
+`data/final/corrections.csv`: one row per item of the two worklists, with `applied` and, when not applied, the
+`reason`. `old` and `new` give the value before and after.
+
+**Limits to report**: 2007 and 2012 dates are publication dates, usually 1 to 5 days after fieldwork; small
+candidates (mostly at 2% or less) are missing in many 2007 and 2012 polls, so shares can sum below 100; before a
+party chose its candidate, the share can be filed under the eventual candidate; sample sizes are absent before 2017.
 
 </details>
 
