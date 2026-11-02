@@ -29,9 +29,9 @@ client of overlapping polls, and a random sample of 30 Wikipedia polls per elect
 
 ## Where things stand
 
-**Collection, parsing and thinning are done. The disagreements are settled; the spot check is not done yet. Nothing after it exists yet.**
+**Collection, parsing and thinning are done, and so is the manual validation. Nothing after it exists yet.**
 
-| Step | State on 29 October 2026 |
+| Step | State on 2 November 2026 |
 |---|---|
 | Collect and parse (notebook 01) | done: 746 Wikipedia polls (2002–2022), 98 france-politique (2002), 351 NSPPolls (2022) |
 | Candidate and pollster mappings (`config/`) | done, nothing unmapped |
@@ -39,7 +39,7 @@ client of overlapping polls, and a random sample of 30 Wikipedia polls per elect
 | Client lookups ([`flagged_clients.csv`](validation/README.md)) | done, 19 of 19 |
 | Cross-source comparison (notebook 03) | run; 31 flagged overlaps (2002, 2022) resolved automatically |
 | Settle disagreements ([`crosscheck_disagreements.csv`](validation/README.md)) | done, 79 of 79 |
-| Spot check ([`spot_check_sample.csv`](validation/README.md)) | **links found for 137 of 150; checks not started** |
+| Spot check ([`spot_check_sample.csv`](validation/README.md)) | done, 150 of 150 (13 with no document) |
 | Apply the validation answers to the tables | not started: no code reads them |
 | Final dataset, calibration statistics | not started: only `data/interim/` exists |
 
@@ -60,14 +60,23 @@ gives the one value that source also gets wrong. The code that applies the answe
 </details>
 
 <details>
-<summary><strong>2 · The spot check</strong></summary>
+<summary><strong>2 · The spot check: done</strong></summary>
 
 <br>
 
-150 polls, none checked yet (`sample_size_ok` is `NA` for 2002–2012: those sources give no sample size).
-`document_url` is filled in for 137; 13 have no document (2002: 5, 2007: 3, 2012: 5), and about 27 link to a
-commentary or a chart that shows only the leading candidates (`link_check` says `partly`). Mark the ones with no
-document `NA` rather than replacing them: the sample is drawn with a fixed seed and must not be redrawn.
+All 150 polls are checked; 13 have no document (2002: 5, 2007: 3, 2012: 5) and are `NA`. What it found:
+
+* **Main candidates' shares are reliable.** Real errors are rare (one to three polls per election) and of a
+  point or less. The three 2022 polls with wrong shares are the ones the cross-check already corrected.
+* **Small candidates are missing in 2007 and 2012** (Lepage, Dupont-Aignan, Nihous, Schivardi, Boutin, Morin,
+  Villepin, Chevènement…), almost all at 2% or less, so shares do not sum to 100.
+* **Dates in 2007 and 2012 are publication dates**, usually 1 to 5 days after the fieldwork.
+* **Sample sizes in 2017 and 2022 are the base of respondents** giving a voting intention (about 91–95% of the
+  full sample written in `notes`), not the full sample.
+* **Before a party chose its candidate**, Wikipedia files the share under the eventual candidate (Mamère for
+  Voynet or Lipietz in 2002, Joly for Hulot in 2012).
+
+Corrections are in `notes`, in the format described in [`validation/README.md`](validation/README.md).
 
 </details>
 
