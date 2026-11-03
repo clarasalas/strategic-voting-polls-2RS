@@ -30,7 +30,7 @@ Nothing here runs the model. Part 3 only produces bounds and inputs that the mod
 | Shares | every metric computed rescaled to 100 and raw. Below-threshold shares count as half their bound |
 | Concentration | HHI = Σ shares², rescaled HHI = 1 / ENP of the ABM. HHI rather than CENP, which depends on the number of candidates |
 | Roles | leader, 2nd, 3rd, others, by rank; tied candidates share a role (two 2nds, gap 0). Pooled analyses take roles from the poll average, not single polls |
-| Poll average | Gaussian kernel, 10 days, at least 3 polls nearby, for every statistic. Figures widen the window where polls are sparse (to the 4th-nearest poll, at most 45 days), drawn dashed |
+| Poll average | Gaussian kernel, 10 days, at least 3 polls nearby, for every statistic. Figures widen the window where polls are sparse (to the 4th-nearest poll, at most 45 days), drawn pale; figures show the last 250 days |
 | Candidates | all candidates in Parts 1 and 2; the ABM's candidate set only when preparing its inputs |
 
 ## Part 1 · The polls themselves (notebook 05, done)
