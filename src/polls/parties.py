@@ -22,8 +22,9 @@ import pandas as pd
 
 COLUMNS = ["election", "candidate", "labels", "party", "override", "unlabelled_polls", "match", "note"]
 
-# Spelling variants of one label.
-SPELLING = {"SP": "S&P", "SÉ": "SE"}
+# Spelling variants of one label; and orientation codes, which are not parties, read as SE (sans
+# étiquette): DVG/DVD/EXD = divers gauche / divers droite / extrême droite (Zemmour before Reconquête).
+SPELLING = {"SP": "S&P", "SÉ": "SE", "DVG": "SE", "DVD": "SE", "EXD": "SE", "EXG": "SE", "DIV": "SE"}
 
 # Initial fill for the rows Wikipedia leaves without a label: (election, candidate) -> (party, override, match, note).
 INITIAL = {
@@ -34,10 +35,10 @@ INITIAL = {
     (2012, "Jean-Marie Le Pen"): ("FN", "", "suggested", "polls of 2007-2009"),
     (2012, "José Bové"): ("SE", "", "manual", "SE as Wikipedia: unaffiliated, then Europe Écologie (a coalition) from 2008 (checked by hand)"),
     (2017, "Henri Guaino"): ("LR", "", "suggested", "poll of June 2016, still an LR deputy"),
-    (2017, "Jean Lassalle"): ("RES", "", "suggested", "poll of June 2016: check that Résistons! existed then"),
+    (2017, "Jean Lassalle"): ("RES", "", "manual", "Résistons!, already founded in June 2016 (checked by hand)"),
     (2017, "Nicolas Hulot"): ("SE", "", "suggested", "polls of 2016"),
     (2017, "Rama Yade"): ("SE", "", "suggested", "poll of June 2016"),
-    (2022, "Arnaud Montebourg"): ("DVG", "", "suggested", "polls of January 2021, as his later label"),
+    (2022, "Arnaud Montebourg"): ("SE", "", "suggested", "polls of January 2021; Wikipedia says DVG later (an orientation, read as SE)"),
     (2022, "Bernard Cazeneuve"): ("PS", "", "suggested", "poll of 2019"),
     (2022, "Bruno Retailleau"): ("LR", "", "suggested", ""),
     (2022, "Denis Payre"): ("LR", "", "suggested", "LR congress candidate, September 2021: check membership"),
@@ -49,12 +50,12 @@ INITIAL = {
     (2022, "Olivier Faure"): ("PS", "", "suggested", "PS first secretary"),
     (2022, "Philippe Juvin"): ("LR", "", "suggested", ""),
     (2022, "Rachida Dati"): ("LR", "", "suggested", ""),
-    (2022, "Ségolène Royal"): ("PS", "", "suggested", "poll of October 2020: check membership"),
-    (2022, "Valérie Pécresse"): ("Libres!", "", "suggested",
-                                 "polls of October 2019 to November 2021: left LR in June 2019; check when she rejoined for the congress"),
-    (2022, "Xavier Bertrand"): ("DVD", "", "suggested", "polls of 2019-2021: left LR in 2017, ran in the 2021 LR congress"),
+    (2022, "Ségolène Royal"): ("PS", "", "manual", "PS member at the time (checked by hand)"),
+    (2022, "Valérie Pécresse"): ("Soyons libres", "", "manual",
+                                 "her movement, founded in 2017; left LR in June 2019; Wikipedia labels her LR once LR's nominee (December 2021)"),
+    (2022, "Xavier Bertrand"): ("SE", "", "suggested", "polls of 2019-2021: left LR in 2017, ran in the 2021 LR congress"),
     (2022, "Éric Ciotti"): ("LR", "", "suggested", ""),
-    (2022, "Éric Zemmour"): ("EXD", "", "suggested", "polls of February-June 2021: as Wikipedia labels him until November 2021"),
+    (2022, "Éric Zemmour"): ("SE", "", "manual", "no party before Reconquête (founded 5 December 2021, REC from then on)"),
     (2022, "[LR, candidat non désigné]"): ("LR", "", "label", "placeholder"),
     (2022, "[EELV, candidat non désigné]"): ("EELV", "", "label", "placeholder before the EELV primary"),
 }
