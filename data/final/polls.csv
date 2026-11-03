@@ -3568,28 +3568,29 @@ election,poll_id,scenario_id,scenario_label,institute,institute_family,institute
 2012,2012_wp_ipsos_2011-06-20_1,2012_wp_ipsos_2011-06-20_1_s3,,Ipsos,Ipsos,Ipsos,,,,2011-06-20,2011-06-20,,,Ségolène Royal,19.0,value,,False,False,,,,238741176,table 6 row 5
 2012,2012_wp_ipsos_2011-06-20_1,2012_wp_ipsos_2011-06-20_1_s3,,Ipsos,Ipsos,Ipsos,,,,2011-06-20,2011-06-20,,,"[EELV, candidat non désigné]",,not_tested,,False,False,,,,238741176,table 6 row 5
 2012,2012_wp_ifop_2011-06-23_1,2012_wp_ifop_2011-06-23_1_s1,,Ifop,Ifop,Ifop,,,,2011-06-23,2011-06-23,,,Dominique de Villepin,3.0,value,,False,False,original document,,,238741176,table 6 row 3
-2012,2012_wp_ifop_2011-06-23_1,2012_wp_ifop_2011-06-23_1_s1,,Ifop,Ifop,Ifop,,,,2011-06-23,2011-06-23,,,Eva Joly,1.5,value,,False,False,original document,,,238741176,table 6 row 3
+2012,2012_wp_ifop_2011-06-23_1,2012_wp_ifop_2011-06-23_1_s1,,Ifop,Ifop,Ifop,,,,2011-06-23,2011-06-23,,,Eva Joly,,not_tested,,False,True,original document,,,238741176,table 6 row 3
 2012,2012_wp_ifop_2011-06-23_1,2012_wp_ifop_2011-06-23_1_s1,,Ifop,Ifop,Ifop,,,,2011-06-23,2011-06-23,,,François Bayrou,6.0,value,,False,False,original document,,,238741176,table 6 row 3
 2012,2012_wp_ifop_2011-06-23_1,2012_wp_ifop_2011-06-23_1_s1,,Ifop,Ifop,Ifop,,,,2011-06-23,2011-06-23,,,François Hollande,26.5,value,,False,False,original document,,,238741176,table 6 row 3
 2012,2012_wp_ifop_2011-06-23_1,2012_wp_ifop_2011-06-23_1_s1,,Ifop,Ifop,Ifop,,,,2011-06-23,2011-06-23,,,Jean-Louis Borloo,7.0,value,,False,False,original document,,,238741176,table 6 row 3
 2012,2012_wp_ifop_2011-06-23_1,2012_wp_ifop_2011-06-23_1_s1,,Ifop,Ifop,Ifop,,,,2011-06-23,2011-06-23,,,Jean-Luc Mélenchon,6.5,value,,False,False,original document,,,238741176,table 6 row 3
-2012,2012_wp_ifop_2011-06-23_1,2012_wp_ifop_2011-06-23_1_s1,,Ifop,Ifop,Ifop,,,,2011-06-23,2011-06-23,,,Jean-Pierre Chevènement,6.5,value,,False,False,original document,,,238741176,table 6 row 3
+2012,2012_wp_ifop_2011-06-23_1,2012_wp_ifop_2011-06-23_1_s1,,Ifop,Ifop,Ifop,,,,2011-06-23,2011-06-23,,,Jean-Pierre Chevènement,1.5,value,,False,True,original document,,,238741176,table 6 row 3
 2012,2012_wp_ifop_2011-06-23_1,2012_wp_ifop_2011-06-23_1_s1,,Ifop,Ifop,Ifop,,,,2011-06-23,2011-06-23,,,Marine Le Pen,21.0,value,,False,False,original document,,,238741176,table 6 row 3
 2012,2012_wp_ifop_2011-06-23_1,2012_wp_ifop_2011-06-23_1_s1,,Ifop,Ifop,Ifop,,,,2011-06-23,2011-06-23,,,Nathalie Arthaud,0.5,value,,False,False,original document,,,238741176,table 6 row 3
-2012,2012_wp_ifop_2011-06-23_1,2012_wp_ifop_2011-06-23_1_s1,,Ifop,Ifop,Ifop,,,,2011-06-23,2011-06-23,,,Nicolas Dupont-Aignan,0.0,value,,False,False,original document,,,238741176,table 6 row 3
+2012,2012_wp_ifop_2011-06-23_1,2012_wp_ifop_2011-06-23_1_s1,,Ifop,Ifop,Ifop,,,,2011-06-23,2011-06-23,,,Nicolas Dupont-Aignan,,below_threshold,0.5,False,True,original document,,,238741176,table 6 row 3
+2012,2012_wp_ifop_2011-06-23_1,2012_wp_ifop_2011-06-23_1_s1,,Ifop,Ifop,Ifop,,,,2011-06-23,2011-06-23,,,Nicolas Hulot,6.5,value,,False,True,original document,,,238741176,table 6 row 3
 2012,2012_wp_ifop_2011-06-23_1,2012_wp_ifop_2011-06-23_1_s1,,Ifop,Ifop,Ifop,,,,2011-06-23,2011-06-23,,,Nicolas Sarkozy,21.0,value,,False,False,original document,,,238741176,table 6 row 3
 2012,2012_wp_ifop_2011-06-23_1,2012_wp_ifop_2011-06-23_1_s1,,Ifop,Ifop,Ifop,,,,2011-06-23,2011-06-23,,,Olivier Besancenot,0.5,value,,False,False,original document,,,238741176,table 6 row 3
 2012,2012_wp_ifop_2011-06-23_1,2012_wp_ifop_2011-06-23_1_s2,,Ifop,Ifop,Ifop,,,,2011-06-23,2011-06-23,,,Dominique de Villepin,3.0,value,,False,False,original document,,,238741176,table 6 row 3
-2012,2012_wp_ifop_2011-06-23_1,2012_wp_ifop_2011-06-23_1_s2,,Ifop,Ifop,Ifop,,,,2011-06-23,2011-06-23,,,Eva Joly,1.5,value,,False,False,original document,,,238741176,table 6 row 3
+2012,2012_wp_ifop_2011-06-23_1,2012_wp_ifop_2011-06-23_1_s2,,Ifop,Ifop,Ifop,,,,2011-06-23,2011-06-23,,,Eva Joly,6.5,value,,False,True,original document,,,238741176,table 6 row 3
 2012,2012_wp_ifop_2011-06-23_1,2012_wp_ifop_2011-06-23_1_s2,,Ifop,Ifop,Ifop,,,,2011-06-23,2011-06-23,,,François Bayrou,6.0,value,,False,False,original document,,,238741176,table 6 row 3
 2012,2012_wp_ifop_2011-06-23_1,2012_wp_ifop_2011-06-23_1_s2,,Ifop,Ifop,Ifop,,,,2011-06-23,2011-06-23,,,François Hollande,26.0,value,,False,False,original document,,,238741176,table 6 row 3
 2012,2012_wp_ifop_2011-06-23_1,2012_wp_ifop_2011-06-23_1_s2,,Ifop,Ifop,Ifop,,,,2011-06-23,2011-06-23,,,Jean-Louis Borloo,7.5,value,,False,False,original document,,,238741176,table 6 row 3
 2012,2012_wp_ifop_2011-06-23_1,2012_wp_ifop_2011-06-23_1_s2,,Ifop,Ifop,Ifop,,,,2011-06-23,2011-06-23,,,Jean-Luc Mélenchon,7.0,value,,False,False,original document,,,238741176,table 6 row 3
-2012,2012_wp_ifop_2011-06-23_1,2012_wp_ifop_2011-06-23_1_s2,,Ifop,Ifop,Ifop,,,,2011-06-23,2011-06-23,,,Jean-Pierre Chevènement,,not_tested,,False,False,original document,,,238741176,table 6 row 3
+2012,2012_wp_ifop_2011-06-23_1,2012_wp_ifop_2011-06-23_1_s2,,Ifop,Ifop,Ifop,,,,2011-06-23,2011-06-23,,,Jean-Pierre Chevènement,1.0,value,,False,True,original document,,,238741176,table 6 row 3
 2012,2012_wp_ifop_2011-06-23_1,2012_wp_ifop_2011-06-23_1_s2,,Ifop,Ifop,Ifop,,,,2011-06-23,2011-06-23,,,Marine Le Pen,20.5,value,,False,False,original document,,,238741176,table 6 row 3
 2012,2012_wp_ifop_2011-06-23_1,2012_wp_ifop_2011-06-23_1_s2,,Ifop,Ifop,Ifop,,,,2011-06-23,2011-06-23,,,Nathalie Arthaud,0.5,value,,False,False,original document,,,238741176,table 6 row 3
 2012,2012_wp_ifop_2011-06-23_1,2012_wp_ifop_2011-06-23_1_s2,,Ifop,Ifop,Ifop,,,,2011-06-23,2011-06-23,,,Nicolas Dupont-Aignan,0.5,value,,False,False,original document,,,238741176,table 6 row 3
-2012,2012_wp_ifop_2011-06-23_1,2012_wp_ifop_2011-06-23_1_s2,,Ifop,Ifop,Ifop,,,,2011-06-23,2011-06-23,,,Nicolas Hulot,6.5,value,,False,False,original document,,,238741176,table 6 row 3
+2012,2012_wp_ifop_2011-06-23_1,2012_wp_ifop_2011-06-23_1_s2,,Ifop,Ifop,Ifop,,,,2011-06-23,2011-06-23,,,Nicolas Hulot,,not_tested,,False,True,original document,,,238741176,table 6 row 3
 2012,2012_wp_ifop_2011-06-23_1,2012_wp_ifop_2011-06-23_1_s2,,Ifop,Ifop,Ifop,,,,2011-06-23,2011-06-23,,,Nicolas Sarkozy,21.0,value,,False,False,original document,,,238741176,table 6 row 3
 2012,2012_wp_ifop_2011-06-23_1,2012_wp_ifop_2011-06-23_1_s2,,Ifop,Ifop,Ifop,,,,2011-06-23,2011-06-23,,,Olivier Besancenot,0.5,value,,False,False,original document,,,238741176,table 6 row 3
 2012,2012_wp_ipsos_2011-07-09_1,2012_wp_ipsos_2011-07-09_1_s1,,Ipsos,Ipsos,Ipsos,,,,2011-07-09,2011-07-09,,,Dominique de Villepin,3.0,value,,False,False,original document,,,238741176,table 5 row 12

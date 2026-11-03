@@ -189,7 +189,6 @@ spot check,2012_wp_csa_2012-03-22_1,2012_wp_csa_2012-03-22_1,fieldwork: 2012-03-
 spot check,2012_wp_csa_2012-03-22_1,2012_wp_csa_2012-03-22_1,document: chart of the leading candidates only,False,information only,,,,,
 spot check,2012_wp_csa_2012-04-17_1,2012_wp_csa_2012-04-17_1,fieldwork: 2012-04-16 to 2012-04-17,False,dates_ok is not 'no': information only,,,,,
 spot check,2012_wp_csa_2012-04-17_1,2012_wp_csa_2012-04-17_1,share: Hollande 29,True,,2012_wp_csa_2012-04-17_1_s1,François Hollande,share,28,29
-spot check,2012_wp_csa_2012-04-17_1,2012_wp_csa_2012-04-17_1,"not in document: Arthaud, Poutou, Cheminade, Dupont-Aignan",False,held: four candidates on the official ballot absent from a poll five days before the vote,,,,,
 spot check,2012_wp_harris_2012-03-07_1,2012_wp_harris_2012-03-07_1,fieldwork: 2012-03-01 to 2012-03-05,False,2007/2012 dates are publication dates: kept (decision),,,,,
 spot check,2012_wp_harris_2012-03-07_1,2012_wp_harris_2012-03-07_1,"missing: Lepage (1), de Villepin (1)",False,missing candidates are not added (decision),,,,,
 spot check,2012_wp_harris_2012-04-03_1,2012_wp_harris_2012-04-03_1,fieldwork: 2012-03-29 to 2012-04-02,False,2007/2012 dates are publication dates: kept (decision),,,,,
@@ -198,8 +197,13 @@ spot check,2012_wp_ifop_2007-11-02_1,2012_wp_ifop_2007-11-02_1,fieldwork: 2007-1
 spot check,2012_wp_ifop_2010-10-14_1,2012_wp_ifop_2010-10-14_1,fieldwork: 2010-05-12 to 2010-05-14,True,,,,fieldwork, to  (reported 2010-10-14),2010-05-12 to 2010-05-14
 spot check,2012_wp_ifop_2010-10-14_1,2012_wp_ifop_2010-10-14_1,"other: the shares are those of the May 2010 poll, printed for comparison in the October 2010 report",False,information only,,,,,
 spot check,2012_wp_ifop_2011-06-23_1,2012_wp_ifop_2011-06-23_1,fieldwork: 2011-06-21 to 2011-06-23,False,dates_ok is not 'no': information only,,,,,
-spot check,2012_wp_ifop_2011-06-23_1,2012_wp_ifop_2011-06-23_1,s1 share: Joly 6.5,False,held: s1 would sum to 105; Chevènement's 6.5 in s1 is probably Joly's (columns swapped),,,,,
-spot check,2012_wp_ifop_2011-06-23_1,2012_wp_ifop_2011-06-23_1,s2 not in document: Joly,False,held: s1 would sum to 105; Chevènement's 6.5 in s1 is probably Joly's (columns swapped),,,,,
+spot check,2012_wp_ifop_2011-06-23_1,2012_wp_ifop_2011-06-23_1,s1 share: Hulot 6.5,True,,2012_wp_ifop_2011-06-23_1_s1,Nicolas Hulot,share,absent,6.5
+spot check,2012_wp_ifop_2011-06-23_1,2012_wp_ifop_2011-06-23_1,s1 share: Chevènement 1.5,True,,2012_wp_ifop_2011-06-23_1_s1,Jean-Pierre Chevènement,share,6.5,1.5
+spot check,2012_wp_ifop_2011-06-23_1,2012_wp_ifop_2011-06-23_1,s1 share: Dupont-Aignan <0.5,True,,2012_wp_ifop_2011-06-23_1_s1,Nicolas Dupont-Aignan,share,0,<0.5
+spot check,2012_wp_ifop_2011-06-23_1,2012_wp_ifop_2011-06-23_1,s1 not in document: Joly,True,,2012_wp_ifop_2011-06-23_1_s1,Eva Joly,share,1.5,not_tested
+spot check,2012_wp_ifop_2011-06-23_1,2012_wp_ifop_2011-06-23_1,s2 share: Joly 6.5,True,,2012_wp_ifop_2011-06-23_1_s2,Eva Joly,share,1.5,6.5
+spot check,2012_wp_ifop_2011-06-23_1,2012_wp_ifop_2011-06-23_1,s2 share: Chevènement 1,True,,2012_wp_ifop_2011-06-23_1_s2,Jean-Pierre Chevènement,share,not_tested,1
+spot check,2012_wp_ifop_2011-06-23_1,2012_wp_ifop_2011-06-23_1,s2 not in document: Hulot,True,,2012_wp_ifop_2011-06-23_1_s2,Nicolas Hulot,share,6.5,not_tested
 spot check,2012_wp_ifop_2012-01-06_1,2012_wp_ifop_2012-01-06_1,fieldwork: 2012-01-04 to 2012-01-06,False,dates_ok is not 'no': information only,,,,,
 spot check,2012_wp_ifop_2012-01-06_1,2012_wp_ifop_2012-01-06_1,share: Morin 1,True,,2012_wp_ifop_2012-01-06_1_s1,Hervé Morin,share,<1,1
 spot check,2012_wp_ifop_2012-01-06_1,2012_wp_ifop_2012-01-06_1,share: Chevènement <0.5,True,,2012_wp_ifop_2012-01-06_1_s1,Jean-Pierre Chevènement,share,<1,<0.5
@@ -266,7 +270,6 @@ spot check,2017_wp_ifop_2016-06-17_1,2017_wp_ifop_2016-06-17_1,s7 missing: Chemi
 spot check,2017_wp_ifop_2016-06-17_1,2017_wp_ifop_2016-06-17_1,s8 share: Cheminade <0.5,True,,2017_wp_ifop_2016-06-17_1_s8,Jacques Cheminade,share,0,<0.5
 spot check,2017_wp_ifop_2016-06-17_1,2017_wp_ifop_2016-06-17_1,s9 missing: Asselineau (1),False,missing candidates are not added (decision),,,,,
 spot check,2017_wp_kantar-sofres_2017-02-24_1,2017_wp_kantar-sofres_2017-02-24_1,missing: Cheminade (<0.5),False,missing candidates are not added (decision),,,,,
-spot check,2017_wp_odoxa_2015-04-30_1,2017_wp_odoxa_2015-04-30_1,s2 candidate: Juppé → Bayrou,False,François Bayrou is already listed in this scenario,2017_wp_odoxa_2015-04-30_1_s2,,candidate,Alain Juppé,François Bayrou
 spot check,2017_wp_opinionway_2017-04-21_1,2017_wp_opinionway_2017-04-21_1,fieldwork: 2017-04-17 to 2017-04-21,True,,,,fieldwork,2017-04-19 to 2017-04-21 (reported ),2017-04-17 to 2017-04-21
 spot check,2017_wp_scan-research-le-terrain_2017-03-27_1,2017_wp_scan-research-le-terrain_2017-03-27_1,sample size: 1241,False,data keeps the base of respondents (decision),,,,,
 spot check,2017_wp_scan-research-le-terrain_2017-03-27_1,2017_wp_scan-research-le-terrain_2017-03-27_1,document: method and sample tables only,False,information only,,,,,
@@ -306,4 +309,4 @@ spot check,2022_wp_opinionway_2022-04-06_1,2022_wp_opinionway_2022-04-06_1,share
 spot check,2022_wp_opinionway_2022-04-06_1,2022_wp_opinionway_2022-04-06_1,share: Arthaud <1,True,,2022_wp_opinionway_2022-04-06_1_s1,Nathalie Arthaud,share,0,<1
 spot check,2022_wp_opinionway_2022-04-06_1,2022_wp_opinionway_2022-04-06_1,share: Dupont-Aignan 2,False,already this value,2022_wp_opinionway_2022-04-06_1_s1,Nicolas Dupont-Aignan,share,2,2
 spot check,2022_wp_opinionway_2022-04-07_2,2022_wp_opinionway_2022-04-07_2,sample size: 2154,False,data keeps the base of respondents (decision),,,,,
-spot check,2022_wp_yougov_2022-04-07_1,2022_wp_yougov_2022-04-07_1,fieldwork: 2022-03-28 to 2022-03-31,False,"held: the notice of 8 April gives 28-31 March, the dates of the other YouGov poll, whose shares differ",,,,,
+spot check,2022_wp_yougov_2022-04-07_1,2022_wp_yougov_2022-04-07_1,"other: the notice of 8 April repeats the fieldwork dates of the previous wave (28-31 March), but the results are those of 4-7 April",False,information only,,,,,

@@ -40,7 +40,7 @@ client of overlapping polls, and a random sample of 30 Wikipedia polls per elect
 | Cross-source comparison (notebook 03) | run; 31 flagged overlaps (2002, 2022) resolved automatically |
 | Settle disagreements ([`crosscheck_disagreements.csv`](validation/README.md)) | done, 79 of 79 |
 | Spot check ([`spot_check_sample.csv`](validation/README.md)) | done, 150 of 150 (13 with no document) |
-| Apply the validation answers to the tables | done (notebook 04): 127 corrections applied, 4 held for a check by hand |
+| Apply the validation answers to the tables | done (notebook 04): 134 corrections applied |
 | Final dataset ([`data/final/polls.csv`](#final-dataset)) | done: 708 polls, 1,164 scenarios |
 | Calibration statistics | not started |
 
@@ -82,7 +82,7 @@ Corrections are in `notes`, in the format described in [`validation/README.md`](
 </details>
 
 <details>
-<summary><strong>3 · Final dataset: four items to check by hand</strong></summary>
+<summary><strong>3 · Final dataset: done</strong></summary>
 
 <br>
 
@@ -99,15 +99,10 @@ Notebook 04 builds `data/final/polls.csv` (see [Final dataset](#final-dataset)).
 * **One-off errors are corrected**: wrong shares, candidates listed but not tested, and wrong dates where the data
   has fieldwork dates (2002, 2017, 2022).
 
-Held until checked (`HELD` in `src/polls/final.py`):
-
-* **Ifop, June 2011**: Wikipedia seems to have Joly's and Chevènement's columns swapped in s1 (Chevènement 6.5,
-  Joly 1.5). The note's "s1 share: Joly 6.5" alone would make s1 sum to 105.
-* **CSA, 16–17 April 2012**: the note says Arthaud, Poutou, Cheminade and Dupont-Aignan are not in the document,
-  five days before the vote, when all ten candidates were known.
-* **YouGov, 4–7 April 2022**: the notice of 8 April gives 28–31 March, the dates of the other YouGov poll, whose
-  shares differ. The data keeps 4–7 April.
-* **Odoxa, April 2015, s2**: the note says Bayrou, not Juppé, is tested, but s2 lists both (Juppé 26, Bayrou 10).
+Four items held for a check were settled on 3 November 2026 and their notes corrected: Ifop, June 2011
+(Wikipedia had Joly, Chevènement and Hulot in the wrong scenarios: both now sum to 100); CSA, 16–17 April 2012
+(the small candidates are in the document: only Hollande is corrected); YouGov, 4–7 April 2022 (dates kept: the
+notice repeats the previous wave's dates); Odoxa, April 2015 (data right).
 
 Not added: NSPPolls' extra scenario for Ifop, June 2020 (answered `NSPPolls`), which is a one-candidate fragment
 of its Bertrand hypothesis (Roussel 2); Wikipedia's scenario is right, as the answer for that poll's s3 says.

@@ -53,16 +53,8 @@ VALID_ELECTIONS_FOR_DATES = {2002, 2017, 2022}
 MIN_SCENARIO_SIZE = 5
 
 # Spot-check items not applied until confirmed by hand: (poll_id, item key) -> reason.
-HELD = {
-    ("2022_wp_yougov_2022-04-07_1", "fieldwork"):
-        "held: the notice of 8 April gives 28-31 March, the dates of the other YouGov poll, whose shares differ",
-    ("2012_wp_csa_2012-04-17_1", "not in document"):
-        "held: four candidates on the official ballot absent from a poll five days before the vote",
-    ("2012_wp_ifop_2011-06-23_1", "share"):
-        "held: s1 would sum to 105; Chevènement's 6.5 in s1 is probably Joly's (columns swapped)",
-    ("2012_wp_ifop_2011-06-23_1", "not in document"):
-        "held: s1 would sum to 105; Chevènement's 6.5 in s1 is probably Joly's (columns swapped)",
-}
+# Empty: the last four were checked on 3 November 2026 and their notes corrected.
+HELD: dict[tuple[str, str], str] = {}
 
 FINAL_COLUMNS = [
     "election", "poll_id", "scenario_id", "scenario_label", "institute", "institute_family", "institute_raw",
