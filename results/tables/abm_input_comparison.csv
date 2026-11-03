@@ -1,0 +1,7 @@
+year,variant,polls,weeks,dropped,abm_current_polls,abm_current_weeks,weeks_in_common,mean_abs_diff_points,max_abs_diff_points,largest_on
+2002,main,39,8,0,39,8,8,0.01,0.2,MNR
+2002,all releases,39,8,0,39,8,8,0.01,0.2,MNR
+2002,12 weeks,49,11,0,39,8,8,0.03,0.82,LO
+2022,main,70,5,0,81,5,5,0.07,0.29,LFI
+2022,all releases,85,5,0,81,5,5,0.04,0.25,PCF
+2022,12 weeks,128,12,0,81,5,5,0.07,0.29,LFI

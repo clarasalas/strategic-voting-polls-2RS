@@ -63,7 +63,7 @@ coloured left to right in the order of Wikipedia's poll-table columns (`src/poll
 - [x] **Stylized facts** across the five elections (2007, 2012 and 2017 as out-of-sample cases): `results/tables/stylized_facts.csv`, each row
       naming the table it comes from
 
-## Part 3 · Parameters (notebook 07)
+## Part 3 · Parameters (notebook 07, done)
 
 - [x] **Poll noise ρ<sub>s</sub>** per election, against the synthetic bounds (10–200). Polling moved from phone to online
       between 2002 and 2022: estimate per election, do not pool blindly
@@ -74,7 +74,7 @@ coloured left to right in the order of Wikipedia's poll-table columns (`src/poll
       go when not offered
 - [x] **Real-world ranges** for the synthetic setup: number of candidates tested (10–16, against 6, 8, 9), HHI, cliff,
       1st–2nd gap, slope of shares by rank
-- [ ] **Poll input for the empirical mode**, prepared only: window, aggregation, scenario, thresholds, variants
+- [x] **Poll input for the empirical mode**, prepared only: window, aggregation, scenario, thresholds, variants
 
 **Parked**: α, how far voters follow the latest poll (the mechanism will change; survey data on expectations, such as
 the CEVIPOF Enquête électorale, would measure it).

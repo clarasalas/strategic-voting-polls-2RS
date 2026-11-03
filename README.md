@@ -171,6 +171,7 @@ data/
     thinning.csv        one row per poll: kept after removing rolling overlap, and why (notebook 02)
     crosscheck_{2002,2022}_{polls,shares}.csv   poll matches and share-by-share verdicts (notebook 03)
     flags_resolved.csv  flagged overlaps resolved from the other source (notebook 03)
+  abm_input/            poll input for the ABM's empirical mode, prepared not used (notebook 07)
   final/                the final dataset (notebook 04)
     polls.csv           Wikipedia polls kept by thinning, with the validation applied
     corrections.csv     every correction in the worklists, applied or not, with the reason

@@ -299,7 +299,8 @@ def apply_spot_check(b: Builder, spot: pd.DataFrame) -> None:
 
 
 # ---- assembly ------------------------------------------------------------------------------
-def build(root: Path) -> tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame, list[str]]:
+def build(root: Path, thin: bool = True) -> tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame, list[str]]:
+    """thin=False keeps every rolling release (for inputs where what voters saw matters more than independence)."""
     interim, validation = root / "data" / "interim", root / "validation"
     wp = pd.read_csv(interim / "polls_wikipedia.csv", low_memory=False)
     others = {"france_politique": pd.read_csv(interim / "polls_france_politique.csv", low_memory=False),
@@ -316,7 +317,7 @@ def build(root: Path) -> tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame, list[st
     log = pd.DataFrame([c.__dict__ for c in b.log])
 
     kept = set(thinning.loc[(thinning["source"] == "wikipedia") & thinning["kept"].astype(bool), "poll_id"])
-    final = b.wp[b.wp["poll_id"].isin(kept)].copy()
+    final = b.wp[b.wp["poll_id"].isin(kept)].copy() if thin else b.wp.copy()
     final["date"] = final["fieldwork_end"].fillna(final["reported_date"])
     party_file = root / "config" / "parties.csv"
     parties.update(party_file, final[final["share_status"] != "not_tested"])
