@@ -182,6 +182,7 @@ notebooks/
   04_final_dataset.ipynb applies the validation and writes data/final/
   05_polls_descriptive.ipynb  the study, part 1: the polls themselves (docs/study_plan.md)
   06_polls_vs_results.ipynb   the study, part 2: polls against results
+  07_parameters.ipynb         the study, part 3: parameter bounds and the empirical poll input
 validation/             worklists filled in by hand; written once by notebook 03, never overwritten
   README.md                      how to fill them in
   crosscheck_disagreements.csv   polls where two sources disagree: settle against the original document

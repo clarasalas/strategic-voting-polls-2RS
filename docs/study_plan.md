@@ -65,9 +65,9 @@ coloured left to right in the order of Wikipedia's poll-table columns (`src/poll
 
 ## Part 3 · Parameters (notebook 07)
 
-- [ ] **Poll noise ρ<sub>s</sub>** per election, against the synthetic bounds (10–200). Polling moved from phone to online
+- [x] **Poll noise ρ<sub>s</sub>** per election, against the synthetic bounds (10–200). Polling moved from phone to online
       between 2002 and 2022: estimate per election, do not pool blindly
-- [ ] **Temperature θ**, two estimates compared: final polls against results (contaminated by late strategic switching:
+- [x] **Temperature θ**, two estimates compared: final polls against results (contaminated by late strategic switching:
       a bound), and the slope of shares by rank in polls against results
 - [ ] **Prior spread ρ<sub>π</sub>**: how much pollsters disagree at the opening of the campaign
 - [ ] **Tolerance τ̂**: paired scenarios of one poll, differing by one candidate, show where that candidate's voters
