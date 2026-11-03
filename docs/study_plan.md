@@ -47,7 +47,7 @@ Nothing here runs the model. Part 3 only produces bounds and inputs that the mod
 Tables in `results/tables/` (`coverage_*`, `trajectories_*`, `ranks_*`, `pollsters_*`, `noise_*`). Figures are
 coloured left to right in the order of Wikipedia's poll-table columns (`src/polls/ideology.py`).
 
-## Part 2 · Polls against results (notebook 06)
+## Part 2 · Polls against results (notebook 06, done)
 
 - [x] **Structure metrics** per poll and result: HHI and ENP, top-two share, the cliff as in the ABM (largest drop
       between sorted shares: magnitude, location, ratio), the 2nd–3rd gap (qualification), 1st–2nd and 3rd–4th gaps,
@@ -60,7 +60,8 @@ coloured left to right in the order of Wikipedia's poll-table columns (`src/poll
 - [x] ~~**Who gains in the last weeks**, for 2002 and 2022 with the ABM's candidate positions~~ covered by the error
       along the left-right axis (section 3 of notebook 06); measured distances not needed
 - [x] **Momentum**: does rising predict rising further?
-- [ ] **Stylized facts** across the five elections (2007, 2012 and 2017 as out-of-sample cases)
+- [x] **Stylized facts** across the five elections (2007, 2012 and 2017 as out-of-sample cases): `results/tables/stylized_facts.csv`, each row
+      naming the table it comes from
 
 ## Part 3 · Parameters (notebook 07)
 
