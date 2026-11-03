@@ -52,7 +52,7 @@ coloured left to right in the order of Wikipedia's poll-table columns (`src/poll
 - [x] **Structure metrics** per poll and result: HHI and ENP, top-two share, the cliff as in the ABM (largest drop
       between sorted shares: magnitude, location, ratio), the 2nd–3rd gap (qualification), 1st–2nd and 3rd–4th gaps,
       candidates in contention
-- [ ] **Their evolution**, with the change in HHI split two ways: campaign (first poll → last polls) against last mile
+- [x] **Their evolution**, with the change in HHI split two ways: campaign (first poll → last polls) against last mile
       (last polls → result); and change in the candidate set (elite coordination: withdrawals) against shares moving
       within a fixed set (voter coordination)
 - [ ] **Poll error by role**, signed: do candidates near the cliff do worse than their polls, their neighbours better?
