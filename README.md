@@ -205,6 +205,7 @@ of the interim tables (below), plus:
 | Column | Meaning |
 |---|---|
 | `party` | the label at the time of the poll: the poll's Wikipedia row (Juppé is UMP in 2014, LR from 2015), else `config/parties.csv` |
+| `client`, `client_source` | who commissioned the poll, where another source says so: france-politique (2002) and NSPPolls (2022) through the cross-check's matching, or the hand lookups of `validation/flagged_clients.csv`. Wikipedia gives none |
 | `slot` | the final-ballot candidate whose place this candidate fills: the same person, or the same party at the time, allowing for renamings (UMP → LR, FN → RN, DLR → DLF, EM → LREM, LV → EELV, LCR → NPA). Empty for SE candidates and for parties absent from the ballot |
 | `ballot_scenario` | this scenario is the poll's ballot scenario (see below) |
 | `date` | `fieldwork_end`, or `reported_date` where the source gives no fieldwork (2007, 2012: publication date) |

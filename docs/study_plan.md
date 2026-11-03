@@ -40,7 +40,7 @@ Nothing here runs the model. Part 3 only produces bounds and inputs that the mod
 - [x] **Rank stability**: who is 1st to 4th over time; rank swaps; share of polls whose top two is the real runoff
       pair; date from which the runoff pair stops changing
 - [x] **Pollsters**: house effects (pollster × candidate, against the poll average); herding (agreement beyond sampling
-      error, especially near the vote)
+      error, especially near the vote); clients (2002, 2022): does one pollster's house effect differ by client?
 - [x] **Noise**: spread within a week against sampling error: effective sample size
 
 Tables in `results/tables/` (`coverage_*`, `trajectories_*`, `ranks_*`, `pollsters_*`, `noise_*`). Figures are

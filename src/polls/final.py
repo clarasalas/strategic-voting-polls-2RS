@@ -58,7 +58,7 @@ HELD: dict[tuple[str, str], str] = {}
 
 FINAL_COLUMNS = [
     "election", "poll_id", "scenario_id", "scenario_label", "institute", "institute_family", "institute_raw",
-    "sponsor", "fieldwork_start", "fieldwork_end", "reported_date", "date", "sample_size", "rolling",
+    "client", "client_source", "fieldwork_start", "fieldwork_end", "reported_date", "date", "sample_size", "rolling",
     "candidate", "party", "slot", "share", "share_status", "share_upper_bound", "final_list_scenario",
     "ballot_scenario", "corrected", "checked_against", "upstream_source_url", "notice_url", "wiki_revision_id", "source_poll_ref",
 ]
@@ -321,6 +321,7 @@ def build(root: Path) -> tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame, list[st
     party_file = root / "config" / "parties.csv"
     parties.update(party_file, final[final["share_status"] != "not_tested"])
     final["party"] = parties.assign(final, party_file)
+    final = final.merge(clients(root, final["poll_id"].unique()), on="poll_id", how="left")
     final["slot"], scenarios = matching.match(final, pd.read_csv(interim / "results.csv"))
     final["ballot_scenario"] = final["scenario_id"].isin(scenarios.loc[scenarios["chosen"], "scenario_id"])
     cross = set(matches.loc[matches["status"].str.startswith("matched"), "poll_id_b"])
@@ -335,6 +336,25 @@ def build(root: Path) -> tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame, list[st
     final["sample_size"] = pd.array(pd.to_numeric(final["sample_size"]), dtype="Int64")
     final = final.astype({"ballot_scenario": bool})
     return final, log, scenarios, warnings(final, log)
+
+
+def clients(root: Path, poll_ids) -> pd.DataFrame:
+    """Who commissioned each Wikipedia poll, where another source says so: france-politique (2002)
+    and NSPPolls (2022) through the cross-check's poll matching, else the hand lookups of
+    validation/flagged_clients.csv. Wikipedia itself gives no client."""
+    interim = root / "data" / "interim"
+    out = []
+    for year, src, label in ((2002, "france_politique", "france-politique"), (2022, "nsppolls", "NSPPolls")):
+        m = pd.read_csv(interim / f"crosscheck_{year}_polls.csv")
+        m = m[m["status"].str.startswith("matched")]
+        other = pd.read_csv(interim / f"polls_{src}.csv", low_memory=False).drop_duplicates("poll_id").set_index("poll_id")
+        out.append(pd.DataFrame({"poll_id": m["poll_id_b"].to_numpy(), "client": m["poll_id_a"].map(other["sponsor"]).to_numpy(),
+                                 "client_source": label}))
+    hand = worklists.read(root / "validation" / "flagged_clients.csv")
+    out.append(pd.DataFrame({"poll_id": hand["poll_id"], "client": hand["client"].replace("", None),
+                             "client_source": "hand lookup"}))
+    c = pd.concat(out).dropna(subset=["client"]).drop_duplicates("poll_id")
+    return c[c["poll_id"].isin(set(poll_ids))]
 
 
 def warnings(final: pd.DataFrame, log: pd.DataFrame) -> list[str]:
