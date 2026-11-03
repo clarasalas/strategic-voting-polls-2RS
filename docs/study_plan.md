@@ -32,16 +32,19 @@ Nothing here runs the model. Part 3 only produces bounds and inputs that the mod
 | Roles | leader, 2nd, 3rd, others, by rank; tied candidates share a role (two 2nds, cliff 0). Pooled analyses take roles from the poll average, not single polls |
 | Candidates | all candidates in Parts 1 and 2; the ABM's candidate set only when preparing its inputs |
 
-## Part 1 · The polls themselves (notebook 05)
+## Part 1 · The polls themselves (notebook 05, done)
 
-- [ ] **Coverage**: polls per election, month and pollster; pace near the vote; rolling polls; sample sizes
-- [ ] **Trajectories**: poll average per candidate with a band; week-to-week volatility; markers where the set of
+- [x] **Coverage**: polls per election, month and pollster; pace near the vote; rolling polls; sample sizes
+- [x] **Trajectories**: poll average per candidate with a band; week-to-week volatility; markers where the set of
       tested candidates changes (entries, withdrawals)
-- [ ] **Rank stability**: who is 1st to 4th over time; rank swaps; share of polls whose top two is the real runoff
+- [x] **Rank stability**: who is 1st to 4th over time; rank swaps; share of polls whose top two is the real runoff
       pair; date from which the runoff pair stops changing
-- [ ] **Pollsters**: house effects (pollster × candidate, against the poll average); herding (agreement beyond sampling
+- [x] **Pollsters**: house effects (pollster × candidate, against the poll average); herding (agreement beyond sampling
       error, especially near the vote)
-- [ ] **Noise**: spread within a week against sampling error: effective sample size
+- [x] **Noise**: spread within a week against sampling error: effective sample size
+
+Tables in `results/tables/` (`coverage_*`, `trajectories_*`, `ranks_*`, `pollsters_*`, `noise_*`). Figures are
+coloured left to right in the order of Wikipedia's poll-table columns (`src/polls/ideology.py`).
 
 ## Part 2 · Polls against results (notebook 06)
 
