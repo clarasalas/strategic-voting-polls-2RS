@@ -7,7 +7,9 @@ hand-editable and covers the rest:
 - `party` fills the rows where Wikipedia gives no label, and must be the label at the time of
   those rows (Duflot in 2010: Les Verts, before EELV existed);
 - `override` = yes applies `party` to every row of that candidate, replacing Wikipedia's label
-  (none at present).
+  (none at present);
+- `from_date` (optional) starts a period: a candidate can have several rows, each applying from its
+  date until the next one (Bertrand in 2022: SE, then LR from 15 October 2021, when he rejoined).
 
 `match`: "label" (taken from the candidate's other Wikipedia labels), "suggested" (a proposal to
 check), "manual" (checked or written by hand). Rows already in the file are never changed; new
@@ -20,7 +22,7 @@ from pathlib import Path
 
 import pandas as pd
 
-COLUMNS = ["election", "candidate", "labels", "party", "override", "unlabelled_polls", "match", "note"]
+COLUMNS = ["election", "candidate", "from_date", "labels", "party", "override", "unlabelled_polls", "match", "note"]
 
 # Spelling variants of one label; and orientation codes, which are not parties, read as SE (sans
 # étiquette): DVG/DVD/EXD = divers gauche / divers droite / extrême droite (Zemmour before Reconquête).
@@ -53,7 +55,7 @@ INITIAL = {
     (2022, "Ségolène Royal"): ("PS", "", "manual", "PS member at the time (checked by hand)"),
     (2022, "Valérie Pécresse"): ("Soyons libres", "", "manual",
                                  "her movement, founded in 2017; left LR in June 2019; Wikipedia labels her LR once LR's nominee (December 2021)"),
-    (2022, "Xavier Bertrand"): ("SE", "", "suggested", "polls of 2019-2021: left LR in 2017, ran in the 2021 LR congress"),
+    (2022, "Xavier Bertrand"): ("SE", "", "manual", "left LR in 2017; LR again from 15 October 2021 (next row) (checked by hand)"),
     (2022, "Éric Ciotti"): ("LR", "", "suggested", ""),
     (2022, "Éric Zemmour"): ("SE", "", "manual", "no party before Reconquête (founded 5 December 2021, REC from then on)"),
     (2022, "[LR, candidat non désigné]"): ("LR", "", "label", "placeholder"),
@@ -74,6 +76,7 @@ def update(path: Path, polls: pd.DataFrame) -> pd.DataFrame:
     """Add a row for every candidate that needs one (some rows without a label) and return the file.
     `polls`: rows with election, candidate, candidate_raw, candidate_column, date."""
     existing = pd.read_csv(path, dtype=str, keep_default_na=False) if path.exists() else pd.DataFrame(columns=COLUMNS)
+    existing = existing.reindex(columns=COLUMNS, fill_value="")
     have = set(zip(existing["election"].astype(int), existing["candidate"]))
     p = polls.assign(label=[row_label(a, b) for a, b in zip(polls["candidate_raw"], polls["candidate_column"])])
     new = []
@@ -93,19 +96,37 @@ def update(path: Path, polls: pd.DataFrame) -> pd.DataFrame:
                         unlabelled_polls=n_unlabelled, match=match, note=note))
     out = pd.concat([existing, pd.DataFrame(new, columns=COLUMNS)], ignore_index=True)
     out["election"] = out["election"].astype(int)
-    out = out.sort_values(["election", "candidate"])
+    out = out.sort_values(["election", "candidate", "from_date"])
     out.to_csv(path, index=False, encoding="utf-8-sig")
     return out
 
 
+def _periods(f: pd.DataFrame, rows) -> dict:
+    """(election, candidate) -> [(from_date, party)], sorted; '' sorts first (from the start)."""
+    out: dict = {}
+    for r in f[rows].itertuples():
+        out.setdefault((int(r.election), r.candidate), []).append((r.from_date.strip(), r.party))
+    return {k: sorted(v) for k, v in out.items()}
+
+
+def _at(periods, date) -> str:
+    """The party of the last period starting on or before `date`."""
+    found = ""
+    for start, party in periods or []:
+        if not start or (isinstance(date, str) and date >= start):
+            found = party
+    return found
+
+
 def assign(polls: pd.DataFrame, path: Path) -> pd.Series:
-    """Party of every row: override, else the row's Wikipedia label, else the file's fallback."""
-    f = pd.read_csv(path, dtype=str, keep_default_na=False)
-    fallback = {(int(e), c): p for e, c, p in zip(f["election"], f["candidate"], f["party"]) if p}
-    forced = {(int(e), c): p for e, c, p, o in zip(f["election"], f["candidate"], f["party"], f["override"])
-              if p and o.strip().lower() == "yes"}
+    """Party of every row: override, else the row's Wikipedia label, else the file's fallback for its date."""
+    f = pd.read_csv(path, dtype=str, keep_default_na=False).reindex(columns=COLUMNS, fill_value="")
+    filled = f["party"] != ""
+    fallback = _periods(f, filled)
+    forced = _periods(f, filled & (f["override"].str.strip().str.lower() == "yes"))
     out = []
-    for e, c, raw, col in zip(polls["election"], polls["candidate"], polls["candidate_raw"], polls["candidate_column"]):
+    for e, c, raw, col, date in zip(polls["election"], polls["candidate"], polls["candidate_raw"],
+                                    polls["candidate_column"], polls["date"]):
         key = (int(e), c)
-        out.append(forced.get(key) or row_label(raw, col) or fallback.get(key, ""))
+        out.append(_at(forced.get(key), date) or row_label(raw, col) or _at(fallback.get(key), date))
     return pd.Series(out, index=polls.index)
