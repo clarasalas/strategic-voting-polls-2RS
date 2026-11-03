@@ -48,7 +48,7 @@ coloured left to right in the order of Wikipedia's poll-table columns (`src/poll
 
 ## Part 2 · Polls against results (notebook 06)
 
-- [ ] **Structure metrics** per poll and result: HHI and ENP, top-two share, cliff (2nd − 3rd, in points and relative
+- [x] **Structure metrics** per poll and result: HHI and ENP, top-two share, cliff (2nd − 3rd, in points and relative
       to 2nd), 1st–2nd and 3rd–4th gaps, candidates in contention
 - [ ] **Their evolution**, with the change in HHI split two ways: campaign (first poll → last polls) against last mile
       (last polls → result); and change in the candidate set (elite coordination: withdrawals) against shares moving

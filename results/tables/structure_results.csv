@@ -1,0 +1,6 @@
+election,n_candidates,total,hhi,hhi_raw,enp,top2_share,gap_12,cliff,cliff_rel,gap_34,n_in_contention,first,second,third,fourth
+2002,16,100.02,0.1155,0.1155,8.6587,36.74,3.02,0.68,0.0403,9.34,2,Jacques Chirac,Jean-Marie Le Pen,Lionel Jospin,François Bayrou
+2007,12,100.01,0.2128,0.2128,4.7001,57.05,5.31,7.3,0.2822,8.13,1,Nicolas Sarkozy,Ségolène Royal,François Bayrou,Jean-Marie Le Pen
+2012,10,100.0,0.2096,0.2096,4.7718,55.81,1.45,9.28,0.3414,6.8,1,François Hollande,Nicolas Sarkozy,Marine Le Pen,Jean-Luc Mélenchon
+2017,11,100.0,0.188,0.188,5.3179,45.31,2.71,1.29,0.0606,0.43,3,Emmanuel Macron,Marine Le Pen,François Fillon,Jean-Luc Mélenchon
+2022,12,99.98,0.1912,0.1911,5.2312,51.0,4.7,1.2,0.0518,14.88,2,Emmanuel Macron,Marine Le Pen,Jean-Luc Mélenchon,Éric Zemmour
