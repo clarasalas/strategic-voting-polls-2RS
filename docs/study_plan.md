@@ -29,7 +29,8 @@ Nothing here runs the model. Part 3 only produces bounds and inputs that the mod
 | Phases | before the official list of candidates; from the list to two weeks before; the last two weeks (`config/elections.yaml`) |
 | Shares | every metric computed rescaled to 100 and raw. Below-threshold shares count as half their bound |
 | Concentration | HHI = Σ shares², rescaled HHI = 1 / ENP of the ABM. HHI rather than CENP, which depends on the number of candidates |
-| Roles | leader, 2nd, 3rd, others, by rank; tied candidates share a role (two 2nds, cliff 0). Pooled analyses take roles from the poll average, not single polls |
+| Roles | leader, 2nd, 3rd, others, by rank; tied candidates share a role (two 2nds, gap 0). Pooled analyses take roles from the poll average, not single polls |
+| Poll average | Gaussian kernel, 10 days, at least 3 polls nearby, for every statistic. Figures widen the window where polls are sparse (to the 4th-nearest poll, at most 45 days), drawn dashed |
 | Candidates | all candidates in Parts 1 and 2; the ABM's candidate set only when preparing its inputs |
 
 ## Part 1 · The polls themselves (notebook 05, done)
@@ -48,8 +49,9 @@ coloured left to right in the order of Wikipedia's poll-table columns (`src/poll
 
 ## Part 2 · Polls against results (notebook 06)
 
-- [x] **Structure metrics** per poll and result: HHI and ENP, top-two share, cliff (2nd − 3rd, in points and relative
-      to 2nd), 1st–2nd and 3rd–4th gaps, candidates in contention
+- [x] **Structure metrics** per poll and result: HHI and ENP, top-two share, the cliff as in the ABM (largest drop
+      between sorted shares: magnitude, location, ratio), the 2nd–3rd gap (qualification), 1st–2nd and 3rd–4th gaps,
+      candidates in contention
 - [ ] **Their evolution**, with the change in HHI split two ways: campaign (first poll → last polls) against last mile
       (last polls → result); and change in the candidate set (elite coordination: withdrawals) against shares moving
       within a fixed set (voter coordination)

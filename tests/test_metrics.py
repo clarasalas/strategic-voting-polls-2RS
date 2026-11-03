@@ -25,11 +25,11 @@ def test_enp_matches_the_abm_formula():
     assert metrics.enp(s) == pytest.approx(abm, abs=1e-12)
 
 
-def test_tied_candidates_share_a_role_and_the_cliff_is_zero():
+def test_tied_candidates_share_a_role_and_their_gap_is_zero():
     s = pd.Series({"A": 30.0, "B": 20.0, "C": 20.0, "D": 10.0})
     assert metrics.roles(s).to_dict() == {"A": "leader", "B": "2nd", "C": "2nd", "D": "other"}
     st = metrics.structure(s)
-    assert st["cliff"] == 0.0 and st["gap_12"] == 10.0 and st["gap_34"] == 10.0
+    assert st["gap_23"] == 0.0 and st["gap_12"] == 10.0 and st["gap_34"] == 10.0
     assert st["n_in_contention"] == 2
 
 
@@ -70,3 +70,31 @@ def test_leave_one_out_ignores_the_poll_itself():
     loo = average.leave_one_out(days, values, h=50, min_polls=1)
     assert loo[2] == pytest.approx(10.0)          # the outlier does not count for itself
     assert loo[0] > 10.0                          # but counts for the others
+
+
+def test_cliff_matches_the_abm():
+    rng = np.random.default_rng(0)
+    for _ in range(50):
+        s = rng.dirichlet(np.ones(9)) * 100
+        # the ABM's _cliff_stats, copied
+        srt = np.sort(s)[::-1]; drops = srt[:-1] - srt[1:]; idx = int(np.argmax(drops))
+        rest = np.concatenate([drops[:idx], drops[idx + 1:]])
+        expected = (idx + 1, drops[idx], drops[idx] / (drops[idx] + rest.mean()))
+        assert metrics.cliff(s) == pytest.approx(expected)
+
+
+def test_largest_cliff_and_gap_23():
+    st = metrics.structure(pd.Series({"A": 30.0, "B": 28.0, "C": 12.0, "D": 10.0}))
+    assert (st["cliff_location"], st["cliff"], st["gap_23"]) == (2, 16.0, 16.0)
+    st = metrics.structure(pd.Series({"A": 40.0, "B": 20.0, "C": 18.0, "D": 16.0}))
+    assert (st["cliff_location"], st["cliff"], st["gap_23"]) == (1, 20.0, 2.0)
+
+
+def test_adaptive_average_fills_sparse_stretches():
+    from polls import average
+    days = np.array([0, 2, 4, 6, 90.0, 110.0, 130.0, 150.0])
+    fixed = average.smooth(days, np.full(8, 10.0), np.array([120]))
+    wide = average.smooth(days, np.full(8, 10.0), np.array([120]), adaptive_k=4)
+    gone = average.smooth(days, np.full(8, 10.0), np.array([300]), adaptive_k=4)   # beyond max_h: empty
+    assert gone["mean"].isna().all()
+    assert fixed["mean"].isna().all() and wide["mean"].tolist() == pytest.approx([10.0]) and wide["sparse"].all()
