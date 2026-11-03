@@ -173,6 +173,7 @@ data/
   final/                the final dataset (notebook 04)
     polls.csv           Wikipedia polls kept by thinning, with the validation applied
     corrections.csv     every correction in the worklists, applied or not, with the reason
+    scenarios.csv       one row per scenario: ballot-scenario match, stand-ins, extra candidates
 notebooks/
   01_collect_and_parse.ipynb
   02_thin_rolling.ipynb  removes sample overlap within a pollster/client series (Erikson & Wlezien)
@@ -199,9 +200,21 @@ of the interim tables (below), plus:
 | Column | Meaning |
 |---|---|
 | `party` | the label at the time of the poll: the poll's Wikipedia row (Juppé is UMP in 2014, LR from 2015), else `config/parties.csv` |
+| `slot` | the final-ballot candidate whose place this candidate fills: the same person, or the same party at the time, allowing for renamings (UMP → LR, FN → RN, DLR → DLF, EM → LREM, LV → EELV, LCR → NPA). Empty for SE candidates and for parties absent from the ballot |
+| `ballot_scenario` | this scenario is the poll's ballot scenario (see below) |
 | `date` | `fieldwork_end`, or `reported_date` where the source gives no fieldwork (2007, 2012: publication date) |
 | `corrected` | the row was changed by the validation (see `corrections.csv`) |
 | `checked_against` | `other source` (matched in france-politique or NSPPolls), `original document` (spot check), both, or empty |
+
+**Ballot scenario.** A scenario is a ballot scenario when every final candidacy with at least 2% of the vote has
+its slot filled. It may also test candidates who will not be on the ballot (Taubira in 2022, Bayrou and Jadot in
+2017): that is the poll voters saw. A candidate from another party never fills a slot, even if that party later
+backed the final candidate. Per poll, the ballot scenario chosen has the most slots filled by the same person, then
+the fewest extra candidates. Polls with one: 49 of 98 (2002, from February 2002), 107 of 107 (2007), 116 of 124
+(2012), 109 of 148 (2017), 184 of 231 (2022). Rules in `src/polls/matching.py`.
+
+`data/final/scenarios.csv`: one row per scenario: whether it is a ballot scenario and chosen, the required
+candidacies missing, the candidates filling a slot for someone else, and the extra candidates with their total share.
 
 `data/final/corrections.csv`: one row per item of the two worklists, with `applied` and, when not applied, the
 `reason`. `old` and `new` give the value before and after.

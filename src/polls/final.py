@@ -26,7 +26,7 @@ from pathlib import Path
 
 import pandas as pd
 
-from . import parties, worklists
+from . import matching, parties, worklists
 from .crosscheck import ALIASES
 from .textparse import strip_accents
 
@@ -59,8 +59,8 @@ HELD: dict[tuple[str, str], str] = {}
 FINAL_COLUMNS = [
     "election", "poll_id", "scenario_id", "scenario_label", "institute", "institute_family", "institute_raw",
     "sponsor", "fieldwork_start", "fieldwork_end", "reported_date", "date", "sample_size", "rolling",
-    "candidate", "party", "share", "share_status", "share_upper_bound", "final_list_scenario",
-    "corrected", "checked_against", "upstream_source_url", "notice_url", "wiki_revision_id", "source_poll_ref",
+    "candidate", "party", "slot", "share", "share_status", "share_upper_bound", "final_list_scenario",
+    "ballot_scenario", "corrected", "checked_against", "upstream_source_url", "notice_url", "wiki_revision_id", "source_poll_ref",
 ]
 
 
@@ -299,7 +299,7 @@ def apply_spot_check(b: Builder, spot: pd.DataFrame) -> None:
 
 
 # ---- assembly ------------------------------------------------------------------------------
-def build(root: Path) -> tuple[pd.DataFrame, pd.DataFrame, list[str]]:
+def build(root: Path) -> tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame, list[str]]:
     interim, validation = root / "data" / "interim", root / "validation"
     wp = pd.read_csv(interim / "polls_wikipedia.csv", low_memory=False)
     others = {"france_politique": pd.read_csv(interim / "polls_france_politique.csv", low_memory=False),
@@ -321,6 +321,8 @@ def build(root: Path) -> tuple[pd.DataFrame, pd.DataFrame, list[str]]:
     party_file = root / "config" / "parties.csv"
     parties.update(party_file, final[final["share_status"] != "not_tested"])
     final["party"] = parties.assign(final, party_file)
+    final["slot"], scenarios = matching.match(final, pd.read_csv(interim / "results.csv"))
+    final["ballot_scenario"] = final["scenario_id"].isin(scenarios.loc[scenarios["chosen"], "scenario_id"])
     cross = set(matches.loc[matches["status"].str.startswith("matched"), "poll_id_b"])
     spotted = set(spot["poll_id"])
     final["checked_against"] = [
@@ -331,7 +333,8 @@ def build(root: Path) -> tuple[pd.DataFrame, pd.DataFrame, list[str]]:
     final = final[FINAL_COLUMNS].reset_index(drop=True)
     final = final.astype({"share": float, "share_upper_bound": float, "corrected": bool, "election": int})
     final["sample_size"] = pd.array(pd.to_numeric(final["sample_size"]), dtype="Int64")
-    return final, log, warnings(final, log)
+    final = final.astype({"ballot_scenario": bool})
+    return final, log, scenarios, warnings(final, log)
 
 
 def warnings(final: pd.DataFrame, log: pd.DataFrame) -> list[str]:
