@@ -1,0 +1,566 @@
+election,poll_id,days_before,first,second,third,fourth,right_leader,top2,weeks_before,phase
+2002,2002_wp_bva_2002-02-16_1,64,Jacques Chirac,Lionel Jospin,Jean-Marie Le Pen,Jean-Pierre Chevènement,True,wrong pair,10,before the official list
+2002,2002_wp_bva_2002-03-02_1,50,Lionel Jospin,Jacques Chirac,Jean-Marie Le Pen,Jean-Pierre Chevènement,False,wrong pair,8,before the official list
+2002,2002_wp_bva_2002-03-16_1,36,Jacques Chirac,Lionel Jospin,Jean-Marie Le Pen,Arlette Laguiller,True,wrong pair,6,before the official list
+2002,2002_wp_bva_2002-03-23_1,29,Jacques Chirac,Lionel Jospin,Jean-Marie Le Pen,Arlette Laguiller,True,wrong pair,5,before the official list
+2002,2002_wp_bva_2002-03-30_1,22,Jacques Chirac,Lionel Jospin,Jean-Marie Le Pen,Arlette Laguiller,True,wrong pair,4,before the official list
+2002,2002_wp_bva_2002-04-06_1,15,Jacques Chirac,Lionel Jospin,Jean-Marie Le Pen,Arlette Laguiller,True,wrong pair,3,official list to two weeks before
+2002,2002_wp_bva_2002-04-13_1,8,Jacques Chirac,Lionel Jospin,Jean-Marie Le Pen,Arlette Laguiller,True,wrong pair,2,last two weeks
+2002,2002_wp_bva_2002-04-18_1,3,Jacques Chirac,Lionel Jospin,Jean-Marie Le Pen,Arlette Laguiller,True,wrong pair,1,last two weeks
+2002,2002_wp_csa_2002-02-14_1,66,Jacques Chirac,Lionel Jospin,Jean-Pierre Chevènement,Jean-Marie Le Pen,True,wrong pair,10,before the official list
+2002,2002_wp_csa_2002-02-28_1,52,Lionel Jospin,Jacques Chirac,Jean-Pierre Chevènement,Jean-Marie Le Pen,False,wrong pair,8,before the official list
+2002,2002_wp_csa_2002-03-14_1,38,Jacques Chirac,Lionel Jospin,Jean-Marie Le Pen,Jean-Pierre Chevènement,True,wrong pair,6,before the official list
+2002,2002_wp_csa_2002-03-22_1,30,Jacques Chirac,Lionel Jospin,Jean-Marie Le Pen,Arlette Laguiller,True,wrong pair,5,before the official list
+2002,2002_wp_csa_2002-03-28_1,24,Lionel Jospin,Jacques Chirac,Jean-Marie Le Pen,Arlette Laguiller,True,wrong pair,4,before the official list
+2002,2002_wp_csa_2002-04-04_1,17,Jacques Chirac,Lionel Jospin,Jean-Marie Le Pen,Arlette Laguiller,True,wrong pair,3,official list to two weeks before
+2002,2002_wp_csa_2002-04-11_1,10,Jacques Chirac,Lionel Jospin,Jean-Marie Le Pen,Arlette Laguiller,True,wrong pair,2,last two weeks
+2002,2002_wp_csa_2002-04-18_1,3,Jacques Chirac,Lionel Jospin,Jean-Marie Le Pen,Arlette Laguiller,True,wrong pair,1,last two weeks
+2002,2002_wp_ifop_2002-03-01_1,51,Jacques Chirac,Lionel Jospin,Jean-Pierre Chevènement,Arlette Laguiller,True,wrong pair,8,before the official list
+2002,2002_wp_ifop_2002-03-16_1,36,Jacques Chirac,Lionel Jospin,Jean-Pierre Chevènement,Arlette Laguiller,True,wrong pair,6,before the official list
+2002,2002_wp_ifop_2002-03-29_1,23,Jacques Chirac,Lionel Jospin,Arlette Laguiller,Jean-Marie Le Pen,True,wrong pair,4,before the official list
+2002,2002_wp_ifop_2002-04-06_1,15,Jacques Chirac,Lionel Jospin,Jean-Marie Le Pen,Arlette Laguiller,True,wrong pair,3,official list to two weeks before
+2002,2002_wp_ifop_2002-04-12_1,9,Jacques Chirac,Lionel Jospin,Jean-Marie Le Pen,Arlette Laguiller,True,wrong pair,2,last two weeks
+2002,2002_wp_ifop_2002-04-13_1,8,Jacques Chirac,Lionel Jospin,Jean-Marie Le Pen,Jean-Pierre Chevènement,True,wrong pair,2,last two weeks
+2002,2002_wp_ipsos_2002-02-09_1,71,Jacques Chirac,Lionel Jospin,Jean-Pierre Chevènement,Jean-Marie Le Pen,True,wrong pair,11,before the official list
+2002,2002_wp_ipsos_2002-02-12_1,68,Jacques Chirac,Lionel Jospin,Jean-Pierre Chevènement,Jean-Marie Le Pen,True,wrong pair,10,before the official list
+2002,2002_wp_ipsos_2002-02-16_1,64,Jacques Chirac,Lionel Jospin,Jean-Pierre Chevènement,Jean-Marie Le Pen,True,wrong pair,10,before the official list
+2002,2002_wp_ipsos_2002-02-23_1,57,Jacques Chirac,Lionel Jospin,Jean-Pierre Chevènement,Jean-Marie Le Pen,True,wrong pair,9,before the official list
+2002,2002_wp_ipsos_2002-03-02_1,50,Jacques Chirac,Lionel Jospin,Jean-Pierre Chevènement,Jean-Marie Le Pen,True,wrong pair,8,before the official list
+2002,2002_wp_ipsos_2002-03-09_1,43,Jacques Chirac,Lionel Jospin,Jean-Pierre Chevènement,Jean-Marie Le Pen,True,wrong pair,7,before the official list
+2002,2002_wp_ipsos_2002-03-16_1,36,Jacques Chirac,Lionel Jospin,Jean-Pierre Chevènement,Jean-Marie Le Pen,True,wrong pair,6,before the official list
+2002,2002_wp_ipsos_2002-03-23_1,29,Jacques Chirac,Lionel Jospin,Arlette Laguiller,Jean-Marie Le Pen,True,wrong pair,5,before the official list
+2002,2002_wp_ipsos_2002-03-30_1,22,Jacques Chirac,Lionel Jospin,Arlette Laguiller,Jean-Marie Le Pen,True,wrong pair,4,before the official list
+2002,2002_wp_ipsos_2002-04-06_1,15,Jacques Chirac,Lionel Jospin,Jean-Marie Le Pen,Arlette Laguiller,True,wrong pair,3,official list to two weeks before
+2002,2002_wp_ipsos_2002-04-16_1,5,Jacques Chirac,Lionel Jospin,Jean-Marie Le Pen,Arlette Laguiller,True,wrong pair,1,last two weeks
+2002,2002_wp_ipsos_2002-04-18_1,3,Jacques Chirac,Lionel Jospin,Jean-Marie Le Pen,Arlette Laguiller,True,wrong pair,1,last two weeks
+2002,2002_wp_louis-harris_2002-03-09_1,43,Jacques Chirac,Lionel Jospin,Jean-Pierre Chevènement,Jean-Marie Le Pen,True,wrong pair,7,before the official list
+2002,2002_wp_louis-harris_2002-03-30_1,22,Jacques Chirac,Lionel Jospin,Arlette Laguiller,Jean-Marie Le Pen,True,wrong pair,4,before the official list
+2002,2002_wp_louis-harris_2002-04-17_1,4,Jacques Chirac,Lionel Jospin,Jean-Marie Le Pen,Arlette Laguiller,True,wrong pair,1,last two weeks
+2002,2002_wp_sofres_2002-02-15_1,65,Jacques Chirac,Lionel Jospin,Jean-Pierre Chevènement,Jean-Marie Le Pen,True,wrong pair,10,before the official list
+2002,2002_wp_sofres_2002-02-23_1,57,Jacques Chirac,Lionel Jospin,Jean-Marie Le Pen,Jean-Pierre Chevènement,True,wrong pair,9,before the official list
+2002,2002_wp_sofres_2002-02-28_1,52,Jacques Chirac,Lionel Jospin,Jean-Marie Le Pen,Jean-Pierre Chevènement,True,wrong pair,8,before the official list
+2002,2002_wp_sofres_2002-03-09_1,43,Jacques Chirac,Lionel Jospin,Jean-Marie Le Pen,Arlette Laguiller,True,wrong pair,7,before the official list
+2002,2002_wp_sofres_2002-03-15_1,37,Jacques Chirac,Lionel Jospin,Jean-Marie Le Pen,Arlette Laguiller,True,wrong pair,6,before the official list
+2002,2002_wp_sofres_2002-03-16_1,36,Jacques Chirac,Lionel Jospin,Jean-Marie Le Pen,Arlette Laguiller,True,wrong pair,6,before the official list
+2002,2002_wp_sofres_2002-03-23_1,29,Jacques Chirac,Lionel Jospin,Arlette Laguiller,Jean-Marie Le Pen,True,wrong pair,5,before the official list
+2002,2002_wp_sofres_2002-03-28_1,24,Jacques Chirac,Lionel Jospin,Jean-Marie Le Pen,Arlette Laguiller,True,wrong pair,4,before the official list
+2002,2002_wp_sofres_2002-04-04_1,17,Jacques Chirac,Lionel Jospin,Jean-Marie Le Pen,Arlette Laguiller,True,wrong pair,3,official list to two weeks before
+2002,2002_wp_sofres_2002-04-11_1,10,Jacques Chirac,Lionel Jospin,Jean-Marie Le Pen,Arlette Laguiller,True,wrong pair,2,last two weeks
+2002,2002_wp_sofres_2002-04-15_1,6,Jacques Chirac,Lionel Jospin,Jean-Marie Le Pen,Arlette Laguiller,True,wrong pair,1,last two weeks
+2002,2002_wp_sofres_2002-04-18_1,3,Jacques Chirac,Lionel Jospin,Jean-Marie Le Pen,Arlette Laguiller,True,wrong pair,1,last two weeks
+2007,2007_wp_bva_2007-02-08_1,73,Nicolas Sarkozy,Ségolène Royal,François Bayrou,Jean-Marie Le Pen,True,right pair,11,before the official list
+2007,2007_wp_bva_2007-02-14_1,67,Nicolas Sarkozy,Ségolène Royal,François Bayrou,Jean-Marie Le Pen,True,right pair,10,before the official list
+2007,2007_wp_bva_2007-02-21_1,60,Nicolas Sarkozy,Ségolène Royal,François Bayrou,Jean-Marie Le Pen,True,right pair,9,before the official list
+2007,2007_wp_bva_2007-03-01_1,52,Nicolas Sarkozy,Ségolène Royal,François Bayrou,Jean-Marie Le Pen,True,right pair,8,before the official list
+2007,2007_wp_bva_2007-03-08_1,45,Nicolas Sarkozy,Ségolène Royal,François Bayrou,Jean-Marie Le Pen,True,right pair,7,before the official list
+2007,2007_wp_bva_2007-03-17_1,36,Nicolas Sarkozy,Ségolène Royal,François Bayrou,Jean-Marie Le Pen,True,right pair,6,before the official list
+2007,2007_wp_bva_2007-03-22_1,31,Nicolas Sarkozy,Ségolène Royal,François Bayrou,Jean-Marie Le Pen,True,right pair,5,official list to two weeks before
+2007,2007_wp_bva_2007-03-29_1,24,Nicolas Sarkozy,Ségolène Royal,François Bayrou,Jean-Marie Le Pen,True,right pair,4,official list to two weeks before
+2007,2007_wp_bva_2007-04-05_1,17,Nicolas Sarkozy,Ségolène Royal,François Bayrou,Jean-Marie Le Pen,True,right pair,3,official list to two weeks before
+2007,2007_wp_bva_2007-04-12_1,10,Nicolas Sarkozy,Ségolène Royal,François Bayrou,Jean-Marie Le Pen,True,right pair,2,last two weeks
+2007,2007_wp_bva_2007-04-19_1,3,Nicolas Sarkozy,Ségolène Royal,François Bayrou,Jean-Marie Le Pen,True,right pair,1,last two weeks
+2007,2007_wp_csa_2006-10-18_1,186,Ségolène Royal,Nicolas Sarkozy,Jean-Marie Le Pen,François Bayrou,False,right pair,27,before the official list
+2007,2007_wp_csa_2006-11-08_1,165,Nicolas Sarkozy,Ségolène Royal,Jean-Marie Le Pen,François Bayrou,True,right pair,24,before the official list
+2007,2007_wp_csa_2006-11-21_1,152,Ségolène Royal,Nicolas Sarkozy,Jean-Marie Le Pen,François Bayrou,False,right pair,22,before the official list
+2007,2007_wp_csa_2006-12-13_1,130,Ségolène Royal,Nicolas Sarkozy,Jean-Marie Le Pen,François Bayrou,False,right pair,19,before the official list
+2007,2007_wp_csa_2007-01-03_1,109,Ségolène Royal,Nicolas Sarkozy,Jean-Marie Le Pen,François Bayrou,False,right pair,16,before the official list
+2007,2007_wp_csa_2007-01-17_1,95,Nicolas Sarkozy,Ségolène Royal,Jean-Marie Le Pen,François Bayrou,True,right pair,14,before the official list
+2007,2007_wp_csa_2007-01-31_1,81,Nicolas Sarkozy,Ségolène Royal,Jean-Marie Le Pen,François Bayrou,True,right pair,12,before the official list
+2007,2007_wp_csa_2007-02-15_1,66,Nicolas Sarkozy,Ségolène Royal,Jean-Marie Le Pen,François Bayrou,True,right pair,10,before the official list
+2007,2007_wp_csa_2007-02-17_1,64,Nicolas Sarkozy,Ségolène Royal,Jean-Marie Le Pen,François Bayrou,True,right pair,10,before the official list
+2007,2007_wp_csa_2007-02-21_1,60,Ségolène Royal,Nicolas Sarkozy,François Bayrou,Jean-Marie Le Pen,False,right pair,9,before the official list
+2007,2007_wp_csa_2007-02-21_2,60,Ségolène Royal,Nicolas Sarkozy,François Bayrou,Jean-Marie Le Pen,True,right pair,9,before the official list
+2007,2007_wp_csa_2007-03-07_1,46,Nicolas Sarkozy,Ségolène Royal,François Bayrou,Jean-Marie Le Pen,True,right pair,7,before the official list
+2007,2007_wp_csa_2007-03-14_1,39,Nicolas Sarkozy,Ségolène Royal,François Bayrou,Jean-Marie Le Pen,True,right pair,6,before the official list
+2007,2007_wp_csa_2007-03-21_1,32,Nicolas Sarkozy,Ségolène Royal,François Bayrou,Jean-Marie Le Pen,True,right pair,5,official list to two weeks before
+2007,2007_wp_csa_2007-03-29_1,24,Nicolas Sarkozy,Ségolène Royal,François Bayrou,Jean-Marie Le Pen,True,right pair,4,official list to two weeks before
+2007,2007_wp_csa_2007-04-05_1,17,Nicolas Sarkozy,Ségolène Royal,François Bayrou,Jean-Marie Le Pen,True,right pair,3,official list to two weeks before
+2007,2007_wp_csa_2007-04-12_1,10,Nicolas Sarkozy,Ségolène Royal,François Bayrou,Jean-Marie Le Pen,True,right pair,2,last two weeks
+2007,2007_wp_csa_2007-04-14_1,8,Nicolas Sarkozy,Ségolène Royal,François Bayrou,Jean-Marie Le Pen,True,right pair,2,last two weeks
+2007,2007_wp_csa_2007-04-17_1,5,Nicolas Sarkozy,Ségolène Royal,François Bayrou,Jean-Marie Le Pen,True,right pair,1,last two weeks
+2007,2007_wp_csa_2007-04-19_1,3,Nicolas Sarkozy,Ségolène Royal,François Bayrou,Jean-Marie Le Pen,True,right pair,1,last two weeks
+2007,2007_wp_ifop_2005-01-21_1,821,Nicolas Sarkozy,Ségolène Royal,Jean-Marie Le Pen,Dominique Voynet,True,right pair,118,before the official list
+2007,2007_wp_ifop_2006-10-13_1,191,Nicolas Sarkozy,Ségolène Royal,Jean-Marie Le Pen,François Bayrou,True,right pair,28,before the official list
+2007,2007_wp_ifop_2006-11-18_1,155,Ségolène Royal,Nicolas Sarkozy,François Bayrou,Jean-Marie Le Pen,True,right pair,23,before the official list
+2007,2007_wp_ifop_2006-11-30_1,143,Ségolène Royal,Nicolas Sarkozy,Jean-Marie Le Pen,François Bayrou,False,right pair,21,before the official list
+2007,2007_wp_ifop_2007-01-02_1,110,Nicolas Sarkozy,Ségolène Royal,Jean-Marie Le Pen,François Bayrou,True,right pair,16,before the official list
+2007,2007_wp_ifop_2007-01-07_1,105,Ségolène Royal,Nicolas Sarkozy,Jean-Marie Le Pen,François Bayrou,False,right pair,15,before the official list
+2007,2007_wp_ifop_2007-01-15_1,97,Nicolas Sarkozy,Ségolène Royal,François Bayrou,Jean-Marie Le Pen,True,right pair,14,before the official list
+2007,2007_wp_ifop_2007-01-19_1,93,Nicolas Sarkozy,Ségolène Royal,François Bayrou,Jean-Marie Le Pen,True,right pair,14,before the official list
+2007,2007_wp_ifop_2007-01-25_1,87,Nicolas Sarkozy,Ségolène Royal,Jean-Marie Le Pen,François Bayrou,True,right pair,13,before the official list
+2007,2007_wp_ifop_2007-02-12_1,69,Nicolas Sarkozy,Ségolène Royal,François Bayrou,Jean-Marie Le Pen,True,right pair,10,before the official list
+2007,2007_wp_ifop_2007-02-19_1,62,Nicolas Sarkozy,Ségolène Royal,Jean-Marie Le Pen,François Bayrou,True,right pair,9,before the official list
+2007,2007_wp_ifop_2007-02-26_1,55,Nicolas Sarkozy,Ségolène Royal,François Bayrou,Jean-Marie Le Pen,True,right pair,8,before the official list
+2007,2007_wp_ifop_2007-02-27_1,54,Nicolas Sarkozy,Ségolène Royal,François Bayrou,Jean-Marie Le Pen,True,right pair,8,before the official list
+2007,2007_wp_ifop_2007-03-09_1,44,Nicolas Sarkozy,François Bayrou,Ségolène Royal,Jean-Marie Le Pen,True,"right pair, tied",7,before the official list
+2007,2007_wp_ifop_2007-03-18_1,35,Nicolas Sarkozy,Ségolène Royal,François Bayrou,Jean-Marie Le Pen,True,right pair,5,before the official list
+2007,2007_wp_ifop_2007-03-22_1,31,Nicolas Sarkozy,Ségolène Royal,François Bayrou,Jean-Marie Le Pen,True,right pair,5,official list to two weeks before
+2007,2007_wp_ifop_2007-03-25_1,28,Nicolas Sarkozy,Ségolène Royal,François Bayrou,Jean-Marie Le Pen,True,right pair,4,official list to two weeks before
+2007,2007_wp_ifop_2007-04-01_1,21,Nicolas Sarkozy,Ségolène Royal,François Bayrou,Jean-Marie Le Pen,True,right pair,3,official list to two weeks before
+2007,2007_wp_ifop_2007-04-04_1,18,Nicolas Sarkozy,Ségolène Royal,François Bayrou,Jean-Marie Le Pen,True,right pair,3,official list to two weeks before
+2007,2007_wp_ifop_2007-04-08_1,14,Nicolas Sarkozy,Ségolène Royal,François Bayrou,Jean-Marie Le Pen,True,right pair,2,last two weeks
+2007,2007_wp_ifop_2007-04-15_1,7,Nicolas Sarkozy,Ségolène Royal,François Bayrou,Jean-Marie Le Pen,True,right pair,1,last two weeks
+2007,2007_wp_ifop_2007-04-18_1,4,Nicolas Sarkozy,Ségolène Royal,François Bayrou,Jean-Marie Le Pen,True,right pair,1,last two weeks
+2007,2007_wp_ipsos_2006-11-13_1,160,Nicolas Sarkozy,Ségolène Royal,Jean-Marie Le Pen,François Bayrou,True,right pair,23,before the official list
+2007,2007_wp_ipsos_2006-12-01_1,142,Nicolas Sarkozy,Ségolène Royal,Jean-Marie Le Pen,François Bayrou,True,right pair,21,before the official list
+2007,2007_wp_ipsos_2006-12-11_1,132,Nicolas Sarkozy,Ségolène Royal,Jean-Marie Le Pen,François Bayrou,True,right pair,19,before the official list
+2007,2007_wp_ipsos_2007-01-09_1,103,Nicolas Sarkozy,Ségolène Royal,Jean-Marie Le Pen,François Bayrou,True,right pair,15,before the official list
+2007,2007_wp_ipsos_2007-01-22_1,90,Nicolas Sarkozy,Ségolène Royal,Jean-Marie Le Pen,François Bayrou,True,right pair,13,before the official list
+2007,2007_wp_ipsos_2007-01-29_1,83,Nicolas Sarkozy,Ségolène Royal,François Bayrou,Jean-Marie Le Pen,True,right pair,12,before the official list
+2007,2007_wp_ipsos_2007-02-05_1,76,Nicolas Sarkozy,Ségolène Royal,François Bayrou,Jean-Marie Le Pen,True,right pair,11,before the official list
+2007,2007_wp_ipsos_2007-02-10_1,71,Nicolas Sarkozy,Ségolène Royal,François Bayrou,Jean-Marie Le Pen,True,right pair,11,before the official list
+2007,2007_wp_ipsos_2007-02-12_1,69,Nicolas Sarkozy,Ségolène Royal,François Bayrou,Jean-Marie Le Pen,True,right pair,10,before the official list
+2007,2007_wp_ipsos_2007-02-17_1,64,Nicolas Sarkozy,Ségolène Royal,François Bayrou,Jean-Marie Le Pen,True,right pair,10,before the official list
+2007,2007_wp_ipsos_2007-02-19_1,62,Nicolas Sarkozy,Ségolène Royal,François Bayrou,Jean-Marie Le Pen,True,right pair,9,before the official list
+2007,2007_wp_ipsos_2007-02-26_1,55,Nicolas Sarkozy,Ségolène Royal,François Bayrou,Jean-Marie Le Pen,True,right pair,8,before the official list
+2007,2007_wp_ipsos_2007-03-01_1,52,Nicolas Sarkozy,Ségolène Royal,François Bayrou,Jean-Marie Le Pen,True,right pair,8,before the official list
+2007,2007_wp_ipsos_2007-03-05_1,48,Nicolas Sarkozy,Ségolène Royal,François Bayrou,Jean-Marie Le Pen,True,right pair,7,before the official list
+2007,2007_wp_ipsos_2007-03-08_1,45,Nicolas Sarkozy,Ségolène Royal,François Bayrou,Jean-Marie Le Pen,True,right pair,7,before the official list
+2007,2007_wp_ipsos_2007-03-11_1,42,Nicolas Sarkozy,Ségolène Royal,François Bayrou,Jean-Marie Le Pen,True,right pair,6,before the official list
+2007,2007_wp_ipsos_2007-03-15_1,38,Nicolas Sarkozy,Ségolène Royal,François Bayrou,Jean-Marie Le Pen,True,right pair,6,before the official list
+2007,2007_wp_ipsos_2007-03-22_1,31,Nicolas Sarkozy,Ségolène Royal,François Bayrou,Jean-Marie Le Pen,True,right pair,5,official list to two weeks before
+2007,2007_wp_ipsos_2007-03-25_1,28,Nicolas Sarkozy,Ségolène Royal,François Bayrou,Jean-Marie Le Pen,True,right pair,4,official list to two weeks before
+2007,2007_wp_ipsos_2007-03-29_1,24,Nicolas Sarkozy,Ségolène Royal,François Bayrou,Jean-Marie Le Pen,True,right pair,4,official list to two weeks before
+2007,2007_wp_ipsos_2007-04-03_1,19,Nicolas Sarkozy,Ségolène Royal,François Bayrou,Jean-Marie Le Pen,True,right pair,3,official list to two weeks before
+2007,2007_wp_ipsos_2007-04-08_1,14,Nicolas Sarkozy,Ségolène Royal,François Bayrou,Jean-Marie Le Pen,True,right pair,2,last two weeks
+2007,2007_wp_ipsos_2007-04-12_1,10,Nicolas Sarkozy,Ségolène Royal,François Bayrou,Jean-Marie Le Pen,True,right pair,2,last two weeks
+2007,2007_wp_ipsos_2007-04-15_1,7,Nicolas Sarkozy,Ségolène Royal,François Bayrou,Jean-Marie Le Pen,True,right pair,1,last two weeks
+2007,2007_wp_ipsos_2007-04-20_1,2,Nicolas Sarkozy,Ségolène Royal,François Bayrou,Jean-Marie Le Pen,True,right pair,1,last two weeks
+2007,2007_wp_lh2_2007-01-29_1,83,Nicolas Sarkozy,Ségolène Royal,François Bayrou,Jean-Marie Le Pen,True,right pair,12,before the official list
+2007,2007_wp_lh2_2007-02-03_1,78,Nicolas Sarkozy,Ségolène Royal,François Bayrou,Jean-Marie Le Pen,True,right pair,12,before the official list
+2007,2007_wp_lh2_2007-02-10_1,71,Nicolas Sarkozy,Ségolène Royal,François Bayrou,Jean-Marie Le Pen,True,right pair,11,before the official list
+2007,2007_wp_lh2_2007-02-19_1,62,Nicolas Sarkozy,Ségolène Royal,François Bayrou,Jean-Marie Le Pen,True,right pair,9,before the official list
+2007,2007_wp_lh2_2007-02-26_1,55,Nicolas Sarkozy,Ségolène Royal,François Bayrou,Jean-Marie Le Pen,True,right pair,8,before the official list
+2007,2007_wp_lh2_2007-03-05_1,48,Nicolas Sarkozy,Ségolène Royal,François Bayrou,Jean-Marie Le Pen,True,right pair,7,before the official list
+2007,2007_wp_lh2_2007-03-12_1,41,Nicolas Sarkozy,Ségolène Royal,François Bayrou,Jean-Marie Le Pen,True,right pair,6,before the official list
+2007,2007_wp_lh2_2007-03-19_1,34,Nicolas Sarkozy,Ségolène Royal,François Bayrou,Jean-Marie Le Pen,True,right pair,5,official list to two weeks before
+2007,2007_wp_lh2_2007-03-26_1,27,Nicolas Sarkozy,Ségolène Royal,François Bayrou,Jean-Marie Le Pen,True,right pair,4,official list to two weeks before
+2007,2007_wp_lh2_2007-04-02_1,20,Nicolas Sarkozy,Ségolène Royal,François Bayrou,Jean-Marie Le Pen,True,right pair,3,official list to two weeks before
+2007,2007_wp_lh2_2007-04-09_1,13,Nicolas Sarkozy,Ségolène Royal,François Bayrou,Jean-Marie Le Pen,True,right pair,2,last two weeks
+2007,2007_wp_lh2_2007-04-16_1,6,Nicolas Sarkozy,Ségolène Royal,François Bayrou,Jean-Marie Le Pen,True,right pair,1,last two weeks
+2007,2007_wp_sofres_2006-10-05_1,199,Nicolas Sarkozy,Ségolène Royal,Jean-Marie Le Pen,François Bayrou,True,right pair,29,before the official list
+2007,2007_wp_sofres_2006-10-13_1,191,Nicolas Sarkozy,Ségolène Royal,Jean-Marie Le Pen,François Bayrou,True,right pair,28,before the official list
+2007,2007_wp_sofres_2006-11-11_1,162,Ségolène Royal,Nicolas Sarkozy,Jean-Marie Le Pen,François Bayrou,True,right pair,24,before the official list
+2007,2007_wp_sofres_2006-12-06_1,137,Ségolène Royal,Nicolas Sarkozy,Jean-Marie Le Pen,François Bayrou,True,right pair,20,before the official list
+2007,2007_wp_sofres_2007-01-18_1,94,Nicolas Sarkozy,Ségolène Royal,Jean-Marie Le Pen,François Bayrou,True,right pair,14,before the official list
+2007,2007_wp_sofres_2007-02-01_1,80,Nicolas Sarkozy,Ségolène Royal,Jean-Marie Le Pen,François Bayrou,True,right pair,12,before the official list
+2007,2007_wp_sofres_2007-02-09_1,72,Nicolas Sarkozy,Ségolène Royal,François Bayrou,Jean-Marie Le Pen,True,right pair,11,before the official list
+2007,2007_wp_sofres_2007-02-17_1,64,Nicolas Sarkozy,Ségolène Royal,Jean-Marie Le Pen,François Bayrou,True,right pair,10,before the official list
+2007,2007_wp_sofres_2007-03-05_1,48,Nicolas Sarkozy,Ségolène Royal,François Bayrou,Jean-Marie Le Pen,True,right pair,7,before the official list
+2007,2007_wp_sofres_2007-03-12_1,41,Nicolas Sarkozy,Ségolène Royal,François Bayrou,Jean-Marie Le Pen,True,right pair,6,before the official list
+2007,2007_wp_sofres_2007-03-17_1,36,Nicolas Sarkozy,Ségolène Royal,François Bayrou,Jean-Marie Le Pen,True,right pair,6,before the official list
+2007,2007_wp_sofres_2007-03-24_1,29,Nicolas Sarkozy,Ségolène Royal,François Bayrou,Jean-Marie Le Pen,True,right pair,5,official list to two weeks before
+2007,2007_wp_sofres_2007-04-02_1,20,Nicolas Sarkozy,Ségolène Royal,François Bayrou,Jean-Marie Le Pen,True,right pair,3,official list to two weeks before
+2007,2007_wp_sofres_2007-04-06_1,16,Nicolas Sarkozy,Ségolène Royal,François Bayrou,Jean-Marie Le Pen,True,right pair,3,official list to two weeks before
+2007,2007_wp_sofres_2007-04-13_1,9,Nicolas Sarkozy,Ségolène Royal,François Bayrou,Jean-Marie Le Pen,True,right pair,2,last two weeks
+2007,2007_wp_sofres_2007-04-18_1,4,Nicolas Sarkozy,Ségolène Royal,François Bayrou,Jean-Marie Le Pen,True,right pair,1,last two weeks
+2007,2007_wp_sofres_2007-04-19_1,3,Nicolas Sarkozy,Ségolène Royal,François Bayrou,Jean-Marie Le Pen,True,right pair,1,last two weeks
+2012,2012_wp_bva_2011-03-26_1,393,François Hollande,Marine Le Pen,Nicolas Sarkozy,Eva Joly,True,wrong pair,57,before the official list
+2012,2012_wp_bva_2011-11-22_1,152,François Hollande,Nicolas Sarkozy,Marine Le Pen,François Bayrou,True,right pair,22,before the official list
+2012,2012_wp_bva_2011-12-06_1,138,François Hollande,Nicolas Sarkozy,Marine Le Pen,François Bayrou,True,right pair,20,before the official list
+2012,2012_wp_bva_2012-01-09_1,104,François Hollande,Nicolas Sarkozy,Marine Le Pen,François Bayrou,True,right pair,15,before the official list
+2012,2012_wp_bva_2012-01-21_1,92,François Hollande,Nicolas Sarkozy,Marine Le Pen,François Bayrou,True,right pair,14,before the official list
+2012,2012_wp_bva_2012-02-01_1,81,François Hollande,Nicolas Sarkozy,Marine Le Pen,François Bayrou,True,right pair,12,before the official list
+2012,2012_wp_bva_2012-02-07_1,75,François Hollande,Nicolas Sarkozy,Marine Le Pen,François Bayrou,True,right pair,11,before the official list
+2012,2012_wp_bva_2012-02-17_1,65,François Hollande,Nicolas Sarkozy,Marine Le Pen,François Bayrou,True,right pair,10,before the official list
+2012,2012_wp_bva_2012-03-05_1,48,François Hollande,Nicolas Sarkozy,Marine Le Pen,François Bayrou,True,right pair,7,before the official list
+2012,2012_wp_bva_2012-03-22_1,31,François Hollande,Nicolas Sarkozy,Jean-Luc Mélenchon,Marine Le Pen,True,right pair,5,official list to two weeks before
+2012,2012_wp_bva_2012-04-03_1,19,François Hollande,Nicolas Sarkozy,Marine Le Pen,Jean-Luc Mélenchon,True,right pair,3,official list to two weeks before
+2012,2012_wp_bva_2012-04-12_1,10,François Hollande,Nicolas Sarkozy,Marine Le Pen,Jean-Luc Mélenchon,True,right pair,2,last two weeks
+2012,2012_wp_csa_2011-11-17_1,157,François Hollande,Nicolas Sarkozy,Marine Le Pen,François Bayrou,True,right pair,23,before the official list
+2012,2012_wp_csa_2011-12-15_1,129,François Hollande,Nicolas Sarkozy,Marine Le Pen,François Bayrou,True,right pair,19,before the official list
+2012,2012_wp_csa_2012-01-13_1,100,François Hollande,Nicolas Sarkozy,Marine Le Pen,François Bayrou,True,right pair,15,before the official list
+2012,2012_wp_csa_2012-01-26_1,87,François Hollande,Nicolas Sarkozy,Marine Le Pen,François Bayrou,True,right pair,13,before the official list
+2012,2012_wp_csa_2012-02-09_1,73,François Hollande,Nicolas Sarkozy,Marine Le Pen,François Bayrou,True,right pair,11,before the official list
+2012,2012_wp_csa_2012-02-22_1,60,François Hollande,Nicolas Sarkozy,Marine Le Pen,François Bayrou,True,right pair,9,before the official list
+2012,2012_wp_csa_2012-03-07_1,46,François Hollande,Nicolas Sarkozy,Marine Le Pen,François Bayrou,True,right pair,7,before the official list
+2012,2012_wp_csa_2012-03-15_1,38,François Hollande,Nicolas Sarkozy,Marine Le Pen,François Bayrou,True,right pair,6,before the official list
+2012,2012_wp_csa_2012-03-22_1,31,Nicolas Sarkozy,François Hollande,Marine Le Pen,François Bayrou,False,right pair,5,official list to two weeks before
+2012,2012_wp_csa_2012-03-28_1,25,Nicolas Sarkozy,François Hollande,Marine Le Pen,François Bayrou,False,right pair,4,official list to two weeks before
+2012,2012_wp_csa_2012-04-04_1,18,Nicolas Sarkozy,François Hollande,Jean-Luc Mélenchon,Marine Le Pen,False,right pair,3,official list to two weeks before
+2012,2012_wp_csa_2012-04-13_1,9,François Hollande,Nicolas Sarkozy,Jean-Luc Mélenchon,Marine Le Pen,True,right pair,2,last two weeks
+2012,2012_wp_csa_2012-04-17_1,5,François Hollande,Nicolas Sarkozy,Marine Le Pen,Jean-Luc Mélenchon,True,right pair,1,last two weeks
+2012,2012_wp_harris_2011-03-06_1,413,Marine Le Pen,Nicolas Sarkozy,François Hollande,François Bayrou,False,wrong pair,59,before the official list
+2012,2012_wp_harris_2011-09-05_1,230,François Hollande,Nicolas Sarkozy,Marine Le Pen,Eva Joly,True,right pair,33,before the official list
+2012,2012_wp_harris_2011-12-16_1,128,François Hollande,Nicolas Sarkozy,Marine Le Pen,François Bayrou,True,right pair,19,before the official list
+2012,2012_wp_harris_2012-01-25_1,88,François Hollande,Nicolas Sarkozy,Marine Le Pen,François Bayrou,True,right pair,13,before the official list
+2012,2012_wp_harris_2012-02-15_1,67,François Hollande,Nicolas Sarkozy,Marine Le Pen,François Bayrou,True,right pair,10,before the official list
+2012,2012_wp_harris_2012-03-07_1,46,François Hollande,Nicolas Sarkozy,Marine Le Pen,François Bayrou,True,right pair,7,before the official list
+2012,2012_wp_harris_2012-03-27_1,26,Nicolas Sarkozy,François Hollande,Marine Le Pen,François Bayrou,False,right pair,4,official list to two weeks before
+2012,2012_wp_harris_2012-04-03_1,19,Nicolas Sarkozy,François Hollande,Marine Le Pen,Jean-Luc Mélenchon,False,right pair,3,official list to two weeks before
+2012,2012_wp_harris_2012-04-10_1,12,Nicolas Sarkozy,François Hollande,Marine Le Pen,Jean-Luc Mélenchon,False,right pair,2,last two weeks
+2012,2012_wp_harris_2012-04-17_1,5,Nicolas Sarkozy,François Hollande,Marine Le Pen,Jean-Luc Mélenchon,False,right pair,1,last two weeks
+2012,2012_wp_ifop_2010-03-26_1,758,François Hollande,Nicolas Sarkozy,Marine Le Pen,Eva Joly,True,right pair,109,before the official list
+2012,2012_wp_ifop_2010-04-22_1,731,Nicolas Sarkozy,François Hollande,Marine Le Pen,Eva Joly,False,right pair,105,before the official list
+2012,2012_wp_ifop_2010-06-04_1,688,Nicolas Sarkozy,François Hollande,Marine Le Pen,François Bayrou,False,right pair,99,before the official list
+2012,2012_wp_ifop_2010-07-09_1,653,François Hollande,Nicolas Sarkozy,Marine Le Pen,Eva Joly,True,right pair,94,before the official list
+2012,2012_wp_ifop_2010-10-14_1,709,Nicolas Sarkozy,François Hollande,Marine Le Pen,François Bayrou,False,right pair,102,before the official list
+2012,2012_wp_ifop_2010-11-18_1,521,Nicolas Sarkozy,François Hollande,Marine Le Pen,Eva Joly,False,right pair,75,before the official list
+2012,2012_wp_ifop_2010-11-19_1,520,Nicolas Sarkozy,François Hollande,Marine Le Pen,François Bayrou,False,right pair,75,before the official list
+2012,2012_wp_ifop_2011-01-13_1,465,Nicolas Sarkozy,François Hollande,Marine Le Pen,François Bayrou,False,right pair,67,before the official list
+2012,2012_wp_ifop_2011-02-17_1,430,Nicolas Sarkozy,François Hollande,Marine Le Pen,François Bayrou,False,right pair,62,before the official list
+2012,2012_wp_ifop_2011-03-09_1,410,Nicolas Sarkozy,François Hollande,Marine Le Pen,François Bayrou,False,right pair,59,before the official list
+2012,2012_wp_ifop_2011-04-21_1,367,François Hollande,Nicolas Sarkozy,Marine Le Pen,François Bayrou,True,right pair,53,before the official list
+2012,2012_wp_ifop_2011-06-23_1,304,François Hollande,Nicolas Sarkozy,Marine Le Pen,Jean-Luc Mélenchon,True,right pair,44,before the official list
+2012,2012_wp_ifop_2011-07-21_1,276,François Hollande,Nicolas Sarkozy,Marine Le Pen,Eva Joly,True,right pair,40,before the official list
+2012,2012_wp_ifop_2011-10-20_1,185,François Hollande,Nicolas Sarkozy,Marine Le Pen,François Bayrou,True,right pair,27,before the official list
+2012,2012_wp_ifop_2011-11-04_1,170,François Hollande,Nicolas Sarkozy,Marine Le Pen,François Bayrou,True,right pair,25,before the official list
+2012,2012_wp_ifop_2011-11-16_1,158,François Hollande,Nicolas Sarkozy,Marine Le Pen,Jean-Luc Mélenchon,True,right pair,23,before the official list
+2012,2012_wp_ifop_2011-12-01_1,143,François Hollande,Nicolas Sarkozy,Marine Le Pen,François Bayrou,True,right pair,21,before the official list
+2012,2012_wp_ifop_2011-12-16_1,128,François Hollande,Nicolas Sarkozy,Marine Le Pen,François Bayrou,True,right pair,19,before the official list
+2012,2012_wp_ifop_2012-01-06_1,107,François Hollande,Nicolas Sarkozy,Marine Le Pen,François Bayrou,True,right pair,16,before the official list
+2012,2012_wp_ifop_2012-01-17_1,96,François Hollande,Nicolas Sarkozy,Marine Le Pen,François Bayrou,True,right pair,14,before the official list
+2012,2012_wp_ifop_2012-01-30_1,83,François Hollande,Nicolas Sarkozy,Marine Le Pen,François Bayrou,True,right pair,12,before the official list
+2012,2012_wp_ifop_2012-02-07_1,75,François Hollande,Nicolas Sarkozy,Marine Le Pen,François Bayrou,True,right pair,11,before the official list
+2012,2012_wp_ifop_2012-02-14_1,68,François Hollande,Nicolas Sarkozy,Marine Le Pen,François Bayrou,True,right pair,10,before the official list
+2012,2012_wp_ifop_2012-02-24_1,58,François Hollande,Nicolas Sarkozy,Marine Le Pen,François Bayrou,True,right pair,9,before the official list
+2012,2012_wp_ifop_2012-02-29_1,53,François Hollande,Nicolas Sarkozy,Marine Le Pen,François Bayrou,True,right pair,8,before the official list
+2012,2012_wp_ifop_2012-03-01_1,52,François Hollande,Nicolas Sarkozy,Marine Le Pen,François Bayrou,True,right pair,8,before the official list
+2012,2012_wp_ifop_2012-03-02_1,51,François Hollande,Nicolas Sarkozy,Marine Le Pen,François Bayrou,True,right pair,8,before the official list
+2012,2012_wp_ifop_2012-03-13_1,40,Nicolas Sarkozy,François Hollande,Marine Le Pen,François Bayrou,False,right pair,6,before the official list
+2012,2012_wp_ifop_2012-03-16_1,37,Nicolas Sarkozy,François Hollande,Marine Le Pen,François Bayrou,False,right pair,6,before the official list
+2012,2012_wp_ifop_2012-03-18_1,35,Nicolas Sarkozy,François Hollande,Marine Le Pen,François Bayrou,False,right pair,5,before the official list
+2012,2012_wp_ifop_2012-03-20_1,33,François Hollande,Nicolas Sarkozy,Marine Le Pen,François Bayrou,True,right pair,5,official list to two weeks before
+2012,2012_wp_ifop_2012-03-27_1,26,Nicolas Sarkozy,François Hollande,Marine Le Pen,Jean-Luc Mélenchon,False,right pair,4,official list to two weeks before
+2012,2012_wp_ifop_2012-03-30_1,23,Nicolas Sarkozy,François Hollande,Marine Le Pen,Jean-Luc Mélenchon,False,right pair,4,official list to two weeks before
+2012,2012_wp_ifop_2012-04-10_1,12,Nicolas Sarkozy,François Hollande,Marine Le Pen,Jean-Luc Mélenchon,False,right pair,2,last two weeks
+2012,2012_wp_ifop_2012-04-16_1,6,François Hollande,Nicolas Sarkozy,Marine Le Pen,Jean-Luc Mélenchon,True,right pair,1,last two weeks
+2012,2012_wp_ipsos_2011-03-14_1,405,François Hollande,Nicolas Sarkozy,Marine Le Pen,François Bayrou,True,"right pair, tied",58,before the official list
+2012,2012_wp_ipsos_2011-03-26_1,393,François Hollande,Marine Le Pen,Nicolas Sarkozy,François Bayrou,True,wrong pair,57,before the official list
+2012,2012_wp_ipsos_2011-05-14_1,344,François Hollande,Nicolas Sarkozy,Marine Le Pen,Eva Joly,True,right pair,50,before the official list
+2012,2012_wp_ipsos_2011-05-18_1,340,François Hollande,Nicolas Sarkozy,Marine Le Pen,Eva Joly,True,right pair,49,before the official list
+2012,2012_wp_ipsos_2011-07-09_1,288,François Hollande,Nicolas Sarkozy,Marine Le Pen,Eva Joly,True,right pair,42,before the official list
+2012,2012_wp_ipsos_2011-09-03_1,232,François Hollande,Nicolas Sarkozy,Marine Le Pen,François Bayrou,True,right pair,34,before the official list
+2012,2012_wp_ipsos_2011-10-29_1,176,François Hollande,Nicolas Sarkozy,Marine Le Pen,Eva Joly,True,right pair,26,before the official list
+2012,2012_wp_ipsos_2011-11-02_1,172,François Hollande,Nicolas Sarkozy,Marine Le Pen,Eva Joly,True,right pair,25,before the official list
+2012,2012_wp_ipsos_2011-12-03_1,141,François Hollande,Nicolas Sarkozy,Marine Le Pen,Jean-Luc Mélenchon,True,right pair,21,before the official list
+2012,2012_wp_ipsos_2012-01-17_1,96,François Hollande,Nicolas Sarkozy,Marine Le Pen,François Bayrou,True,right pair,14,before the official list
+2012,2012_wp_ipsos_2012-02-06_1,76,François Hollande,Nicolas Sarkozy,Marine Le Pen,François Bayrou,True,right pair,11,before the official list
+2012,2012_wp_ipsos_2012-02-21_1,61,François Hollande,Nicolas Sarkozy,Marine Le Pen,François Bayrou,True,right pair,9,before the official list
+2012,2012_wp_ipsos_2012-02-28_1,54,François Hollande,Nicolas Sarkozy,Marine Le Pen,François Bayrou,True,right pair,8,before the official list
+2012,2012_wp_ipsos_2012-03-06_1,47,François Hollande,Nicolas Sarkozy,Marine Le Pen,François Bayrou,True,right pair,7,before the official list
+2012,2012_wp_ipsos_2012-03-20_1,33,François Hollande,Nicolas Sarkozy,Marine Le Pen,François Bayrou,True,right pair,5,official list to two weeks before
+2012,2012_wp_ipsos_2012-03-27_1,26,François Hollande,Nicolas Sarkozy,Marine Le Pen,François Bayrou,True,right pair,4,official list to two weeks before
+2012,2012_wp_ipsos_2012-04-03_1,19,Nicolas Sarkozy,François Hollande,Jean-Luc Mélenchon,Marine Le Pen,False,right pair,3,official list to two weeks before
+2012,2012_wp_ipsos_2012-04-10_1,12,Nicolas Sarkozy,François Hollande,Marine Le Pen,Jean-Luc Mélenchon,False,right pair,2,last two weeks
+2012,2012_wp_ipsos_2012-04-17_1,5,Nicolas Sarkozy,François Hollande,Marine Le Pen,Jean-Luc Mélenchon,True,right pair,1,last two weeks
+2012,2012_wp_lh2_2011-11-20_1,154,François Hollande,Nicolas Sarkozy,Marine Le Pen,Jean-Luc Mélenchon,True,right pair,22,before the official list
+2012,2012_wp_lh2_2011-12-06_1,138,François Hollande,Nicolas Sarkozy,Marine Le Pen,Jean-Luc Mélenchon,True,right pair,20,before the official list
+2012,2012_wp_lh2_2011-12-11_1,133,François Hollande,Nicolas Sarkozy,Marine Le Pen,François Bayrou,True,right pair,19,before the official list
+2012,2012_wp_lh2_2012-01-15_1,98,François Hollande,Nicolas Sarkozy,Marine Le Pen,François Bayrou,True,right pair,14,before the official list
+2012,2012_wp_lh2_2012-02-20_1,62,François Hollande,Nicolas Sarkozy,Marine Le Pen,François Bayrou,True,right pair,9,before the official list
+2012,2012_wp_lh2_2012-03-04_1,49,François Hollande,Nicolas Sarkozy,Marine Le Pen,François Bayrou,True,right pair,7,before the official list
+2012,2012_wp_lh2_2012-03-18_1,35,François Hollande,Nicolas Sarkozy,Marine Le Pen,François Bayrou,True,right pair,5,before the official list
+2012,2012_wp_lh2_2012-04-01_1,21,François Hollande,Nicolas Sarkozy,Jean-Luc Mélenchon,Marine Le Pen,True,right pair,3,official list to two weeks before
+2012,2012_wp_lh2_2012-04-12_1,10,François Hollande,Nicolas Sarkozy,Marine Le Pen,Jean-Luc Mélenchon,True,right pair,2,last two weeks
+2012,2012_wp_opinionway_2011-04-07_1,381,François Hollande,Marine Le Pen,Nicolas Sarkozy,François Bayrou,True,wrong pair,55,before the official list
+2012,2012_wp_opinionway_2011-11-25_1,149,François Hollande,Nicolas Sarkozy,Marine Le Pen,Jean-Luc Mélenchon,True,right pair,22,before the official list
+2012,2012_wp_opinionway_2011-12-16_1,128,François Hollande,Nicolas Sarkozy,Marine Le Pen,François Bayrou,True,right pair,19,before the official list
+2012,2012_wp_opinionway_2011-12-21_1,123,François Hollande,Nicolas Sarkozy,Marine Le Pen,François Bayrou,True,right pair,18,before the official list
+2012,2012_wp_opinionway_2012-01-13_1,100,François Hollande,Nicolas Sarkozy,Marine Le Pen,François Bayrou,True,right pair,15,before the official list
+2012,2012_wp_opinionway_2012-02-08_1,74,François Hollande,Nicolas Sarkozy,Marine Le Pen,François Bayrou,True,right pair,11,before the official list
+2012,2012_wp_opinionway_2012-02-20_1,62,François Hollande,Nicolas Sarkozy,Marine Le Pen,François Bayrou,True,right pair,9,before the official list
+2012,2012_wp_opinionway_2012-03-08_1,45,François Hollande,Nicolas Sarkozy,Marine Le Pen,François Bayrou,True,right pair,7,before the official list
+2012,2012_wp_opinionway_2012-03-16_1,37,François Hollande,Nicolas Sarkozy,Marine Le Pen,François Bayrou,True,right pair,6,before the official list
+2012,2012_wp_opinionway_2012-03-27_1,26,Nicolas Sarkozy,François Hollande,Marine Le Pen,François Bayrou,False,right pair,4,official list to two weeks before
+2012,2012_wp_opinionway_2012-04-05_1,17,Nicolas Sarkozy,François Hollande,Marine Le Pen,Jean-Luc Mélenchon,False,right pair,3,official list to two weeks before
+2012,2012_wp_opinionway_2012-04-12_1,10,François Hollande,Nicolas Sarkozy,Marine Le Pen,Jean-Luc Mélenchon,True,right pair,2,last two weeks
+2012,2012_wp_sofres_2011-11-30_1,144,François Hollande,Nicolas Sarkozy,Marine Le Pen,Jean-Luc Mélenchon,True,right pair,21,before the official list
+2012,2012_wp_sofres_2012-02-01_1,81,François Hollande,Nicolas Sarkozy,Marine Le Pen,François Bayrou,True,right pair,12,before the official list
+2012,2012_wp_sofres_2012-02-28_1,54,François Hollande,Nicolas Sarkozy,Marine Le Pen,François Bayrou,True,right pair,8,before the official list
+2012,2012_wp_sofres_2012-03-13_1,40,François Hollande,Nicolas Sarkozy,Marine Le Pen,François Bayrou,True,right pair,6,before the official list
+2012,2012_wp_sofres_2012-03-28_1,25,Nicolas Sarkozy,François Hollande,Marine Le Pen,Jean-Luc Mélenchon,False,right pair,4,official list to two weeks before
+2012,2012_wp_sofres_2012-04-13_1,9,François Hollande,Nicolas Sarkozy,Marine Le Pen,Jean-Luc Mélenchon,True,right pair,2,last two weeks
+2017,2017_wp_bva_2016-09-11_1,224,Marine Le Pen,François Fillon,Emmanuel Macron,Jean-Luc Mélenchon,False,wrong pair,32,before the official list
+2017,2017_wp_bva_2016-10-19_1,189,François Fillon,Marine Le Pen,Jean-Luc Mélenchon,Emmanuel Macron,False,wrong pair,27,before the official list
+2017,2017_wp_bva_2016-12-04_1,140,François Fillon,Marine Le Pen,Jean-Luc Mélenchon,Emmanuel Macron,False,wrong pair,20,before the official list
+2017,2017_wp_bva_2017-01-08_1,105,Marine Le Pen,François Fillon,Emmanuel Macron,Jean-Luc Mélenchon,False,wrong pair,15,before the official list
+2017,2017_wp_bva_2017-02-02_1,80,Marine Le Pen,Emmanuel Macron,François Fillon,Benoît Hamon,False,right pair,12,before the official list
+2017,2017_wp_bva_2017-02-20_1,62,Marine Le Pen,Emmanuel Macron,François Fillon,Benoît Hamon,False,right pair,9,before the official list
+2017,2017_wp_bva_2017-03-02_1,52,Marine Le Pen,Emmanuel Macron,François Fillon,Benoît Hamon,False,right pair,8,before the official list
+2017,2017_wp_bva_2017-03-10_1,44,Emmanuel Macron,Marine Le Pen,François Fillon,Benoît Hamon,True,right pair,7,before the official list
+2017,2017_wp_bva_2017-03-17_1,37,Marine Le Pen,Emmanuel Macron,François Fillon,Benoît Hamon,False,right pair,6,before the official list
+2017,2017_wp_bva_2017-03-24_1,30,Emmanuel Macron,Marine Le Pen,François Fillon,Jean-Luc Mélenchon,True,right pair,5,official list to two weeks before
+2017,2017_wp_bva_2017-03-30_1,24,Emmanuel Macron,Marine Le Pen,François Fillon,Jean-Luc Mélenchon,True,right pair,4,official list to two weeks before
+2017,2017_wp_bva_2017-04-07_1,16,Emmanuel Macron,Marine Le Pen,François Fillon,Jean-Luc Mélenchon,True,right pair,3,official list to two weeks before
+2017,2017_wp_bva_2017-04-14_1,9,Emmanuel Macron,Marine Le Pen,François Fillon,Jean-Luc Mélenchon,True,right pair,2,last two weeks
+2017,2017_wp_bva_2017-04-19_1,4,Emmanuel Macron,Marine Le Pen,François Fillon,Jean-Luc Mélenchon,True,right pair,1,last two weeks
+2017,2017_wp_bva_2017-04-21_1,2,Emmanuel Macron,Marine Le Pen,Jean-Luc Mélenchon,François Fillon,True,right pair,1,last two weeks
+2017,2017_wp_cevipof-ipsos-sopra-steria_2016-09-18_1,217,François Fillon,Marine Le Pen,Emmanuel Macron,Jean-Luc Mélenchon,False,wrong pair,31,before the official list
+2017,2017_wp_cevipof-ipsos-sopra-steria_2016-11-13_1,161,Marine Le Pen,François Fillon,Jean-Luc Mélenchon,Emmanuel Macron,False,wrong pair,23,before the official list
+2017,2017_wp_cevipof-ipsos-sopra-steria_2016-12-07_1,137,François Fillon,Marine Le Pen,Emmanuel Macron,Jean-Luc Mélenchon,False,wrong pair,20,before the official list
+2017,2017_wp_cevipof-ipsos-sopra-steria_2017-01-15_1,98,Marine Le Pen,François Fillon,Emmanuel Macron,Jean-Luc Mélenchon,False,wrong pair,14,before the official list
+2017,2017_wp_cevipof-ipsos-sopra-steria_2017-02-12_1,70,Marine Le Pen,Emmanuel Macron,François Fillon,Benoît Hamon,False,right pair,10,before the official list
+2017,2017_wp_cevipof-ipsos-sopra-steria_2017-03-05_1,49,Marine Le Pen,Emmanuel Macron,François Fillon,Benoît Hamon,False,right pair,7,before the official list
+2017,2017_wp_cevipof-ipsos-sopra-steria_2017-03-15_1,39,Marine Le Pen,Emmanuel Macron,François Fillon,Benoît Hamon,False,right pair,6,before the official list
+2017,2017_wp_cevipof-ipsos-sopra-steria_2017-04-02_1,21,Emmanuel Macron,Marine Le Pen,François Fillon,Jean-Luc Mélenchon,True,right pair,3,official list to two weeks before
+2017,2017_wp_cevipof-ipsos-sopra-steria_2017-04-17_1,6,Emmanuel Macron,Marine Le Pen,François Fillon,Jean-Luc Mélenchon,True,right pair,1,last two weeks
+2017,2017_wp_dedicated-research_2017-02-14_1,68,Emmanuel Macron,Marine Le Pen,François Fillon,Benoît Hamon,True,right pair,10,before the official list
+2017,2017_wp_elabe_2016-09-21_1,214,Marine Le Pen,François Fillon,Emmanuel Macron,Jean-Luc Mélenchon,False,wrong pair,31,before the official list
+2017,2017_wp_elabe_2016-11-29_1,145,François Fillon,Marine Le Pen,Emmanuel Macron,Jean-Luc Mélenchon,False,wrong pair,21,before the official list
+2017,2017_wp_elabe_2017-01-04_1,109,François Fillon,Marine Le Pen,Emmanuel Macron,Jean-Luc Mélenchon,False,wrong pair,16,before the official list
+2017,2017_wp_elabe_2017-01-31_1,82,Marine Le Pen,Emmanuel Macron,François Fillon,Benoît Hamon,False,right pair,12,before the official list
+2017,2017_wp_elabe_2017-02-08_1,74,Marine Le Pen,Emmanuel Macron,François Fillon,Benoît Hamon,False,right pair,11,before the official list
+2017,2017_wp_elabe_2017-02-20_1,62,Marine Le Pen,François Fillon,Emmanuel Macron,Benoît Hamon,False,wrong pair,9,before the official list
+2017,2017_wp_elabe_2017-03-02_1,52,Marine Le Pen,Emmanuel Macron,François Fillon,Benoît Hamon,False,right pair,8,before the official list
+2017,2017_wp_elabe_2017-03-06_1,48,Marine Le Pen,Emmanuel Macron,François Fillon,Benoît Hamon,False,right pair,7,before the official list
+2017,2017_wp_elabe_2017-03-19_1,35,Emmanuel Macron,Marine Le Pen,François Fillon,Benoît Hamon,True,right pair,5,official list to two weeks before
+2017,2017_wp_elabe_2017-03-21_1,33,Emmanuel Macron,Marine Le Pen,François Fillon,Jean-Luc Mélenchon,True,right pair,5,official list to two weeks before
+2017,2017_wp_elabe_2017-03-29_1,25,Emmanuel Macron,Marine Le Pen,François Fillon,Jean-Luc Mélenchon,True,right pair,4,official list to two weeks before
+2017,2017_wp_elabe_2017-04-05_1,18,Emmanuel Macron,Marine Le Pen,François Fillon,Jean-Luc Mélenchon,True,right pair,3,official list to two weeks before
+2017,2017_wp_elabe_2017-04-10_1,13,Emmanuel Macron,Marine Le Pen,François Fillon,Jean-Luc Mélenchon,True,right pair,2,last two weeks
+2017,2017_wp_elabe_2017-04-12_1,11,Emmanuel Macron,Marine Le Pen,François Fillon,Jean-Luc Mélenchon,True,right pair,2,last two weeks
+2017,2017_wp_elabe_2017-04-17_1,6,Emmanuel Macron,Marine Le Pen,François Fillon,Jean-Luc Mélenchon,True,right pair,1,last two weeks
+2017,2017_wp_elabe_2017-04-20_1,3,Emmanuel Macron,Marine Le Pen,François Fillon,Jean-Luc Mélenchon,True,right pair,1,last two weeks
+2017,2017_wp_harris-interactive_2017-02-08_1,74,Marine Le Pen,Emmanuel Macron,François Fillon,Benoît Hamon,False,right pair,11,before the official list
+2017,2017_wp_harris-interactive_2017-02-22_1,60,Marine Le Pen,François Fillon,Emmanuel Macron,Benoît Hamon,False,wrong pair,9,before the official list
+2017,2017_wp_harris-interactive_2017-03-08_1,46,Emmanuel Macron,Marine Le Pen,François Fillon,Benoît Hamon,True,right pair,7,before the official list
+2017,2017_wp_harris-interactive_2017-03-22_1,32,Emmanuel Macron,Marine Le Pen,François Fillon,Jean-Luc Mélenchon,True,right pair,5,official list to two weeks before
+2017,2017_wp_harris-interactive_2017-04-05_1,18,Emmanuel Macron,Marine Le Pen,François Fillon,Jean-Luc Mélenchon,True,right pair,3,official list to two weeks before
+2017,2017_wp_harris-interactive_2017-04-06_1,17,Emmanuel Macron,Marine Le Pen,François Fillon,Jean-Luc Mélenchon,True,right pair,3,official list to two weeks before
+2017,2017_wp_harris-interactive_2017-04-13_1,10,Emmanuel Macron,Marine Le Pen,François Fillon,Jean-Luc Mélenchon,True,right pair,2,last two weeks
+2017,2017_wp_harris-interactive_2017-04-19_1,4,Emmanuel Macron,Marine Le Pen,François Fillon,Jean-Luc Mélenchon,True,right pair,1,last two weeks
+2017,2017_wp_harris_2016-11-27_1,147,François Fillon,Marine Le Pen,Emmanuel Macron,Jean-Luc Mélenchon,False,wrong pair,21,before the official list
+2017,2017_wp_ifop-fiducial_2016-11-17_1,157,Marine Le Pen,François Fillon,Emmanuel Macron,Jean-Luc Mélenchon,False,wrong pair,23,before the official list
+2017,2017_wp_ifop-fiducial_2016-11-30_1,144,François Fillon,Marine Le Pen,Emmanuel Macron,Jean-Luc Mélenchon,False,wrong pair,21,before the official list
+2017,2017_wp_ifop-fiducial_2016-12-03_1,141,François Fillon,Marine Le Pen,Emmanuel Macron,Jean-Luc Mélenchon,False,wrong pair,21,before the official list
+2017,2017_wp_ifop-fiducial_2017-01-06_1,107,Marine Le Pen,François Fillon,Emmanuel Macron,Jean-Luc Mélenchon,False,wrong pair,16,before the official list
+2017,2017_wp_ifop-fiducial_2017-02-01_1,81,Marine Le Pen,François Fillon,Emmanuel Macron,Benoît Hamon,False,wrong pair,12,before the official list
+2017,2017_wp_ifop-fiducial_2017-02-06_1,76,Marine Le Pen,Emmanuel Macron,François Fillon,Benoît Hamon,False,right pair,11,before the official list
+2017,2017_wp_ifop-fiducial_2017-02-09_1,73,Marine Le Pen,Emmanuel Macron,François Fillon,Benoît Hamon,False,right pair,11,before the official list
+2017,2017_wp_ifop-fiducial_2017-02-14_1,68,Marine Le Pen,Emmanuel Macron,François Fillon,Benoît Hamon,False,right pair,10,before the official list
+2017,2017_wp_ifop-fiducial_2017-02-17_1,65,Marine Le Pen,François Fillon,Emmanuel Macron,Benoît Hamon,False,"right pair, tied",10,before the official list
+2017,2017_wp_ifop-fiducial_2017-02-20_1,62,Marine Le Pen,Emmanuel Macron,François Fillon,Benoît Hamon,False,right pair,9,before the official list
+2017,2017_wp_ifop-fiducial_2017-02-22_1,60,Marine Le Pen,François Fillon,Emmanuel Macron,Benoît Hamon,False,"right pair, tied",9,before the official list
+2017,2017_wp_ifop-fiducial_2017-02-27_1,55,Marine Le Pen,Emmanuel Macron,François Fillon,Benoît Hamon,False,right pair,8,before the official list
+2017,2017_wp_ifop-fiducial_2017-03-04_1,50,Marine Le Pen,Emmanuel Macron,François Fillon,Benoît Hamon,False,right pair,8,before the official list
+2017,2017_wp_ifop-fiducial_2017-03-10_1,44,Marine Le Pen,Emmanuel Macron,François Fillon,Benoît Hamon,False,right pair,7,before the official list
+2017,2017_wp_ifop-fiducial_2017-03-15_1,39,Marine Le Pen,Emmanuel Macron,François Fillon,Benoît Hamon,False,right pair,6,before the official list
+2017,2017_wp_ifop-fiducial_2017-03-24_1,30,Emmanuel Macron,Marine Le Pen,François Fillon,Jean-Luc Mélenchon,True,right pair,5,official list to two weeks before
+2017,2017_wp_ifop-fiducial_2017-03-29_1,25,Emmanuel Macron,Marine Le Pen,François Fillon,Jean-Luc Mélenchon,True,right pair,4,official list to two weeks before
+2017,2017_wp_ifop-fiducial_2017-04-03_1,20,Emmanuel Macron,Marine Le Pen,François Fillon,Jean-Luc Mélenchon,True,right pair,3,official list to two weeks before
+2017,2017_wp_ifop-fiducial_2017-04-06_1,17,Marine Le Pen,Emmanuel Macron,François Fillon,Jean-Luc Mélenchon,False,right pair,3,official list to two weeks before
+2017,2017_wp_ifop-fiducial_2017-04-11_1,12,Marine Le Pen,Emmanuel Macron,François Fillon,Jean-Luc Mélenchon,False,right pair,2,last two weeks
+2017,2017_wp_ifop-fiducial_2017-04-15_1,8,Emmanuel Macron,Marine Le Pen,Jean-Luc Mélenchon,François Fillon,True,right pair,2,last two weeks
+2017,2017_wp_ifop-fiducial_2017-04-21_1,2,Emmanuel Macron,Marine Le Pen,François Fillon,Jean-Luc Mélenchon,True,right pair,1,last two weeks
+2017,2017_wp_ifop_2016-04-14_1,374,François Fillon,Marine Le Pen,Emmanuel Macron,Jean-Luc Mélenchon,False,wrong pair,54,before the official list
+2017,2017_wp_ifop_2016-06-17_1,310,François Fillon,Marine Le Pen,Jean-Luc Mélenchon,Emmanuel Macron,False,wrong pair,45,before the official list
+2017,2017_wp_ifop_2016-09-07_1,228,François Fillon,Marine Le Pen,Emmanuel Macron,Benoît Hamon,False,wrong pair,33,before the official list
+2017,2017_wp_ipsos-sopra-steria_2017-04-20_1,3,Emmanuel Macron,Marine Le Pen,François Fillon,Jean-Luc Mélenchon,True,right pair,1,last two weeks
+2017,2017_wp_ipsos_2017-01-20_1,93,Marine Le Pen,François Fillon,Emmanuel Macron,Jean-Luc Mélenchon,False,wrong pair,14,before the official list
+2017,2017_wp_ipsos_2017-03-27_1,27,Marine Le Pen,Emmanuel Macron,François Fillon,Jean-Luc Mélenchon,False,right pair,4,official list to two weeks before
+2017,2017_wp_ipsos_2017-04-09_1,14,Emmanuel Macron,Marine Le Pen,Jean-Luc Mélenchon,François Fillon,True,right pair,2,last two weeks
+2017,2017_wp_ipsos_2017-04-13_1,10,Emmanuel Macron,Marine Le Pen,Jean-Luc Mélenchon,François Fillon,True,right pair,2,last two weeks
+2017,2017_wp_kantar-sofres-onepoint_2016-10-23_1,182,François Fillon,Marine Le Pen,Emmanuel Macron,Jean-Luc Mélenchon,False,wrong pair,26,before the official list
+2017,2017_wp_kantar-sofres-onepoint_2016-11-28_1,146,François Fillon,Marine Le Pen,Emmanuel Macron,Jean-Luc Mélenchon,False,wrong pair,21,before the official list
+2017,2017_wp_kantar-sofres-onepoint_2017-01-27_1,86,Marine Le Pen,François Fillon,Emmanuel Macron,Benoît Hamon,False,wrong pair,13,before the official list
+2017,2017_wp_kantar-sofres-onepoint_2017-03-04_1,50,Marine Le Pen,Emmanuel Macron,François Fillon,Benoît Hamon,False,right pair,8,before the official list
+2017,2017_wp_kantar-sofres-onepoint_2017-03-17_1,37,Emmanuel Macron,Marine Le Pen,François Fillon,Jean-Luc Mélenchon,True,right pair,6,before the official list
+2017,2017_wp_kantar-sofres-onepoint_2017-04-07_1,16,Emmanuel Macron,Marine Le Pen,Jean-Luc Mélenchon,François Fillon,True,right pair,3,official list to two weeks before
+2017,2017_wp_kantar-sofres-onepoint_2017-04-17_1,6,Emmanuel Macron,Marine Le Pen,François Fillon,Jean-Luc Mélenchon,True,right pair,1,last two weeks
+2017,2017_wp_kantar-sofres_2017-02-24_1,58,Marine Le Pen,Emmanuel Macron,François Fillon,Benoît Hamon,False,right pair,9,before the official list
+2017,2017_wp_odoxa_2016-11-25_1,149,François Fillon,Marine Le Pen,Emmanuel Macron,Jean-Luc Mélenchon,False,wrong pair,22,before the official list
+2017,2017_wp_odoxa_2017-02-23_1,59,Marine Le Pen,Emmanuel Macron,François Fillon,Benoît Hamon,False,right pair,9,before the official list
+2017,2017_wp_odoxa_2017-03-02_1,52,Emmanuel Macron,Marine Le Pen,François Fillon,Benoît Hamon,True,right pair,8,before the official list
+2017,2017_wp_odoxa_2017-03-16_1,38,Emmanuel Macron,Marine Le Pen,François Fillon,Benoît Hamon,True,right pair,6,before the official list
+2017,2017_wp_odoxa_2017-03-30_1,24,Emmanuel Macron,Marine Le Pen,François Fillon,Jean-Luc Mélenchon,True,right pair,4,official list to two weeks before
+2017,2017_wp_odoxa_2017-04-05_1,18,Emmanuel Macron,Marine Le Pen,François Fillon,Jean-Luc Mélenchon,True,right pair,3,official list to two weeks before
+2017,2017_wp_odoxa_2017-04-13_1,10,Emmanuel Macron,Marine Le Pen,Jean-Luc Mélenchon,François Fillon,True,right pair,2,last two weeks
+2017,2017_wp_odoxa_2017-04-21_1,2,Emmanuel Macron,Marine Le Pen,François Fillon,Jean-Luc Mélenchon,True,right pair,1,last two weeks
+2017,2017_wp_opinionway_2017-02-09_1,73,Marine Le Pen,Emmanuel Macron,François Fillon,Benoît Hamon,False,right pair,11,before the official list
+2017,2017_wp_opinionway_2017-02-17_1,65,Marine Le Pen,Emmanuel Macron,François Fillon,Benoît Hamon,False,"right pair, tied",10,before the official list
+2017,2017_wp_opinionway_2017-02-24_1,58,Marine Le Pen,Emmanuel Macron,François Fillon,Benoît Hamon,False,right pair,9,before the official list
+2017,2017_wp_opinionway_2017-03-09_1,45,Emmanuel Macron,Marine Le Pen,François Fillon,Benoît Hamon,True,right pair,7,before the official list
+2017,2017_wp_opinionway_2017-03-16_1,38,Marine Le Pen,Emmanuel Macron,François Fillon,Benoît Hamon,False,right pair,6,before the official list
+2017,2017_wp_opinionway_2017-03-23_1,31,Marine Le Pen,Emmanuel Macron,François Fillon,Jean-Luc Mélenchon,False,right pair,5,official list to two weeks before
+2017,2017_wp_opinionway_2017-03-30_1,24,Emmanuel Macron,Marine Le Pen,François Fillon,Jean-Luc Mélenchon,True,right pair,4,official list to two weeks before
+2017,2017_wp_opinionway_2017-04-06_1,17,Marine Le Pen,Emmanuel Macron,François Fillon,Jean-Luc Mélenchon,False,right pair,3,official list to two weeks before
+2017,2017_wp_opinionway_2017-04-13_1,10,Marine Le Pen,Emmanuel Macron,François Fillon,Jean-Luc Mélenchon,False,right pair,2,last two weeks
+2017,2017_wp_opinionway_2017-04-21_1,2,Emmanuel Macron,Marine Le Pen,François Fillon,Jean-Luc Mélenchon,True,right pair,1,last two weeks
+2017,2017_wp_scan-research-le-terrain_2017-03-27_1,27,Emmanuel Macron,Marine Le Pen,Jean-Luc Mélenchon,François Fillon,True,right pair,4,official list to two weeks before
+2017,2017_wp_scan-research-le-terrain_2017-04-15_1,8,Emmanuel Macron,Jean-Luc Mélenchon,Marine Le Pen,François Fillon,True,wrong pair,2,last two weeks
+2017,2017_wp_tns-sofres_2016-09-05_1,230,Marine Le Pen,François Fillon,Emmanuel Macron,Benoît Hamon,False,wrong pair,33,before the official list
+2022,2022_wp_atlas-politico_2022-04-06_1,4,Emmanuel Macron,Marine Le Pen,Jean-Luc Mélenchon,Éric Zemmour,True,right pair,1,last two weeks
+2022,2022_wp_bva_2021-10-11_1,181,Emmanuel Macron,Marine Le Pen,Éric Zemmour,Valérie Pécresse,True,right pair,26,before the official list
+2022,2022_wp_bva_2021-11-15_1,146,Emmanuel Macron,Marine Le Pen,Éric Zemmour,Valérie Pécresse,True,right pair,21,before the official list
+2022,2022_wp_bva_2021-12-08_1,123,Emmanuel Macron,Valérie Pécresse,Marine Le Pen,Éric Zemmour,True,wrong pair,18,before the official list
+2022,2022_wp_bva_2022-01-06_1,94,Emmanuel Macron,Marine Le Pen,Valérie Pécresse,Éric Zemmour,True,right pair,14,before the official list
+2022,2022_wp_bva_2022-01-26_1,74,Emmanuel Macron,Marine Le Pen,Valérie Pécresse,Éric Zemmour,True,right pair,11,before the official list
+2022,2022_wp_bva_2022-02-09_1,60,Emmanuel Macron,Marine Le Pen,Valérie Pécresse,Éric Zemmour,True,right pair,9,before the official list
+2022,2022_wp_bva_2022-02-16_1,53,Emmanuel Macron,Marine Le Pen,Éric Zemmour,Valérie Pécresse,True,right pair,8,before the official list
+2022,2022_wp_bva_2022-03-02_1,39,Emmanuel Macron,Marine Le Pen,Valérie Pécresse,Éric Zemmour,True,right pair,6,before the official list
+2022,2022_wp_bva_2022-03-09_1,32,Emmanuel Macron,Marine Le Pen,Éric Zemmour,Jean-Luc Mélenchon,True,right pair,5,official list to two weeks before
+2022,2022_wp_bva_2022-03-16_1,25,Emmanuel Macron,Marine Le Pen,Jean-Luc Mélenchon,Éric Zemmour,True,right pair,4,official list to two weeks before
+2022,2022_wp_bva_2022-03-23_1,18,Emmanuel Macron,Marine Le Pen,Jean-Luc Mélenchon,Éric Zemmour,True,right pair,3,official list to two weeks before
+2022,2022_wp_bva_2022-03-31_1,10,Emmanuel Macron,Marine Le Pen,Jean-Luc Mélenchon,Éric Zemmour,True,right pair,2,last two weeks
+2022,2022_wp_bva_2022-04-07_1,3,Emmanuel Macron,Marine Le Pen,Jean-Luc Mélenchon,Éric Zemmour,True,right pair,1,last two weeks
+2022,2022_wp_cluster-17_2022-03-31_1,10,Emmanuel Macron,Marine Le Pen,Jean-Luc Mélenchon,Éric Zemmour,True,right pair,2,last two weeks
+2022,2022_wp_cluster-17_2022-04-04_1,6,Emmanuel Macron,Marine Le Pen,Jean-Luc Mélenchon,Éric Zemmour,True,right pair,1,last two weeks
+2022,2022_wp_cluster-17_2022-04-08_1,2,Emmanuel Macron,Marine Le Pen,Jean-Luc Mélenchon,Éric Zemmour,True,right pair,1,last two weeks
+2022,2022_wp_cluster17_2021-12-08_1,123,Emmanuel Macron,Marine Le Pen,Valérie Pécresse,Éric Zemmour,True,"right pair, tied",18,before the official list
+2022,2022_wp_cluster17_2021-12-15_1,116,Emmanuel Macron,Valérie Pécresse,Marine Le Pen,Éric Zemmour,True,wrong pair,17,before the official list
+2022,2022_wp_cluster17_2021-12-22_1,109,Emmanuel Macron,Valérie Pécresse,Éric Zemmour,Marine Le Pen,True,wrong pair,16,before the official list
+2022,2022_wp_cluster17_2021-12-31_1,100,Emmanuel Macron,Éric Zemmour,Valérie Pécresse,Marine Le Pen,True,wrong pair,15,before the official list
+2022,2022_wp_cluster17_2022-01-08_1,92,Emmanuel Macron,Marine Le Pen,Valérie Pécresse,Éric Zemmour,True,right pair,14,before the official list
+2022,2022_wp_cluster17_2022-01-15_1,85,Emmanuel Macron,Marine Le Pen,Éric Zemmour,Valérie Pécresse,True,right pair,13,before the official list
+2022,2022_wp_cluster17_2022-01-22_1,78,Emmanuel Macron,Marine Le Pen,Valérie Pécresse,Éric Zemmour,True,right pair,12,before the official list
+2022,2022_wp_cluster17_2022-01-29_1,71,Emmanuel Macron,Marine Le Pen,Éric Zemmour,Valérie Pécresse,True,"right pair, tied",11,before the official list
+2022,2022_wp_cluster17_2022-02-05_1,64,Emmanuel Macron,Marine Le Pen,Éric Zemmour,Valérie Pécresse,True,"right pair, tied",10,before the official list
+2022,2022_wp_cluster17_2022-02-11_1,58,Emmanuel Macron,Marine Le Pen,Valérie Pécresse,Éric Zemmour,True,right pair,9,before the official list
+2022,2022_wp_cluster17_2022-02-23_1,46,Emmanuel Macron,Marine Le Pen,Éric Zemmour,Jean-Luc Mélenchon,True,"right pair, tied",7,before the official list
+2022,2022_wp_cluster17_2022-03-01_1,40,Emmanuel Macron,Marine Le Pen,Éric Zemmour,Jean-Luc Mélenchon,True,"right pair, tied",6,before the official list
+2022,2022_wp_cluster17_2022-03-06_1,35,Emmanuel Macron,Marine Le Pen,Éric Zemmour,Jean-Luc Mélenchon,True,"right pair, tied",5,before the official list
+2022,2022_wp_cluster17_2022-03-20_1,21,Emmanuel Macron,Marine Le Pen,Jean-Luc Mélenchon,Éric Zemmour,True,right pair,3,official list to two weeks before
+2022,2022_wp_elabe_2021-09-13_1,209,Emmanuel Macron,Marine Le Pen,Valérie Pécresse,Éric Zemmour,True,right pair,30,before the official list
+2022,2022_wp_elabe_2021-10-06_1,186,Emmanuel Macron,Marine Le Pen,Éric Zemmour,Yannick Jadot,True,right pair,27,before the official list
+2022,2022_wp_elabe_2021-10-27_1,165,Emmanuel Macron,Marine Le Pen,Éric Zemmour,Valérie Pécresse,True,right pair,24,before the official list
+2022,2022_wp_elabe_2021-11-11_1,150,Emmanuel Macron,Marine Le Pen,Éric Zemmour,Valérie Pécresse,True,right pair,22,before the official list
+2022,2022_wp_elabe_2021-11-24_1,137,Emmanuel Macron,Marine Le Pen,Éric Zemmour,Valérie Pécresse,True,right pair,20,before the official list
+2022,2022_wp_elabe_2021-12-07_1,124,Emmanuel Macron,Valérie Pécresse,Marine Le Pen,Éric Zemmour,True,wrong pair,18,before the official list
+2022,2022_wp_elabe_2021-12-20_1,111,Emmanuel Macron,Valérie Pécresse,Marine Le Pen,Éric Zemmour,True,wrong pair,16,before the official list
+2022,2022_wp_elabe_2022-01-11_1,89,Emmanuel Macron,Marine Le Pen,Valérie Pécresse,Éric Zemmour,True,"right pair, tied",13,before the official list
+2022,2022_wp_elabe_2022-01-26_1,74,Emmanuel Macron,Marine Le Pen,Valérie Pécresse,Éric Zemmour,True,"right pair, tied",11,before the official list
+2022,2022_wp_elabe_2022-02-02_1,67,Emmanuel Macron,Marine Le Pen,Valérie Pécresse,Éric Zemmour,True,right pair,10,before the official list
+2022,2022_wp_elabe_2022-02-08_1,61,Emmanuel Macron,Marine Le Pen,Valérie Pécresse,Éric Zemmour,True,right pair,9,before the official list
+2022,2022_wp_elabe_2022-02-16_1,53,Emmanuel Macron,Marine Le Pen,Valérie Pécresse,Éric Zemmour,True,right pair,8,before the official list
+2022,2022_wp_elabe_2022-02-22_1,47,Emmanuel Macron,Marine Le Pen,Éric Zemmour,Valérie Pécresse,True,right pair,7,before the official list
+2022,2022_wp_elabe_2022-02-28_1,41,Emmanuel Macron,Marine Le Pen,Éric Zemmour,Jean-Luc Mélenchon,True,right pair,6,before the official list
+2022,2022_wp_elabe_2022-03-08_1,33,Emmanuel Macron,Marine Le Pen,Jean-Luc Mélenchon,Éric Zemmour,True,right pair,5,official list to two weeks before
+2022,2022_wp_elabe_2022-03-16_1,25,Emmanuel Macron,Marine Le Pen,Jean-Luc Mélenchon,Valérie Pécresse,True,right pair,4,official list to two weeks before
+2022,2022_wp_elabe_2022-03-21_1,20,Emmanuel Macron,Marine Le Pen,Jean-Luc Mélenchon,Éric Zemmour,True,right pair,3,official list to two weeks before
+2022,2022_wp_elabe_2022-03-30_1,11,Emmanuel Macron,Marine Le Pen,Jean-Luc Mélenchon,Éric Zemmour,True,right pair,2,last two weeks
+2022,2022_wp_elabe_2022-04-01_1,9,Emmanuel Macron,Marine Le Pen,Jean-Luc Mélenchon,Éric Zemmour,True,right pair,2,last two weeks
+2022,2022_wp_elabe_2022-04-05_1,5,Emmanuel Macron,Marine Le Pen,Jean-Luc Mélenchon,Éric Zemmour,True,right pair,1,last two weeks
+2022,2022_wp_elabe_2022-04-08_1,2,Emmanuel Macron,Marine Le Pen,Jean-Luc Mélenchon,Éric Zemmour,True,right pair,1,last two weeks
+2022,2022_wp_harris-interactive_2021-09-20_1,202,Emmanuel Macron,Marine Le Pen,Valérie Pécresse,Éric Zemmour,True,right pair,29,before the official list
+2022,2022_wp_harris-interactive_2021-09-27_1,195,Emmanuel Macron,Marine Le Pen,Jean-Luc Mélenchon,Éric Zemmour,True,right pair,28,before the official list
+2022,2022_wp_harris-interactive_2021-10-04_1,188,Emmanuel Macron,Éric Zemmour,Marine Le Pen,Valérie Pécresse,True,wrong pair,27,before the official list
+2022,2022_wp_harris-interactive_2021-10-11_1,181,Emmanuel Macron,Éric Zemmour,Marine Le Pen,Valérie Pécresse,True,wrong pair,26,before the official list
+2022,2022_wp_harris-interactive_2021-10-18_1,174,Emmanuel Macron,Éric Zemmour,Marine Le Pen,Valérie Pécresse,True,wrong pair,25,before the official list
+2022,2022_wp_harris-interactive_2021-10-25_1,167,Emmanuel Macron,Éric Zemmour,Marine Le Pen,Valérie Pécresse,True,wrong pair,24,before the official list
+2022,2022_wp_harris-interactive_2021-10-30_1,162,Emmanuel Macron,Éric Zemmour,Marine Le Pen,Valérie Pécresse,True,wrong pair,24,before the official list
+2022,2022_wp_harris-interactive_2021-11-08_1,153,Emmanuel Macron,Éric Zemmour,Marine Le Pen,Valérie Pécresse,True,wrong pair,22,before the official list
+2022,2022_wp_harris-interactive_2021-11-15_1,146,Emmanuel Macron,Éric Zemmour,Marine Le Pen,Valérie Pécresse,True,wrong pair,21,before the official list
+2022,2022_wp_harris-interactive_2021-11-22_1,139,Emmanuel Macron,Marine Le Pen,Éric Zemmour,Valérie Pécresse,True,"right pair, tied",20,before the official list
+2022,2022_wp_harris-interactive_2021-11-29_1,132,Emmanuel Macron,Marine Le Pen,Éric Zemmour,Valérie Pécresse,True,right pair,19,before the official list
+2022,2022_wp_harris-interactive_2021-12-06_1,125,Emmanuel Macron,Marine Le Pen,Valérie Pécresse,Éric Zemmour,True,right pair,18,before the official list
+2022,2022_wp_harris-interactive_2021-12-13_1,118,Emmanuel Macron,Valérie Pécresse,Marine Le Pen,Éric Zemmour,True,wrong pair,17,before the official list
+2022,2022_wp_harris-interactive_2021-12-31_1,100,Emmanuel Macron,Éric Zemmour,Valérie Pécresse,Marine Le Pen,True,"right pair, tied",15,before the official list
+2022,2022_wp_harris-interactive_2022-01-10_1,90,Emmanuel Macron,Marine Le Pen,Valérie Pécresse,Éric Zemmour,True,"right pair, tied",13,before the official list
+2022,2022_wp_harris-interactive_2022-01-17_1,83,Emmanuel Macron,Marine Le Pen,Valérie Pécresse,Éric Zemmour,True,right pair,12,before the official list
+2022,2022_wp_harris-interactive_2022-01-24_1,76,Emmanuel Macron,Marine Le Pen,Valérie Pécresse,Éric Zemmour,True,right pair,11,before the official list
+2022,2022_wp_harris-interactive_2022-01-31_1,69,Emmanuel Macron,Marine Le Pen,Valérie Pécresse,Éric Zemmour,True,right pair,10,before the official list
+2022,2022_wp_harris-interactive_2022-02-07_1,62,Emmanuel Macron,Marine Le Pen,Valérie Pécresse,Éric Zemmour,True,right pair,9,before the official list
+2022,2022_wp_harris-interactive_2022-02-14_1,55,Emmanuel Macron,Marine Le Pen,Éric Zemmour,Valérie Pécresse,True,right pair,8,before the official list
+2022,2022_wp_harris-interactive_2022-02-21_1,48,Emmanuel Macron,Marine Le Pen,Éric Zemmour,Valérie Pécresse,True,right pair,7,before the official list
+2022,2022_wp_harris-interactive_2022-02-28_1,41,Emmanuel Macron,Marine Le Pen,Éric Zemmour,Jean-Luc Mélenchon,True,right pair,6,before the official list
+2022,2022_wp_harris-interactive_2022-03-07_1,34,Emmanuel Macron,Marine Le Pen,Jean-Luc Mélenchon,Éric Zemmour,True,right pair,5,official list to two weeks before
+2022,2022_wp_harris-interractive_2022-03-14_1,27,Emmanuel Macron,Marine Le Pen,Jean-Luc Mélenchon,Éric Zemmour,True,right pair,4,official list to two weeks before
+2022,2022_wp_harris-interractive_2022-03-21_1,20,Emmanuel Macron,Marine Le Pen,Jean-Luc Mélenchon,Éric Zemmour,True,right pair,3,official list to two weeks before
+2022,2022_wp_harris-interractive_2022-03-28_1,13,Emmanuel Macron,Marine Le Pen,Jean-Luc Mélenchon,Éric Zemmour,True,right pair,2,last two weeks
+2022,2022_wp_harris-interractive_2022-04-04_1,6,Emmanuel Macron,Marine Le Pen,Jean-Luc Mélenchon,Éric Zemmour,True,right pair,1,last two weeks
+2022,2022_wp_harris-interractive_2022-04-08_1,2,Emmanuel Macron,Marine Le Pen,Jean-Luc Mélenchon,Éric Zemmour,True,right pair,1,last two weeks
+2022,2022_wp_ifop_2021-09-02_1,220,Emmanuel Macron,Marine Le Pen,Valérie Pécresse,Jean-Luc Mélenchon,True,right pair,32,before the official list
+2022,2022_wp_ifop_2021-10-01_1,191,Emmanuel Macron,Marine Le Pen,Éric Zemmour,Valérie Pécresse,True,right pair,28,before the official list
+2022,2022_wp_ifop_2021-10-06_1,186,Emmanuel Macron,Marine Le Pen,Éric Zemmour,Valérie Pécresse,True,right pair,27,before the official list
+2022,2022_wp_ifop_2021-10-13_1,179,Emmanuel Macron,Marine Le Pen,Éric Zemmour,Valérie Pécresse,True,right pair,26,before the official list
+2022,2022_wp_ifop_2021-10-15_1,177,Emmanuel Macron,Marine Le Pen,Éric Zemmour,Valérie Pécresse,True,"right pair, tied",26,before the official list
+2022,2022_wp_ifop_2021-10-27_1,165,Emmanuel Macron,Marine Le Pen,Éric Zemmour,Valérie Pécresse,True,right pair,24,before the official list
+2022,2022_wp_ifop_2021-11-05_1,156,Emmanuel Macron,Marine Le Pen,Éric Zemmour,Valérie Pécresse,True,"right pair, tied",23,before the official list
+2022,2022_wp_ifop_2021-11-25_1,136,Emmanuel Macron,Marine Le Pen,Éric Zemmour,Valérie Pécresse,True,right pair,20,before the official list
+2022,2022_wp_ifop_2021-12-06_1,125,Emmanuel Macron,Marine Le Pen,Valérie Pécresse,Éric Zemmour,True,"right pair, tied",18,before the official list
+2022,2022_wp_ifop_2021-12-15_1,116,Emmanuel Macron,Valérie Pécresse,Marine Le Pen,Éric Zemmour,True,wrong pair,17,before the official list
+2022,2022_wp_ifop_2022-01-05_1,95,Emmanuel Macron,Marine Le Pen,Valérie Pécresse,Éric Zemmour,True,"right pair, tied",14,before the official list
+2022,2022_wp_ifop_2022-01-13_1,87,Emmanuel Macron,Valérie Pécresse,Marine Le Pen,Éric Zemmour,True,wrong pair,13,before the official list
+2022,2022_wp_ifop_2022-01-20_1,80,Emmanuel Macron,Marine Le Pen,Valérie Pécresse,Éric Zemmour,True,right pair,12,before the official list
+2022,2022_wp_ifop_2022-01-27_1,73,Emmanuel Macron,Marine Le Pen,Valérie Pécresse,Éric Zemmour,True,right pair,11,before the official list
+2022,2022_wp_ifop_2022-02-03_1,66,Emmanuel Macron,Marine Le Pen,Valérie Pécresse,Éric Zemmour,True,right pair,10,before the official list
+2022,2022_wp_ifop_2022-02-04_1,65,Emmanuel Macron,Marine Le Pen,Valérie Pécresse,Éric Zemmour,True,right pair,10,before the official list
+2022,2022_wp_ifop_2022-02-10_1,59,Emmanuel Macron,Marine Le Pen,Valérie Pécresse,Éric Zemmour,True,right pair,9,before the official list
+2022,2022_wp_ifop_2022-02-17_1,52,Emmanuel Macron,Marine Le Pen,Éric Zemmour,Valérie Pécresse,True,right pair,8,before the official list
+2022,2022_wp_ifop_2022-02-24_1,45,Emmanuel Macron,Marine Le Pen,Éric Zemmour,Valérie Pécresse,True,"right pair, tied",7,before the official list
+2022,2022_wp_ifop_2022-03-03_1,38,Emmanuel Macron,Marine Le Pen,Valérie Pécresse,Éric Zemmour,True,right pair,6,before the official list
+2022,2022_wp_ifop_2022-03-10_1,31,Emmanuel Macron,Marine Le Pen,Valérie Pécresse,Éric Zemmour,True,right pair,5,official list to two weeks before
+2022,2022_wp_ifop_2022-03-17_1,24,Emmanuel Macron,Marine Le Pen,Éric Zemmour,Jean-Luc Mélenchon,True,right pair,4,official list to two weeks before
+2022,2022_wp_ifop_2022-03-18_1,23,Emmanuel Macron,Marine Le Pen,Jean-Luc Mélenchon,Éric Zemmour,True,right pair,4,official list to two weeks before
+2022,2022_wp_ifop_2022-03-24_1,17,Emmanuel Macron,Marine Le Pen,Jean-Luc Mélenchon,Éric Zemmour,True,right pair,3,official list to two weeks before
+2022,2022_wp_ifop_2022-03-31_1,10,Emmanuel Macron,Marine Le Pen,Jean-Luc Mélenchon,Éric Zemmour,True,right pair,2,last two weeks
+2022,2022_wp_ifop_2022-04-01_1,9,Emmanuel Macron,Marine Le Pen,Jean-Luc Mélenchon,Éric Zemmour,True,right pair,2,last two weeks
+2022,2022_wp_ifop_2022-04-07_1,3,Emmanuel Macron,Marine Le Pen,Jean-Luc Mélenchon,Valérie Pécresse,True,right pair,1,last two weeks
+2022,2022_wp_ipsos_2021-09-30_1,192,Emmanuel Macron,Marine Le Pen,Éric Zemmour,Valérie Pécresse,True,right pair,28,before the official list
+2022,2022_wp_ipsos_2021-10-13_1,179,Emmanuel Macron,Marine Le Pen,Éric Zemmour,Valérie Pécresse,True,"right pair, tied",26,before the official list
+2022,2022_wp_ipsos_2021-12-08_1,123,Emmanuel Macron,Marine Le Pen,Valérie Pécresse,Éric Zemmour,True,"right pair, tied",18,before the official list
+2022,2022_wp_ipsos_2021-12-13_1,118,Emmanuel Macron,Valérie Pécresse,Marine Le Pen,Éric Zemmour,True,wrong pair,17,before the official list
+2022,2022_wp_ipsos_2022-01-06_1,94,Emmanuel Macron,Marine Le Pen,Valérie Pécresse,Éric Zemmour,True,right pair,14,before the official list
+2022,2022_wp_ipsos_2022-01-17_1,83,Emmanuel Macron,Marine Le Pen,Valérie Pécresse,Éric Zemmour,True,"right pair, tied",12,before the official list
+2022,2022_wp_ipsos_2022-02-03_1,66,Emmanuel Macron,Valérie Pécresse,Marine Le Pen,Éric Zemmour,True,wrong pair,10,before the official list
+2022,2022_wp_ipsos_2022-02-07_1,62,Emmanuel Macron,Valérie Pécresse,Marine Le Pen,Éric Zemmour,True,wrong pair,9,before the official list
+2022,2022_wp_ipsos_2022-02-27_1,42,Emmanuel Macron,Marine Le Pen,Éric Zemmour,Valérie Pécresse,True,right pair,6,before the official list
+2022,2022_wp_ipsos_2022-03-03_1,38,Emmanuel Macron,Marine Le Pen,Éric Zemmour,Jean-Luc Mélenchon,True,right pair,6,before the official list
+2022,2022_wp_ipsos_2022-03-12_1,29,Emmanuel Macron,Marine Le Pen,Éric Zemmour,Jean-Luc Mélenchon,True,right pair,5,official list to two weeks before
+2022,2022_wp_ipsos_2022-03-14_1,27,Emmanuel Macron,Marine Le Pen,Éric Zemmour,Jean-Luc Mélenchon,True,right pair,4,official list to two weeks before
+2022,2022_wp_ipsos_2022-03-19_1,22,Emmanuel Macron,Marine Le Pen,Jean-Luc Mélenchon,Éric Zemmour,True,right pair,4,official list to two weeks before
+2022,2022_wp_ipsos_2022-03-24_1,17,Emmanuel Macron,Marine Le Pen,Jean-Luc Mélenchon,Éric Zemmour,True,right pair,3,official list to two weeks before
+2022,2022_wp_ipsos_2022-03-26_1,15,Emmanuel Macron,Marine Le Pen,Jean-Luc Mélenchon,Éric Zemmour,True,right pair,3,official list to two weeks before
+2022,2022_wp_ipsos_2022-03-30_1,10,Emmanuel Macron,Marine Le Pen,Jean-Luc Mélenchon,Éric Zemmour,True,right pair,2,last two weeks
+2022,2022_wp_ipsos_2022-04-02_1,8,Emmanuel Macron,Marine Le Pen,Jean-Luc Mélenchon,Éric Zemmour,True,right pair,2,last two weeks
+2022,2022_wp_ipsos_2022-04-04_1,6,Emmanuel Macron,Marine Le Pen,Jean-Luc Mélenchon,Éric Zemmour,True,right pair,1,last two weeks
+2022,2022_wp_ipsos_2022-04-07_1,3,Emmanuel Macron,Marine Le Pen,Jean-Luc Mélenchon,Éric Zemmour,True,right pair,1,last two weeks
+2022,2022_wp_ipsos_2022-04-08_1,2,Emmanuel Macron,Marine Le Pen,Jean-Luc Mélenchon,Éric Zemmour,True,right pair,1,last two weeks
+2022,2022_wp_kantar_2022-02-23_1,46,Emmanuel Macron,Marine Le Pen,Éric Zemmour,Valérie Pécresse,True,"right pair, tied",7,before the official list
+2022,2022_wp_kantar_2022-03-09_1,32,Emmanuel Macron,Marine Le Pen,Éric Zemmour,Valérie Pécresse,True,right pair,5,official list to two weeks before
+2022,2022_wp_kantar_2022-03-23_1,18,Emmanuel Macron,Marine Le Pen,Jean-Luc Mélenchon,Éric Zemmour,True,right pair,3,official list to two weeks before
+2022,2022_wp_kantar_2022-04-05_1,5,Emmanuel Macron,Marine Le Pen,Jean-Luc Mélenchon,Éric Zemmour,True,right pair,1,last two weeks
+2022,2022_wp_odoxa_2021-11-08_1,153,Emmanuel Macron,Marine Le Pen,Éric Zemmour,Valérie Pécresse,True,right pair,22,before the official list
+2022,2022_wp_odoxa_2021-12-09_1,122,Emmanuel Macron,Valérie Pécresse,Marine Le Pen,Éric Zemmour,True,wrong pair,18,before the official list
+2022,2022_wp_odoxa_2022-02-16_1,53,Emmanuel Macron,Marine Le Pen,Éric Zemmour,Valérie Pécresse,True,right pair,8,before the official list
+2022,2022_wp_odoxa_2022-03-11_1,30,Emmanuel Macron,Marine Le Pen,Jean-Luc Mélenchon,Éric Zemmour,True,right pair,5,official list to two weeks before
+2022,2022_wp_odoxa_2022-04-06_1,4,Emmanuel Macron,Marine Le Pen,Jean-Luc Mélenchon,Éric Zemmour,True,right pair,1,last two weeks
+2022,2022_wp_opinionway_2021-12-15_1,116,Emmanuel Macron,Valérie Pécresse,Marine Le Pen,Éric Zemmour,True,wrong pair,17,before the official list
+2022,2022_wp_opinionway_2021-12-22_1,109,Emmanuel Macron,Valérie Pécresse,Marine Le Pen,Éric Zemmour,True,wrong pair,16,before the official list
+2022,2022_wp_opinionway_2022-01-07_1,93,Emmanuel Macron,Marine Le Pen,Valérie Pécresse,Éric Zemmour,True,"right pair, tied",14,before the official list
+2022,2022_wp_opinionway_2022-01-14_1,86,Emmanuel Macron,Marine Le Pen,Valérie Pécresse,Éric Zemmour,True,"right pair, tied",13,before the official list
+2022,2022_wp_opinionway_2022-01-20_1,80,Emmanuel Macron,Marine Le Pen,Valérie Pécresse,Éric Zemmour,True,"right pair, tied",12,before the official list
+2022,2022_wp_opinionway_2022-01-21_1,79,Emmanuel Macron,Valérie Pécresse,Marine Le Pen,Éric Zemmour,True,wrong pair,12,before the official list
+2022,2022_wp_opinionway_2022-01-27_1,73,Emmanuel Macron,Valérie Pécresse,Marine Le Pen,Éric Zemmour,True,wrong pair,11,before the official list
+2022,2022_wp_opinionway_2022-01-27_2,73,Emmanuel Macron,Marine Le Pen,Valérie Pécresse,Éric Zemmour,True,"right pair, tied",11,before the official list
+2022,2022_wp_opinionway_2022-02-03_1,66,Emmanuel Macron,Marine Le Pen,Valérie Pécresse,Éric Zemmour,True,right pair,10,before the official list
+2022,2022_wp_opinionway_2022-02-03_2,66,Emmanuel Macron,Marine Le Pen,Valérie Pécresse,Éric Zemmour,True,right pair,10,before the official list
+2022,2022_wp_opinionway_2022-02-10_1,59,Emmanuel Macron,Marine Le Pen,Valérie Pécresse,Éric Zemmour,True,right pair,9,before the official list
+2022,2022_wp_opinionway_2022-02-10_2,59,Emmanuel Macron,Marine Le Pen,Valérie Pécresse,Éric Zemmour,True,right pair,9,before the official list
+2022,2022_wp_opinionway_2022-02-17_1,52,Emmanuel Macron,Éric Zemmour,Valérie Pécresse,Marine Le Pen,True,"right pair, tied",8,before the official list
+2022,2022_wp_opinionway_2022-02-17_2,52,Emmanuel Macron,Marine Le Pen,Valérie Pécresse,Éric Zemmour,True,right pair,8,before the official list
+2022,2022_wp_opinionway_2022-02-24_1,45,Emmanuel Macron,Marine Le Pen,Valérie Pécresse,Éric Zemmour,True,right pair,7,before the official list
+2022,2022_wp_opinionway_2022-02-24_2,45,Emmanuel Macron,Marine Le Pen,Valérie Pécresse,Éric Zemmour,True,right pair,7,before the official list
+2022,2022_wp_opinionway_2022-02-27_1,42,Emmanuel Macron,Marine Le Pen,Valérie Pécresse,Éric Zemmour,True,right pair,6,before the official list
+2022,2022_wp_opinionway_2022-02-28_1,41,Emmanuel Macron,Marine Le Pen,Valérie Pécresse,Éric Zemmour,True,right pair,6,before the official list
+2022,2022_wp_opinionway_2022-03-01_1,40,Emmanuel Macron,Marine Le Pen,Valérie Pécresse,Éric Zemmour,True,right pair,6,before the official list
+2022,2022_wp_opinionway_2022-03-02_1,39,Emmanuel Macron,Marine Le Pen,Valérie Pécresse,Éric Zemmour,True,right pair,6,before the official list
+2022,2022_wp_opinionway_2022-03-03_1,38,Emmanuel Macron,Marine Le Pen,Valérie Pécresse,Éric Zemmour,True,right pair,6,before the official list
+2022,2022_wp_opinionway_2022-03-03_2,38,Emmanuel Macron,Marine Le Pen,Valérie Pécresse,Éric Zemmour,True,right pair,6,before the official list
+2022,2022_wp_opinionway_2022-03-06_1,35,Emmanuel Macron,Marine Le Pen,Valérie Pécresse,Éric Zemmour,True,right pair,5,before the official list
+2022,2022_wp_opinionway_2022-03-07_1,34,Emmanuel Macron,Marine Le Pen,Valérie Pécresse,Éric Zemmour,True,right pair,5,official list to two weeks before
+2022,2022_wp_opinionway_2022-03-08_1,33,Emmanuel Macron,Marine Le Pen,Valérie Pécresse,Éric Zemmour,True,right pair,5,official list to two weeks before
+2022,2022_wp_opinionway_2022-03-10_1,31,Emmanuel Macron,Marine Le Pen,Valérie Pécresse,Éric Zemmour,True,right pair,5,official list to two weeks before
+2022,2022_wp_opinionway_2022-03-13_1,28,Emmanuel Macron,Marine Le Pen,Jean-Luc Mélenchon,Valérie Pécresse,True,right pair,4,official list to two weeks before
+2022,2022_wp_opinionway_2022-03-14_1,27,Emmanuel Macron,Marine Le Pen,Jean-Luc Mélenchon,Éric Zemmour,True,right pair,4,official list to two weeks before
+2022,2022_wp_opinionway_2022-03-15_1,26,Emmanuel Macron,Marine Le Pen,Jean-Luc Mélenchon,Éric Zemmour,True,right pair,4,official list to two weeks before
+2022,2022_wp_opinionway_2022-03-16_1,25,Emmanuel Macron,Marine Le Pen,Éric Zemmour,Valérie Pécresse,True,right pair,4,official list to two weeks before
+2022,2022_wp_opinionway_2022-03-17_1,24,Emmanuel Macron,Marine Le Pen,Jean-Luc Mélenchon,Éric Zemmour,True,right pair,4,official list to two weeks before
+2022,2022_wp_opinionway_2022-03-17_2,24,Emmanuel Macron,Marine Le Pen,Jean-Luc Mélenchon,Valérie Pécresse,True,right pair,4,official list to two weeks before
+2022,2022_wp_opinionway_2022-03-20_1,21,Emmanuel Macron,Marine Le Pen,Jean-Luc Mélenchon,Valérie Pécresse,True,right pair,3,official list to two weeks before
+2022,2022_wp_opinionway_2022-03-21_1,20,Emmanuel Macron,Marine Le Pen,Jean-Luc Mélenchon,Valérie Pécresse,True,right pair,3,official list to two weeks before
+2022,2022_wp_opinionway_2022-03-22_1,19,Emmanuel Macron,Marine Le Pen,Jean-Luc Mélenchon,Valérie Pécresse,True,right pair,3,official list to two weeks before
+2022,2022_wp_opinionway_2022-03-23_1,18,Emmanuel Macron,Marine Le Pen,Jean-Luc Mélenchon,Valérie Pécresse,True,right pair,3,official list to two weeks before
+2022,2022_wp_opinionway_2022-03-24_1,17,Emmanuel Macron,Marine Le Pen,Jean-Luc Mélenchon,Valérie Pécresse,True,right pair,3,official list to two weeks before
+2022,2022_wp_opinionway_2022-03-24_2,17,Emmanuel Macron,Marine Le Pen,Jean-Luc Mélenchon,Valérie Pécresse,True,right pair,3,official list to two weeks before
+2022,2022_wp_opinionway_2022-03-27_1,14,Emmanuel Macron,Marine Le Pen,Jean-Luc Mélenchon,Éric Zemmour,True,right pair,2,last two weeks
+2022,2022_wp_opinionway_2022-03-31_1,10,Emmanuel Macron,Marine Le Pen,Jean-Luc Mélenchon,Éric Zemmour,True,right pair,2,last two weeks
+2022,2022_wp_opinionway_2022-03-31_2,10,Emmanuel Macron,Marine Le Pen,Jean-Luc Mélenchon,Éric Zemmour,True,right pair,2,last two weeks
+2022,2022_wp_opinionway_2022-04-04_1,6,Emmanuel Macron,Marine Le Pen,Jean-Luc Mélenchon,Éric Zemmour,True,right pair,1,last two weeks
+2022,2022_wp_opinionway_2022-04-05_1,5,Emmanuel Macron,Marine Le Pen,Jean-Luc Mélenchon,Éric Zemmour,True,right pair,1,last two weeks
+2022,2022_wp_opinionway_2022-04-06_1,4,Emmanuel Macron,Marine Le Pen,Jean-Luc Mélenchon,Éric Zemmour,True,right pair,1,last two weeks
+2022,2022_wp_opinionway_2022-04-07_1,3,Emmanuel Macron,Marine Le Pen,Jean-Luc Mélenchon,Éric Zemmour,True,right pair,1,last two weeks
+2022,2022_wp_opinionway_2022-04-07_2,3,Emmanuel Macron,Marine Le Pen,Jean-Luc Mélenchon,Éric Zemmour,True,right pair,1,last two weeks
+2022,2022_wp_yougov_2022-03-31_1,10,Emmanuel Macron,Marine Le Pen,Jean-Luc Mélenchon,Éric Zemmour,True,right pair,2,last two weeks
+2022,2022_wp_yougov_2022-04-07_1,3,Emmanuel Macron,Marine Le Pen,Jean-Luc Mélenchon,Éric Zemmour,True,right pair,1,last two weeks
