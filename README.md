@@ -102,7 +102,7 @@ Notebook 04 builds `data/final/polls.csv` (see [Final dataset](#final-dataset)).
 Four items held for a check were settled on 3 November 2026 and their notes corrected: Ifop, June 2011
 (Wikipedia had Joly, Chevènement and Hulot in the wrong scenarios: both now sum to 100); CSA, 16–17 April 2012
 (the small candidates are in the document: only Hollande is corrected); YouGov, 4–7 April 2022 (dates kept: the
-notice repeats the previous wave's dates); Odoxa, April 2015 (Wikipedia files Sarkozy's 26 under Juppé
+notice's cover page gives 4–7 April; its methodology page repeats the previous wave's 28–31 March); Odoxa, April 2015 (Wikipedia files Sarkozy's 26 under Juppé
 in the Valls hypothesis: corrected).
 
 Not added: NSPPolls' extra scenario for Ifop, June 2020 (answered `NSPPolls`), which is a one-candidate fragment

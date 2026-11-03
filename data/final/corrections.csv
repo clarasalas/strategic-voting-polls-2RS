@@ -311,4 +311,4 @@ spot check,2022_wp_opinionway_2022-04-06_1,2022_wp_opinionway_2022-04-06_1,share
 spot check,2022_wp_opinionway_2022-04-06_1,2022_wp_opinionway_2022-04-06_1,share: Arthaud <1,True,,2022_wp_opinionway_2022-04-06_1_s1,Nathalie Arthaud,share,0,<1
 spot check,2022_wp_opinionway_2022-04-06_1,2022_wp_opinionway_2022-04-06_1,share: Dupont-Aignan 2,False,already this value,2022_wp_opinionway_2022-04-06_1_s1,Nicolas Dupont-Aignan,share,2,2
 spot check,2022_wp_opinionway_2022-04-07_2,2022_wp_opinionway_2022-04-07_2,sample size: 2154,False,data keeps the base of respondents (decision),,,,,
-spot check,2022_wp_yougov_2022-04-07_1,2022_wp_yougov_2022-04-07_1,"other: the notice of 8 April repeats the fieldwork dates of the previous wave (28-31 March), but the results are those of 4-7 April",False,information only,,,,,
+spot check,2022_wp_yougov_2022-04-07_1,2022_wp_yougov_2022-04-07_1,"other: the notice's cover page gives fieldwork 4-7 April 2022, but its methodology page says 28-31 March, copied from the previous wave (whose results differ). 4-7 April kept",False,information only,,,,,
