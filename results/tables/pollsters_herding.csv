@@ -1,0 +1,16 @@
+election,phase,polls,ratio,ratio_after_house_effects
+2002,before the official list,32,1.16,0.73
+2002,official list to two weeks before,5,1.15,0.89
+2002,last two weeks,12,1.07,0.64
+2007,before the official list,67,2.34,1.64
+2007,official list to two weeks before,20,1.96,1.21
+2007,last two weeks,18,1.0,0.7
+2012,before the official list,69,1.41,0.81
+2012,official list to two weeks before,17,0.89,0.64
+2012,last two weeks,12,0.93,0.87
+2017,before the official list,60,2.57,2.29
+2017,official list to two weeks before,23,1.03,0.99
+2017,last two weeks,22,0.73,0.69
+2022,before the official list,113,2.3,1.38
+2022,official list to two weeks before,37,1.47,1.12
+2022,last two weeks,33,1.96,1.85

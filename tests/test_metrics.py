@@ -61,3 +61,12 @@ def test_poll_average_leaves_sparse_days_empty():
     from polls import average
     s = average.smooth(np.array([0.0]), np.array([20.0]), np.array([0, 200]), min_polls=3)
     assert s["mean"].isna().all()
+
+
+def test_leave_one_out_ignores_the_poll_itself():
+    from polls import average
+    days = np.array([0.0, 1.0, 2.0, 3.0, 4.0])
+    values = np.array([10.0, 10.0, 40.0, 10.0, 10.0])
+    loo = average.leave_one_out(days, values, h=50, min_polls=1)
+    assert loo[2] == pytest.approx(10.0)          # the outlier does not count for itself
+    assert loo[0] > 10.0                          # but counts for the others

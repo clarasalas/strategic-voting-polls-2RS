@@ -1,0 +1,211 @@
+election,institute_family,slot,polls,house_effect,se,significant
+2002,BVA,Arlette Laguiller,8,0.72,0.3,True
+2002,BVA,François Bayrou,8,0.15,0.17,False
+2002,BVA,Jacques Chirac,8,-0.93,0.56,False
+2002,BVA,Jean-Marie Le Pen,8,1.05,0.28,True
+2002,BVA,Jean-Pierre Chevènement,8,-1.25,0.15,True
+2002,BVA,Lionel Jospin,8,0.89,0.39,True
+2002,CSA,Arlette Laguiller,8,-1.13,0.21,True
+2002,CSA,François Bayrou,8,-0.18,0.18,False
+2002,CSA,Jacques Chirac,8,-0.25,0.59,False
+2002,CSA,Jean-Marie Le Pen,8,0.34,0.25,False
+2002,CSA,Jean-Pierre Chevènement,8,0.12,0.32,False
+2002,CSA,Lionel Jospin,8,0.18,0.27,False
+2002,Ifop,Arlette Laguiller,6,0.13,0.45,False
+2002,Ifop,François Bayrou,6,0.45,0.26,False
+2002,Ifop,Jacques Chirac,6,-1.09,0.24,True
+2002,Ifop,Jean-Marie Le Pen,6,-1.49,0.6,True
+2002,Ifop,Jean-Pierre Chevènement,6,1.29,0.34,True
+2002,Ifop,Lionel Jospin,6,-1.38,0.43,True
+2002,Ipsos,Arlette Laguiller,12,-0.03,0.28,False
+2002,Ipsos,François Bayrou,12,-0.09,0.13,False
+2002,Ipsos,Jacques Chirac,12,0.94,0.37,True
+2002,Ipsos,Jean-Marie Le Pen,12,-0.49,0.33,False
+2002,Ipsos,Jean-Pierre Chevènement,12,0.85,0.26,True
+2002,Ipsos,Lionel Jospin,12,-0.14,0.28,False
+2002,Kantar (Sofres),Arlette Laguiller,12,-0.1,0.22,False
+2002,Kantar (Sofres),François Bayrou,12,-0.15,0.14,False
+2002,Kantar (Sofres),Jacques Chirac,12,0.46,0.33,False
+2002,Kantar (Sofres),Jean-Marie Le Pen,12,0.41,0.21,False
+2002,Kantar (Sofres),Jean-Pierre Chevènement,12,-0.7,0.24,True
+2002,Kantar (Sofres),Lionel Jospin,12,-0.11,0.15,False
+2007,BVA,François Bayrou,11,-0.88,0.48,False
+2007,BVA,Jean-Marie Le Pen,11,-0.75,0.38,False
+2007,BVA,Nicolas Sarkozy,11,0.7,0.36,False
+2007,BVA,Olivier Besancenot,11,0.27,0.26,False
+2007,BVA,Philippe de Villiers,11,0.39,0.22,False
+2007,BVA,Ségolène Royal,11,-0.06,0.46,False
+2007,CSA,François Bayrou,20,-0.38,0.46,False
+2007,CSA,Jean-Marie Le Pen,20,2.16,0.28,True
+2007,CSA,Nicolas Sarkozy,20,-2.06,0.33,True
+2007,CSA,Olivier Besancenot,20,-0.19,0.16,False
+2007,CSA,Philippe de Villiers,20,-0.12,0.12,False
+2007,CSA,Ségolène Royal,20,0.7,0.37,False
+2007,Ifop,François Bayrou,21,1.03,0.43,True
+2007,Ifop,Jean-Marie Le Pen,21,-0.23,0.32,False
+2007,Ifop,Nicolas Sarkozy,21,-1.32,0.45,True
+2007,Ifop,Olivier Besancenot,21,0.3,0.13,True
+2007,Ifop,Philippe de Villiers,21,0.21,0.15,False
+2007,Ifop,Ségolène Royal,21,-1.17,0.36,True
+2007,Ipsos,François Bayrou,25,-0.24,0.21,False
+2007,Ipsos,Jean-Marie Le Pen,25,-0.48,0.19,True
+2007,Ipsos,Nicolas Sarkozy,25,1.76,0.22,True
+2007,Ipsos,Olivier Besancenot,25,-0.11,0.12,False
+2007,Ipsos,Philippe de Villiers,25,-0.11,0.14,False
+2007,Ipsos,Ségolène Royal,25,-0.32,0.28,False
+2007,Kantar (Sofres),François Bayrou,16,-0.35,0.4,False
+2007,Kantar (Sofres),Jean-Marie Le Pen,16,-0.58,0.26,True
+2007,Kantar (Sofres),Nicolas Sarkozy,16,1.41,0.65,True
+2007,Kantar (Sofres),Olivier Besancenot,16,-0.1,0.14,False
+2007,Kantar (Sofres),Philippe de Villiers,16,-0.33,0.13,True
+2007,Kantar (Sofres),Ségolène Royal,16,1.04,0.46,True
+2007,LH2 (Louis Harris),François Bayrou,12,0.08,0.35,False
+2007,LH2 (Louis Harris),Jean-Marie Le Pen,12,-0.38,0.4,False
+2007,LH2 (Louis Harris),Nicolas Sarkozy,12,-0.85,0.31,True
+2007,LH2 (Louis Harris),Olivier Besancenot,12,-0.14,0.24,False
+2007,LH2 (Louis Harris),Philippe de Villiers,12,0.19,0.16,False
+2007,LH2 (Louis Harris),Ségolène Royal,12,0.68,0.33,True
+2012,BVA,Eva Joly,12,0.09,0.37,False
+2012,BVA,François Bayrou,12,-0.27,0.35,False
+2012,BVA,François Hollande,12,1.87,0.5,True
+2012,BVA,Jean-Luc Mélenchon,12,-0.18,0.34,False
+2012,BVA,Marine Le Pen,12,-1.18,0.34,True
+2012,BVA,Nicolas Sarkozy,12,-0.57,0.26,True
+2012,CSA,Eva Joly,13,-0.69,0.15,True
+2012,CSA,François Bayrou,13,0.39,0.25,False
+2012,CSA,François Hollande,13,0.26,0.38,False
+2012,CSA,Jean-Luc Mélenchon,13,0.5,0.34,False
+2012,CSA,Marine Le Pen,13,-0.56,0.34,False
+2012,CSA,Nicolas Sarkozy,13,0.67,0.46,False
+2012,Harris Interactive,Eva Joly,9,0.65,0.18,True
+2012,Harris Interactive,François Bayrou,9,0.39,0.26,False
+2012,Harris Interactive,François Hollande,9,-1.94,0.31,True
+2012,Harris Interactive,Jean-Luc Mélenchon,9,-0.5,0.35,False
+2012,Harris Interactive,Marine Le Pen,9,1.75,0.32,True
+2012,Harris Interactive,Nicolas Sarkozy,9,-0.54,0.37,False
+2012,Ifop,Eva Joly,22,0.15,0.1,False
+2012,Ifop,François Bayrou,22,-0.36,0.17,True
+2012,Ifop,François Hollande,22,-0.81,0.21,True
+2012,Ifop,Jean-Luc Mélenchon,22,-0.19,0.14,False
+2012,Ifop,Marine Le Pen,22,1.33,0.21,True
+2012,Ifop,Nicolas Sarkozy,22,0.13,0.22,False
+2012,Ipsos,Eva Joly,15,-0.11,0.22,False
+2012,Ipsos,François Bayrou,15,-0.31,0.25,False
+2012,Ipsos,François Hollande,15,0.7,0.23,True
+2012,Ipsos,Jean-Luc Mélenchon,15,0.17,0.15,False
+2012,Ipsos,Marine Le Pen,15,-0.14,0.23,False
+2012,Ipsos,Nicolas Sarkozy,15,-0.31,0.27,False
+2012,Kantar (Sofres),Eva Joly,6,-0.02,0.28,False
+2012,Kantar (Sofres),François Bayrou,6,-1.41,0.18,True
+2012,Kantar (Sofres),François Hollande,6,0.51,0.26,False
+2012,Kantar (Sofres),Jean-Luc Mélenchon,6,0.96,0.34,True
+2012,Kantar (Sofres),Marine Le Pen,6,-0.3,0.33,False
+2012,Kantar (Sofres),Nicolas Sarkozy,6,0.56,0.65,False
+2012,LH2 (Louis Harris),Eva Joly,9,0.63,0.28,True
+2012,LH2 (Louis Harris),François Bayrou,9,0.69,0.56,False
+2012,LH2 (Louis Harris),François Hollande,9,1.09,0.43,True
+2012,LH2 (Louis Harris),Jean-Luc Mélenchon,9,0.18,0.32,False
+2012,LH2 (Louis Harris),Marine Le Pen,9,-1.92,0.38,True
+2012,LH2 (Louis Harris),Nicolas Sarkozy,9,-0.29,0.55,False
+2012,OpinionWay,Eva Joly,12,-0.5,0.37,False
+2012,OpinionWay,François Bayrou,12,0.86,0.36,True
+2012,OpinionWay,François Hollande,12,-1.31,0.25,True
+2012,OpinionWay,Jean-Luc Mélenchon,12,-0.67,0.25,True
+2012,OpinionWay,Marine Le Pen,12,0.25,0.26,False
+2012,OpinionWay,Nicolas Sarkozy,12,-0.16,0.22,False
+2017,BVA,Benoît Hamon,14,0.59,0.53,False
+2017,BVA,Emmanuel Macron,14,-0.11,0.28,False
+2017,BVA,François Fillon,14,-0.11,0.38,False
+2017,BVA,Jean-Luc Mélenchon,14,-0.02,0.31,False
+2017,BVA,Marine Le Pen,14,0.1,0.18,False
+2017,BVA,Nicolas Dupont-Aignan,14,-0.27,0.2,False
+2017,Elabe,Benoît Hamon,16,-0.03,0.3,False
+2017,Elabe,Emmanuel Macron,16,0.32,0.4,False
+2017,Elabe,François Fillon,16,0.3,0.28,False
+2017,Elabe,Jean-Luc Mélenchon,16,0.28,0.27,False
+2017,Elabe,Marine Le Pen,16,-0.12,0.26,False
+2017,Elabe,Nicolas Dupont-Aignan,16,-0.01,0.22,False
+2017,Harris Interactive,Benoît Hamon,9,-0.23,0.25,False
+2017,Harris Interactive,Emmanuel Macron,9,-0.03,0.45,False
+2017,Harris Interactive,François Fillon,9,0.18,0.36,False
+2017,Harris Interactive,Jean-Luc Mélenchon,9,0.43,0.2,True
+2017,Harris Interactive,Marine Le Pen,9,-0.76,0.2,True
+2017,Harris Interactive,Nicolas Dupont-Aignan,9,0.01,0.19,False
+2017,Ifop,Benoît Hamon,23,-0.13,0.35,False
+2017,Ifop,Emmanuel Macron,23,-0.34,0.34,False
+2017,Ifop,François Fillon,23,-0.38,0.37,False
+2017,Ifop,Jean-Luc Mélenchon,23,-0.62,0.21,True
+2017,Ifop,Marine Le Pen,23,0.25,0.24,False
+2017,Ifop,Nicolas Dupont-Aignan,23,0.0,0.11,False
+2017,Ipsos,Benoît Hamon,14,-0.2,0.59,False
+2017,Ipsos,Emmanuel Macron,14,-0.53,0.38,False
+2017,Ipsos,François Fillon,14,-0.13,0.53,False
+2017,Ipsos,Jean-Luc Mélenchon,14,0.42,0.31,False
+2017,Ipsos,Marine Le Pen,14,0.69,0.31,True
+2017,Ipsos,Nicolas Dupont-Aignan,14,0.29,0.14,True
+2017,Kantar (Sofres),Benoît Hamon,8,0.38,0.33,False
+2017,Kantar (Sofres),Emmanuel Macron,8,1.14,0.47,True
+2017,Kantar (Sofres),François Fillon,8,-0.66,0.8,False
+2017,Kantar (Sofres),Jean-Luc Mélenchon,8,-0.33,0.37,False
+2017,Kantar (Sofres),Marine Le Pen,8,0.09,0.18,False
+2017,Kantar (Sofres),Nicolas Dupont-Aignan,8,-0.06,0.25,False
+2017,Odoxa,Benoît Hamon,8,-0.68,0.28,True
+2017,Odoxa,Emmanuel Macron,8,0.82,0.6,False
+2017,Odoxa,François Fillon,8,0.45,0.72,False
+2017,Odoxa,Jean-Luc Mélenchon,8,-0.29,0.46,False
+2017,Odoxa,Marine Le Pen,8,-0.26,0.44,False
+2017,Odoxa,Nicolas Dupont-Aignan,8,0.11,0.23,False
+2017,OpinionWay,Benoît Hamon,10,0.34,0.26,False
+2017,OpinionWay,Emmanuel Macron,10,-0.64,0.3,True
+2017,OpinionWay,François Fillon,10,1.23,0.15,True
+2017,OpinionWay,Jean-Luc Mélenchon,10,-0.5,0.35,False
+2017,OpinionWay,Marine Le Pen,10,0.21,0.32,False
+2017,OpinionWay,Nicolas Dupont-Aignan,10,-0.07,0.19,False
+2022,BVA,Emmanuel Macron,13,0.38,0.28,False
+2022,BVA,Jean-Luc Mélenchon,13,-0.24,0.25,False
+2022,BVA,Marine Le Pen,13,0.2,0.22,False
+2022,BVA,Valérie Pécresse,13,-0.24,0.18,False
+2022,BVA,Yannick Jadot,13,0.07,0.19,False
+2022,BVA,Éric Zemmour,13,-0.29,0.25,False
+2022,Cluster17,Emmanuel Macron,17,-1.65,0.23,True
+2022,Cluster17,Jean-Luc Mélenchon,17,2.29,0.18,True
+2022,Cluster17,Marine Le Pen,17,-1.63,0.21,True
+2022,Cluster17,Valérie Pécresse,17,-0.58,0.31,False
+2022,Cluster17,Yannick Jadot,17,-1.03,0.18,True
+2022,Cluster17,Éric Zemmour,17,1.24,0.2,True
+2022,Elabe,Emmanuel Macron,21,0.5,0.39,False
+2022,Elabe,Jean-Luc Mélenchon,21,-0.26,0.26,False
+2022,Elabe,Marine Le Pen,21,0.4,0.32,False
+2022,Elabe,Valérie Pécresse,21,-0.25,0.37,False
+2022,Elabe,Yannick Jadot,21,-0.21,0.18,False
+2022,Elabe,Éric Zemmour,21,-0.95,0.2,True
+2022,Harris Interactive,Emmanuel Macron,28,-0.19,0.19,False
+2022,Harris Interactive,Jean-Luc Mélenchon,28,1.08,0.17,True
+2022,Harris Interactive,Marine Le Pen,28,0.12,0.26,False
+2022,Harris Interactive,Valérie Pécresse,28,-0.46,0.18,True
+2022,Harris Interactive,Yannick Jadot,28,0.25,0.17,False
+2022,Harris Interactive,Éric Zemmour,28,0.64,0.24,True
+2022,Ifop,Emmanuel Macron,26,0.59,0.22,True
+2022,Ifop,Jean-Luc Mélenchon,26,-0.53,0.17,True
+2022,Ifop,Marine Le Pen,26,0.52,0.2,True
+2022,Ifop,Valérie Pécresse,26,0.31,0.21,False
+2022,Ifop,Yannick Jadot,26,-0.44,0.13,True
+2022,Ifop,Éric Zemmour,26,0.15,0.24,False
+2022,Ipsos,Emmanuel Macron,20,0.26,0.24,False
+2022,Ipsos,Jean-Luc Mélenchon,20,-0.47,0.22,True
+2022,Ipsos,Marine Le Pen,20,-1.08,0.29,True
+2022,Ipsos,Valérie Pécresse,20,-0.2,0.14,False
+2022,Ipsos,Yannick Jadot,20,1.26,0.16,True
+2022,Ipsos,Éric Zemmour,20,0.32,0.2,False
+2022,Odoxa,Emmanuel Macron,5,0.25,0.28,False
+2022,Odoxa,Jean-Luc Mélenchon,5,-0.14,0.21,False
+2022,Odoxa,Marine Le Pen,5,1.55,0.31,True
+2022,Odoxa,Valérie Pécresse,5,-0.65,0.93,False
+2022,Odoxa,Yannick Jadot,5,-0.74,0.24,True
+2022,Odoxa,Éric Zemmour,5,-1.29,0.35,True
+2022,OpinionWay,Emmanuel Macron,46,-0.26,0.17,False
+2022,OpinionWay,Jean-Luc Mélenchon,46,-0.82,0.12,True
+2022,OpinionWay,Marine Le Pen,46,0.26,0.14,False
+2022,OpinionWay,Valérie Pécresse,46,0.88,0.14,True
+2022,OpinionWay,Yannick Jadot,46,0.13,0.09,False
+2022,OpinionWay,Éric Zemmour,46,-0.65,0.1,True

@@ -39,3 +39,17 @@ def by_candidate(table: pd.DataFrame, value: str, grid: np.ndarray, key: str = "
         s = smooth(g["days_before"].to_numpy(), g[value].to_numpy(), grid, **kw)
         parts.append(s.assign(**{key: k}).reset_index())
     return pd.concat(parts, ignore_index=True)
+
+
+def leave_one_out(days: np.ndarray, values: np.ndarray, h: float = 10.0, min_polls: float = 3.0) -> np.ndarray:
+    """For each poll, the kernel average of the *other* polls at its date (NaN if too few nearby).
+    The poll is left out so that it does not pull the average toward itself."""
+    days, values = np.asarray(days, float), np.asarray(values, float)
+    w = np.exp(-0.5 * ((days[:, None] - days[None, :]) / h) ** 2)
+    np.fill_diagonal(w, 0.0)
+    w[:, np.isnan(values)] = 0.0
+    s = w.sum(axis=1)
+    n_eff = np.divide(s ** 2, (w ** 2).sum(axis=1), out=np.zeros_like(s), where=(w ** 2).sum(axis=1) > 0)
+    mean = np.divide(w @ np.nan_to_num(values), s, out=np.full_like(s, np.nan), where=s > 1e-9)
+    mean[n_eff < min_polls] = np.nan
+    return mean
