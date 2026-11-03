@@ -1,0 +1,17 @@
+# First-round dates and the publication of the official list of candidates by the Conseil constitutionnel.
+# Used for the time axis (days before the vote) and the campaign phases (src/polls/timeline.py).
+2002:
+  first_round: 2002-04-21
+  official_list: 2002-04-04   # announced 4 April, Journal officiel of 5 April
+2007:
+  first_round: 2007-04-22
+  official_list: 2007-03-19
+2012:
+  first_round: 2012-04-22
+  official_list: 2012-03-19
+2017:
+  first_round: 2017-04-23
+  official_list: 2017-03-18
+2022:
+  first_round: 2022-04-10
+  official_list: 2022-03-07

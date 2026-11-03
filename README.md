@@ -156,6 +156,7 @@ config/
   institutes.csv        hand-editable map institute_raw -> institute, institute_family
   parties.csv           party for poll rows Wikipedia leaves without a label, and hand overrides (src/polls/parties.py)
   validation.yaml       seed and size of the spot-check sample (fixed before drawing)
+  elections.yaml        first-round dates and official lists of candidates (time axis of the study)
 data/
   raw/                  downloads exactly as received; never edited
     manifest.csv        one row per download: source, url, pinned_id, retrieved_utc (UTC), sha256, local_path, archive_url
@@ -179,12 +180,16 @@ notebooks/
   02_thin_rolling.ipynb  removes sample overlap within a pollster/client series (Erikson & Wlezien)
   03_cross_check.ipynb   compares sources (2002, 2022), resolves flagged overlaps, draws the spot-check sample
   04_final_dataset.ipynb applies the validation and writes data/final/
+  05_polls_descriptive.ipynb  the study, part 1: the polls themselves (docs/study_plan.md)
 validation/             worklists filled in by hand; written once by notebook 03, never overwritten
   README.md                      how to fill them in
   crosscheck_disagreements.csv   polls where two sources disagree: settle against the original document
   flagged_clients.csv            overlapping polls (2017, one pair in 2022) whose client must be looked up
   spot_check_sample.csv          30 random Wikipedia polls per election (seed in config/validation.yaml)
-src/polls/              functions used by the notebooks (fetch, parsers, mapping, thinning, checks)
+src/polls/              functions used by the notebooks (fetch, parsers, mapping, thinning, checks, metrics)
+tests/                  tests of the study's metrics and time axis (python -m pytest tests)
+results/tables/         tables produced by the study notebooks; results/figures/ is regenerated, not committed
+docs/study_plan.md      the study of the polls: plan, decisions, progress
 ```
 
 </details>
