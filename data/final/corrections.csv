@@ -270,6 +270,8 @@ spot check,2017_wp_ifop_2016-06-17_1,2017_wp_ifop_2016-06-17_1,s7 missing: Chemi
 spot check,2017_wp_ifop_2016-06-17_1,2017_wp_ifop_2016-06-17_1,s8 share: Cheminade <0.5,True,,2017_wp_ifop_2016-06-17_1_s8,Jacques Cheminade,share,0,<0.5
 spot check,2017_wp_ifop_2016-06-17_1,2017_wp_ifop_2016-06-17_1,s9 missing: Asselineau (1),False,missing candidates are not added (decision),,,,,
 spot check,2017_wp_kantar-sofres_2017-02-24_1,2017_wp_kantar-sofres_2017-02-24_1,missing: Cheminade (<0.5),False,missing candidates are not added (decision),,,,,
+spot check,2017_wp_odoxa_2015-04-30_1,2017_wp_odoxa_2015-04-30_1,s2 share: Sarkozy 26,True,,2017_wp_odoxa_2015-04-30_1_s2,Nicolas Sarkozy,share,not_tested,26
+spot check,2017_wp_odoxa_2015-04-30_1,2017_wp_odoxa_2015-04-30_1,s2 not in document: Juppé,True,,2017_wp_odoxa_2015-04-30_1_s2,Alain Juppé,share,26,not_tested
 spot check,2017_wp_opinionway_2017-04-21_1,2017_wp_opinionway_2017-04-21_1,fieldwork: 2017-04-17 to 2017-04-21,True,,,,fieldwork,2017-04-19 to 2017-04-21 (reported ),2017-04-17 to 2017-04-21
 spot check,2017_wp_scan-research-le-terrain_2017-03-27_1,2017_wp_scan-research-le-terrain_2017-03-27_1,sample size: 1241,False,data keeps the base of respondents (decision),,,,,
 spot check,2017_wp_scan-research-le-terrain_2017-03-27_1,2017_wp_scan-research-le-terrain_2017-03-27_1,document: method and sample tables only,False,information only,,,,,

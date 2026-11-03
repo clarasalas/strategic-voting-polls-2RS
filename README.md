@@ -40,7 +40,7 @@ client of overlapping polls, and a random sample of 30 Wikipedia polls per elect
 | Cross-source comparison (notebook 03) | run; 31 flagged overlaps (2002, 2022) resolved automatically |
 | Settle disagreements ([`crosscheck_disagreements.csv`](validation/README.md)) | done, 79 of 79 |
 | Spot check ([`spot_check_sample.csv`](validation/README.md)) | done, 150 of 150 (13 with no document) |
-| Apply the validation answers to the tables | done (notebook 04): 134 corrections applied |
+| Apply the validation answers to the tables | done (notebook 04): 136 corrections applied |
 | Final dataset ([`data/final/polls.csv`](#final-dataset)) | done: 708 polls, 1,164 scenarios |
 | Calibration statistics | not started |
 
@@ -102,7 +102,8 @@ Notebook 04 builds `data/final/polls.csv` (see [Final dataset](#final-dataset)).
 Four items held for a check were settled on 3 November 2026 and their notes corrected: Ifop, June 2011
 (Wikipedia had Joly, Chevènement and Hulot in the wrong scenarios: both now sum to 100); CSA, 16–17 April 2012
 (the small candidates are in the document: only Hollande is corrected); YouGov, 4–7 April 2022 (dates kept: the
-notice repeats the previous wave's dates); Odoxa, April 2015 (data right).
+notice repeats the previous wave's dates); Odoxa, April 2015 (Wikipedia files Sarkozy's 26 under Juppé
+in the Valls hypothesis: corrected).
 
 Not added: NSPPolls' extra scenario for Ifop, June 2020 (answered `NSPPolls`), which is a one-candidate fragment
 of its Bertrand hypothesis (Roussel 2); Wikipedia's scenario is right, as the answer for that poll's s3 says.
