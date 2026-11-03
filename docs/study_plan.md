@@ -55,7 +55,7 @@ coloured left to right in the order of Wikipedia's poll-table columns (`src/poll
 - [x] **Their evolution**, with the change in HHI split two ways: campaign (first poll → last polls) against last mile
       (last polls → result); and change in the candidate set (elite coordination: withdrawals) against shares moving
       within a fixed set (voter coordination)
-- [ ] **Poll error by role**, signed: do candidates near the cliff do worse than their polls, their neighbours better?
+- [x] **Poll error by role**, signed: do candidates near the cliff do worse than their polls, their neighbours better?
 - [ ] **The cliff**: size in polls against the result; predictability of the runoff pair at each horizon
 - [ ] **Who gains in the last weeks**, for 2002 and 2022 with the ABM's candidate positions
 - [ ] **Momentum**: does rising predict rising further?

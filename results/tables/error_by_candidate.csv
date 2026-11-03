@@ -1,0 +1,62 @@
+election,slot,result,polled,polls,coverage,error,relative_error,rank,role,contender,position
+2002,Arlette Laguiller,5.72,7.625,12,1.0,-1.905,-0.25,4.0,4th,False,0.0
+2002,Daniel Gluckstein,0.47,0.458,12,1.0,0.012,0.025,16.0,5th and below,False,0.065
+2002,Olivier Besancenot,4.25,2.917,12,1.0,1.333,0.457,11.0,5th and below,False,0.094
+2002,Robert Hue,3.37,5.417,12,1.0,-2.047,-0.378,8.0,5th and below,False,0.149
+2002,Lionel Jospin,16.18,17.958,12,1.0,-1.778,-0.099,2.0,2nd,False,0.231
+2002,Christiane Taubira,2.32,1.5,12,1.0,0.82,0.547,13.0,5th and below,False,0.297
+2002,Noël Mamère,5.25,5.958,12,1.0,-0.708,-0.119,6.0,5th and below,False,0.359
+2002,Jean-Pierre Chevènement,5.33,6.583,12,1.0,-1.253,-0.19,5.0,5th and below,False,0.434
+2002,Corinne Lepage,1.88,1.375,12,1.0,0.505,0.367,14.0,5th and below,False,0.5
+2002,Jean Saint-Josse,4.23,3.667,12,1.0,0.563,0.154,10.0,5th and below,False,0.869
+2002,François Bayrou,6.84,5.958,12,1.0,0.882,0.148,6.0,5th and below,False,0.556
+2002,Alain Madelin,3.91,4.333,12,1.0,-0.423,-0.098,9.0,5th and below,False,0.771
+2002,Jacques Chirac,19.88,20.042,12,1.0,-0.162,-0.008,1.0,1st,False,0.687
+2002,Christine Boutin,1.19,1.083,12,1.0,0.107,0.098,15.0,5th and below,False,0.635
+2002,Jean-Marie Le Pen,16.86,12.708,12,1.0,4.152,0.327,3.0,3rd,False,0.918
+2002,Bruno Mégret,2.34,2.417,12,1.0,-0.077,-0.032,12.0,5th and below,False,1.0
+2007,Gérard Schivardi,0.34,0.615,13,0.722,-0.275,-0.448,12.0,5th and below,False,0.267
+2007,Arlette Laguiller,1.33,1.806,18,1.0,-0.476,-0.263,7.0,5th and below,False,0.0
+2007,Olivier Besancenot,4.08,4.167,18,1.0,-0.087,-0.021,5.0,5th and below,False,0.095
+2007,Marie-George Buffet,1.93,2.5,18,1.0,-0.57,-0.228,6.0,5th and below,False,0.189
+2007,José Bové,1.32,1.806,18,1.0,-0.486,-0.269,7.0,5th and below,False,0.445
+2007,Dominique Voynet,1.57,1.389,18,1.0,0.181,0.13,11.0,5th and below,False,0.533
+2007,Philippe de Villiers,2.23,1.583,18,1.0,0.647,0.408,9.0,5th and below,False,0.828
+2007,Ségolène Royal,25.87,24.056,18,1.0,1.814,0.075,2.0,2nd,False,0.352
+2007,Frédéric Nihous,1.15,1.5,18,1.0,-0.35,-0.233,10.0,5th and below,False,0.907
+2007,François Bayrou,18.57,18.528,18,1.0,0.042,0.002,3.0,3rd,False,0.639
+2007,Nicolas Sarkozy,31.18,28.389,18,1.0,2.791,0.098,1.0,1st,False,0.733
+2007,Jean-Marie Le Pen,10.44,13.944,18,1.0,-3.504,-0.251,4.0,4th,False,1.0
+2012,Nathalie Arthaud,0.56,0.688,12,1.0,-0.127,-0.185,9.0,5th and below,False,0.0
+2012,Philippe Poutou,1.15,0.729,12,1.0,0.421,0.577,8.0,5th and below,False,0.103
+2012,Jean-Luc Mélenchon,11.1,14.167,12,1.0,-3.067,-0.216,4.0,4th,False,0.194
+2012,François Hollande,28.63,28.0,12,1.0,0.63,0.022,1.0,1st,False,0.309
+2012,Eva Joly,2.31,2.292,12,1.0,0.018,0.008,6.0,5th and below,False,0.435
+2012,François Bayrou,9.13,10.167,12,1.0,-1.037,-0.102,5.0,5th and below,False,0.54
+2012,Nicolas Sarkozy,27.18,27.042,12,1.0,0.138,0.005,2.0,2nd,False,0.765
+2012,Nicolas Dupont-Aignan,1.79,1.167,12,1.0,0.623,0.534,7.0,5th and below,False,0.875
+2012,Marine Le Pen,17.9,15.708,12,1.0,2.192,0.14,3.0,3rd,False,0.975
+2012,Jacques Cheminade,0.25,0.292,12,1.0,-0.042,-0.143,10.0,5th and below,False,1.0
+2017,Nathalie Arthaud,0.64,0.466,22,1.0,0.174,0.374,10.0,5th and below,False,0.034
+2017,Philippe Poutou,1.09,1.659,22,1.0,-0.569,-0.343,7.0,5th and below,False,0.119
+2017,Jean-Luc Mélenchon,19.58,18.886,22,1.0,0.694,0.037,4.0,4th,True,0.209
+2017,Benoît Hamon,6.36,8.023,22,1.0,-1.663,-0.207,5.0,5th and below,False,0.338
+2017,Emmanuel Macron,24.01,23.591,22,1.0,0.419,0.018,1.0,1st,False,0.536
+2017,Jean Lassalle,1.21,0.955,22,1.0,0.255,0.268,8.0,5th and below,False,0.5
+2017,François Fillon,20.01,19.227,22,1.0,0.783,0.041,3.0,3rd,True,0.739
+2017,Nicolas Dupont-Aignan,4.7,3.75,22,1.0,0.95,0.253,6.0,5th and below,False,0.88
+2017,François Asselineau,0.92,0.864,22,1.0,0.056,0.065,9.0,5th and below,False,0.8
+2017,Marine Le Pen,21.3,22.568,22,1.0,-1.268,-0.056,2.0,2nd,False,0.98
+2017,Jacques Cheminade,0.18,0.17,22,1.0,0.01,0.056,11.0,5th and below,False,0.308
+2022,Philippe Poutou,0.77,1.042,33,1.0,-0.272,-0.261,11.0,5th and below,False,0.073
+2022,Nathalie Arthaud,0.56,0.548,33,1.0,0.012,0.021,12.0,5th and below,False,0.0
+2022,Fabien Roussel,2.28,2.948,33,1.0,-0.668,-0.227,7.0,5th and below,False,0.145
+2022,Jean-Luc Mélenchon,21.95,16.094,33,1.0,5.856,0.364,3.0,3rd,False,0.218
+2022,Yannick Jadot,4.63,5.061,33,1.0,-0.431,-0.085,6.0,5th and below,False,0.418
+2022,Anne Hidalgo,1.75,1.967,33,1.0,-0.217,-0.11,10.0,5th and below,False,0.315
+2022,Emmanuel Macron,27.85,26.827,33,1.0,1.023,0.038,1.0,1st,False,0.49
+2022,Valérie Pécresse,4.78,8.782,33,1.0,-4.002,-0.456,5.0,5th and below,False,0.592
+2022,Jean Lassalle,3.13,2.555,33,1.0,0.575,0.225,8.0,5th and below,False,0.675
+2022,Nicolas Dupont-Aignan,2.06,2.209,33,1.0,-0.149,-0.067,9.0,5th and below,False,0.766
+2022,Marine Le Pen,23.15,22.039,33,1.0,1.111,0.05,2.0,2nd,False,0.868
+2022,Éric Zemmour,7.07,9.879,33,1.0,-2.809,-0.284,4.0,4th,False,0.927

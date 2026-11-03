@@ -1,0 +1,6 @@
+role,candidates,mean_error,mean_relative_error,did_better,did_worse
+1st,5,0.94,0.03,4,1
+2nd,5,0.0,-0.0,3,2
+3rd,5,2.6,0.17,5,0
+4th,5,-2.12,-0.19,1,4
+5th and below,41,-0.19,0.01,19,22
