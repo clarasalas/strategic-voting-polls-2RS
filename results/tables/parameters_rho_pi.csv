@@ -1,0 +1,6 @@
+election,opening_from,opening_to,polls,pollsters,rho_pi_all_polls,rho_pi_between_pollsters
+2002,71,26,26,5,740.0,1372.0
+2007,199,154,8,3,290.0,351.0
+2012,232,187,2,0,1408.0,
+2017,230,185,6,1,344.0,
+2022,220,175,14,4,359.0,903.0

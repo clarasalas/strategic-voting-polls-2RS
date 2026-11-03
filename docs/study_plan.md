@@ -69,7 +69,7 @@ coloured left to right in the order of Wikipedia's poll-table columns (`src/poll
       between 2002 and 2022: estimate per election, do not pool blindly
 - [x] **Temperature θ**, two estimates compared: final polls against results (contaminated by late strategic switching:
       a bound), and the slope of shares by rank in polls against results
-- [ ] **Prior spread ρ<sub>π</sub>**: how much pollsters disagree at the opening of the campaign
+- [x] **Prior spread ρ<sub>π</sub>**: how much pollsters disagree at the opening of the campaign
 - [ ] **Tolerance τ̂**: paired scenarios of one poll, differing by one candidate, show where that candidate's voters
       go when not offered
 - [ ] **Real-world ranges** for the synthetic setup: number of candidates tested (10–16, against 6, 8, 9), HHI, cliff,
