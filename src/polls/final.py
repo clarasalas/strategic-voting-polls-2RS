@@ -318,10 +318,9 @@ def build(root: Path) -> tuple[pd.DataFrame, pd.DataFrame, list[str]]:
     kept = set(thinning.loc[(thinning["source"] == "wikipedia") & thinning["kept"].astype(bool), "poll_id"])
     final = b.wp[b.wp["poll_id"].isin(kept)].copy()
     final["date"] = final["fieldwork_end"].fillna(final["reported_date"])
-    results = pd.read_csv(interim / "results.csv")
-    parties.update(root / "config" / "parties.csv", wp, results, extra=set(zip(b.wp["election"], b.wp["candidate"])))
-    party = parties.load(root / "config" / "parties.csv")
-    final["party"] = [party.get((int(e), c), "") for e, c in zip(final["election"], final["candidate"])]
+    party_file = root / "config" / "parties.csv"
+    parties.update(party_file, final[final["share_status"] != "not_tested"])
+    final["party"] = parties.assign(final, party_file)
     cross = set(matches.loc[matches["status"].str.startswith("matched"), "poll_id_b"])
     spotted = set(spot["poll_id"])
     final["checked_against"] = [
