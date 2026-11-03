@@ -154,6 +154,7 @@ config/
   sources.yaml          pinned sources: Wikipedia revision IDs, git commits, Wayback capture
   candidates.csv        hand-editable map (election, candidate_raw) -> candidate
   institutes.csv        hand-editable map institute_raw -> institute, institute_family
+  parties.csv           hand-editable map (election, candidate) -> party, named as on the ballot (src/polls/parties.py)
   validation.yaml       seed and size of the spot-check sample (fixed before drawing)
 data/
   raw/                  downloads exactly as received; never edited
@@ -197,6 +198,7 @@ of the interim tables (below), plus:
 
 | Column | Meaning |
 |---|---|
+| `party` | from `config/parties.csv`: the ballot party whose slot the candidate fills (Juppé and Sarkozy count for LR in 2017) |
 | `date` | `fieldwork_end`, or `reported_date` where the source gives no fieldwork (2007, 2012: publication date) |
 | `corrected` | the row was changed by the validation (see `corrections.csv`) |
 | `checked_against` | `other source` (matched in france-politique or NSPPolls), `original document` (spot check), both, or empty |

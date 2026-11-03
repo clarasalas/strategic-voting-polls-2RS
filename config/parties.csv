@@ -1,0 +1,147 @@
+﻿election,candidate,labels,party,on_ballot,match,note
+2002,Alain Madelin,DL,DL,True,results,
+2002,Arlette Laguiller,LO,LO,True,results,
+2002,Bruno Mégret,MNR,MNR,True,results,
+2002,Christiane Taubira,PRG,PRG,True,results,
+2002,Christine Boutin,FRS,FRS,True,results,
+2002,Corinne Lepage,Cap21,CAP21,True,results,
+2002,Daniel Gluckstein,POI,PT,True,results,
+2002,François Bayrou,UDF,UDF,True,results,
+2002,Jacques Chirac,RPR,RPR,True,results,
+2002,Jean Saint-Josse,CPNT,CPNT,True,results,
+2002,Jean-Marie Le Pen,FN,FN,True,results,
+2002,Jean-Pierre Chevènement,MDC,MDC,True,results,
+2002,Lionel Jospin,PS,PS,True,results,
+2002,Noël Mamère,LV,LV,True,results,
+2002,Olivier Besancenot,LCR,LCR,True,results,
+2002,Robert Hue,PCF,PCF,True,results,
+2002,Charles Pasqua,RPF,RPF,False,label,withdrew before the official list
+2002,Dominique Voynet,LV,LV,False,label,Green candidate before Mamère
+2002,Philippe de Villiers,MPF,MPF,False,label,did not run
+2002,Antoine Waechter,,MEI,False,suggested,Mouvement écologiste indépendant; not on the ballot
+2002,Dieudonné M'Bala M'Bala,,SE,False,suggested,"no label; independent, not on the ballot"
+2002,Pierre Larrouturou,,SE,False,suggested,no label; affiliation in 2002 to check
+2007,Arlette Laguiller,LO,LO,True,results,
+2007,Dominique Voynet,LV,VERTS,True,results,
+2007,François Bayrou,UDF,UDF,True,results,
+2007,Frédéric Nihous,CPNT,CPNT,True,results,
+2007,Gérard Schivardi,PT,PT,True,results,
+2007,Jean-Marie Le Pen,FN,FN,True,results,
+2007,José Bové,DVG,IND,True,results,
+2007,Marie-George Buffet,PCF,PCF,True,results,
+2007,Nicolas Sarkozy,UMP,UMP,True,results,
+2007,Olivier Besancenot,LCR,LCR,True,results,
+2007,Philippe de Villiers,MPF,MPF,True,results,
+2007,Ségolène Royal,PS,PS,True,results,
+2007,François Hollande,PS,PS,False,label,before the PS nomination
+2007,Jack Lang,PS,PS,False,label,before the PS nomination
+2007,Laurent Fabius,PS,PS,False,label,before the PS nomination
+2007,Nicolas Hulot,SE,SE,False,label,did not run
+2007,Noël Mamère,LV,VERTS,False,label,Green candidate before Voynet (label LV)
+2012,Eva Joly,EELV,EELV,True,results,
+2012,François Bayrou,MoDem,MODEM,True,results,
+2012,François Hollande,PS,PS,True,results,
+2012,Jacques Cheminade,S&P,SP,True,results,
+2012,Jean-Luc Mélenchon,FG,FI,True,results,
+2012,Marine Le Pen,FN,FN,True,results,
+2012,Nathalie Arthaud,LO,LO,True,results,
+2012,Nicolas Dupont-Aignan,DLR,DLF,True,results,
+2012,Nicolas Sarkozy,UMP,UMP,True,results,
+2012,Philippe Poutou,NPA,NPA,True,results,
+2012,Arlette Laguiller,LO,LO,False,label,before Arthaud
+2012,Bernard Tapie,PRG,PRG,False,label,did not run
+2012,Christine Boutin,PCD,PCD,False,label,withdrew
+2012,Corinne Lepage,Cap21,CAP21,False,label,not on the ballot
+2012,Cécile Duflot,EELV,EELV,False,label,before the EELV primary
+2012,Dominique Strauss-Kahn,PS,PS,False,label,before the PS primary
+2012,Dominique Voynet,EELV,EELV,False,label,before the EELV primary
+2012,Dominique de Villepin,RS,RS,False,label,not on the ballot
+2012,Frédéric Nihous,CPNT,CPNT,False,label,did not run
+2012,Gérard Schivardi,PT,PT,False,label,did not run
+2012,Hervé Morin,NC,NC,False,label,withdrew
+2012,Jean-Louis Borloo,PR,PR,False,label,did not run
+2012,Jean-Marie Le Pen,,FN,False,suggested,no label; FN before Marine Le Pen took over (January 2011)
+2012,Jean-Pierre Chevènement,MRC,MRC,False,label,withdrew
+2012,José Bové,SÉ,EELV,False,suggested,label SÉ; tested as a possible EELV candidate
+2012,Marie-George Buffet,PCF,FI,False,suggested,"PCF, part of the Front de gauche behind Mélenchon (FI in the results)"
+2012,Martine Aubry,PS,PS,False,label,before the PS primary
+2012,Nicolas Hulot,EELV,EELV,False,label,before the EELV primary
+2012,Olivier Besancenot,NPA,NPA,False,label,before Poutou
+2012,Philippe de Villiers,MPF,MPF,False,label,did not run
+2012,Ségolène Royal,PS,PS,False,label,before the PS primary
+2012,"[EELV, candidat non désigné]",,EELV,False,label,placeholder before the EELV primary
+2017,Benoît Hamon,PS,PS,True,results,
+2017,Emmanuel Macron,DVG|EM|SE,RE,True,results,
+2017,François Asselineau,UPR,UPR,True,results,
+2017,François Fillon,LR|UMP,LR,True,results,
+2017,Jacques Cheminade,S&P|SP,SP,True,results,
+2017,Jean Lassalle,RES,RES,True,results,
+2017,Jean-Luc Mélenchon,FG|LFI,LFI,True,results,
+2017,Marine Le Pen,FN,RN,True,results,
+2017,Nathalie Arthaud,LO,LO,True,results,
+2017,Nicolas Dupont-Aignan,DLF|DLR,DLF,True,results,
+2017,Philippe Poutou,NPA,NPA,True,results,
+2017,Alain Juppé,LR|UMP,LR,False,label,LR primary (label LR or UMP)
+2017,Arnaud Montebourg,PS,PS,False,label,PS primary
+2017,Bruno Le Maire,LR,LR,False,label,LR primary
+2017,Charlotte Marchandise,,SE,False,suggested,"no label; LaPrimaire.org, not on the ballot"
+2017,Cécile Duflot,EELV,EELV,False,label,EELV primary; EELV later backed Hamon
+2017,Eva Joly,EELV,EELV,False,label,EELV later backed Hamon
+2017,François Bayrou,MoDem,MODEM,False,label,"withdrew, backed Macron"
+2017,François Hollande,PS,PS,False,label,did not run
+2017,Henri Guaino,,SE,False,suggested,"no label; LR member running as an independent, not on the ballot"
+2017,Jean-François Copé,UMP,LR,False,label,LR primary (label UMP)
+2017,Manuel Valls,PS,PS,False,label,PS primary
+2017,Martine Aubry,PS,PS,False,label,did not run
+2017,Michèle Alliot-Marie,,SE,False,suggested,"no label; independent bid, not on the ballot"
+2017,Nicolas Hulot,,SE,False,suggested,no label; did not run
+2017,Nicolas Sarkozy,LR|UMP,LR,False,label,LR primary (label LR or UMP)
+2017,Olivier Besancenot,NPA,NPA,False,label,before Poutou
+2017,Philippe de Villiers,MPF,MPF,False,label,did not run
+2017,Pierre Larrouturou,,ND,False,suggested,no label; Nouvelle Donne
+2017,Rama Yade,,SE,False,suggested,"no label; La France qui ose, not on the ballot"
+2017,Sylvia Pinel,PRG,PRG,False,label,PS primary; PRG later backed Hamon
+2017,Vincent Peillon,PS,PS,False,label,PS primary
+2017,Yannick Jadot,EELV,EELV,False,label,"withdrew, backed Hamon"
+2022,Anne Hidalgo,PS,PS,True,results,
+2022,Emmanuel Macron,LREM,RE,True,results,
+2022,Fabien Roussel,PCF,PCF,True,results,
+2022,Jean Lassalle,RES,RES,True,results,
+2022,Jean-Luc Mélenchon,LFI,LFI,True,results,
+2022,Marine Le Pen,RN,RN,True,results,
+2022,Nathalie Arthaud,LO,LO,True,results,
+2022,Nicolas Dupont-Aignan,DLF,DLF,True,results,
+2022,Philippe Poutou,NPA,NPA,True,results,
+2022,Valérie Pécresse,LR,LR,True,results,
+2022,Yannick Jadot,EELV,EELV,True,results,
+2022,Éric Zemmour,EXD|REC,REC,True,results,
+2022,Arnaud Montebourg,DVG|PS,DVG,False,suggested,"label DVG or PS; ran outside the PS, withdrew"
+2022,Benoît Hamon,G.s,G.s,False,label,did not run
+2022,Bernard Cazeneuve,,PS,False,suggested,no label; tested as an alternative PS-side candidate
+2022,Bruno Retailleau,,LR,False,suggested,no label; LR nomination contender
+2022,Christiane Taubira,DVG,DVG,False,label,withdrew; not the PS candidate
+2022,Denis Payre,,LR,False,suggested,no label; LR congress candidate
+2022,Florian Philippot,LP,LP,False,label,not on the ballot
+2022,François Asselineau,UPR,UPR,False,label,not on the ballot
+2022,François Baroin,,LR,False,suggested,no label; possible LR candidate
+2022,François Fillon,,LR,False,suggested,no label
+2022,François Hollande,,PS,False,suggested,no label
+2022,Hélène Thouy,PA,PA,False,label,not on the ballot
+2022,Jacques Cheminade,S&P,SP,False,label,not on the ballot
+2022,Jean-Christophe Lagarde,UDI,UDI,False,label,"withdrew, backed Pécresse"
+2022,Jean-Frédéric Poisson,VIA,VIA,False,label,"withdrew, backed Zemmour"
+2022,Laurent Wauquiez,,LR,False,suggested,no label; possible LR candidate
+2022,Michel Barnier,,LR,False,suggested,no label; LR congress candidate
+2022,Olivier Faure,,PS,False,suggested,no label; PS first secretary
+2022,Philippe Juvin,,LR,False,suggested,no label; LR congress candidate
+2022,Rachida Dati,,LR,False,suggested,no label
+2022,Sandrine Rousseau,EELV,EELV,False,label,EELV primary
+2022,Ségolène Royal,,PS,False,suggested,"no label; former PS candidate, considered an independent bid"
+2022,Xavier Bertrand,,LR,False,suggested,"no label; left LR in 2017, ran in the LR congress in 2021"
+2022,"[LR, candidat non désigné]",,LR,False,suggested,placeholder before the LR congress
+2022,"[PS, candidat non désigné]",,PS,False,suggested,placeholder
+2022,"[PS/DVG, candidat non désigné]",,PS,False,suggested,placeholder for the PS or an ally
+2022,"[extrême gauche, candidat non désigné]",NPA,NPA,False,suggested,placeholder; label NPA
+2022,Éric Ciotti,,LR,False,suggested,no label; LR congress candidate
+2022,Éric Piolle,EELV,EELV,False,label,EELV primary
+2022,"[EELV, candidat non désigné]",,EELV,False,label,placeholder before the EELV primary

@@ -26,7 +26,7 @@ from pathlib import Path
 
 import pandas as pd
 
-from . import worklists
+from . import parties, worklists
 from .crosscheck import ALIASES
 from .textparse import strip_accents
 
@@ -59,7 +59,7 @@ HELD: dict[tuple[str, str], str] = {}
 FINAL_COLUMNS = [
     "election", "poll_id", "scenario_id", "scenario_label", "institute", "institute_family", "institute_raw",
     "sponsor", "fieldwork_start", "fieldwork_end", "reported_date", "date", "sample_size", "rolling",
-    "candidate", "share", "share_status", "share_upper_bound", "final_list_scenario",
+    "candidate", "party", "share", "share_status", "share_upper_bound", "final_list_scenario",
     "corrected", "checked_against", "upstream_source_url", "notice_url", "wiki_revision_id", "source_poll_ref",
 ]
 
@@ -318,6 +318,10 @@ def build(root: Path) -> tuple[pd.DataFrame, pd.DataFrame, list[str]]:
     kept = set(thinning.loc[(thinning["source"] == "wikipedia") & thinning["kept"].astype(bool), "poll_id"])
     final = b.wp[b.wp["poll_id"].isin(kept)].copy()
     final["date"] = final["fieldwork_end"].fillna(final["reported_date"])
+    results = pd.read_csv(interim / "results.csv")
+    parties.update(root / "config" / "parties.csv", wp, results, extra=set(zip(b.wp["election"], b.wp["candidate"])))
+    party = parties.load(root / "config" / "parties.csv")
+    final["party"] = [party.get((int(e), c), "") for e, c in zip(final["election"], final["candidate"])]
     cross = set(matches.loc[matches["status"].str.startswith("matched"), "poll_id_b"])
     spotted = set(spot["poll_id"])
     final["checked_against"] = [
