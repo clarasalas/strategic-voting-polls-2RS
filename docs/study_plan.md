@@ -57,8 +57,9 @@ coloured left to right in the order of Wikipedia's poll-table columns (`src/poll
       within a fixed set (voter coordination)
 - [x] **Poll error by role**, signed: do candidates near the cliff do worse than their polls, their neighbours better?
 - [x] **The cliff**: size in polls against the result; predictability of the runoff pair at each horizon
-- [ ] **Who gains in the last weeks**, for 2002 and 2022 with the ABM's candidate positions
-- [ ] **Momentum**: does rising predict rising further?
+- [x] ~~**Who gains in the last weeks**, for 2002 and 2022 with the ABM's candidate positions~~ covered by the error
+      along the left-right axis (section 3 of notebook 06); measured distances not needed
+- [x] **Momentum**: does rising predict rising further?
 - [ ] **Stylized facts** across the five elections (2007, 2012 and 2017 as out-of-sample cases)
 
 ## Part 3 · Parameters (notebook 07)
