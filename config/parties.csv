@@ -7,7 +7,7 @@
 2012,Eva Joly,EELV,EELV,,4,label,
 2012,François Hollande,PS,PS,,15,label,
 2012,Jean-Marie Le Pen,,FN,,4,suggested,polls of 2007-2009
-2012,José Bové,SE,EELV,yes,0,manual,Wikipedia says SÉ; EELV member of the European Parliament (checked by hand)
+2012,José Bové,SE,SE,,0,manual,"SE as Wikipedia: unaffiliated in 2007-08, Europe Écologie (a coalition, not a party) from 2008; never a Verts member (checked by hand)"
 2012,Marine Le Pen,FN,FN,,1,label,
 2012,Martine Aubry,PS,PS,,18,label,
 2012,Nicolas Hulot,EELV,EELV,,4,label,
@@ -36,7 +36,7 @@
 2022,Philippe Juvin,,LR,,7,suggested,
 2022,Rachida Dati,,LR,,1,suggested,
 2022,Ségolène Royal,,PS,,1,suggested,poll of October 2020: check membership
-2022,Valérie Pécresse,LR,Libres!,,59,suggested,polls of October 2019 to November 2021: left LR in June 2019; check when she rejoined for the congress
+2022,Valérie Pécresse,LR,Libres!,,59,manual,"Libres! until her LR nomination (December 2021, from when Wikipedia labels her LR); left LR in June 2019 (checked by hand)"
 2022,Xavier Bertrand,,DVD,,69,suggested,"polls of 2019-2021: left LR in 2017, ran in the 2021 LR congress"
 2022,"[EELV, candidat non désigné]",,EELV,,1,label,placeholder before the EELV primary
 2022,"[LR, candidat non désigné]",,LR,,1,label,placeholder

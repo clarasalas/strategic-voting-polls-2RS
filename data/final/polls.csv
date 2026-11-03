@@ -2844,7 +2844,7 @@ election,poll_id,scenario_id,scenario_label,institute,institute_family,institute
 2012,2012_wp_ifop_2007-11-02_1,2012_wp_ifop_2007-11-02_1_s1,,Ifop,Ifop,Ifop,,,,2007-11-02,2007-11-02,,,Frédéric Nihous,CPNT,1.0,value,,False,False,original document,,,238741176,table 9 row 8
 2012,2012_wp_ifop_2007-11-02_1,2012_wp_ifop_2007-11-02_1_s1,,Ifop,Ifop,Ifop,,,,2007-11-02,2007-11-02,,,Gérard Schivardi,PT,0.5,value,,False,False,original document,,,238741176,table 9 row 8
 2012,2012_wp_ifop_2007-11-02_1,2012_wp_ifop_2007-11-02_1_s1,,Ifop,Ifop,Ifop,,,,2007-11-02,2007-11-02,,,Jean-Marie Le Pen,FN,9.0,value,,False,False,original document,,,238741176,table 9 row 8
-2012,2012_wp_ifop_2007-11-02_1,2012_wp_ifop_2007-11-02_1_s1,,Ifop,Ifop,Ifop,,,,2007-11-02,2007-11-02,,,José Bové,EELV,1.5,value,,False,False,original document,,,238741176,table 9 row 8
+2012,2012_wp_ifop_2007-11-02_1,2012_wp_ifop_2007-11-02_1_s1,,Ifop,Ifop,Ifop,,,,2007-11-02,2007-11-02,,,José Bové,SE,1.5,value,,False,False,original document,,,238741176,table 9 row 8
 2012,2012_wp_ifop_2007-11-02_1,2012_wp_ifop_2007-11-02_1_s1,,Ifop,Ifop,Ifop,,,,2007-11-02,2007-11-02,,,Marie-George Buffet,PCF,2.0,value,,False,False,original document,,,238741176,table 9 row 8
 2012,2012_wp_ifop_2007-11-02_1,2012_wp_ifop_2007-11-02_1_s1,,Ifop,Ifop,Ifop,,,,2007-11-02,2007-11-02,,,Nicolas Dupont-Aignan,DLR,,not_tested,,False,False,original document,,,238741176,table 9 row 8
 2012,2012_wp_ifop_2007-11-02_1,2012_wp_ifop_2007-11-02_1_s1,,Ifop,Ifop,Ifop,,,,2007-11-02,2007-11-02,,,Nicolas Sarkozy,UMP,35.0,value,,False,False,original document,,,238741176,table 9 row 8
@@ -2858,7 +2858,7 @@ election,poll_id,scenario_id,scenario_label,institute,institute_family,institute
 2012,2012_wp_opinionway_2008-05-02_1,2012_wp_opinionway_2008-05-02_1_s1,,OpinionWay,OpinionWay,OpinionWay,,,,2008-05-02,2008-05-02,,,Frédéric Nihous,CPNT,1.0,value,,False,False,,,,238741176,table 9 row 7
 2012,2012_wp_opinionway_2008-05-02_1,2012_wp_opinionway_2008-05-02_1_s1,,OpinionWay,OpinionWay,OpinionWay,,,,2008-05-02,2008-05-02,,,Gérard Schivardi,PT,0.0,value,,False,False,,,,238741176,table 9 row 7
 2012,2012_wp_opinionway_2008-05-02_1,2012_wp_opinionway_2008-05-02_1_s1,,OpinionWay,OpinionWay,OpinionWay,,,,2008-05-02,2008-05-02,,,Jean-Marie Le Pen,FN,7.0,value,,False,False,,,,238741176,table 9 row 7
-2012,2012_wp_opinionway_2008-05-02_1,2012_wp_opinionway_2008-05-02_1_s1,,OpinionWay,OpinionWay,OpinionWay,,,,2008-05-02,2008-05-02,,,José Bové,EELV,2.0,value,,False,False,,,,238741176,table 9 row 7
+2012,2012_wp_opinionway_2008-05-02_1,2012_wp_opinionway_2008-05-02_1_s1,,OpinionWay,OpinionWay,OpinionWay,,,,2008-05-02,2008-05-02,,,José Bové,SE,2.0,value,,False,False,,,,238741176,table 9 row 7
 2012,2012_wp_opinionway_2008-05-02_1,2012_wp_opinionway_2008-05-02_1_s1,,OpinionWay,OpinionWay,OpinionWay,,,,2008-05-02,2008-05-02,,,Marie-George Buffet,PCF,2.0,value,,False,False,,,,238741176,table 9 row 7
 2012,2012_wp_opinionway_2008-05-02_1,2012_wp_opinionway_2008-05-02_1_s1,,OpinionWay,OpinionWay,OpinionWay,,,,2008-05-02,2008-05-02,,,Nicolas Dupont-Aignan,DLR,,not_tested,,False,False,,,,238741176,table 9 row 7
 2012,2012_wp_opinionway_2008-05-02_1,2012_wp_opinionway_2008-05-02_1_s1,,OpinionWay,OpinionWay,OpinionWay,,,,2008-05-02,2008-05-02,,,Nicolas Sarkozy,UMP,33.0,value,,False,False,,,,238741176,table 9 row 7
@@ -2872,7 +2872,7 @@ election,poll_id,scenario_id,scenario_label,institute,institute_family,institute
 2012,2012_wp_opinionway_2009-04-30_1,2012_wp_opinionway_2009-04-30_1_s1,,OpinionWay,OpinionWay,OpinionWay,,,,2009-04-30,2009-04-30,,,Frédéric Nihous,CPNT,0.5,value,,False,False,original document,,,238741176,table 9 row 6
 2012,2012_wp_opinionway_2009-04-30_1,2012_wp_opinionway_2009-04-30_1_s1,,OpinionWay,OpinionWay,OpinionWay,,,,2009-04-30,2009-04-30,,,Gérard Schivardi,PT,0.5,value,,False,False,original document,,,238741176,table 9 row 6
 2012,2012_wp_opinionway_2009-04-30_1,2012_wp_opinionway_2009-04-30_1_s1,,OpinionWay,OpinionWay,OpinionWay,,,,2009-04-30,2009-04-30,,,Jean-Marie Le Pen,FN,7.0,value,,False,False,original document,,,238741176,table 9 row 6
-2012,2012_wp_opinionway_2009-04-30_1,2012_wp_opinionway_2009-04-30_1_s1,,OpinionWay,OpinionWay,OpinionWay,,,,2009-04-30,2009-04-30,,,José Bové,EELV,1.0,value,,False,False,original document,,,238741176,table 9 row 6
+2012,2012_wp_opinionway_2009-04-30_1,2012_wp_opinionway_2009-04-30_1_s1,,OpinionWay,OpinionWay,OpinionWay,,,,2009-04-30,2009-04-30,,,José Bové,SE,1.0,value,,False,False,original document,,,238741176,table 9 row 6
 2012,2012_wp_opinionway_2009-04-30_1,2012_wp_opinionway_2009-04-30_1_s1,,OpinionWay,OpinionWay,OpinionWay,,,,2009-04-30,2009-04-30,,,Marie-George Buffet,PCF,2.0,value,,False,False,original document,,,238741176,table 9 row 6
 2012,2012_wp_opinionway_2009-04-30_1,2012_wp_opinionway_2009-04-30_1_s1,,OpinionWay,OpinionWay,OpinionWay,,,,2009-04-30,2009-04-30,,,Nicolas Dupont-Aignan,DLR,,not_tested,,False,False,original document,,,238741176,table 9 row 6
 2012,2012_wp_opinionway_2009-04-30_1,2012_wp_opinionway_2009-04-30_1_s1,,OpinionWay,OpinionWay,OpinionWay,,,,2009-04-30,2009-04-30,,,Nicolas Sarkozy,UMP,30.0,value,,False,False,original document,,,238741176,table 9 row 6
@@ -2886,7 +2886,7 @@ election,poll_id,scenario_id,scenario_label,institute,institute_family,institute
 2012,2012_wp_opinionway_2009-06-18_1,2012_wp_opinionway_2009-06-18_1_s1,,OpinionWay,OpinionWay,OpinionWay,,,,2009-06-18,2009-06-18,,,Frédéric Nihous,CPNT,0.5,value,,False,False,,,,238741176,table 9 row 4
 2012,2012_wp_opinionway_2009-06-18_1,2012_wp_opinionway_2009-06-18_1_s1,,OpinionWay,OpinionWay,OpinionWay,,,,2009-06-18,2009-06-18,,,Gérard Schivardi,PT,0.5,value,,False,False,,,,238741176,table 9 row 4
 2012,2012_wp_opinionway_2009-06-18_1,2012_wp_opinionway_2009-06-18_1_s1,,OpinionWay,OpinionWay,OpinionWay,,,,2009-06-18,2009-06-18,,,Jean-Marie Le Pen,FN,9.0,value,,False,False,,,,238741176,table 9 row 4
-2012,2012_wp_opinionway_2009-06-18_1,2012_wp_opinionway_2009-06-18_1_s1,,OpinionWay,OpinionWay,OpinionWay,,,,2009-06-18,2009-06-18,,,José Bové,EELV,4.0,value,,False,False,,,,238741176,table 9 row 4
+2012,2012_wp_opinionway_2009-06-18_1,2012_wp_opinionway_2009-06-18_1_s1,,OpinionWay,OpinionWay,OpinionWay,,,,2009-06-18,2009-06-18,,,José Bové,SE,4.0,value,,False,False,,,,238741176,table 9 row 4
 2012,2012_wp_opinionway_2009-06-18_1,2012_wp_opinionway_2009-06-18_1_s1,,OpinionWay,OpinionWay,OpinionWay,,,,2009-06-18,2009-06-18,,,Marie-George Buffet,PCF,3.0,value,,False,False,,,,238741176,table 9 row 4
 2012,2012_wp_opinionway_2009-06-18_1,2012_wp_opinionway_2009-06-18_1_s1,,OpinionWay,OpinionWay,OpinionWay,,,,2009-06-18,2009-06-18,,,Nicolas Dupont-Aignan,DLR,,not_tested,,False,False,,,,238741176,table 9 row 4
 2012,2012_wp_opinionway_2009-06-18_1,2012_wp_opinionway_2009-06-18_1_s1,,OpinionWay,OpinionWay,OpinionWay,,,,2009-06-18,2009-06-18,,,Nicolas Sarkozy,UMP,33.0,value,,False,False,,,,238741176,table 9 row 4
@@ -2900,7 +2900,7 @@ election,poll_id,scenario_id,scenario_label,institute,institute_family,institute
 2012,2012_wp_opinionway_2009-06-18_1,2012_wp_opinionway_2009-06-18_1_s2,,OpinionWay,OpinionWay,OpinionWay,,,,2009-06-18,2009-06-18,,,Frédéric Nihous,CPNT,0.5,value,,False,False,,,,238741176,table 9 row 4
 2012,2012_wp_opinionway_2009-06-18_1,2012_wp_opinionway_2009-06-18_1_s2,,OpinionWay,OpinionWay,OpinionWay,,,,2009-06-18,2009-06-18,,,Gérard Schivardi,PT,0.5,value,,False,False,,,,238741176,table 9 row 4
 2012,2012_wp_opinionway_2009-06-18_1,2012_wp_opinionway_2009-06-18_1_s2,,OpinionWay,OpinionWay,OpinionWay,,,,2009-06-18,2009-06-18,,,Jean-Marie Le Pen,FN,9.0,value,,False,False,,,,238741176,table 9 row 4
-2012,2012_wp_opinionway_2009-06-18_1,2012_wp_opinionway_2009-06-18_1_s2,,OpinionWay,OpinionWay,OpinionWay,,,,2009-06-18,2009-06-18,,,José Bové,EELV,5.0,value,,False,False,,,,238741176,table 9 row 4
+2012,2012_wp_opinionway_2009-06-18_1,2012_wp_opinionway_2009-06-18_1_s2,,OpinionWay,OpinionWay,OpinionWay,,,,2009-06-18,2009-06-18,,,José Bové,SE,5.0,value,,False,False,,,,238741176,table 9 row 4
 2012,2012_wp_opinionway_2009-06-18_1,2012_wp_opinionway_2009-06-18_1_s2,,OpinionWay,OpinionWay,OpinionWay,,,,2009-06-18,2009-06-18,,,Marie-George Buffet,PCF,2.0,value,,False,False,,,,238741176,table 9 row 4
 2012,2012_wp_opinionway_2009-06-18_1,2012_wp_opinionway_2009-06-18_1_s2,,OpinionWay,OpinionWay,OpinionWay,,,,2009-06-18,2009-06-18,,,Martine Aubry,PS,19.0,value,,False,False,,,,238741176,table 9 row 4
 2012,2012_wp_opinionway_2009-06-18_1,2012_wp_opinionway_2009-06-18_1_s2,,OpinionWay,OpinionWay,OpinionWay,,,,2009-06-18,2009-06-18,,,Nicolas Dupont-Aignan,DLR,,not_tested,,False,False,,,,238741176,table 9 row 4
@@ -2912,7 +2912,7 @@ election,poll_id,scenario_id,scenario_label,institute,institute_family,institute
 2012,2012_wp_ifop_2009-10-30_1,2012_wp_ifop_2009-10-30_1_s1,,Ifop,Ifop,Ifop,,,,2009-10-30,2009-10-30,,,François Bayrou,MoDem,14.0,value,,False,False,,,,238741176,table 9 row 3
 2012,2012_wp_ifop_2009-10-30_1,2012_wp_ifop_2009-10-30_1_s1,,Ifop,Ifop,Ifop,,,,2009-10-30,2009-10-30,,,Frédéric Nihous,CPNT,,not_tested,,False,False,,,,238741176,table 9 row 3
 2012,2012_wp_ifop_2009-10-30_1,2012_wp_ifop_2009-10-30_1_s1,,Ifop,Ifop,Ifop,,,,2009-10-30,2009-10-30,,,Gérard Schivardi,PT,,not_tested,,False,False,,,,238741176,table 9 row 3
-2012,2012_wp_ifop_2009-10-30_1,2012_wp_ifop_2009-10-30_1_s1,,Ifop,Ifop,Ifop,,,,2009-10-30,2009-10-30,,,José Bové,EELV,,not_tested,,False,False,,,,238741176,table 9 row 3
+2012,2012_wp_ifop_2009-10-30_1,2012_wp_ifop_2009-10-30_1_s1,,Ifop,Ifop,Ifop,,,,2009-10-30,2009-10-30,,,José Bové,SE,,not_tested,,False,False,,,,238741176,table 9 row 3
 2012,2012_wp_ifop_2009-10-30_1,2012_wp_ifop_2009-10-30_1_s1,,Ifop,Ifop,Ifop,,,,2009-10-30,2009-10-30,,,Marie-George Buffet,PCF,3.0,value,,False,False,,,,238741176,table 9 row 3
 2012,2012_wp_ifop_2009-10-30_1,2012_wp_ifop_2009-10-30_1_s1,,Ifop,Ifop,Ifop,,,,2009-10-30,2009-10-30,,,Marine Le Pen,FN,11.0,value,,False,False,,,,238741176,table 9 row 3
 2012,2012_wp_ifop_2009-10-30_1,2012_wp_ifop_2009-10-30_1_s1,,Ifop,Ifop,Ifop,,,,2009-10-30,2009-10-30,,,Martine Aubry,PS,20.0,value,,False,False,,,,238741176,table 9 row 3

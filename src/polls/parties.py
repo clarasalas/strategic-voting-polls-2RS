@@ -7,7 +7,7 @@ hand-editable and covers the rest:
 - `party` fills the rows where Wikipedia gives no label, and must be the label at the time of
   those rows (Duflot in 2010: Les Verts, before EELV existed);
 - `override` = yes applies `party` to every row of that candidate, replacing Wikipedia's label
-  (Bové in 2012: Wikipedia says SÉ, he was an EELV member of the European Parliament).
+  (none at present).
 
 `match`: "label" (taken from the candidate's other Wikipedia labels), "suggested" (a proposal to
 check), "manual" (checked or written by hand). Rows already in the file are never changed; new
@@ -32,7 +32,7 @@ INITIAL = {
     (2002, "Pierre Larrouturou"): ("SE", "", "manual", "independent: had left the PS (checked by hand)"),
     (2012, "Cécile Duflot"): ("LV", "", "suggested", "polls of 2010, before Les Verts became EELV (November 2010)"),
     (2012, "Jean-Marie Le Pen"): ("FN", "", "suggested", "polls of 2007-2009"),
-    (2012, "José Bové"): ("EELV", "yes", "manual", "Wikipedia says SÉ; EELV member of the European Parliament (checked by hand)"),
+    (2012, "José Bové"): ("SE", "", "manual", "SE as Wikipedia: unaffiliated, then Europe Écologie (a coalition) from 2008 (checked by hand)"),
     (2017, "Henri Guaino"): ("LR", "", "suggested", "poll of June 2016, still an LR deputy"),
     (2017, "Jean Lassalle"): ("RES", "", "suggested", "poll of June 2016: check that Résistons! existed then"),
     (2017, "Nicolas Hulot"): ("SE", "", "suggested", "polls of 2016"),
