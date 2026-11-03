@@ -43,7 +43,7 @@ INITIAL = {
     (2022, "Arnaud Montebourg"): ("SE", "", "suggested", "polls of January 2021; Wikipedia says DVG later (an orientation, read as SE)"),
     (2022, "Bernard Cazeneuve"): ("PS", "", "suggested", "poll of 2019"),
     (2022, "Bruno Retailleau"): ("LR", "", "suggested", ""),
-    (2022, "Denis Payre"): ("LR", "", "suggested", "LR congress candidate, September 2021: check membership"),
+    (2022, "Denis Payre"): ("LR", "", "manual", "LR congress candidate, September 2021 (checked by hand)"),
     (2022, "François Baroin"): ("LR", "", "suggested", ""),
     (2022, "François Fillon"): ("LR", "", "suggested", "polls of 2017-2018"),
     (2022, "François Hollande"): ("PS", "", "suggested", ""),
