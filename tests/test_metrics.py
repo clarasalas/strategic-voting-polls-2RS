@@ -48,3 +48,16 @@ def test_phases_and_weeks():
     assert t["days_before"].tolist() == [40, 21, 14, 2]
     assert t["weeks_before"].tolist() == [6, 3, 2, 1]
     assert t["phase"].tolist() == [timeline.PHASES[0], timeline.PHASES[1], timeline.PHASES[2], timeline.PHASES[2]]
+
+
+def test_poll_average_of_constant_polls_is_that_constant():
+    from polls import average
+    days = np.arange(0, 60, 2)
+    s = average.smooth(days, np.full(len(days), 20.0), np.array([10, 30]))
+    assert s["mean"].tolist() == pytest.approx([20.0, 20.0]) and s["sd"].tolist() == pytest.approx([0.0, 0.0])
+
+
+def test_poll_average_leaves_sparse_days_empty():
+    from polls import average
+    s = average.smooth(np.array([0.0]), np.array([20.0]), np.array([0, 200]), min_polls=3)
+    assert s["mean"].isna().all()
