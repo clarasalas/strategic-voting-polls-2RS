@@ -1,0 +1,14 @@
+election,removed,polls,pairs,total,top_receivers,to_adjacent,places_50,places_80,mean_places,to_the_left,losses
+2017,François Bayrou,19,28,1.0,LR slot 28%; Macron 22%; PS slot 17%,0.51,1,3,1.89,0.57,-0.0
+2022,Éric Zemmour,16,34,1.0,Le Pen 52%; LR slot 16%; Dupont-Aignan 15%,0.52,1,4,2.36,1.0,0.0
+2017,Emmanuel Macron,9,15,1.0,LR slot 37%; PS slot 21%; Le Pen 14%,0.67,1,3,1.75,0.35,0.0
+2022,Christiane Taubira,6,6,1.0,Jadot 26%; Macron 22%; PS slot 18%,0.42,2,5,2.62,0.41,0.04
+2017,Arnaud Montebourg,3,4,1.0,Mélenchon 34%; LR slot 21%; Macron 17%,0.13,2,2,2.32,0.43,-0.0
+2022,Yannick Jadot,2,2,1.0,Hidalgo 61%; Macron 35%; LR slot 10%,0.85,1,1,1.37,0.57,0.13
+2022,Anne Hidalgo,2,3,1.0,Jadot 59%; Macron 19%; LR slot 9%,0.61,1,2,1.89,0.05,-0.0
+2017,Jean-Luc Mélenchon,1,1,1.0,PS slot 33%; Bayrou 21%; Le Pen 17%,0.5,1,3,2.04,0.25,-0.0
+2017,Cécile Duflot,1,1,1.0,PS slot 33%; Bayrou 33%; Dupont-Aignan 33%,0.33,2,4,2.33,0.0,-0.0
+2022,François Hollande,1,1,1.0,Jadot 133%; Dupont-Aignan 17%; LR slot 8%,0.05,3,3,2.79,0.84,0.58
+2022,Arnaud Montebourg,1,2,1.0,Jadot 84%; Hidalgo 12%; LR slot 6%,0.13,1,1,1.61,0.01,0.04
+2022,Xavier Bertrand,1,1,1.0,Pécresse 45%; Macron 36%; Le Pen 27%,0.42,3,4,2.42,0.75,0.09
+2022,Valérie Pécresse,1,1,1.0,LR slot 62%; Macron 38%; Le Pen 12%,0.56,1,2,1.78,0.33,0.12
