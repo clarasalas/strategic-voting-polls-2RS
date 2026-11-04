@@ -62,6 +62,18 @@ The sample is stratified by pollster and drawn with the seed in `config/validati
 Do not redraw it. If no errors are found in 30 polls, the error rate is below about 10% at 95% confidence (rule of
 three).
 
+### `opinionway_2022_overlaps.csv`
+
+The 34 OpinionWay polls of 2022 (NSPPolls) whose fieldwork overlaps between its CNews series (2 days) and its
+*Les Echos* / Radio Classique rolling series (4 days), with each poll's Commission des sondages notice: the number,
+the current address where the link search found it, the old (dead) address and its Wayback form. To settle whether
+CNews got part of the same rolling sample:
+
+| Column | What to write |
+|---|---|
+| `same_sample` | `yes`, `no` or `NA` |
+| `notes` | what the notices say (fieldwork, sample, method) |
+
 ### `flagged_clients.csv`
 
 Done. `client` is who commissioned the poll and `client_found_in` where that was read. Notebook 02 reads this
