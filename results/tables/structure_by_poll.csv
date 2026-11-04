@@ -473,15 +473,15 @@ election,poll_id,days_before,phase,n_extra,n_candidates,total,hhi,hhi_raw,enp,to
 2022,2022_wp_ifop_2022-01-05_1,95,before the official list,1,13,100.0,0.1572,0.1572,6.3593,43.0,11.0,11.0,1,0.8864,0.0,0.0,2.5,3,Emmanuel Macron,Valérie Pécresse,Marine Le Pen,Éric Zemmour
 2022,2022_wp_ifop_2022-01-13_1,87,before the official list,2,14,100.0,0.16,0.16,6.248,43.5,9.5,9.5,1,0.8736,0.5,0.0294,3.0,3,Emmanuel Macron,Valérie Pécresse,Marine Le Pen,Éric Zemmour
 2022,2022_wp_ifop_2022-01-20_1,80,before the official list,3,15,100.0,0.1541,0.1541,6.4872,43.5,7.5,7.5,1,0.8442,2.0,0.1111,4.0,2,Emmanuel Macron,Marine Le Pen,Valérie Pécresse,Éric Zemmour
-2022,2022_wp_ifop_2022-01-27_1,73,before the official list,2,14,100.0,0.1526,0.1526,6.5531,43.0,6.0,6.0,1,0.7956,2.5,0.1351,2.5,3,Emmanuel Macron,Marine Le Pen,Valérie Pécresse,Éric Zemmour
-2022,2022_wp_ifop_2022-02-03_1,66,before the official list,2,14,100.0,0.1546,0.1546,6.4662,43.0,7.0,7.0,1,0.8235,2.5,0.1389,1.5,3,Emmanuel Macron,Marine Le Pen,Valérie Pécresse,Éric Zemmour
+2022,2022_wp_ifop_2022-01-24_1,76,before the official list,2,14,100.0,0.1512,0.1512,6.6159,42.5,6.5,6.5,1,0.8125,1.5,0.0833,4.5,2,Emmanuel Macron,Marine Le Pen,Valérie Pécresse,Éric Zemmour
+2022,2022_wp_ifop_2022-01-31_1,69,before the official list,2,14,100.0,0.1496,0.1496,6.6845,41.5,6.5,6.5,1,0.8168,1.0,0.0571,3.0,3,Emmanuel Macron,Marine Le Pen,Valérie Pécresse,Éric Zemmour
 2022,2022_wp_ifop_2022-02-04_1,65,before the official list,2,14,100.5,0.1507,0.1522,6.6356,42.0,8.0,8.0,1,0.8514,1.0,0.0588,2.0,3,Emmanuel Macron,Marine Le Pen,Valérie Pécresse,Éric Zemmour
-2022,2022_wp_ifop_2022-02-10_1,59,before the official list,2,14,100.0,0.1554,0.1554,6.4329,43.0,8.0,8.0,1,0.8458,2.5,0.1429,0.5,3,Emmanuel Macron,Marine Le Pen,Valérie Pécresse,Éric Zemmour
-2022,2022_wp_ifop_2022-02-17_1,52,before the official list,2,14,100.0,0.1601,0.1601,6.2461,42.5,9.5,9.5,1,0.8736,0.5,0.0303,1.0,3,Emmanuel Macron,Marine Le Pen,Éric Zemmour,Valérie Pécresse
-2022,2022_wp_ifop_2022-02-24_1,45,before the official list,2,14,100.0,0.1517,0.1517,6.592,41.0,9.0,9.0,1,0.871,0.0,0.0,2.0,4,Emmanuel Macron,Marine Le Pen,Éric Zemmour,Valérie Pécresse
-2022,2022_wp_ifop_2022-03-03_1,38,before the official list,2,14,100.0,0.1599,0.1599,6.2559,45.0,11.0,11.0,1,0.8889,3.0,0.1765,2.0,3,Emmanuel Macron,Marine Le Pen,Valérie Pécresse,Éric Zemmour
-2022,2022_wp_ifop_2022-03-10_1,31,official list to two weeks before,0,12,100.0,0.1757,0.1757,5.6915,49.0,13.0,13.0,1,0.8814,5.5,0.3056,0.5,1,Emmanuel Macron,Marine Le Pen,Valérie Pécresse,Éric Zemmour
-2022,2022_wp_ifop_2022-03-17_1,24,official list to two weeks before,0,12,100.0,0.17,0.17,5.8824,47.5,12.5,12.5,1,0.8803,4.5,0.2571,0.5,3,Emmanuel Macron,Marine Le Pen,Éric Zemmour,Jean-Luc Mélenchon
+2022,2022_wp_ifop_2022-02-07_1,62,before the official list,2,14,100.0,0.1543,0.1543,6.4809,42.5,7.5,7.5,1,0.8372,2.0,0.1143,1.0,3,Emmanuel Macron,Marine Le Pen,Valérie Pécresse,Éric Zemmour
+2022,2022_wp_ifop_2022-02-14_1,55,before the official list,2,14,100.0,0.1558,0.1558,6.4164,42.5,8.5,8.5,1,0.8571,2.0,0.1176,0.0,3,Emmanuel Macron,Marine Le Pen,Valérie Pécresse,Éric Zemmour
+2022,2022_wp_ifop_2022-02-21_1,48,before the official list,2,14,100.0,0.1544,0.1544,6.4788,41.0,8.0,8.0,1,0.8533,0.5,0.0303,1.0,4,Emmanuel Macron,Marine Le Pen,Éric Zemmour,Valérie Pécresse
+2022,2022_wp_ifop_2022-02-28_1,41,before the official list,2,14,100.0,0.1572,0.1572,6.3613,44.0,12.0,12.0,1,0.9028,2.0,0.125,1.0,3,Emmanuel Macron,Marine Le Pen,Éric Zemmour,Valérie Pécresse
+2022,2022_wp_ifop_2022-03-07_1,34,official list to two weeks before,0,12,100.0,0.1733,0.1733,5.7687,48.0,12.0,12.0,1,0.8696,5.0,0.2778,0.5,2,Emmanuel Macron,Marine Le Pen,Valérie Pécresse,Éric Zemmour
+2022,2022_wp_ifop_2022-03-14_1,27,official list to two weeks before,0,12,100.0,0.1763,0.1763,5.6738,49.0,13.0,13.0,1,0.8784,5.0,0.2778,1.5,2,Emmanuel Macron,Marine Le Pen,Éric Zemmour,Jean-Luc Mélenchon
 2022,2022_wp_ifop_2022-03-18_1,23,official list to two weeks before,0,12,100.25,0.1669,0.1678,5.9909,46.5,11.5,11.5,1,0.8696,4.0,0.2286,0.5,3,Emmanuel Macron,Marine Le Pen,Jean-Luc Mélenchon,Éric Zemmour
 2022,2022_wp_ifop_2022-03-24_1,17,official list to two weeks before,0,12,100.0,0.1716,0.1716,5.8275,48.5,8.5,8.5,1,0.8134,6.0,0.3,2.5,1,Emmanuel Macron,Marine Le Pen,Jean-Luc Mélenchon,Éric Zemmour
 2022,2022_wp_ifop_2022-03-31_1,10,last two weeks,0,12,100.0,0.1732,0.1732,5.7753,49.0,7.0,7.0,1,0.7735,5.5,0.2619,4.5,1,Emmanuel Macron,Marine Le Pen,Jean-Luc Mélenchon,Éric Zemmour
@@ -502,7 +502,6 @@ election,poll_id,days_before,phase,n_extra,n_candidates,total,hhi,hhi_raw,enp,to
 2022,2022_wp_ipsos_2022-03-19_1,22,official list to two weeks before,0,12,100.0,0.1664,0.1664,6.0096,47.0,14.0,14.0,1,0.8974,3.5,0.2121,2.0,2,Emmanuel Macron,Marine Le Pen,Jean-Luc Mélenchon,Éric Zemmour
 2022,2022_wp_ipsos_2022-03-24_1,17,official list to two weeks before,0,12,100.0,0.1597,0.1597,6.2637,45.5,10.5,10.5,1,0.8607,3.5,0.2,2.5,2,Emmanuel Macron,Marine Le Pen,Jean-Luc Mélenchon,Éric Zemmour
 2022,2022_wp_ipsos_2022-03-26_1,15,official list to two weeks before,0,12,100.0,0.1618,0.1618,6.1805,46.0,11.0,11.0,1,0.8661,3.0,0.1714,3.5,2,Emmanuel Macron,Marine Le Pen,Jean-Luc Mélenchon,Éric Zemmour
-2022,2022_wp_ipsos_2022-03-30_1,10,last two weeks,0,12,100.0,0.1642,0.1642,6.0883,47.0,7.0,7.0,1,0.7821,4.5,0.225,4.0,2,Emmanuel Macron,Marine Le Pen,Jean-Luc Mélenchon,Éric Zemmour
 2022,2022_wp_ipsos_2022-04-02_1,8,last two weeks,0,12,100.0,0.1628,0.1628,6.1406,47.0,5.0,5.5,2,0.7333,5.5,0.2619,4.5,1,Emmanuel Macron,Marine Le Pen,Jean-Luc Mélenchon,Éric Zemmour
 2022,2022_wp_ipsos_2022-04-04_1,6,last two weeks,0,12,100.0,0.1657,0.1657,6.0368,48.0,5.0,6.0,3,0.75,5.5,0.2558,6.0,1,Emmanuel Macron,Marine Le Pen,Jean-Luc Mélenchon,Éric Zemmour
 2022,2022_wp_ipsos_2022-04-07_1,3,last two weeks,0,12,100.0,0.1706,0.1706,5.8617,49.5,3.5,8.0,3,0.8163,6.5,0.2826,8.0,1,Emmanuel Macron,Marine Le Pen,Jean-Luc Mélenchon,Éric Zemmour
@@ -520,47 +519,33 @@ election,poll_id,days_before,phase,n_extra,n_candidates,total,hhi,hhi_raw,enp,to
 2022,2022_wp_opinionway_2021-12-22_1,109,before the official list,2,14,100.5,0.1521,0.1536,6.5746,44.0,8.0,8.0,1,0.8458,2.0,0.1111,4.0,2,Emmanuel Macron,Valérie Pécresse,Marine Le Pen,Éric Zemmour
 2022,2022_wp_opinionway_2022-01-07_1,93,before the official list,1,13,100.0,0.151,0.151,6.6225,42.0,8.0,8.0,1,0.8462,0.0,0.0,5.0,3,Emmanuel Macron,Valérie Pécresse,Marine Le Pen,Éric Zemmour
 2022,2022_wp_opinionway_2022-01-14_1,86,before the official list,1,13,100.5,0.1521,0.1536,6.5746,42.0,6.0,6.0,1,0.7904,0.0,0.0,6.0,2,Emmanuel Macron,Valérie Pécresse,Marine Le Pen,Éric Zemmour
+2022,2022_wp_opinionway_2022-01-18_1,82,before the official list,2,14,100.0,0.1454,0.1454,6.8776,41.0,7.0,7.0,1,0.8317,0.0,0.0,5.0,3,Emmanuel Macron,Marine Le Pen,Valérie Pécresse,Éric Zemmour
 2022,2022_wp_opinionway_2022-01-20_1,80,before the official list,1,13,100.5,0.1525,0.154,6.5575,42.0,6.0,6.0,1,0.7904,0.0,0.0,5.0,3,Emmanuel Macron,Valérie Pécresse,Marine Le Pen,Éric Zemmour
-2022,2022_wp_opinionway_2022-01-21_1,79,before the official list,1,13,100.0,0.156,0.156,6.4103,43.0,7.0,7.0,1,0.8105,1.0,0.0556,4.0,3,Emmanuel Macron,Valérie Pécresse,Marine Le Pen,Éric Zemmour
+2022,2022_wp_opinionway_2022-01-24_1,76,before the official list,1,13,100.5,0.1511,0.1526,6.6177,43.0,7.0,7.0,1,0.8148,2.0,0.1111,3.0,3,Emmanuel Macron,Valérie Pécresse,Marine Le Pen,Éric Zemmour
 2022,2022_wp_opinionway_2022-01-27_1,73,before the official list,1,13,100.5,0.1501,0.1516,6.6613,42.0,6.0,6.0,1,0.7904,1.0,0.0556,4.0,3,Emmanuel Macron,Valérie Pécresse,Marine Le Pen,Éric Zemmour
-2022,2022_wp_opinionway_2022-01-27_2,73,before the official list,1,13,100.0,0.1478,0.1478,6.7659,41.0,7.0,7.0,1,0.8191,0.0,0.0,4.0,3,Emmanuel Macron,Valérie Pécresse,Marine Le Pen,Éric Zemmour
+2022,2022_wp_opinionway_2022-01-31_1,69,before the official list,1,13,100.0,0.1496,0.1496,6.6845,41.0,7.0,7.0,1,0.8191,0.0,0.0,4.0,3,Emmanuel Macron,Valérie Pécresse,Marine Le Pen,Éric Zemmour
 2022,2022_wp_opinionway_2022-02-03_1,66,before the official list,1,13,101.0,0.1491,0.152,6.709,42.0,6.0,6.0,1,0.7904,1.0,0.0556,4.0,3,Emmanuel Macron,Marine Le Pen,Valérie Pécresse,Éric Zemmour
-2022,2022_wp_opinionway_2022-02-03_2,66,before the official list,1,13,100.0,0.1482,0.1482,6.7476,41.0,7.0,7.0,1,0.8191,1.0,0.0588,2.0,3,Emmanuel Macron,Marine Le Pen,Valérie Pécresse,Éric Zemmour
+2022,2022_wp_opinionway_2022-02-07_1,62,before the official list,1,13,100.5,0.1479,0.1494,6.7594,41.0,7.0,7.0,1,0.8235,0.0,0.0,3.0,3,Emmanuel Macron,Valérie Pécresse,Marine Le Pen,Éric Zemmour
 2022,2022_wp_opinionway_2022-02-10_1,59,before the official list,1,13,100.5,0.1444,0.1458,6.9263,41.0,5.0,5.0,1,0.7586,2.0,0.1111,3.0,3,Emmanuel Macron,Marine Le Pen,Valérie Pécresse,Éric Zemmour
-2022,2022_wp_opinionway_2022-02-10_2,59,before the official list,1,13,100.0,0.1446,0.1446,6.9156,40.0,6.0,6.0,1,0.7952,1.0,0.0588,1.0,3,Emmanuel Macron,Marine Le Pen,Valérie Pécresse,Éric Zemmour
-2022,2022_wp_opinionway_2022-02-17_1,52,before the official list,1,13,100.0,0.1446,0.1446,6.9156,39.0,9.0,9.0,1,0.8684,0.0,0.0,0.0,4,Emmanuel Macron,Valérie Pécresse,Éric Zemmour,Marine Le Pen
+2022,2022_wp_opinionway_2022-02-14_1,55,before the official list,1,13,100.0,0.1452,0.1452,6.8871,40.0,8.0,8.0,1,0.8462,0.0,0.0,2.0,3,Emmanuel Macron,Valérie Pécresse,Marine Le Pen,Éric Zemmour
 2022,2022_wp_opinionway_2022-02-17_2,52,before the official list,1,13,100.5,0.1446,0.146,6.9168,41.0,7.0,7.0,1,0.8235,2.0,0.1176,1.0,3,Emmanuel Macron,Marine Le Pen,Valérie Pécresse,Éric Zemmour
+2022,2022_wp_opinionway_2022-02-21_1,48,before the official list,1,13,100.0,0.147,0.147,6.8027,42.0,8.0,8.0,1,0.8462,3.0,0.1765,0.0,3,Emmanuel Macron,Marine Le Pen,Valérie Pécresse,Éric Zemmour
 2022,2022_wp_opinionway_2022-02-24_1,45,before the official list,1,13,100.0,0.1494,0.1494,6.6934,42.0,8.0,8.0,1,0.8462,3.0,0.1765,0.0,3,Emmanuel Macron,Marine Le Pen,Valérie Pécresse,Éric Zemmour
-2022,2022_wp_opinionway_2022-02-24_2,45,before the official list,1,13,100.0,0.1418,0.1418,7.0522,40.0,8.0,8.0,1,0.8544,2.0,0.125,0.0,4,Emmanuel Macron,Marine Le Pen,Valérie Pécresse,Éric Zemmour
 2022,2022_wp_opinionway_2022-02-27_1,42,before the official list,1,13,100.0,0.1464,0.1464,6.8306,42.0,6.0,6.0,1,0.7952,3.0,0.1667,2.0,3,Emmanuel Macron,Marine Le Pen,Valérie Pécresse,Éric Zemmour
-2022,2022_wp_opinionway_2022-02-28_1,41,before the official list,1,13,100.0,0.1536,0.1536,6.5104,44.0,6.0,6.0,1,0.7857,4.0,0.2105,2.0,2,Emmanuel Macron,Marine Le Pen,Valérie Pécresse,Éric Zemmour
 2022,2022_wp_opinionway_2022-03-01_1,40,before the official list,1,13,100.0,0.1576,0.1576,6.3452,45.0,9.0,9.0,1,0.8534,4.0,0.2222,2.0,2,Emmanuel Macron,Marine Le Pen,Valérie Pécresse,Éric Zemmour
-2022,2022_wp_opinionway_2022-03-02_1,39,before the official list,1,13,100.0,0.1576,0.1576,6.3452,45.0,9.0,9.0,1,0.8534,4.0,0.2222,2.0,2,Emmanuel Macron,Marine Le Pen,Valérie Pécresse,Éric Zemmour
 2022,2022_wp_opinionway_2022-03-03_1,38,before the official list,1,13,100.0,0.16,0.16,6.25,46.0,10.0,10.0,1,0.8594,5.0,0.2778,1.0,2,Emmanuel Macron,Marine Le Pen,Valérie Pécresse,Éric Zemmour
-2022,2022_wp_opinionway_2022-03-03_2,38,before the official list,1,13,100.0,0.1552,0.1552,6.4433,45.0,9.0,9.0,1,0.8534,4.0,0.2222,2.0,2,Emmanuel Macron,Marine Le Pen,Valérie Pécresse,Éric Zemmour
 2022,2022_wp_opinionway_2022-03-06_1,35,before the official list,0,12,100.0,0.1672,0.1672,5.9809,47.0,11.0,11.0,1,0.8594,4.0,0.2222,2.0,2,Emmanuel Macron,Marine Le Pen,Valérie Pécresse,Éric Zemmour
-2022,2022_wp_opinionway_2022-03-07_1,34,official list to two weeks before,0,12,100.0,0.167,0.167,5.988,47.0,13.0,13.0,1,0.8844,4.0,0.2353,1.0,3,Emmanuel Macron,Marine Le Pen,Valérie Pécresse,Éric Zemmour
-2022,2022_wp_opinionway_2022-03-08_1,33,official list to two weeks before,0,12,100.0,0.1664,0.1664,6.0096,47.0,13.0,13.0,1,0.8904,5.0,0.2941,0.0,3,Emmanuel Macron,Marine Le Pen,Valérie Pécresse,Éric Zemmour
 2022,2022_wp_opinionway_2022-03-10_1,31,official list to two weeks before,0,12,100.0,0.167,0.167,5.988,48.0,12.0,12.0,1,0.8759,6.0,0.3333,1.0,1,Emmanuel Macron,Marine Le Pen,Valérie Pécresse,Éric Zemmour
 2022,2022_wp_opinionway_2022-03-13_1,28,official list to two weeks before,0,12,100.0,0.1674,0.1674,5.9737,49.0,11.0,11.0,1,0.8594,8.0,0.4211,0.0,1,Emmanuel Macron,Marine Le Pen,Jean-Luc Mélenchon,Valérie Pécresse
-2022,2022_wp_opinionway_2022-03-14_1,27,official list to two weeks before,0,12,100.0,0.1642,0.1642,6.0901,48.0,12.0,12.0,1,0.8759,7.0,0.3889,0.0,1,Emmanuel Macron,Marine Le Pen,Jean-Luc Mélenchon,Éric Zemmour
 2022,2022_wp_opinionway_2022-03-15_1,26,official list to two weeks before,0,12,100.0,0.1692,0.1692,5.9102,49.0,11.0,11.0,1,0.8594,7.0,0.3684,1.0,1,Emmanuel Macron,Marine Le Pen,Jean-Luc Mélenchon,Éric Zemmour
-2022,2022_wp_opinionway_2022-03-16_1,25,official list to two weeks before,0,12,100.0,0.1622,0.1622,6.1652,47.0,11.0,11.0,1,0.8661,6.0,0.3333,1.0,1,Emmanuel Macron,Marine Le Pen,Éric Zemmour,Valérie Pécresse
 2022,2022_wp_opinionway_2022-03-17_1,24,official list to two weeks before,0,12,100.0,0.1622,0.1622,6.1652,47.0,11.0,11.0,1,0.8661,6.0,0.3333,1.0,1,Emmanuel Macron,Marine Le Pen,Jean-Luc Mélenchon,Éric Zemmour
-2022,2022_wp_opinionway_2022-03-17_2,24,official list to two weeks before,0,12,100.5,0.1598,0.1614,6.2569,46.0,12.0,12.0,1,0.8791,5.0,0.2941,0.0,3,Emmanuel Macron,Marine Le Pen,Jean-Luc Mélenchon,Valérie Pécresse
 2022,2022_wp_opinionway_2022-03-20_1,21,official list to two weeks before,0,12,100.0,0.163,0.163,6.135,46.0,12.0,12.0,1,0.8824,4.0,0.2353,0.0,3,Emmanuel Macron,Marine Le Pen,Jean-Luc Mélenchon,Valérie Pécresse
-2022,2022_wp_opinionway_2022-03-21_1,20,official list to two weeks before,0,12,100.0,0.1656,0.1656,6.0386,47.0,11.0,11.0,1,0.8661,4.0,0.2222,2.0,2,Emmanuel Macron,Marine Le Pen,Jean-Luc Mélenchon,Valérie Pécresse
 2022,2022_wp_opinionway_2022-03-22_1,19,official list to two weeks before,0,12,100.0,0.161,0.161,6.2112,46.0,10.0,10.0,1,0.8547,4.0,0.2222,2.0,2,Emmanuel Macron,Marine Le Pen,Jean-Luc Mélenchon,Valérie Pécresse
-2022,2022_wp_opinionway_2022-03-23_1,18,official list to two weeks before,0,12,100.0,0.1628,0.1628,6.1425,47.0,9.0,9.0,1,0.8333,5.0,0.2632,3.0,2,Emmanuel Macron,Marine Le Pen,Jean-Luc Mélenchon,Valérie Pécresse
 2022,2022_wp_opinionway_2022-03-24_1,17,official list to two weeks before,0,12,100.0,0.1612,0.1612,6.2035,47.0,7.0,7.0,1,0.7865,6.0,0.3,3.0,1,Emmanuel Macron,Marine Le Pen,Jean-Luc Mélenchon,Valérie Pécresse
-2022,2022_wp_opinionway_2022-03-24_2,17,official list to two weeks before,0,12,100.0,0.1662,0.1662,6.0168,48.0,8.0,8.0,1,0.8081,6.0,0.3,2.0,1,Emmanuel Macron,Marine Le Pen,Jean-Luc Mélenchon,Valérie Pécresse
-2022,2022_wp_opinionway_2022-03-27_1,14,last two weeks,0,12,100.0,0.1596,0.1596,6.2657,47.0,7.0,7.0,1,0.7865,6.0,0.3,4.0,1,Emmanuel Macron,Marine Le Pen,Jean-Luc Mélenchon,Éric Zemmour
+2022,2022_wp_opinionway_2022-03-28_1,13,last two weeks,0,12,100.0,0.1654,0.1654,6.0459,48.0,8.0,8.0,1,0.8081,6.0,0.3,3.0,1,Emmanuel Macron,Marine Le Pen,Jean-Luc Mélenchon,Valérie Pécresse
 2022,2022_wp_opinionway_2022-03-31_1,10,last two weeks,0,12,100.0,0.1654,0.1654,6.0459,48.0,6.0,6.0,1,0.7407,6.0,0.2857,5.0,1,Emmanuel Macron,Marine Le Pen,Jean-Luc Mélenchon,Éric Zemmour
-2022,2022_wp_opinionway_2022-03-31_2,10,last two weeks,0,12,100.0,0.1662,0.1662,6.0168,48.0,8.0,8.0,1,0.8081,5.0,0.25,5.0,2,Emmanuel Macron,Marine Le Pen,Jean-Luc Mélenchon,Éric Zemmour
-2022,2022_wp_opinionway_2022-04-04_1,6,last two weeks,0,12,100.0,0.1646,0.1646,6.0753,49.0,3.0,9.0,2,0.8491,9.0,0.3913,4.0,1,Emmanuel Macron,Marine Le Pen,Jean-Luc Mélenchon,Éric Zemmour
+2022,2022_wp_opinionway_2022-04-03_1,7,last two weeks,0,12,100.5,0.1644,0.166,6.0836,49.0,5.0,8.0,2,0.8122,8.0,0.3636,4.0,1,Emmanuel Macron,Marine Le Pen,Jean-Luc Mélenchon,Valérie Pécresse
 2022,2022_wp_opinionway_2022-04-05_1,5,last two weeks,0,12,100.0,0.1708,0.1708,5.8548,50.0,4.0,8.0,2,0.8081,8.0,0.3478,6.0,1,Emmanuel Macron,Marine Le Pen,Jean-Luc Mélenchon,Éric Zemmour
-2022,2022_wp_opinionway_2022-04-06_1,4,last two weeks,0,12,100.5,0.1711,0.1728,5.8442,50.0,4.0,7.0,2,0.7821,7.0,0.3043,7.0,1,Emmanuel Macron,Marine Le Pen,Jean-Luc Mélenchon,Éric Zemmour
 2022,2022_wp_opinionway_2022-04-07_1,3,last two weeks,0,12,100.0,0.1628,0.1628,6.1425,47.0,3.0,8.0,3,0.8247,5.0,0.2273,8.0,2,Emmanuel Macron,Marine Le Pen,Jean-Luc Mélenchon,Éric Zemmour
-2022,2022_wp_opinionway_2022-04-07_2,3,last two weeks,0,12,100.0,0.1664,0.1664,6.0096,48.0,4.0,8.0,3,0.8247,5.0,0.2273,8.0,2,Emmanuel Macron,Marine Le Pen,Jean-Luc Mélenchon,Éric Zemmour
 2022,2022_wp_yougov_2022-03-31_1,10,last two weeks,0,12,99.0,0.1815,0.1779,5.5093,52.0,2.0,10.0,2,0.8547,10.0,0.4,6.0,1,Emmanuel Macron,Marine Le Pen,Jean-Luc Mélenchon,Éric Zemmour
 2022,2022_wp_yougov_2022-04-07_1,3,last two weeks,0,12,99.0,0.1746,0.1711,5.7282,49.0,3.0,7.0,2,0.7955,7.0,0.3043,3.0,1,Emmanuel Macron,Marine Le Pen,Jean-Luc Mélenchon,Éric Zemmour

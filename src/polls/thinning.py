@@ -39,6 +39,18 @@ def _norm_clients(s) -> str:
     return ", ".join(sorted({CLIENT_ALIASES.get(n, n) for n in names}))
 
 
+# Series sharing their samples, merged into one: (election, pollster, normalised clients) -> series.
+# 2022, OpinionWay: the Les Echos / Radio Classique rolling poll is a cumulation of daily online samples
+# (3 per release, notice 9425); the CNews releases cover 2 of the same days with about two daily
+# samples' worth of respondents (notice 9427). Treated as one series: an assumption, the notices do
+# not say outright that the samples are shared (validation/opinionway_2022_overlaps.csv).
+SHARED_SAMPLES = {
+    (2022, "opinionway", "cnews"): "opinionway | cnews + les echos (shared daily samples)",
+    (2022, "opinionway", "kea partners, les echos, radio classique"): "opinionway | cnews + les echos (shared daily samples)",
+    (2022, "opinionway", "cnews, les echos, radio classique"): "opinionway | cnews + les echos (shared daily samples)",
+}
+
+
 def series_key(polls: pd.DataFrame, clients: dict[str, str] | None = None) -> pd.Series:
     """Pollster + client, as precisely as each source allows. None = no known series.
 
@@ -48,13 +60,19 @@ def series_key(polls: pd.DataFrame, clients: dict[str, str] | None = None) -> pd
       clients polling the same week (2002: Ifop for the JDD and for L'Express a day apart).
       Only releases the page marks as rolling form a series; other polls stand alone and
       same-pollster overlaps are flagged instead (see thin()).
-    - `clients`: poll_id -> client(s) looked up by hand (validation/flagged_clients.csv);
+    - `clients`: poll_id -> client(s) from outside the source: looked up by hand
+      (validation/flagged_clients.csv) or recorded by the other source of a matched poll;
       such a poll joins the series of its pollster and client.
+    - SHARED_SAMPLES merges series that share their samples.
     """
     clients = clients or {}
     keys = []
     for r in polls.itertuples():
-        if clients.get(r.poll_id):
+        client = clients.get(r.poll_id) or (r.sponsor if r.source == "nsppolls" else None)
+        merged = SHARED_SAMPLES.get((int(r.election), _norm_name(r.institute), _norm_clients(client))) if client else None
+        if merged:
+            keys.append(merged)
+        elif clients.get(r.poll_id):
             keys.append(f"{_norm_name(r.institute)} | {_norm_clients(clients[r.poll_id])}")
         elif r.source == "france_politique":
             keys.append(f"{r.institute} | {r.table_label}")

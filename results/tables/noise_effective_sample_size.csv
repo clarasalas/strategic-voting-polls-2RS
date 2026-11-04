@@ -3,19 +3,19 @@ election,period,polls,n_eff,n_eff_after_house_effects,median_base,design_effect
 2007,last 12 months,105,491.6,717.05,,
 2012,last 12 months,92,844.1,1353.58,,
 2017,last 12 months,105,752.62,831.38,1424.0,1.89
-2022,last 12 months,183,781.24,1145.94,1508.0,1.93
+2022,last 12 months,168,769.94,1171.81,1513.0,1.97
 2002,before the official list,32,859.81,1371.93,,
 2007,before the official list,67,426.86,608.81,,
 2012,before the official list,69,711.57,1228.79,,
 2017,before the official list,60,538.44,602.79,1407.0,2.61
-2022,before the official list,113,706.21,1174.95,1505.0,2.13
+2022,before the official list,110,716.88,1227.09,1505.0,2.1
 2002,official list to two weeks before,5,866.1,1121.55,,
 2007,official list to two weeks before,20,508.94,826.38,,
 2012,official list to two weeks before,17,1124.8,1560.5,,
 2017,official list to two weeks before,23,1393.08,1450.57,1500.0,1.08
-2022,official list to two weeks before,37,993.11,1300.77,1505.0,1.52
+2022,official list to two weeks before,29,931.7,1297.27,1507.0,1.62
 2002,last two weeks,12,935.3,1571.05,,
 2007,last two weeks,18,1003.92,1420.84,,
 2012,last two weeks,12,1073.48,1143.46,,
 2017,last two weeks,22,1813.73,1932.2,1466.5,0.81
-2022,last two weeks,33,891.34,941.57,1883.0,2.11
+2022,last two weeks,29,861.03,925.29,1883.0,2.19

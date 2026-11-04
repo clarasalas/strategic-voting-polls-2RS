@@ -35,13 +35,13 @@ client of overlapping polls, and a random sample of 30 Wikipedia polls per elect
 |---|---|
 | Collect and parse (notebook 01) | done: 746 Wikipedia polls (2002–2022), 98 france-politique (2002), 351 NSPPolls (2022) |
 | Candidate and pollster mappings (`config/`) | done, nothing unmapped |
-| Thin rolling polls (notebook 02) | done: drops 6 Wikipedia polls in 2017, 32 in 2022, and 121 NSPPolls polls |
+| Thin rolling polls (notebook 02) | done: drops 6 Wikipedia polls in 2017, 47 in 2022, and 136 NSPPolls polls |
 | Client lookups ([`flagged_clients.csv`](validation/README.md)) | done, 19 of 19 |
 | Cross-source comparison (notebook 03) | run; 31 flagged overlaps (2002, 2022) resolved automatically |
 | Settle disagreements ([`crosscheck_disagreements.csv`](validation/README.md)) | done, 79 of 79 |
 | Spot check ([`spot_check_sample.csv`](validation/README.md)) | done, 150 of 150 (13 with no document) |
 | Apply the validation answers to the tables | done (notebook 04): 136 corrections applied |
-| Final dataset ([`data/final/polls.csv`](#final-dataset)) | done: 708 polls, 1,164 scenarios |
+| Final dataset ([`data/final/polls.csv`](#final-dataset)) | done: 693 polls, 1,149 scenarios |
 | Study, part 1: the polls themselves (notebook 05) | done |
 | Study, part 2: polls against results (notebook 06) | done: `results/tables/stylized_facts.csv` |
 | Study, part 3: parameters and the ABM's poll input (notebook 07) | done: `data/abm_input/` prepared, not used |
@@ -135,8 +135,10 @@ Sobol analysis with the ranges the polls support for θ and ρ<sub>s</sub>; fix 
 * **Share sums.** 32 of 1,862 scenarios have shares summing outside 98–102: 19 on the 2012 Wikipedia page, and 4
   in NSPPolls, some summing to 0. They are listed at the end of notebook 01 and not investigated.
 * **One parse error**: a 2017 Wikipedia cell reading `640-646` (`data/interim/parse_errors.csv`).
-* **OpinionWay in 2022.** Its CNews releases overlap its *Les Echos* rolling releases, possibly one rolling sample
-  sold to two clients. To check against the Commission des sondages notices (end of notebook 02).
+* **OpinionWay in 2022: settled.** Its CNews releases (2 days) overlap its *Les Echos* rolling releases (3 daily
+  online samples); treated as one series sharing daily samples (`SHARED_SAMPLES` in `src/polls/thinning.py`), an
+  assumption the notices support without stating it (`validation/opinionway_2022_overlaps.csv`). Wikipedia polls now
+  take their client from the matched france-politique or NSPPolls poll, so no overlap is left flagged.
 
 </details>
 
@@ -233,7 +235,7 @@ its slot filled. It may also test candidates who will not be on the ballot (Taub
 2017): that is the poll voters saw. A candidate from another party never fills a slot, even if that party later
 backed the final candidate. Per poll, the ballot scenario chosen has the most slots filled by the same person, then
 the fewest extra candidates. Polls with one: 49 of 98 (2002, from February 2002), 107 of 107 (2007), 116 of 124
-(2012), 109 of 148 (2017), 184 of 231 (2022). Rules in `src/polls/matching.py`.
+(2012), 109 of 148 (2017), 169 of 216 (2022). Rules in `src/polls/matching.py`.
 
 `data/final/scenarios.csv`: one row per scenario: whether it is a ballot scenario and chosen, the required
 candidacies missing, the candidates filling a slot for someone else, and the extra candidates with their total share.

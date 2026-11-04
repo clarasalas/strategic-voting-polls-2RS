@@ -1,16 +1,16 @@
 election,horizon,typical_error,2nd,3rd,gap_23,p_real_pair,1. candidate,1. P(qualify),2. candidate,2. P(qualify),3. candidate,3. P(qualify),4. candidate,4. P(qualify)
-2002,8 weeks,4.984,Lionel Jospin,Jean-Pierre Chevènement,11.968,0.03,Chirac,0.949,Jospin,0.907,Chevènement,0.049,Le Pen,0.046
-2002,4 weeks,3.662,Lionel Jospin,Jean-Marie Le Pen,9.839,0.025,Chirac,0.982,Jospin,0.951,Le Pen,0.035,Laguiller,0.018
-2002,1 week,2.502,Lionel Jospin,Jean-Marie Le Pen,6.106,0.042,Chirac,0.992,Jospin,0.956,Le Pen,0.05,Laguiller,0.002
-2007,8 weeks,5.178,Ségolène Royal,François Bayrou,9.004,0.851,Sarkozy,0.976,Royal,0.874,Bayrou,0.117,Le Pen,0.031
-2007,4 weeks,3.847,Ségolène Royal,François Bayrou,4.791,0.782,Sarkozy,0.965,Royal,0.817,Bayrou,0.21,Le Pen,0.009
-2007,1 week,2.461,Ségolène Royal,François Bayrou,5.433,0.938,Sarkozy,0.998,Royal,0.94,Bayrou,0.062,Le Pen,0.001
-2012,8 weeks,5.243,Nicolas Sarkozy,Marine Le Pen,9.46,0.849,Hollande,0.963,Sarkozy,0.885,Le Pen,0.117,Bayrou,0.028
-2012,4 weeks,3.932,François Hollande,Marine Le Pen,12.371,0.971,Sarkozy,0.986,Hollande,0.985,Le Pen,0.022,Mélenchon,0.004
-2012,1 week,2.555,Nicolas Sarkozy,Marine Le Pen,11.956,0.999,Hollande,1.0,Sarkozy,0.999,Le Pen,0.001,Mélenchon,0.0
-2017,8 weeks,4.663,Emmanuel Macron,François Fillon,4.102,0.614,Le Pen,0.883,Macron,0.724,Fillon,0.31,Hamon,0.061
-2017,4 weeks,3.698,Marine Le Pen,François Fillon,6.457,0.798,Macron,0.906,Le Pen,0.89,Fillon,0.161,Mélenchon,0.04
-2017,1 week,2.614,Marine Le Pen,François Fillon,3.982,0.717,Macron,0.887,Le Pen,0.826,Fillon,0.173,Mélenchon,0.115
-2022,8 weeks,3.806,Marine Le Pen,Valérie Pécresse,2.314,0.496,Macron,0.979,Le Pen,0.512,Pécresse,0.241,Zemmour,0.215
-2022,4 weeks,2.882,Marine Le Pen,Jean-Luc Mélenchon,5.412,0.843,Macron,1.0,Le Pen,0.843,Mélenchon,0.074,Zemmour,0.046
-2022,1 week,2.02,Marine Le Pen,Jean-Luc Mélenchon,5.679,0.978,Macron,1.0,Le Pen,0.978,Mélenchon,0.022,Zemmour,0.0
+2002,8 weeks,4.995,Lionel Jospin,Jean-Pierre Chevènement,11.968,0.03,Chirac,0.949,Jospin,0.906,Chevènement,0.049,Le Pen,0.047
+2002,4 weeks,3.633,Lionel Jospin,Jean-Marie Le Pen,9.839,0.024,Chirac,0.983,Jospin,0.953,Le Pen,0.033,Laguiller,0.017
+2002,1 week,2.475,Lionel Jospin,Jean-Marie Le Pen,6.106,0.04,Chirac,0.993,Jospin,0.958,Le Pen,0.047,Laguiller,0.001
+2007,8 weeks,5.188,Ségolène Royal,François Bayrou,9.004,0.85,Sarkozy,0.976,Royal,0.874,Bayrou,0.117,Le Pen,0.031
+2007,4 weeks,3.824,Ségolène Royal,François Bayrou,4.791,0.783,Sarkozy,0.965,Royal,0.818,Bayrou,0.208,Le Pen,0.008
+2007,1 week,2.438,Ségolène Royal,François Bayrou,5.433,0.94,Sarkozy,0.998,Royal,0.942,Bayrou,0.059,Le Pen,0.0
+2012,8 weeks,5.252,Nicolas Sarkozy,Marine Le Pen,9.46,0.848,Hollande,0.963,Sarkozy,0.884,Le Pen,0.117,Bayrou,0.029
+2012,4 weeks,3.908,François Hollande,Marine Le Pen,12.371,0.973,Sarkozy,0.987,Hollande,0.986,Le Pen,0.021,Mélenchon,0.004
+2012,1 week,2.532,Nicolas Sarkozy,Marine Le Pen,11.956,0.999,Hollande,1.0,Sarkozy,0.999,Le Pen,0.001,Mélenchon,0.0
+2017,8 weeks,4.673,Emmanuel Macron,François Fillon,4.102,0.613,Le Pen,0.883,Macron,0.724,Fillon,0.31,Hamon,0.061
+2017,4 weeks,3.672,Marine Le Pen,François Fillon,6.457,0.8,Macron,0.907,Le Pen,0.892,Fillon,0.159,Mélenchon,0.039
+2017,1 week,2.592,Marine Le Pen,François Fillon,3.982,0.721,Macron,0.889,Le Pen,0.828,Fillon,0.171,Mélenchon,0.112
+2022,8 weeks,3.806,Marine Le Pen,Valérie Pécresse,2.206,0.492,Macron,0.979,Le Pen,0.509,Pécresse,0.249,Zemmour,0.212
+2022,4 weeks,2.882,Marine Le Pen,Jean-Luc Mélenchon,5.222,0.838,Macron,1.0,Le Pen,0.838,Mélenchon,0.081,Zemmour,0.049
+2022,1 week,2.02,Marine Le Pen,Jean-Luc Mélenchon,5.705,0.978,Macron,1.0,Le Pen,0.978,Mélenchon,0.021,Zemmour,0.0

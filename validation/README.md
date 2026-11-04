@@ -71,7 +71,7 @@ CNews got part of the same rolling sample:
 
 | Column | What to write |
 |---|---|
-| `same_sample` | `yes`, `no` or `NA` |
+| `same_sample` | `yes`, `no`, `assumed` or `NA` |
 | `notes` | what the notices say (fieldwork, sample, method) |
 
 ### `flagged_clients.csv`

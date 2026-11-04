@@ -6,21 +6,21 @@ result,cliff: largest drop (points),9.34,8.13,9.28,13.22,14.88,structure_results
 result,cliff location (candidates above),3.0,3.0,2.0,4.0,3.0,structure_results.csv
 result,cliff ratio,0.9285,0.7817,0.7954,0.9181,0.923,structure_results.csv
 result,gap 2nd − 3rd (points),0.68,7.3,9.28,1.29,1.2,structure_results.csv
-last two weeks of polls,ENP,8.732,5.099,4.834,5.34,5.889,structure_last_polls_vs_result.csv
-last two weeks of polls,gap 2nd − 3rd (points),5.25,5.528,10.833,2.955,5.945,structure_last_polls_vs_result.csv
-last two weeks of polls,cliff: largest drop (points),6.125,9.944,11.042,10.523,7.567,structure_last_polls_vs_result.csv
-concentration,campaign ΔHHI: voters,-0.0318,-0.0407,-0.0196,-0.0089,0.0052,concentration_decomposition.csv
-concentration,campaign ΔHHI: offer,0.0045,-0.0019,0.0422,0.006,0.0202,concentration_decomposition.csv
-concentration,last-mile ΔHHI (all voters),0.0007,0.0165,0.0026,0.0007,0.0211,concentration_decomposition.csv
+last two weeks of polls,ENP,8.732,5.099,4.834,5.34,5.867,structure_last_polls_vs_result.csv
+last two weeks of polls,gap 2nd − 3rd (points),5.25,5.528,10.833,2.955,5.99,structure_last_polls_vs_result.csv
+last two weeks of polls,cliff: largest drop (points),6.125,9.944,11.042,10.523,7.576,structure_last_polls_vs_result.csv
+concentration,campaign ΔHHI: voters,-0.0318,-0.0407,-0.0196,-0.0089,0.0056,concentration_decomposition.csv
+concentration,campaign ΔHHI: offer,0.0045,-0.0019,0.0422,0.006,0.0204,concentration_decomposition.csv
+concentration,last-mile ΔHHI (all voters),0.0007,0.0165,0.0026,0.0007,0.0205,concentration_decomposition.csv
 runoff pair,"share of polls with the real pair, last two weeks",0.0,1.0,1.0,0.95,1.0,ranks_right_pair_by_phase.csv
 runoff pair,locked in the poll average from (days before),,204.0,208.0,86.0,96.0,ranks_lockin.csv
-runoff pair,"probability the polls gave the real pair, 4 weeks before",0.025,0.782,0.971,0.798,0.843,cliff_predictability.csv
-runoff pair,"probability the polls gave the real pair, 1 week before",0.042,0.938,0.999,0.717,0.978,cliff_predictability.csv
-poll error,3rd in the last polls: result − polls,4.152,0.042,2.192,0.783,5.856,error_by_candidate.csv
-poll error,4th in the last polls: result − polls,-1.905,-3.504,-3.067,0.694,-2.809,error_by_candidate.csv
-poll error,"mean absolute error, candidates polled ≥ 5%",1.610875,2.03775,1.4128,0.9654,2.5386666666666664,error_by_candidate.csv
-dynamics,momentum: 3-week persistence (slope),0.999,0.492,0.545,0.269,0.373,momentum_campaign.csv
-dynamics,"volatility, last two weeks (points per week)",0.74,0.26,0.32,0.55,0.99,trajectories_volatility.csv
-polls,"effective sample size, last two weeks",935.3,1003.92,1073.48,1813.73,891.34,noise_effective_sample_size.csv
-polls,"scatter / sampling noise, last two weeks (herding below 1)",1.07,1.0,0.93,0.73,1.96,pollsters_herding.csv
-polls,polls in the last two weeks,12.0,18.0,12.0,22.0,33.0,coverage_by_election.csv
+runoff pair,"probability the polls gave the real pair, 4 weeks before",0.024,0.783,0.973,0.8,0.838,cliff_predictability.csv
+runoff pair,"probability the polls gave the real pair, 1 week before",0.04,0.94,0.999,0.721,0.978,cliff_predictability.csv
+poll error,3rd in the last polls: result − polls,4.152,0.042,2.192,0.783,5.826,error_by_candidate.csv
+poll error,4th in the last polls: result − polls,-1.905,-3.504,-3.067,0.694,-2.775,error_by_candidate.csv
+poll error,"mean absolute error, candidates polled ≥ 5%",1.610875,2.03775,1.4128,0.9654,2.4985,error_by_candidate.csv
+dynamics,momentum: 3-week persistence (slope),0.999,0.492,0.545,0.269,0.377,momentum_campaign.csv
+dynamics,"volatility, last two weeks (points per week)",0.74,0.26,0.32,0.55,0.96,trajectories_volatility.csv
+polls,"effective sample size, last two weeks",935.3,1003.92,1073.48,1813.73,861.03,noise_effective_sample_size.csv
+polls,"scatter / sampling noise, last two weeks (herding below 1)",1.07,1.0,0.93,0.73,2.09,pollsters_herding.csv
+polls,polls in the last two weeks,12.0,18.0,12.0,22.0,29.0,coverage_by_election.csv

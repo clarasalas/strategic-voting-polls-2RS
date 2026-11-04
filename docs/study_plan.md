@@ -22,6 +22,7 @@ Nothing here runs the model. Part 3 only produces bounds and inputs that the mod
 | Topic | Decision |
 |---|---|
 | Base | Wikipedia polls, thinned (notebook 02), with the validation applied (notebook 04): `data/final/polls.csv` |
+| Thinning | a Wikipedia poll takes its client from the matched france-politique or NSPPolls poll; OpinionWay's CNews and *Les Echos* series of 2022 are one series sharing daily online samples (an assumption, from notices 9425 and 9427): fewer double-counted interviews in 2022 (polls 231 → 216) |
 | Party | the label at the time of the poll: the poll's Wikipedia row, else `config/parties.csv` (with dated periods: Bertrand LR from 15 October 2021, Pécresse from 14 October 2021). Orientation codes (DVG, DVD, EXD) read as SE |
 | Slot | the final candidacy a candidate stands in for: same person, or same party at the time, allowing for renamings (UMP → LR, FN → RN…). Never across parties, even when a party later backed the candidate (Buffet, Bayrou, EELV 2017) |
 | Scenario | per poll, the *ballot scenario*: every final candidacy with ≥ 2% of the vote has its slot filled; extra candidates not on the ballot allowed and counted (`n_extra`, `extra_share`). Descriptive work may use all scenarios |
