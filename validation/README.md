@@ -1,43 +1,57 @@
 <h1 align="center">validation</h1>
 
 <p align="center">
-The checks a program cannot settle: three worklists, written once by notebook 03 and filled in by hand against
-the pollster's report or the Commission des sondages notice.
+The checks a program cannot settle, filled in by hand against the pollster's report or the Commission des sondages
+notice. All done: notebook 04 applies them.
 </p>
 
 <p align="center"><sub><a href="../README.md">← Back to the project</a></sub></p>
 
 ## What is in here
 
-| File | What it holds | Filled in on 2 November 2026 |
+| File | What it holds | Answered |
 |---|---|---|
-| `crosscheck_disagreements.csv` | one row per scenario where two sources disagree | 79 of 79, done |
-| `flagged_clients.csv` | overlapping polls by one pollster whose client Wikipedia doesn't give | 19 of 19, done |
-| `spot_check_sample.csv` | 30 random Wikipedia polls per election | 150 of 150, done |
+| `crosscheck_disagreements.csv` | one row per scenario where two sources disagree (2002, 2022) | 79 of 79 |
+| `spot_check_sample.csv` | 30 random Wikipedia polls per election | 150 of 150 (13 with no document) |
+| `flagged_clients.csv` | overlapping polls by one pollster whose client Wikipedia doesn't give | 19 of 19 |
+| `opinionway_2022_overlaps.csv` | OpinionWay's overlapping CNews and *Les Echos* polls of 2022 | 2 notices read, the assumption applied to all 34 |
+| [`link_search/`](link_search/README.md) | how a working link to the original document was found for each poll | |
 
+Together they gave 136 corrections, listed with every other item in `data/final/corrections.csv`.
+
+## What they found
+
+* **Disagreements.** In 2002, france-politique was right 14 times, Wikipedia once, and 4 had no document. In 2022,
+  NSPPolls was right 35 times, Wikipedia 23 times, and 2 had no document.
+* **Spot check.** Main candidates' shares are reliable: errors are rare (one to three polls per election) and of a
+  point or less. Small candidates are missing in many 2007 and 2012 polls, whose dates are publication dates. Sample
+  sizes from 2017 are the base giving a voting intention, not the full sample. These are kept as limits of the data
+  ([`data/`](../data/README.md)), and the one-off errors are corrected.
+* **OpinionWay 2022.** Its CNews releases are treated as sharing the daily online samples of its *Les Echos* rolling
+  series, so the two are thinned as one series: an assumption the notices support without stating it.
 `notebooks/03_cross_check.ipynb` never overwrites an existing worklist. On a rerun it only reports how many rows
 have answers and whether its own list of polls has changed. Files saved from a French-locale Excel, with `;` as
 the separator, are read correctly.
 
-## What to fill in
+## How they were filled in
 
 ### `crosscheck_disagreements.csv`
 
 The sources compared are france-politique and Wikipedia for 2002, NSPPolls and Wikipedia for 2022.
 
-| Column | What to write |
+| Column | What was written |
 |---|---|
 | `correct_source` | `NSPPolls`, `Wikipedia`, `Fp` (france-politique, 2002), `neither`, or `NA` when no document was found |
 | `document_url` | the document actually read (filled in from the link search; `document_to_use` holds NSPPolls' old, mostly dead links) |
 | `notes` | for `neither`, the values in the document; when both sources are wrong but one is named, the other value it gets wrong |
 
-Done: every row is answered. `link_check` and `link_notes` come from the link search (`link_search/`).
+`link_check` and `link_notes` come from the link search (`link_search/`). Two 2022 rows (Ifop, June 2020 s3; Ifop, April 2021 s8) name the source with the bigger error, and `notes` gives the one value that source also gets wrong.
 
 ### `spot_check_sample.csv`
 
 Check each poll against the original document: dates, sample size, and every share.
 
-| Column | What to write |
+| Column | What was written |
 |---|---|
 | `document_url` | the document read |
 | `dates_ok`, `sample_size_ok`, `shares_ok` | `yes`, `no` or `NA` (no document, or nothing to check against) |
@@ -65,18 +79,18 @@ three).
 ### `opinionway_2022_overlaps.csv`
 
 The 34 OpinionWay polls of 2022 (NSPPolls) whose fieldwork overlaps between its CNews series (2 days) and its
-*Les Echos* / Radio Classique rolling series (4 days), with each poll's Commission des sondages notice: the number,
-the current address where the link search found it, the old (dead) address and its Wayback form. To settle whether
-CNews got part of the same rolling sample:
+*Les Echos* / Radio Classique rolling series (3 daily online samples), with each poll's Commission des sondages notice:
+the number, the current address where the link search found it, the old (dead) address and its Wayback form. To
+settle whether CNews got part of the same rolling sample:
 
-| Column | What to write |
+| Column | What was written |
 |---|---|
 | `same_sample` | `yes`, `no`, `assumed` or `NA` |
 | `notes` | what the notices say (fieldwork, sample, method) |
 
 ### `flagged_clients.csv`
 
-Done. `client` is who commissioned the poll and `client_found_in` where that was read. Notebook 02 reads this
+`client` is who commissioned the poll and `client_found_in` where that was read. Notebook 02 reads this
 file: two overlapping polls with the same pollster and the same client are one series, and are thinned.
 
 <details>

@@ -1,164 +1,205 @@
 <h1 align="center">French presidential polls, 2002–2022</h1>
 
 <p align="center">
-Every first-round poll of the five French presidential elections from 2002 to 2022, collected from pinned
-sources, parsed into one table per source, and checked against the original documents.
+Every first-round poll of the five French presidential elections from 2002 to 2022, checked against the original
+documents, and what they say about how voters coordinate before the vote.
 </p>
 
-<p align="center"><sub>
-Paused on 5 October 2026, with the manual validation half done. <a href="#where-things-stand">Where things stand</a>
-and <a href="#next-steps">Next steps</a> say where to pick up.
-</sub></p>
+<p align="center">
+  <img src="results/figures/trajectories.png" width="620"
+       alt="Poll average of the six leading candidates over the last 250 days of each campaign, 2002 to 2022, with the results">
+</p>
+
+<p align="center">
+Poll average of the six leading candidates over the last 250 days of each campaign, coloured from left to right;
+dots are the results. In 2002 the polls kept Jospin second until the end and Le Pen qualified; in 2022 Mélenchon
+closed most of the gap, but not all of it.
+</p>
 
 ## About
 
-This is the poll data behind [strategic-voting-abm-2RS](https://github.com/clarasalas/strategic-voting-abm-2RS),
-an agent-based model of strategic voting in two-round elections: an empirical study of French presidential
-first-round polls, used to calibrate the model.
+In a two-round election, voters who expect their preferred candidate to be eliminated can move to a candidate with a
+real chance of reaching the runoff. What they expect comes largely from the polls. This project builds a validated
+dataset of the first-round polls of 2002, 2007, 2012, 2017 and 2022, and studies it: how accurate the polls are, how
+much coordination they show, and toward whom.
 
-The polls come from the French Wikipedia lists of polls for the five elections, from france-politique.fr for 2002
-and from NSPPolls for 2022. Every source is pinned (a Wikipedia revision, a git commit, a Wayback capture) and
-stored exactly as downloaded, so the parsing can be rerun offline and gives the same tables. The output is one row
-per poll × scenario × candidate.
+It is the poll side of [strategic-voting-abm-2RS](https://github.com/clarasalas/strategic-voting-abm-2RS), an
+agent-based model of voters who switch to a compromise candidate when nobody they can tolerate looks likely to reach
+the runoff. The model reads polls as its voters' information; this project describes what real polls looked like, and
+gives realistic ranges for the model's poll parameters. Nothing here runs the model. A companion project,
+[strategic-voting-geo-2RS](https://github.com/clarasalas/strategic-voting-geo-2RS), maps where the vote concentrated.
 
-Three steps follow the parsing. Rolling polls are thinned, so that each interview counts at most once within a
-pollster's series for one client (Erikson and Wlezien). Where two sources cover the same election (2002 and 2022),
-they are compared share by share. And the points a program cannot settle go to worklists filled in by hand
-against the pollster's report or the Commission des sondages notice: the disagreements between sources, the
-client of overlapping polls, and a random sample of 30 Wikipedia polls per election.
+**The data.** The polls come from the French Wikipedia lists of polls, at fixed revisions, with france-politique.fr
+for 2002 and NSPPolls for 2022 as second sources. Rolling polls are thinned so that each interview counts once. Where
+two sources cover the same poll they are compared share by share, and every disagreement was settled by hand against
+the pollster's report or the Commission des sondages notice; a random sample of 30 polls per election was checked
+the same way. The result, `data/final/polls.csv`, holds 693 polls and 1,149 scenarios, with 136 corrections applied.
 
-## Where things stand
+**What is measured.** Each poll is read through its *ballot scenario*: the hypothesis that tests every candidate who
+will win at least 2% of the vote, as voters saw it. Concentration is the Herfindahl–Hirschman index (HHI, the sum of
+squared shares; 1/HHI is the effective number of candidates, ENP, as in the model). The *cliff* is the model's: the
+largest drop between consecutive sorted shares. The runoff is decided by the gap between the 2nd and the 3rd.
 
-**Done: collection, validation, the final dataset (`data/final/`) and the study of the polls (notebooks 05–07, `docs/study_plan.md`). Four small loose ends remain (step 5).**
+Polls are not voters' expectations, and the result is not the polls' target: it also contains the late switching
+the model is meant to produce. A gap between the last polls and the result therefore mixes poll error and real late
+movement, which these data cannot separate. All results are descriptive, over five elections.
 
-| Step | State on 4 November 2026 |
-|---|---|
-| Collect and parse (notebook 01) | done: 746 Wikipedia polls (2002–2022), 98 france-politique (2002), 351 NSPPolls (2022) |
-| Candidate and pollster mappings (`config/`) | done, nothing unmapped |
-| Thin rolling polls (notebook 02) | done: drops 6 Wikipedia polls in 2017, 47 in 2022, and 136 NSPPolls polls |
-| Client lookups ([`flagged_clients.csv`](validation/README.md)) | done, 19 of 19 |
-| Cross-source comparison (notebook 03) | run; 31 flagged overlaps (2002, 2022) resolved automatically |
-| Settle disagreements ([`crosscheck_disagreements.csv`](validation/README.md)) | done, 79 of 79 |
-| Spot check ([`spot_check_sample.csv`](validation/README.md)) | done, 150 of 150 (13 with no document) |
-| Apply the validation answers to the tables | done (notebook 04): 136 corrections applied |
-| Final dataset ([`data/final/polls.csv`](#final-dataset)) | done: 693 polls, 1,149 scenarios |
-| Study, part 1: the polls themselves (notebook 05) | done |
-| Study, part 2: polls against results (notebook 06) | done: `results/tables/stylized_facts.csv` |
-| Study, part 3: parameters and the ABM's poll input (notebook 07) | done: `data/abm_input/` prepared, not used |
+## Main findings
 
-## Next steps
+**When the 2nd and the 3rd are far apart, the polls name the runoff pair months ahead; when they are close, the polls
+cannot.** In the last two weeks, every poll had the real runoff pair as its top two in 2007, 2012 and 2022, 95% in
+2017, none in 2002. In the poll average, the pair stopped changing about 200 days before the vote in 2007 and 2012,
+and about 90 days before in 2017 and 2022. It never settled in 2002, when Le Pen finished 0.7 points ahead of Jospin.
 
 <details>
-<summary><strong>1 · Disagreements: done</strong></summary>
+<summary>Supporting evidence: the gap for qualification and how predictable the pair was</summary>
 
 <br>
 
-All 79 rows are settled. In 2002: france-politique 14, Wikipedia 1, no document found 4. In 2022: NSPPolls 35,
-Wikipedia 23, no document found 2. No row is `neither`: the earlier `neither` answers came from dead links and
-were redone with the documents found by the link search ([`validation/link_search/`](validation/link_search/README.md)).
+* **Close results, wider polls.** The gap between the 2nd and the 3rd was 0.7 points in the 2002 result, 1.3 in 2017
+  and 1.2 in 2022. The last two weeks of polls had put it at 5.3, 3.0 and 6.0 points.
+* **How likely the polls made the real pair, one week before**, allowing for the typical poll error of the other four
+  elections: 4% in 2002, 72% in 2017, 94% in 2007, 98% in 2022, almost 100% in 2012. A rough gauge, not a forecast
+  model (candidates' errors drawn independently).
+* **The leader** was right in every poll of the last two weeks in 2002, 2007 and 2022, in 91% in 2017 and 67% in
+  2012 (Hollande and Sarkozy about a point apart).
 
-Two 2022 rows (Ifop 18–19 June 2020 s3, Ifop 2–8 April 2021 s8) name the source with the bigger error, and `notes`
-gives the one value that source also gets wrong. The code that applies the answers must read those notes.
+Tables: `ranks_right_pair_by_phase.csv`, `ranks_lockin.csv`, `cliff_predictability.csv`,
+`structure_last_polls_vs_result.csv`.
 
 </details>
 
+**Near the threshold, the result tilts toward the candidate polled 3rd and away from the 4th.** The candidate 3rd in
+the last two weeks of polls did at least as well as polled in all five elections, by 2.6 points on average (Le Pen
++4.2 in 2002, Mélenchon +5.8 in 2022); the 4th did worse in four of five, by 2.1 points on average. This is the
+direction the model's mechanism predicts, voters leaving a candidate out of reach for one within reach of the runoff,
+but it is also what a poll bias would produce: the two cannot be told apart here.
+
 <details>
-<summary><strong>2 · The spot check: done</strong></summary>
+<summary>Supporting evidence: error by role and overall accuracy</summary>
 
 <br>
 
-All 150 polls are checked; 13 have no document (2002: 5, 2007: 3, 2012: 5) and are `NA`. What it found:
+| Role in the last polls | Mean error (points) | Did better | Did worse |
+|---|---|---|---|
+| 1st | +0.9 | 4 | 1 |
+| 2nd | 0.0 | 3 | 2 |
+| 3rd | +2.6 | 5 | 0 |
+| 4th | −2.1 | 1 | 4 |
+| 5th and below | −0.2 | 19 | 22 |
 
-* **Main candidates' shares are reliable.** Real errors are rare (one to three polls per election) and of a
-  point or less. The three 2022 polls with wrong shares are the ones the cross-check already corrected.
-* **Small candidates are missing in 2007 and 2012** (Lepage, Dupont-Aignan, Nihous, Schivardi, Boutin, Morin,
-  Villepin, Chevènement…), almost all at 2% or less, so shares do not sum to 100.
-* **Dates in 2007 and 2012 are publication dates**, usually 1 to 5 days after the fieldwork.
-* **Sample sizes in 2017 and 2022 are the base of respondents** giving a voting intention (about 91–95% of the
-  full sample written in `notes`), not the full sample.
-* **Before a party chose its candidate**, Wikipedia files the share under the eventual candidate (Mamère for
-  Voynet or Lipietz in 2002, Joly for Hulot in 2012).
-
-Corrections are in `notes`, in the format described in [`validation/README.md`](validation/README.md).
+Error = result − mean of the last two weeks of polls; roles come from that mean. The mean absolute error for the
+candidates polled at 5% or more is 1.0 to 2.5 points per election. Tables: `error_by_role.csv`,
+`error_by_candidate.csv`.
 
 </details>
 
+**The vote concentrates at the end, not over the campaign.** Within a fixed set of candidates, the polls spread out
+over the campaign in 2002, 2007, 2012 and 2017 (HHI down by 0.01 to 0.04 from the opening polls to the last ones);
+the rises in 2012 and 2022 come mostly from the offer narrowing, as candidates withdrew. Between the last polls and the result, the vote
+concentrates in all five elections, by voters moving, most in 2007 and 2022 (HHI +0.016 and +0.020). 2002 is the
+most fragmented result by far: 8.7 effective candidates, against 4.7 to 5.3 in the other four.
+
 <details>
-<summary><strong>3 · Final dataset: done</strong></summary>
+<summary>Supporting evidence: splitting the change in concentration</summary>
 
 <br>
 
-Notebook 04 builds `data/final/polls.csv` (see [Final dataset](#final-dataset)). Decided on 2 November 2026:
+HHI is computed twice for every ballot poll and for the result: over every candidate tested, and over the *core*,
+the candidates who will win at least 2%, rescaled among themselves. The core is the same set throughout, so its
+changes are voters moving; the difference between the two is the offer (candidates tested, then withdrawing).
 
-* **Wikipedia is the base for every election**, so one source covers all five. For 2002 and 2022 the cross-check
-  corrections are applied to it; polls only france-politique or NSPPolls has are not added.
-* **2007 and 2012 stay as they are.** The dates stay publication dates and the missing small candidates are not
-  added, not even for the polls checked by hand: correcting half the polls would mix two standards in one table
-  and still leave the gap. These are reported as limits of the data. The same goes for the Green candidate's name
-  before nomination (Mamère for Voynet or Lipietz in 2002).
-* **Sample size is the base of respondents giving a voting intention**, as Wikipedia gives it, since the shares
-  are percentages of that base. The full sample written in the spot check's `notes` is not used.
-* **One-off errors are corrected**: wrong shares, candidates listed but not tested, and wrong dates where the data
-  has fieldwork dates (2002, 2017, 2022).
+| | 2002 | 2007 | 2012 | 2017 | 2022 |
+|---|---|---|---|---|---|
+| Campaign: voters (core) | −0.032 | −0.041 | −0.020 | −0.009 | +0.006 |
+| Campaign: offer | +0.004 | −0.002 | +0.042 | +0.006 | +0.020 |
+| Last mile: voters (core) | +0.002 | +0.011 | +0.007 | +0.001 | +0.020 |
 
-Four items held for a check were settled on 3 November 2026 and their notes corrected: Ifop, June 2011
-(Wikipedia had Joly, Chevènement and Hulot in the wrong scenarios: both now sum to 100); CSA, 16–17 April 2012
-(the small candidates are in the document: only Hollande is corrected); YouGov, 4–7 April 2022 (dates kept: the
-notice's cover page gives 4–7 April; its methodology page repeats the previous wave's 28–31 March); Odoxa, April 2015 (Wikipedia files Sarkozy's 26 under Juppé
-in the Valls hypothesis: corrected).
-
-Not added: NSPPolls' extra scenario for Ifop, June 2020 (answered `NSPPolls`), which is a one-candidate fragment
-of its Bertrand hypothesis (Roussel 2); Wikipedia's scenario is right, as the answer for that poll's s3 says.
+Table: `concentration_decomposition.csv`. Figure: `results/figures/structure_over_campaign.png`.
 
 </details>
 
+**Single polls are about as precise as random samples of one to two thousand people, house effects are small, and
+movement partly carries on.** In the last two weeks, the scatter of single polls around the poll average is what
+simple random samples of 860 to 1,800 people would give. Pollsters' house effects are typically 0.3 to 0.5 points, at most
+about 2. A rise in the poll average over three weeks is followed by a further rise of about 0.4 times as much over the
+next three.
+
 <details>
-<summary><strong>4 · The study of the polls: done</strong></summary>
+<summary>Supporting evidence: noise, herding, house effects and momentum</summary>
 
 <br>
 
-Plan, decisions and results by block in [`docs/study_plan.md`](docs/study_plan.md); every number cited comes from a
-table in `results/tables/` (figures regenerate in `results/figures/`). Left for the ABM, not done here: rerun the
-Sobol analysis with the ranges the polls support for θ and ρ<sub>s</sub>; fix the description of `cliff_ratio` in its
-`docs/model.md`; α (how far voters follow the latest poll) is parked until the switching mechanism changes.
+* **Herding.** Polls agreed more than sampling allows in the last two weeks of 2017 (scatter 0.73 of sampling noise),
+  and much less in 2022 (2.1). Against the bases they report (given only from 2017), polls were slightly more precise
+  than their samples in 2017 and about half as precise in 2022.
+* **House effects** (pollster × candidate, against the leave-one-out poll average): largest for Cluster17 on
+  Mélenchon in 2022 (+2.2) and CSA on Le Pen and Sarkozy in 2007 (+2.2, −2.1).
+* **Momentum.** Pooled slope 0.40 (95% interval 0.29–0.53), from 0.27 to 0.55 per election, with 2002 alone near 1
+  and very uncertain. The trend of the last month also carries on into the result (slope 0.62 over 33 candidates).
+
+Tables: `noise_effective_sample_size.csv`, `pollsters_herding.csv`, `pollsters_house_effects.csv`,
+`momentum_campaign.csv`, `momentum_into_the_vote.csv`.
 
 </details>
 
+**Real polls are much less noisy than the model's synthetic polls, and about as steep as the results.** The model
+draws synthetic polls with a noise ρ<sub>s</sub> between 10 and 200 and a temperature θ between 0.3 and 3. Single
+real polls correspond to ρ<sub>s</sub> of about 500 to 1,800, and θ comes out at 0.94 to 1.12. Real polls test 9 to
+16 candidates (median 12), against 6, 8 and 9 in the synthetic runs.
+
 <details>
-<summary><strong>5 · Loose ends</strong></summary>
+<summary>Supporting evidence: the model's parameters</summary>
 
 <br>
 
-* **The results file is pinned to a merged pull request.** It points to the commit of
-  [strategic-voting-abm-2RS#24](https://github.com/clarasalas/strategic-voting-abm-2RS/pull/24), merged on
-  2 October 2026. Blank `results.commit` in `config/sources.yaml` and rerun notebook 01 to re-pin to `main`.
-* **Share sums.** 32 of 1,862 scenarios have shares summing outside 98–102: 19 on the 2012 Wikipedia page, and 4
-  in NSPPolls, some summing to 0. They are listed at the end of notebook 01 and not investigated.
-* **One parse error**: a 2017 Wikipedia cell reading `640-646` (`data/interim/parse_errors.csv`).
-* **OpinionWay in 2022: settled.** Its CNews releases (2 days) overlap its *Les Echos* rolling releases (3 daily
-  online samples); treated as one series sharing daily samples (`SHARED_SAMPLES` in `src/polls/thinning.py`), an
-  assumption the notices support without stating it (`validation/opinionway_2022_overlaps.csv`). Wikipedia polls now
-  take their client from the matched france-politique or NSPPolls poll, so no overlap is left flagged.
+* **Poll noise ρ<sub>s</sub>.** 490 to 880 for single polls over the campaign, 860 to 1,810 in the last two weeks. A
+  lower bound, the poll average a week out against the result (noise, common bias and late movement together), gives
+  105 to 730: only the top of the current range reaches it.
+* **Temperature θ**, two ways: candidate by candidate (0.94 to 1.12) and from the slope of shares by rank (0.95 to
+  1.08). Polls neither sharpen nor flatten the result much, though the result itself contains late switching.
+* **Prior spread ρ<sub>π</sub>**, how much the opening polls disagree: 290 to 1,410. An upper bound: voters' beliefs
+  are surely more spread out than the polls they could read.
+* **Tolerance τ̂.** Two hypotheses of the same poll that differ by one candidate show where that candidate's voters go
+  when not offered. For candidates polling 3% or more, about half go to a neighbour on the left-right axis, and on
+  average 1.8 to 2.6 places away, inside the model's range τ̂ ∈ [0.5, 3]. Few pairs outside Bayrou and Macron in
+  2017 and Zemmour and Taubira in 2022.
+* **α**, how far voters follow the latest poll, is left out: the mechanism will change, and survey data on
+  expectations would measure it better than polls.
+
+Tables: `parameters_*.csv`. A poll input for the model's empirical mode is prepared in
+[`data/abm_input/`](data/abm_input/README.md), not used.
 
 </details>
+
+<p align="center">
+  <img src="results/figures/ranks.png" width="45%" alt="Rank of the six leading candidates in the poll average over the last 250 days, 2002 to 2022">
+  <img src="results/figures/error_left_right.png" width="53%" alt="Result minus the last two weeks of polls for every candidate, 2002 to 2022">
+</p>
+
+<p align="center">
+Left: rank of the six leading candidates in the poll average; green band: the top two; dashed line: from when the
+runoff pair stops changing. Right: result minus the last two weeks of polls, candidates from left to right; outlined:
+the 2nd and the 3rd in the polls.
+</p>
+
+The study is in `notebooks/05_polls_descriptive.ipynb`, `06_polls_vs_results.ipynb` and `07_parameters.ipynb`; every
+decision behind it is in [`docs/study_plan.md`](docs/study_plan.md), and every number above comes from a table in
+[`results/tables/`](results/README.md).
 
 ## Reproduce
 
 ```bash
 pip install -r requirements.txt
-jupyter nbconvert --to notebook --execute --inplace notebooks/01_collect_and_parse.ipynb
-jupyter nbconvert --to notebook --execute --inplace notebooks/02_thin_rolling.ipynb
-jupyter nbconvert --to notebook --execute --inplace notebooks/03_cross_check.ipynb
-jupyter nbconvert --to notebook --execute --inplace notebooks/04_final_dataset.ipynb
+for nb in notebooks/0*.ipynb; do jupyter nbconvert --to notebook --execute --inplace "$nb"; done
+python -m pytest tests
 ```
 
-Part 1 of notebook 01 needs the network. It downloads only what isn't already in `data/raw/`, so a rerun with
-everything cached makes no requests except to resolve pins left blank. Part 2 reads only `data/raw/` and can be
-run offline. Notebooks 02 to 04 read only `data/interim/` and `validation/`.
-
-If notebook 01 stops with "unmapped candidate names" or "unmapped pollster names", open `config/candidates.csv` or
-`config/institutes.csv`, fill in the empty columns for the listed rows, set `match` to `manual`, and rerun. Rows
-already filled are never overwritten, so hand edits persist. The same holds for the worklists in `validation/`.
+The notebooks run in order, 01 to 07, each reading what the previous ones wrote (see
+[`notebooks/`](notebooks/README.md)). Every source is pinned and the downloads are committed in `data/raw/`, so the
+whole pipeline runs offline and gives the same tables; notebook 01 goes online only for a pin left blank in
+`config/sources.yaml`. The hand-filled files, `config/*.csv` and the worklists in `validation/`, are never
+overwritten by a rerun. The results were produced with Python 3.13.
 
 <details>
 <summary><strong>Repository layout</strong></summary>
@@ -166,125 +207,40 @@ already filled are never overwritten, so hand edits persist. The same holds for 
 <br>
 
 ```
-config/
-  sources.yaml          pinned sources: Wikipedia revision IDs, git commits, Wayback capture
-  candidates.csv        hand-editable map (election, candidate_raw) -> candidate
-  institutes.csv        hand-editable map institute_raw -> institute, institute_family
-  parties.csv           party for poll rows Wikipedia leaves without a label, and hand overrides (src/polls/parties.py)
-  validation.yaml       seed and size of the spot-check sample (fixed before drawing)
-  elections.yaml        first-round dates and official lists of candidates (time axis of the study)
+config/          pinned sources, election dates, and the hand-editable name and party mappings
 data/
-  raw/                  downloads exactly as received; never edited
-    manifest.csv        one row per download: source, url, pinned_id, retrieved_utc (UTC), sha256, local_path, archive_url
-    wikipedia/          MediaWiki API action=parse responses (JSON) for each pinned revision
-    france_politique/   2002 page, live copy and Wayback copy
-    nsppolls/           presidentielle.json at the pinned commit
-    results/            FR-electoral_data.csv at the pinned commit
-  interim/              parsed tables (regenerated by the notebooks)
-    polls_wikipedia.csv, polls_france_politique.csv, polls_nsppolls.csv
-    results.csv
-    parse_errors.csv    cells that could not be parsed, with their raw contents
-    thinning.csv        one row per poll: kept after removing rolling overlap, and why (notebook 02)
-    crosscheck_{2002,2022}_{polls,shares}.csv   poll matches and share-by-share verdicts (notebook 03)
-    flags_resolved.csv  flagged overlaps resolved from the other source (notebook 03)
-  abm_input/            poll input for the ABM's empirical mode, prepared not used (notebook 07)
-  final/                the final dataset (notebook 04)
-    polls.csv           Wikipedia polls kept by thinning, with the validation applied
-    corrections.csv     every correction in the worklists, applied or not, with the reason
-    scenarios.csv       one row per scenario: ballot-scenario match, stand-ins, extra candidates
-notebooks/
-  01_collect_and_parse.ipynb
-  02_thin_rolling.ipynb  removes sample overlap within a pollster/client series (Erikson & Wlezien)
-  03_cross_check.ipynb   compares sources (2002, 2022), resolves flagged overlaps, draws the spot-check sample
-  04_final_dataset.ipynb applies the validation and writes data/final/
-  05_polls_descriptive.ipynb  the study, part 1: the polls themselves (docs/study_plan.md)
-  06_polls_vs_results.ipynb   the study, part 2: polls against results
-  07_parameters.ipynb         the study, part 3: parameter bounds and the empirical poll input
-validation/             worklists filled in by hand; written once by notebook 03, never overwritten
-  README.md                      how to fill them in
-  crosscheck_disagreements.csv   polls where two sources disagree: settle against the original document
-  flagged_clients.csv            overlapping polls (2017, one pair in 2022) whose client must be looked up
-  spot_check_sample.csv          30 random Wikipedia polls per election (seed in config/validation.yaml)
-src/polls/              functions used by the notebooks (fetch, parsers, mapping, thinning, checks, metrics)
-tests/                  tests of the study's metrics and time axis (python -m pytest tests)
-results/tables/         tables produced by the study notebooks; results/figures/ is regenerated, not committed
-docs/study_plan.md      the study of the polls: plan, decisions, progress
+  raw/           downloads exactly as received, never edited
+  interim/       parsed tables, one per source, thinning and cross-check
+  final/         the final dataset: polls, scenarios, corrections
+  abm_input/     poll input for the model's empirical mode (prepared, not used)
+validation/      worklists filled in by hand against the original documents
+notebooks/       the pipeline (01–04) and the study (05–07)
+src/polls/       the code the notebooks call: parsers, mappings, thinning, metrics, poll average
+results/
+  tables/        every table the study produces
+  figures/       its figures
+tests/           tests of the metrics and the time axis
+docs/            the study plan and its decisions
 ```
 
-</details>
-
-<details>
-<summary><strong id="final-dataset">Final dataset</strong></summary>
-
-<br>
-
-`data/final/polls.csv`: one row per poll × scenario × candidate, Wikipedia polls only, thinned. Columns are those
-of the interim tables (below), plus:
-
-| Column | Meaning |
-|---|---|
-| `party` | the label at the time of the poll: the poll's Wikipedia row (Juppé is UMP in 2014, LR from 2015), else `config/parties.csv` |
-| `slot` | the final-ballot candidate whose place this candidate fills: the same person, or the same party at the time, allowing for renamings (UMP → LR, FN → RN, DLR → DLF, EM → LREM, LV → EELV, LCR → NPA). Empty for SE candidates and for parties absent from the ballot |
-| `ballot_scenario` | this scenario is the poll's ballot scenario (see below) |
-| `date` | `fieldwork_end`, or `reported_date` where the source gives no fieldwork (2007, 2012: publication date) |
-| `corrected` | the row was changed by the validation (see `corrections.csv`) |
-| `checked_against` | `other source` (matched in france-politique or NSPPolls), `original document` (spot check), both, or empty |
-
-**Ballot scenario.** A scenario is a ballot scenario when every final candidacy with at least 2% of the vote has
-its slot filled. It may also test candidates who will not be on the ballot (Taubira in 2022, Bayrou and Jadot in
-2017): that is the poll voters saw. A candidate from another party never fills a slot, even if that party later
-backed the final candidate. Per poll, the ballot scenario chosen has the most slots filled by the same person, then
-the fewest extra candidates. Polls with one: 49 of 98 (2002, from February 2002), 107 of 107 (2007), 116 of 124
-(2012), 109 of 148 (2017), 169 of 216 (2022). Rules in `src/polls/matching.py`.
-
-`data/final/scenarios.csv`: one row per scenario: whether it is a ballot scenario and chosen, the required
-candidacies missing, the candidates filling a slot for someone else, and the extra candidates with their total share.
-
-`data/final/corrections.csv`: one row per item of the two worklists, with `applied` and, when not applied, the
-`reason`. `old` and `new` give the value before and after.
-
-**Limits to report**: 2007 and 2012 dates are publication dates, usually 1 to 5 days after fieldwork; small
-candidates (mostly at 2% or less) are missing in many 2007 and 2012 polls, so shares can sum below 100; before a
-party chose its candidate, the share can be filed under the eventual candidate; sample sizes are absent before 2017.
+Each folder has its own README.
 
 </details>
 
 <details>
-<summary><strong>Output tables</strong></summary>
+<summary><strong>Pipeline</strong></summary>
 
 <br>
 
-One row per poll × scenario × candidate. Shares are in percent.
-
-**Pollsters.** `institute_raw` is the name as written in the source; `institute` is the pollster at the time,
-without partner names ("Ifop-Fiducial" → Ifop, "Cevipof Ipsos-Sopra Steria" → Ipsos); `institute_family` groups
-renamings of one company (Sofres, TNS Sofres, Kantar Sofres, Kantar Public → "Kantar (Sofres)"; Louis Harris, LH2 →
-"LH2 (Louis Harris)"; Atlas Político → AtlasIntel). Harris Interactive is a separate company from Louis
-Harris/LH2. `poll_id` is built from `institute_raw`, so editing the mapping never changes ids.
-
-**Columns beyond the base specification.** `scenario_label` (NSPPolls hypothesis), `reported_date` (a single date
-when the source doesn't say whether it is the end of fieldwork or the publication date), `date_raw`,
-`share_upper_bound`, `candidate_column` (the source column, when the candidate is named inside the cell),
-`table_label`, and `source_poll_ref` (location in the source, or the NSPPolls poll id).
-
-**`share_status`.**
-
-| Value | Meaning | Share |
+| Notebook | Reads | Writes |
 |---|---|---|
-| `value` | a number | the number |
-| `not_tested` | candidate not in this scenario (`—`, `ns`) | null |
-| `grouped_others` | tested but counted in "others" (france-politique `autres`) | null |
-| `below_threshold` | `<0,5 %`, `<1 %` | null; bound in `share_upper_bound` |
-| `missing` | blank cell | null |
-
-The pseudo-candidate `__others__` is the aggregate "Autres" row of the IFOP tables on france-politique. On
-Wikipedia, the "Autres (candidats)" column lists extra named candidates and becomes ordinary candidate rows.
-
-**`rolling`** is true only where the source says so: the `rolling` field in NSPPolls and "(rolling)" after the
-pollster's name on the 2022 Wikipedia page. Otherwise it is null.
-
-**Thinning** deletes nothing from the poll tables: join `data/interim/thinning.csv` on `poll_id` and filter on
-`kept`.
+| `01_collect_and_parse` | the sources (`config/sources.yaml`) | `data/raw/`, `data/interim/polls_*.csv`, `results.csv`, `parse_errors.csv` |
+| `02_thin_rolling` | interim polls, `validation/flagged_clients.csv` | `data/interim/thinning.csv` |
+| `03_cross_check` | interim polls, thinning | `data/interim/crosscheck_*.csv`, the worklists in `validation/` (once) |
+| `04_final_dataset` | interim tables, filled worklists | `data/final/` |
+| `05_polls_descriptive` | `data/final/polls.csv` | `results/tables/coverage_*`, `trajectories_*`, `ranks_*`, `pollsters_*`, `noise_*`, figures |
+| `06_polls_vs_results` | final polls, results | `results/tables/structure_*`, `error_*`, `cliff_*`, `momentum_*`, `stylized_facts.csv`, figures |
+| `07_parameters` | final polls, results | `results/tables/parameters_*`, `data/abm_input/`, figures |
 
 </details>
 
@@ -305,31 +261,58 @@ pollster's name on the 2022 Wikipedia page. Otherwise it is null.
   gives the client, the rolling flag and the Commission des sondages notice.
 * **Official first-round results**: `data/FR-electoral_data.csv` in
   [strategic-voting-abm-2RS](https://github.com/clarasalas/strategic-voting-abm-2RS), at commit `8e99f86`.
+* **Original documents** for the validation: pollsters' reports and Commission des sondages notices, linked row by
+  row in the worklists.
 
 Pins are in `config/sources.yaml`; every download is logged with its SHA-256 in `data/raw/manifest.csv`.
 
 </details>
 
 <details>
-<summary><strong>Updating a pinned source</strong></summary>
+<summary><strong>Methodological choices</strong></summary>
 
 <br>
 
-Pins are only ever set when blank, never changed automatically.
+* **Wikipedia is the base for every election**, so one source covers all five. For 2002 and 2022 the cross-check
+  corrections are applied to it; polls only the second source has are not added.
+* **Thinning.** Releases of a rolling poll share interviews. Within one pollster's series for one client, a release
+  is dropped when its fieldwork overlaps a kept one, so each interview counts once (Erikson and Wlezien). OpinionWay's
+  CNews and *Les Echos* series of 2022 are treated as one series sharing daily online samples, an assumption the
+  notices support without stating it.
+* **Party** is the label at the time of the poll (Juppé is UMP in 2014, LR from 2015). Orientation codes (DVG, DVD,
+  EXD) are not parties and read as unaffiliated (SE).
+* **Slot.** A tested candidate fills the place of a final candidacy when it is the same person, or the same party at
+  the time, allowing for renamings (UMP → LR, FN → RN…); never across parties, even when a party later backed the
+  candidate.
+* **Ballot scenario.** Per poll, the hypothesis that fills the slot of every candidacy with at least 2% of the vote.
+  It may also test candidates who will not run (Taubira in 2022): that is the poll voters saw.
+* **Time** is counted in days before the first round, from the end of fieldwork (2007 and 2012: publication date).
+* **Poll average**: a Gaussian kernel with a 10-day bandwidth, at least 3 polls nearby. Figures widen the window where
+  polls are sparse and draw those stretches pale.
+* **Shares** are rescaled to 100; every metric is also kept on raw shares. A share given as below a threshold counts
+  as half its bound.
+* **HHI rather than CENP** to compare elections, since CENP depends on the number of candidates.
 
-* **Wikipedia page**: set that year's `revision_id` (and `revision_timestamp`) to `null` in `config/sources.yaml`
-  to pin the current revision on the next run, or write a specific revision ID.
-* **NSPPolls / results file**: set `commit` to `null` (pins the latest commit: on `master` for NSPPolls, the
-  latest commit that modified the file for the results), or write a specific hash.
-* **france-politique**: set `wayback_timestamp` to `null` and delete the local copy in
-  `data/raw/france_politique/` to download the page again and request a new Wayback capture.
+Every decision, with its reason, is in [`docs/study_plan.md`](docs/study_plan.md).
 
-Old raw files stay in `data/raw/` and in the manifest; parsing uses only the files the current pins point to.
+</details>
+
+<details>
+<summary><strong>Limits</strong></summary>
+
+<br>
+
+* 2007 and 2012 dates are publication dates, usually 1 to 5 days after fieldwork.
+* Small candidates, mostly at 2% or less, are missing in many 2007 and 2012 polls, so their shares can sum below 100.
+* Before a party chose its candidate, Wikipedia can file the share under the eventual candidate (Mamère for Voynet
+  or Lipietz in 2002).
+* Sample sizes are given only from 2017, and are the base of respondents giving a voting intention.
+* No undecided rate: polls leave out those who give no intention, about a quarter of respondents. No runoff polls.
+* Five elections: every pattern above rests on five cases.
 
 </details>
 
 ---
 
-<sub>Clara Salas (ENS-PSL). Poll data for the agent-based model
-[strategic-voting-abm-2RS](https://github.com/clarasalas/strategic-voting-abm-2RS). Companion project on the
-geography of coordination: [strategic-voting-geo-2RS](https://github.com/clarasalas/strategic-voting-geo-2RS).</sub>
+Clara Salas (ENS-PSL). Complementary analysis to the agent-based model
+[strategic-voting-abm-2RS](https://github.com/clarasalas/strategic-voting-abm-2RS).
