@@ -29,9 +29,9 @@ client of overlapping polls, and a random sample of 30 Wikipedia polls per elect
 
 ## Where things stand
 
-**Collection, parsing, thinning and the manual validation are done, and the final dataset is built (`data/final/`). The calibration statistics are next.**
+**Done: collection, validation, the final dataset (`data/final/`) and the study of the polls (notebooks 05–07, `docs/study_plan.md`). Four small loose ends remain (step 5).**
 
-| Step | State on 2 November 2026 |
+| Step | State on 4 November 2026 |
 |---|---|
 | Collect and parse (notebook 01) | done: 746 Wikipedia polls (2002–2022), 98 france-politique (2002), 351 NSPPolls (2022) |
 | Candidate and pollster mappings (`config/`) | done, nothing unmapped |
@@ -42,7 +42,9 @@ client of overlapping polls, and a random sample of 30 Wikipedia polls per elect
 | Spot check ([`spot_check_sample.csv`](validation/README.md)) | done, 150 of 150 (13 with no document) |
 | Apply the validation answers to the tables | done (notebook 04): 136 corrections applied |
 | Final dataset ([`data/final/polls.csv`](#final-dataset)) | done: 708 polls, 1,164 scenarios |
-| Calibration statistics | not started |
+| Study, part 1: the polls themselves (notebook 05) | done |
+| Study, part 2: polls against results (notebook 06) | done: `results/tables/stylized_facts.csv` |
+| Study, part 3: parameters and the ABM's poll input (notebook 07) | done: `data/abm_input/` prepared, not used |
 
 ## Next steps
 
@@ -111,7 +113,19 @@ of its Bertrand hypothesis (Roussel 2); Wikipedia's scenario is right, as the an
 </details>
 
 <details>
-<summary><strong>4 · Loose ends</strong></summary>
+<summary><strong>4 · The study of the polls: done</strong></summary>
+
+<br>
+
+Plan, decisions and results by block in [`docs/study_plan.md`](docs/study_plan.md); every number cited comes from a
+table in `results/tables/` (figures regenerate in `results/figures/`). Left for the ABM, not done here: rerun the
+Sobol analysis with the ranges the polls support for θ and ρ<sub>s</sub>; fix the description of `cliff_ratio` in its
+`docs/model.md`; α (how far voters follow the latest poll) is parked until the switching mechanism changes.
+
+</details>
+
+<details>
+<summary><strong>5 · Loose ends</strong></summary>
 
 <br>
 
