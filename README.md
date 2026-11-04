@@ -6,14 +6,14 @@ documents, and what they say about how voters coordinate before the vote.
 </p>
 
 <p align="center">
-  <img src="results/figures/trajectories.png" width="620"
-       alt="Poll average of the six leading candidates over the last 250 days of each campaign, 2002 to 2022, with the results">
+  <a href="https://clarasalas.github.io/strategic-voting-polls-2RS/">
+    <img src="https://img.shields.io/badge/Open%20the%20interactive%20page-1a1a1a?style=for-the-badge" alt="Open the interactive page">
+  </a>
 </p>
 
 <p align="center">
-Poll average of the six leading candidates over the last 250 days of each campaign, coloured from left to right;
-dots are the results. In 2002 the polls kept Jospin second until the end and Le Pen qualified; in 2022 Mélenchon
-closed most of the gap, but not all of it.
+The interactive page tells the story of the five campaigns: every candidate's poll average and polls, who seemed
+headed for the runoff, who gained in the last weeks, how concentrated the vote was, and how pollsters differed.
 </p>
 
 ## About
@@ -172,17 +172,6 @@ Tables: `parameters_*.csv`. A poll input for the model's empirical mode is prepa
 
 </details>
 
-<p align="center">
-  <img src="results/figures/ranks.png" width="45%" alt="Rank of the six leading candidates in the poll average over the last 250 days, 2002 to 2022">
-  <img src="results/figures/error_left_right.png" width="53%" alt="Result minus the last two weeks of polls for every candidate, 2002 to 2022">
-</p>
-
-<p align="center">
-Left: rank of the six leading candidates in the poll average; green band: the top two; dashed line: from when the
-runoff pair stops changing. Right: result minus the last two weeks of polls, candidates from left to right; outlined:
-the 2nd and the 3rd in the polls.
-</p>
-
 The study is in `notebooks/05_polls_descriptive.ipynb`, `06_polls_vs_results.ipynb` and `07_parameters.ipynb`; every
 decision behind it is in [`docs/study_plan.md`](docs/study_plan.md), and every number above comes from a table in
 [`results/tables/`](results/README.md).
@@ -192,6 +181,7 @@ decision behind it is in [`docs/study_plan.md`](docs/study_plan.md), and every n
 ```bash
 pip install -r requirements.txt
 for nb in notebooks/0*.ipynb; do jupyter nbconvert --to notebook --execute --inplace "$nb"; done
+PYTHONPATH=src python -m polls.page          # rebuilds the interactive page, docs/index.html
 python -m pytest tests
 ```
 
@@ -199,7 +189,8 @@ The notebooks run in order, 01 to 07, each reading what the previous ones wrote 
 [`notebooks/`](notebooks/README.md)). Every source is pinned and the downloads are committed in `data/raw/`, so the
 whole pipeline runs offline and gives the same tables; notebook 01 goes online only for a pin left blank in
 `config/sources.yaml`. The hand-filled files, `config/*.csv` and the worklists in `validation/`, are never
-overwritten by a rerun. The results were produced with Python 3.13.
+overwritten by a rerun. The results were produced with Python 3.13. The interactive page is a single standalone
+file, published with GitHub Pages from the `docs/` folder (see [`docs/README.md`](docs/README.md)).
 
 <details>
 <summary><strong>Repository layout</strong></summary>
@@ -218,9 +209,9 @@ notebooks/       the pipeline (01–04) and the study (05–07)
 src/polls/       the code the notebooks call: parsers, mappings, thinning, metrics, poll average
 results/
   tables/        every table the study produces
-  figures/       its figures
+  figures/       static versions of its figures
 tests/           tests of the metrics and the time axis
-docs/            the study plan and its decisions
+docs/            the interactive page (generated), the study plan and its decisions
 ```
 
 Each folder has its own README.
@@ -241,6 +232,7 @@ Each folder has its own README.
 | `05_polls_descriptive` | `data/final/polls.csv` | `results/tables/coverage_*`, `trajectories_*`, `ranks_*`, `pollsters_*`, `noise_*`, figures |
 | `06_polls_vs_results` | final polls, results | `results/tables/structure_*`, `error_*`, `cliff_*`, `momentum_*`, `stylized_facts.csv`, figures |
 | `07_parameters` | final polls, results | `results/tables/parameters_*`, `data/abm_input/`, figures |
+| `python -m polls.page` | final polls, results, the tables of 05 and 06 | `docs/index.html` |
 
 </details>
 

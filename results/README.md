@@ -34,7 +34,8 @@ All in `tables/`, written by the study notebooks. Shares in points, days counted
 
 ## Figures
 
-All in `figures/`, regenerated with the tables. Candidates are coloured from left to right in the order of
+All in `figures/`, regenerated with the tables: static versions for reading the notebooks. The interactive page
+([`docs/`](../docs/README.md)) draws its own from the same data. Candidates are coloured from left to right in the order of
 Wikipedia's poll-table columns.
 
 | Figure | Notebook | What it shows |

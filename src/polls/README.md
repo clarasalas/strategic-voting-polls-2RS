@@ -19,6 +19,7 @@ The notebooks add `src/` to the path and import `polls`; nothing needs installin
 | **Validate** | `crosscheck` (two sources, share by share), `sampling` (the spot-check draw), `worklists` (written to `validation/`), `links` (links from the link search into the worklists) |
 | **Final dataset** | `final` (applies the worklists), `matching` (slots and ballot scenarios) |
 | **Study** | `timeline` (days before the vote, phases), `metrics` (HHI, ENP, cliff, gaps, roles), `average` (poll average), `ideology` (left-right order), `figures` (plotting helpers), `abm_input` (the model's poll input) |
+| **Page** | `page` (builds `docs/index.html` from `page_template.html`) |
 
 <details>
 <summary><strong>Where the main rules live</strong><br>Which module to read for each decision</summary>
