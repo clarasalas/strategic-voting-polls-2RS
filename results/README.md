@@ -25,7 +25,7 @@ All in `tables/`, written by the study notebooks. Shares in points, days counted
 | `noise_` | 05 | the effective sample size of single polls, against their reported bases |
 | `structure_` | 06 | HHI, ENP, top-two share, cliff and gaps per poll, in the poll average, in the last polls and in the results |
 | `concentration_decomposition` | 06 | the change in HHI split into voters moving and the offer changing, over the campaign and the last mile |
-| `error_` | 06 | result − last two weeks of polls, by candidate and by role |
+| `error_` | 06 | result − last two weeks of polls, by candidate and by role; and each poll's error on a typical candidate |
 | `cliff_` | 06 | the 2nd–3rd gap at 8, 4 and 1 week, and how predictable the runoff pair was |
 | `momentum_` | 06 | does a rise continue: during the campaign, and into the vote |
 | `stylized_facts` | 06 | the main numbers of notebooks 05 and 06 together |

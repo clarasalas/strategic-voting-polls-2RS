@@ -89,8 +89,14 @@ but it is also what a poll bias would produce: the two cannot be told apart here
 | 5th and below | −0.2 | 19 | 22 |
 
 Error = result − mean of the last two weeks of polls; roles come from that mean. The mean absolute error for the
-candidates polled at 5% or more is 1.0 to 2.5 points per election. Tables: `error_by_role.csv`,
-`error_by_candidate.csv`.
+candidates polled at 5% or more is 1.0 to 2.5 points per election.
+
+**Single polls.** A poll of the last two weeks missed the result by 0.9 (2017) to 2.4 points (2022) on a typical
+candidate (root mean square error over the candidates on the ballot). The average of those polls does barely better
+(0.8 to 2.25): most of the error is common to all polls, from a shared bias or from late movement. Polls of one
+election are not independent, so the differences between elections are five cases, not a trend.
+
+Tables: `error_by_role.csv`, `error_by_candidate.csv`, `error_by_poll.csv`.
 
 </details>
 

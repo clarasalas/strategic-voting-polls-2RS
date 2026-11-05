@@ -53,14 +53,50 @@ def load():
     lr = ideology.order(ROOT, {int(p.name[:4]): p for p in (ROOT / "data" / "raw" / "wikipedia").glob("*.json")},
                         pd.read_csv(ROOT / "data" / "interim" / "polls_wikipedia.csv", low_memory=False))
     lr_pos = lr.set_index(["election", "candidate"])["position"]
-    return calendar, rows, results, slot_polls, lr_pos
+    # candidates tested with the full ballot who will not be on it (they withdrew, or never stood)
+    extra_polls = ballot[ballot["slot"].isna()].groupby(["election", "poll_id", "candidate"], as_index=False).agg(
+        value=("value", "sum"), days_before=("days_before", "first"), party=("party", "first"))
+    polls = rows.drop_duplicates("poll_id")[["election", "poll_id", "weeks_before"]].copy()
+    polls["full_ballot"] = polls["poll_id"].isin(ballot["poll_id"])
+    return calendar, rows, results, slot_polls, extra_polls, polls, lr_pos
+
+
+def _colour_at(frac: float) -> str:
+    """The left-right palette at a fraction of the way from left to right, darkened as in ideology.colours."""
+    from matplotlib.colors import LinearSegmentedColormap
+    rgb = list(LinearSegmentedColormap.from_list("left_right", ideology.LEFT_RIGHT)(frac)[:3])
+    while ideology._luminance(rgb) > 0.35:
+        rgb = [x * 0.95 for x in rgb]
+    return _hex(rgb)
+
+
+def withdrawn(e, extra_polls, lr_pos, final_order) -> list[dict]:
+    """Candidates tested with the full ballot who were not on it, with at least 5 polls in the window and a poll
+    average reaching 2%: their line, drawn only between their first and last poll. Coloured by their place
+    among the final candidates on the left-right axis."""
+    ep = extra_polls[(extra_polls["election"] == e) & (extra_polls["days_before"] <= WINDOW)]
+    final_pos = sorted(lr_pos.get((e, c), 0.5) for c in final_order)
+    out = []
+    for c, g in ep.groupby("candidate"):
+        if g["poll_id"].nunique() < 5:
+            continue
+        sm = average.smooth(g["days_before"].to_numpy(), g["value"].to_numpy(), GRID, adaptive_k=4).dropna()
+        sm = sm[(sm.index >= g["days_before"].min()) & (sm.index <= g["days_before"].max())]
+        if sm.empty or sm["mean"].max() < 2.0:
+            continue
+        frac = float(np.interp(lr_pos.get((e, c), 0.5), final_pos, np.linspace(0, 1, len(final_pos))))
+        out.append(dict(name=c, short=surname(c), party=g["party"].iloc[0], result=None, colour=_colour_at(frac),
+                        top6=False, withdrawn=True, last_poll=int(g["days_before"].min()),
+                        traj=[[int(d), _r(m, 2), _r(sd, 2), int(sp_)] for d, m, sd, sp_ in
+                              zip(sm.index, sm["mean"], sm["sd"], sm["sparse"])], rank=[]))
+    return out
 
 
 def table(name: str) -> pd.DataFrame:
     return pd.read_csv(TABLES / f"{name}.csv")
 
 
-def election_block(e, calendar, rows, results, slot_polls, lr_pos) -> dict:
+def election_block(e, calendar, rows, results, slot_polls, extra_polls, all_polls, lr_pos) -> dict:
     res = results[results["election"] == e].sort_values("share", ascending=False)
     cands = sorted(res["candidate"], key=lambda c: lr_pos.get((e, c), 0.5))
     colour = {c: _hex(rgb) for c, rgb in ideology.colours(cands).items()}
@@ -79,17 +115,23 @@ def election_block(e, calendar, rows, results, slot_polls, lr_pos) -> dict:
             traj=[[int(d), _r(m, 2), _r(s, 2), int(sp_)] for d, m, s, sp_ in
                   zip(t["days_before"], t["mean"], t["sd"], t["sparse"])],
             rank=[[int(d), int(k)] for d, k in zip(t["days_before"], t["rank"])]))
+    candidates += withdrawn(e, extra_polls, lr_pos, cands)
 
     shown = sp[sp["days_before"] <= WINDOW]
     index = {c["name"]: i for i, c in enumerate(candidates)}
+    extra = extra_polls[(extra_polls["election"] == e) & extra_polls["candidate"].isin(index)].set_index("poll_id")
     polls = []
     for pid, g in shown.groupby("poll_id"):
-        polls.append([int(g["days_before"].iloc[0]), g["pollster"].iloc[0], str(g["date"].iloc[0])[:10],
-                      {index[s]: _r(v, 1) for s, v in zip(g["slot"], g["value"]) if s in index}])
+        values = {index[s]: _r(v, 1) for s, v in zip(g["slot"], g["value"]) if s in index}
+        if pid in extra.index:
+            x = extra.loc[[pid]]
+            values.update({index[c]: _r(v, 1) for c, v in zip(x["candidate"], x["value"])})
+        polls.append([int(g["days_before"].iloc[0]), g["pollster"].iloc[0], str(g["date"].iloc[0])[:10], values])
 
     events = table("trajectories_entries_withdrawals").query("election == @e and days_before <= @WINDOW")
     cov = table("coverage_by_election").set_index("election").loc[e]
-    weekly = table("coverage_polls_per_week").set_index("weeks_before")[str(e)]
+    ap = all_polls[all_polls["election"] == e]
+    weekly = ap.groupby(["weeks_before", "full_ballot"]).size().unstack(fill_value=0)
     right = table("ranks_right_pair_by_phase").set_index("election").loc[e]
     lock = table("ranks_lockin").set_index("election").loc[e]
     pred = table("cliff_predictability").query("election == @e").set_index("horizon")
@@ -104,7 +146,11 @@ def election_block(e, calendar, rows, results, slot_polls, lr_pos) -> dict:
         official_list=int((calendar.loc[e, "first_round"] - calendar.loc[e, "official_list"]).days),
         candidates=candidates, polls=sorted(polls, key=lambda p: -p[0]),
         events=[dict(kind=r.kind, name=surname(r.candidate), day=int(r.days_before)) for r in events.itertuples()],
-        weekly=[int(weekly.get(w, 0)) for w in range(1, WINDOW // 7 + 1)],
+        accuracy=dict(polls=[[r.institute, str(r.date)[:10], int(r.days_before), _r(r.rmse), surname(r.largest_miss),
+                              _r(r.largest_miss_error)] for r in table("error_by_poll").query("election == @e").itertuples()],
+                      average=_r(np.sqrt((err["error"].dropna() ** 2).mean()))),
+        weekly=[[int(weekly.loc[w].get(True, 0)), int(weekly.loc[w].get(False, 0))] if w in weekly.index else [0, 0]
+                for w in range(1, WINDOW // 7 + 1)],
         stats=dict(polls=int(cov["polls"]), pollsters=int(cov["pollsters"]), last_two_weeks=int(cov["last two weeks"]),
                    volatility_last=_r(vol["last two weeks"]),
                    right_pair_last=_r(right["last two weeks"]), right_leader_last=_r(right["1st place right, last two weeks"]),
@@ -142,7 +188,7 @@ def structure_block() -> dict:
 
 
 def build() -> Path:
-    calendar, rows, results, slot_polls, lr_pos = load()
+    calendar, rows, results, slot_polls, extra_polls, all_polls, lr_pos = load()
     elections = sorted(int(e) for e in rows["election"].unique())
     dec = table("concentration_decomposition")
     momentum = table("momentum_into_the_vote")
@@ -150,7 +196,7 @@ def build() -> Path:
     roles = table("error_by_role")
     herd = table("pollsters_herding").query("phase == 'last two weeks'").set_index("election")
     noise = table("noise_effective_sample_size").query("period == 'last two weeks'").set_index("election")
-    blocks = {e: election_block(e, calendar, rows, results, slot_polls, lr_pos) for e in elections}
+    blocks = {e: election_block(e, calendar, rows, results, slot_polls, extra_polls, all_polls, lr_pos) for e in elections}
     data = dict(
         window=WINDOW, elections=elections, colours=dict(zip(map(str, elections), ELECTION_COLOURS)),
         blocks=blocks, structure=structure_block(),

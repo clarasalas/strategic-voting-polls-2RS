@@ -19,6 +19,7 @@ runoff pair,"probability the polls gave the real pair, 1 week before",0.04,0.94,
 poll error,3rd in the last polls: result − polls,4.152,0.042,2.192,0.783,5.826,error_by_candidate.csv
 poll error,4th in the last polls: result − polls,-1.905,-3.504,-3.067,0.694,-2.775,error_by_candidate.csv
 poll error,"mean absolute error, candidates polled ≥ 5%",1.610875,2.03775,1.4128,0.9654,2.4985,error_by_candidate.csv
+poll error,"error of one poll on a typical candidate, last two weeks (RMSE, mean over polls)",1.5954166666666667,1.6162222222222222,1.45775,0.9420000000000001,2.3762413793103447,error_by_poll.csv
 dynamics,momentum: 3-week persistence (slope),0.999,0.492,0.545,0.269,0.377,momentum_campaign.csv
 dynamics,"volatility, last two weeks (points per week)",0.74,0.26,0.32,0.55,0.96,trajectories_volatility.csv
 polls,"effective sample size, last two weeks",935.3,1003.92,1073.48,1813.73,861.03,noise_effective_sample_size.csv

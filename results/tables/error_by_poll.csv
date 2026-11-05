@@ -1,0 +1,94 @@
+election,poll_id,candidates,rmse,mae,institute,date,days_before,largest_miss,largest_miss_error
+2002,2002_wp_bva_2002-04-13_1,16,1.496,1.16,BVA,2002-04-13,8,Arlette Laguiller,3.28
+2002,2002_wp_bva_2002-04-18_1,16,1.229,0.941,BVA,2002-04-18,3,Jean-Marie Le Pen,-2.86
+2002,2002_wp_csa_2002-04-11_1,16,1.926,1.496,CSA,2002-04-11,10,Jean-Marie Le Pen,-4.86
+2002,2002_wp_csa_2002-04-18_1,16,1.122,0.824,CSA,2002-04-18,3,Jean-Marie Le Pen,-2.86
+2002,2002_wp_ifop_2002-04-12_1,16,2.201,1.342,Ifop,2002-04-12,9,Jean-Marie Le Pen,-7.36
+2002,2002_wp_ifop_2002-04-13_1,16,1.942,1.136,Ifop,2002-04-13,8,Jean-Marie Le Pen,-6.36
+2002,2002_wp_ipsos_2002-04-16_1,16,1.577,1.258,Ipsos,2002-04-16,5,Jean-Marie Le Pen,-3.86
+2002,2002_wp_ipsos_2002-04-18_1,16,1.215,0.945,Ipsos,2002-04-18,3,Jean-Marie Le Pen,-2.86
+2002,2002_wp_louis-harris_2002-04-17_1,16,1.599,1.292,LH2 (Louis Harris),2002-04-17,4,Jean-Marie Le Pen,-3.86
+2002,2002_wp_sofres_2002-04-11_1,16,1.786,1.456,Kantar (Sofres),2002-04-11,10,Jean-Marie Le Pen,-3.86
+2002,2002_wp_sofres_2002-04-15_1,16,1.548,1.14,Kantar (Sofres),2002-04-15,6,Jean-Marie Le Pen,-3.86
+2002,2002_wp_sofres_2002-04-18_1,16,1.504,1.074,Kantar (Sofres),2002-04-18,3,Jean-Marie Le Pen,-4.36
+2007,2007_wp_bva_2007-04-12_1,12,1.584,1.166,BVA,2007-04-12,10,Jean-Marie Le Pen,3.56
+2007,2007_wp_bva_2007-04-19_1,12,1.557,1.222,BVA,2007-04-19,3,François Bayrou,-3.57
+2007,2007_wp_csa_2007-04-12_1,12,1.874,1.154,CSA,2007-04-12,10,Jean-Marie Le Pen,4.56
+2007,2007_wp_csa_2007-04-14_1,12,2.313,1.571,CSA,2007-04-14,8,Nicolas Sarkozy,-5.18
+2007,2007_wp_csa_2007-04-17_1,11,2.023,1.155,CSA,2007-04-17,5,Jean-Marie Le Pen,5.06
+2007,2007_wp_csa_2007-04-19_1,11,2.264,1.477,CSA,2007-04-19,3,Jean-Marie Le Pen,5.56
+2007,2007_wp_ifop_2007-04-08_1,12,1.722,1.224,Ifop,2007-04-08,14,Ségolène Royal,-3.87
+2007,2007_wp_ifop_2007-04-15_1,12,1.315,0.999,Ifop,2007-04-15,7,Nicolas Sarkozy,-2.68
+2007,2007_wp_ifop_2007-04-18_1,12,1.631,1.116,Ifop,2007-04-18,4,Ségolène Royal,-3.37
+2007,2007_wp_ipsos_2007-04-08_1,12,1.378,0.999,Ipsos,2007-04-08,14,Ségolène Royal,-3.37
+2007,2007_wp_ipsos_2007-04-12_1,12,1.397,1.029,Ipsos,2007-04-12,10,Jean-Marie Le Pen,3.56
+2007,2007_wp_ipsos_2007-04-15_1,12,1.193,0.916,Ipsos,2007-04-15,7,Jean-Marie Le Pen,3.06
+2007,2007_wp_ipsos_2007-04-20_1,12,1.215,0.794,Ipsos,2007-04-20,2,Ségolène Royal,-2.87
+2007,2007_wp_lh2_2007-04-09_1,12,1.74,1.096,LH2 (Louis Harris),2007-04-09,13,Jean-Marie Le Pen,4.56
+2007,2007_wp_lh2_2007-04-16_1,12,1.871,1.296,LH2 (Louis Harris),2007-04-16,6,Nicolas Sarkozy,-4.18
+2007,2007_wp_sofres_2007-04-13_1,11,0.959,0.781,Kantar (Sofres),2007-04-13,9,François Bayrou,-1.57
+2007,2007_wp_sofres_2007-04-18_1,11,1.422,0.939,Kantar (Sofres),2007-04-18,4,Jean-Marie Le Pen,3.56
+2007,2007_wp_sofres_2007-04-19_1,11,1.634,1.185,Kantar (Sofres),2007-04-19,3,Jean-Marie Le Pen,3.56
+2012,2012_wp_bva_2012-04-12_1,10,1.403,1.078,BVA,2012-04-12,10,Marine Le Pen,-2.9
+2012,2012_wp_csa_2012-04-13_1,10,2.301,1.629,CSA,2012-04-13,9,Jean-Luc Mélenchon,5.9
+2012,2012_wp_csa_2012-04-17_1,10,1.731,1.103,CSA,2012-04-17,5,Jean-Luc Mélenchon,3.9
+2012,2012_wp_harris_2012-04-10_1,10,1.123,0.919,Harris Interactive,2012-04-10,12,Jean-Luc Mélenchon,1.9
+2012,2012_wp_harris_2012-04-17_1,10,0.93,0.693,Harris Interactive,2012-04-17,5,François Bayrou,1.87
+2012,2012_wp_ifop_2012-04-10_1,10,1.384,0.981,Ifop,2012-04-10,12,Jean-Luc Mélenchon,3.4
+2012,2012_wp_ifop_2012-04-16_1,10,1.379,0.867,Ifop,2012-04-16,6,Jean-Luc Mélenchon,3.4
+2012,2012_wp_ipsos_2012-04-10_1,10,1.586,1.093,Ipsos,2012-04-10,12,Jean-Luc Mélenchon,3.4
+2012,2012_wp_ipsos_2012-04-17_1,10,1.473,1.03,Ipsos,2012-04-17,5,Jean-Luc Mélenchon,3.4
+2012,2012_wp_lh2_2012-04-12_1,10,1.477,0.929,LH2 (Louis Harris),2012-04-12,10,Marine Le Pen,-3.9
+2012,2012_wp_opinionway_2012-04-12_1,10,0.954,0.697,OpinionWay,2012-04-12,10,Jean-Luc Mélenchon,1.9
+2012,2012_wp_sofres_2012-04-13_1,10,1.752,1.081,Kantar (Sofres),2012-04-13,9,Jean-Luc Mélenchon,4.9
+2017,2017_wp_bva_2017-04-14_1,11,0.753,0.555,BVA,2017-04-14,9,Nicolas Dupont-Aignan,-1.7
+2017,2017_wp_bva_2017-04-19_1,11,1.006,0.763,BVA,2017-04-19,4,Benoît Hamon,2.14
+2017,2017_wp_bva_2017-04-21_1,11,0.881,0.672,BVA,2017-04-21,2,Marine Le Pen,1.7
+2017,2017_wp_cevipof-ipsos-sopra-steria_2017-04-17_1,11,0.767,0.595,Ipsos,2017-04-17,6,Benoît Hamon,1.64
+2017,2017_wp_elabe_2017-04-10_1,11,1.596,1.217,Elabe,2017-04-10,13,Benoît Hamon,3.64
+2017,2017_wp_elabe_2017-04-12_1,11,1.139,0.854,Elabe,2017-04-12,11,Benoît Hamon,2.64
+2017,2017_wp_elabe_2017-04-17_1,11,0.97,0.763,Elabe,2017-04-17,6,Marine Le Pen,1.7
+2017,2017_wp_elabe_2017-04-20_1,11,0.329,0.232,Elabe,2017-04-20,3,Nicolas Dupont-Aignan,-0.7
+2017,2017_wp_harris-interactive_2017-04-13_1,11,0.62,0.407,Harris Interactive,2017-04-13,10,Benoît Hamon,1.64
+2017,2017_wp_harris-interactive_2017-04-19_1,11,0.676,0.579,Harris Interactive,2017-04-19,4,Benoît Hamon,1.14
+2017,2017_wp_ifop-fiducial_2017-04-11_1,11,1.242,0.955,Ifop,2017-04-11,12,Marine Le Pen,2.7
+2017,2017_wp_ifop-fiducial_2017-04-15_1,11,0.777,0.605,Ifop,2017-04-15,8,Benoît Hamon,1.64
+2017,2017_wp_ifop-fiducial_2017-04-21_1,11,0.624,0.513,Ifop,2017-04-21,2,Marine Le Pen,1.2
+2017,2017_wp_ipsos-sopra-steria_2017-04-20_1,11,0.597,0.466,Ipsos,2017-04-20,3,Benoît Hamon,1.14
+2017,2017_wp_ipsos_2017-04-09_1,11,1.259,0.934,Ipsos,2017-04-09,14,Marine Le Pen,2.7
+2017,2017_wp_ipsos_2017-04-13_1,11,0.946,0.793,Ipsos,2017-04-13,10,Emmanuel Macron,-2.01
+2017,2017_wp_kantar-sofres-onepoint_2017-04-17_1,11,1.033,0.777,Kantar (Sofres),2017-04-17,6,Marine Le Pen,1.7
+2017,2017_wp_odoxa_2017-04-13_1,11,0.988,0.824,Odoxa,2017-04-13,10,Marine Le Pen,1.7
+2017,2017_wp_odoxa_2017-04-21_1,11,0.785,0.62,Odoxa,2017-04-21,2,Marine Le Pen,1.7
+2017,2017_wp_opinionway_2017-04-13_1,11,1.552,1.295,OpinionWay,2017-04-13,10,Benoît Hamon,2.64
+2017,2017_wp_opinionway_2017-04-21_1,11,0.929,0.785,OpinionWay,2017-04-21,2,Benoît Hamon,1.64
+2017,2017_wp_scan-research-le-terrain_2017-04-15_1,11,1.255,0.915,Scan Research - Le Terrain,2017-04-15,8,François Fillon,-2.51
+2022,2022_wp_atlas-politico_2022-04-06_1,12,1.914,1.235,AtlasIntel,2022-04-06,4,Éric Zemmour,4.93
+2022,2022_wp_bva_2022-03-31_1,12,2.544,1.682,BVA,2022-03-31,10,Jean-Luc Mélenchon,-6.45
+2022,2022_wp_bva_2022-04-07_1,12,1.916,1.223,BVA,2022-04-07,3,Jean-Luc Mélenchon,-4.45
+2022,2022_wp_cluster-17_2022-03-31_1,12,3.113,2.108,Cluster17,2022-03-31,10,Jean-Luc Mélenchon,-5.95
+2022,2022_wp_cluster-17_2022-04-04_1,12,2.614,1.797,Cluster17,2022-04-04,6,Valérie Pécresse,5.22
+2022,2022_wp_cluster-17_2022-04-08_1,12,2.107,1.463,Cluster17,2022-04-08,2,Valérie Pécresse,4.72
+2022,2022_wp_elabe_2022-03-30_1,12,2.613,1.655,Elabe,2022-03-30,11,Jean-Luc Mélenchon,-6.45
+2022,2022_wp_elabe_2022-04-01_1,12,2.458,1.53,Elabe,2022-04-01,9,Jean-Luc Mélenchon,-6.95
+2022,2022_wp_elabe_2022-04-05_1,12,2.171,1.143,Elabe,2022-04-05,5,Jean-Luc Mélenchon,-6.45
+2022,2022_wp_elabe_2022-04-08_1,12,1.831,1.272,Elabe,2022-04-08,2,Jean-Luc Mélenchon,-4.45
+2022,2022_wp_harris-interractive_2022-03-28_1,12,2.689,1.727,Harris Interactive,2022-03-28,13,Jean-Luc Mélenchon,-6.95
+2022,2022_wp_harris-interractive_2022-04-04_1,12,2.168,1.368,Harris Interactive,2022-04-04,6,Jean-Luc Mélenchon,-4.95
+2022,2022_wp_harris-interractive_2022-04-08_1,12,1.605,1.032,Harris Interactive,2022-04-08,2,Jean-Luc Mélenchon,-3.95
+2022,2022_wp_ifop_2022-03-31_1,12,2.794,1.835,Ifop,2022-03-31,10,Jean-Luc Mélenchon,-6.45
+2022,2022_wp_ifop_2022-04-01_1,12,2.615,1.618,Ifop,2022-04-01,9,Jean-Luc Mélenchon,-6.95
+2022,2022_wp_ifop_2022-04-07_1,12,1.895,1.198,Ifop,2022-04-07,3,Jean-Luc Mélenchon,-4.45
+2022,2022_wp_ipsos_2022-04-02_1,12,2.755,1.952,Ipsos,2022-04-02,8,Jean-Luc Mélenchon,-6.45
+2022,2022_wp_ipsos_2022-04-04_1,12,2.35,1.618,Ipsos,2022-04-04,6,Jean-Luc Mélenchon,-5.95
+2022,2022_wp_ipsos_2022-04-07_1,12,2.045,1.285,Ipsos,2022-04-07,3,Jean-Luc Mélenchon,-5.45
+2022,2022_wp_ipsos_2022-04-08_1,12,1.868,1.275,Ipsos,2022-04-08,2,Jean-Luc Mélenchon,-4.45
+2022,2022_wp_kantar_2022-04-05_1,12,2.427,1.535,Kantar (Sofres),2022-04-05,5,Jean-Luc Mélenchon,-5.95
+2022,2022_wp_odoxa_2022-04-06_1,12,1.891,1.025,Odoxa,2022-04-06,4,Jean-Luc Mélenchon,-5.95
+2022,2022_wp_opinionway_2022-03-28_1,12,3.181,1.883,OpinionWay,2022-03-28,13,Jean-Luc Mélenchon,-7.95
+2022,2022_wp_opinionway_2022-03-31_1,12,2.816,1.942,OpinionWay,2022-03-31,10,Jean-Luc Mélenchon,-6.95
+2022,2022_wp_opinionway_2022-04-03_1,12,2.904,1.743,OpinionWay,2022-04-03,7,Jean-Luc Mélenchon,-7.95
+2022,2022_wp_opinionway_2022-04-05_1,12,2.474,1.452,OpinionWay,2022-04-05,5,Jean-Luc Mélenchon,-6.95
+2022,2022_wp_opinionway_2022-04-07_1,12,2.221,1.608,OpinionWay,2022-04-07,3,Jean-Luc Mélenchon,-4.95
+2022,2022_wp_yougov_2022-03-31_1,12,2.406,1.515,YouGov,2022-03-31,10,Jean-Luc Mélenchon,-6.95
+2022,2022_wp_yougov_2022-04-07_1,12,2.526,1.447,YouGov,2022-04-07,3,Jean-Luc Mélenchon,-5.95

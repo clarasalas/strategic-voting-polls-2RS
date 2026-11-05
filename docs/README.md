@@ -29,7 +29,8 @@ PYTHONPATH=src python -m polls.page
 ```
 
 The file is standalone (data and charts embedded; only the font is loaded from Google Fonts), so it also opens
-directly in a browser. It covers the story of the results; the parameters of notebook 07 are left out.
+directly in a browser. It covers the story of the results; the parameters of notebook 07 are left out. Candidates who withdrew are drawn
+when they have at least 5 polls with the full ballot in the window and a poll average reaching 2%.
 
 **Publish.** On GitHub, open **Settings → Pages**, set **Source** to **Deploy from a branch**, select `main` and
 `/docs`, and save. The page is then live at <https://clarasalas.github.io/strategic-voting-polls-2RS/>, and every
