@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>What the polls said</title>
-<meta name="description" content="Every first-round poll of the French presidential elections of 2002 to 2022: how each race unfolded, who seemed headed for the runoff, and how far the polls were from the result.">
+<meta name="description" content="Every first-round poll of the French presidential elections of 2002 to 2022: whether voters gathered on fewer candidates, how each race unfolded, and how accurate the polls were.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
@@ -22,61 +22,81 @@
 html, body { margin: 0; background: var(--bg); color: var(--ink); font-family: var(--font); }
 body { -webkit-font-smoothing: antialiased; line-height: 1.5; -webkit-text-size-adjust: 100%; }
 a { color: var(--accent); }
-.page { max-width: 1120px; margin: 0 auto; padding: 40px 24px 56px; }
+.page { max-width: 1240px; margin: 0 auto; padding: 40px 24px 56px; }
 @media (max-width: 620px) { .page { padding: 28px 16px 44px; } }
 
 .eyebrow { font-size: 12px; font-weight: 600; letter-spacing: .07em; text-transform: uppercase; color: var(--faint); margin: 0; }
 h1 { font-size: clamp(27px, 3.6vw, 40px); line-height: 1.12; letter-spacing: -0.02em; margin: 8px 0 12px; max-width: 24ch; }
-.subtitle { font-size: 18px; color: var(--muted); margin: 0 0 10px; max-width: 64ch; }
-.disclaimer { font-size: 14px; color: var(--faint); margin: 0; max-width: 76ch; }
-
-nav.jump { display: flex; flex-wrap: wrap; gap: 6px; margin: 20px 0 0; }
-nav.jump a, .chip {
-  font: inherit; font-size: 13px; padding: 6px 12px; border-radius: 999px; border: 1px solid var(--rule);
-  background: var(--bg); color: var(--ink); cursor: pointer; text-decoration: none;
-  transition: background .15s, border-color .15s, color .15s;
-}
-nav.jump a:hover, .chip:hover { border-color: var(--rule-firm); }
-.chip[aria-checked="true"] { background: var(--ink); border-color: var(--ink); color: #fff; }
+.subtitle { font-size: 18px; color: var(--muted); margin: 0 0 10px; max-width: 66ch; }
+.disclaimer { font-size: 14px; color: var(--faint); margin: 0; max-width: 78ch; }
 :focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+/* layout: the list of topics on the left, one topic on the right */
+.layout { display: grid; grid-template-columns: 250px minmax(0, 1fr); gap: 44px; margin-top: 28px; padding-top: 24px;
+          border-top: 1px solid var(--rule); }
+nav.side { position: sticky; top: 20px; align-self: start; }
+nav.side .group { margin: 0 0 18px; }
+nav.side .group p { font-size: 12px; font-weight: 600; letter-spacing: .07em; text-transform: uppercase; color: var(--faint);
+                    margin: 0 0 6px 10px; }
+nav.side a { display: block; padding: 7px 10px; border-radius: 8px; font-size: 14px; line-height: 1.35; color: var(--muted);
+             text-decoration: none; transition: background .12s, color .12s; }
+nav.side a:hover { background: var(--soft); color: var(--ink); }
+nav.side a[aria-current="page"] { background: var(--ink); color: #fff; font-weight: 500; }
+@media (max-width: 900px) {
+  .layout { grid-template-columns: 1fr; gap: 18px; }
+  nav.side { position: static; display: flex; gap: 6px; overflow-x: auto; padding-bottom: 6px; scrollbar-width: thin; }
+  nav.side .group { display: contents; }
+  nav.side .group p { display: none; }
+  nav.side a { flex: none; border: 1px solid var(--rule); border-radius: 999px; padding: 6px 12px; font-size: 13px; white-space: nowrap; }
+}
+
+.picker { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 10px; margin: 0 0 22px; }
+.picker .lbl-txt { font-size: 13px; color: var(--muted); }
+.chip {
+  font: inherit; font-size: 13px; padding: 6px 12px; border-radius: 999px; border: 1px solid var(--rule);
+  background: var(--bg); color: var(--ink); cursor: pointer; transition: background .15s, border-color .15s, color .15s;
+}
+.chip:hover { border-color: var(--rule-firm); }
+.chip[aria-checked="true"] { background: var(--ink); border-color: var(--ink); color: #fff; }
 .chips { display: flex; flex-wrap: wrap; gap: 6px; }
-.controls { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 10px; margin: 0 0 14px; }
+.controls { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 10px; margin: 0 0 12px; }
 .toggles { display: flex; flex-wrap: wrap; gap: 8px; }
 .toggle { display: inline-flex; border: 1px solid var(--rule); border-radius: 999px; padding: 2px; }
 .toggle button { font: inherit; font-size: 12px; border: none; background: none; padding: 4px 12px; border-radius: 999px;
                  cursor: pointer; color: var(--muted); }
 .toggle button[aria-pressed="true"] { background: var(--ink); color: #fff; }
 
-section { scroll-margin-top: 16px; }
-.section-head { margin: 56px 0 20px; padding-top: 22px; border-top: 1px solid var(--rule); }
-.section-head h2 { font-size: 24px; letter-spacing: -0.01em; margin: 6px 0 6px; }
-.section-head .lead { font-size: 17px; margin: 0 0 8px; max-width: 70ch; }
-.section-head p { color: var(--muted); margin: 0 0 6px; max-width: 72ch; }
-h3.sub { font-size: 17px; letter-spacing: -0.01em; margin: 40px 0 4px; }
-p.subtext { color: var(--muted); margin: 0 0 14px; max-width: 72ch; }
-
-.grid { display: grid; grid-template-columns: minmax(0, 2.2fr) minmax(250px, 1fr); gap: 36px; }
+.view[hidden] { display: none; }
+.view h2 { font-size: clamp(22px, 2.6vw, 28px); letter-spacing: -0.015em; line-height: 1.2; margin: 6px 0 8px; }
+.view .lead { font-size: 17px; margin: 0 0 22px; max-width: 72ch; }
+.fig { margin: 0 0 30px; }
+.fig h4 { font-size: 14px; margin: 0 0 6px; font-weight: 600; }
+.fig h4 span { color: var(--faint); font-weight: 400; }
+.grid { display: grid; grid-template-columns: minmax(0, 2.4fr) minmax(220px, 1fr); gap: 32px; }
 .grid.even { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
-@media (max-width: 880px) { .grid, .grid.even { grid-template-columns: 1fr; gap: 24px; } }
+@media (max-width: 1080px) { .grid, .grid.even { grid-template-columns: 1fr; gap: 22px; } }
 .chart { position: relative; min-width: 0; }
 .chart svg { display: block; width: 100%; height: auto; overflow: visible; }
-.chart h4 { font-size: 13px; margin: 0 0 4px; font-weight: 600; }
-.chart h4 span { color: var(--faint); font-weight: 400; }
-.caption { font-size: 12.5px; color: var(--faint); margin: 6px 0 0; max-width: 80ch; }
+.caption { font-size: 12.5px; color: var(--faint); margin: 6px 0 0; max-width: 84ch; }
 .caption b { color: var(--muted); font-weight: 600; }
-aside { min-width: 0; }
+.key { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 8px; font-size: 12.5px; color: var(--muted); margin: 2px 0 0; }
+.key .sw { display: inline-block; width: 12px; height: 10px; border-radius: 2px; margin-left: 4px; }
+.key .sw:first-child { margin-left: 0; }
+.metric-desc { font-size: 13px; color: var(--muted); margin: 0 0 8px; max-width: 72ch; }
+
+.explain { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 18px 36px;
+           border-top: 1px solid var(--rule); padding-top: 20px; margin-top: 4px; }
+.explain h3 { font-size: 12px; font-weight: 600; letter-spacing: .07em; text-transform: uppercase; color: var(--faint); margin: 0 0 6px; }
+.explain p { font-size: 15px; margin: 0 0 10px; color: var(--ink); }
+.explain p.m { color: var(--muted); font-size: 14px; }
+
 .stats { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px 14px; }
 .stat .label { font-size: 12px; color: var(--muted); line-height: 1.35; }
 .stat .value { font-size: 26px; font-weight: 600; font-variant-numeric: tabular-nums; letter-spacing: -0.02em; line-height: 1.25; }
 .stat .value small { font-size: 13px; font-weight: 500; color: var(--muted); letter-spacing: 0; }
-.story { font-size: 15px; color: var(--ink); margin: 18px 0 0; padding: 14px 16px; background: var(--soft); border-radius: 8px; }
-.story strong { font-weight: 600; }
-.below { margin-top: 30px; }
 .note { font-size: 13px; color: var(--muted); margin: 0; grid-column: 1 / -1; }
-.key { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 8px; font-size: 12.5px; color: var(--muted); margin: 2px 0 0; }
-.key .sw { display: inline-block; width: 12px; height: 10px; border-radius: 2px; margin-left: 4px; }
-.key .sw:first-child { margin-left: 0; }
-.metric-desc { font-size: 13px; color: var(--muted); margin: 0 0 10px; max-width: 70ch; }
+.story { font-size: 15px; margin: 18px 0 0; padding: 14px 16px; background: var(--soft); border-radius: 8px; }
+.story strong { font-weight: 600; }
 
 /* charts */
 .axis text, .lbl { font-size: 11px; fill: var(--faint); font-variant-numeric: tabular-nums; }
@@ -92,11 +112,11 @@ aside { min-width: 0; }
 .overlay { fill: transparent; cursor: crosshair; touch-action: pan-y; }
 .endlabel { font-size: 11px; font-weight: 500; }
 .dim .endlabel:not(.on) { opacity: .2; }
-.grouptitle { font-size: 12px; font-weight: 600; fill: var(--ink); }
+.grouptitle { font-size: 12.5px; font-weight: 600; fill: var(--ink); }
 
 #tip { position: fixed; z-index: 10; pointer-events: none; background: #fff; border: 1px solid var(--rule);
        border-radius: 8px; box-shadow: var(--shadow); padding: 8px 11px; font-size: 13px; line-height: 1.4;
-       max-width: 270px; opacity: 0; transition: opacity .08s; }
+       max-width: 280px; opacity: 0; transition: opacity .08s; }
 #tip.show { opacity: 1; }
 #tip .t { font-weight: 600; display: flex; align-items: center; gap: 6px; }
 #tip .sw { width: 10px; height: 10px; border-radius: 50%; flex: none; }
@@ -104,7 +124,7 @@ aside { min-width: 0; }
 #tip .v { font-variant-numeric: tabular-nums; }
 
 footer { margin-top: 56px; padding-top: 18px; border-top: 1px solid var(--rule); font-size: 13px; color: var(--muted); }
-footer p { margin: 6px 0; max-width: 90ch; }
+footer p { margin: 6px 0; max-width: 96ch; }
 footer .sig { color: var(--faint); font-size: 12px; margin-top: 14px; }
 </style>
 </head>
@@ -115,187 +135,280 @@ footer .sig { color: var(--faint); font-size: 12px; margin-top: 14px; }
   <p class="eyebrow">French presidential elections · 2002–2022</p>
   <h1>What the polls said before the first round</h1>
   <p class="subtitle">Every first-round poll of five presidential elections, set against what happened on election day:
-    how each race unfolded, who seemed headed for the runoff, and how far the polls were from the result.</p>
+    whether voters gathered on fewer candidates, how each race unfolded, and how accurate the polls were.</p>
   <p class="disclaimer">A poll measures how people say they will vote on the day it is taken; it is not a forecast.
     When the result differs from the last polls, either the polls were off, or voters changed their minds at the last
     minute, for instance to help a candidate reach the runoff. These data cannot tell the two apart.</p>
-  <nav class="jump" aria-label="Sections">
-    <a href="#campaigns">The campaigns</a>
-    <a href="#runoff">Who reaches the runoff</a>
-    <a href="#last-weeks">The last weeks</a>
-    <a href="#concentration">Concentration</a>
-    <a href="#pollsters">Pollsters and momentum</a>
-  </nav>
 </header>
 
-<section id="campaigns">
-  <div class="section-head">
-    <p class="eyebrow">1 · The campaigns</p>
-    <h2>How each race unfolded</h2>
-    <p>Each line is a candidate's average across the polls of the moment, over the eight months before the vote.
-      Hover a line to see that candidate's polls; the dot at the right end is their actual result. Dashed lines are
-      candidates who were polled but did not run in the end.</p>
+<div class="layout">
+<nav class="side" aria-label="Topics">
+  <div class="group"><p>Concentration</p>
+    <a href="#concentration">Do voters gather on fewer candidates?</a>
+    <a href="#momentum">Does a rising candidate keep rising?</a>
   </div>
-  <div class="controls">
-    <div class="chips" data-elections role="radiogroup" aria-label="Election"></div>
-    <div class="toggles">
-      <div class="toggle" role="group" aria-label="Candidates shown">
-        <button type="button" data-all="0" aria-pressed="true">Six leading</button>
-        <button type="button" data-all="1" aria-pressed="false">Every candidate</button>
-      </div>
-      <div class="toggle"><button type="button" id="withdrawn-toggle" aria-pressed="true">Candidates who withdrew</button></div>
-    </div>
+  <div class="group"><p>How the races unfolded</p>
+    <a href="#campaigns">The campaigns</a>
+    <a href="#runoff">The race for second place</a>
   </div>
-  <div class="grid">
-    <div class="chart">
-      <div id="traj"></div>
-      <div id="weekly"></div>
-      <p class="key"><span class="sw" style="background:var(--bar-full)"></span>Polls testing every candidate who ended
-        up on the ballot: used for the lines
-        <span class="sw" style="background:var(--bar-other)"></span>Other polls: left out</p>
-      <p class="caption"><b>Grey area</b>: the final weeks, once the official list of candidates is out.
-        <b>Pale stretches</b>: few polls at the time, so the average is less reliable. <b>Labels at the top</b>: a
-        candidate replacing others from their party in the polls, or dropping out; hover them for details.
-        <b>Bars</b>: polls published each week. Only the dark ones feed the lines, because a poll that leaves out a
-        candidate who later ran hands that candidate's share to the others. A gap in a line means there were no such
-        polls at the time.</p>
-    </div>
-    <aside>
-      <div class="stats" id="campaign-stats"></div>
-      <p class="story" id="campaign-story"></p>
-    </aside>
+  <div class="group"><p>How accurate the polls were</p>
+    <a href="#last-weeks">Who gains on election day?</a>
+    <a href="#accuracy">How far were the polls from the result?</a>
+    <a href="#pollsters">Polling companies compared</a>
   </div>
-</section>
+</nav>
 
-<section id="runoff">
-  <div class="section-head">
-    <p class="eyebrow">2 · Who reaches the runoff</p>
-    <h2>The race that matters is for second place</h2>
-    <p class="lead">Only the top two of the first round go through to the runoff. In 2007, 2012 and 2022, every poll
-      of the final two weeks had the right two candidates on top. In 2002, none did: Le Pen beat Jospin to second
-      place by 0.7 points.</p>
-    <p>When second and third place are far apart, a poll error of a point or two changes nothing, and the polls show
-      the final pair months ahead. When they are close, as in 2002, 2017 and 2022, the same small error can send the
-      wrong candidate through.</p>
-  </div>
-  <div class="controls"><div class="chips" data-elections role="radiogroup" aria-label="Election"></div></div>
-  <div class="grid">
-    <div class="chart">
-      <h4>Each candidate's place in the polls <span>· six leading candidates</span></h4>
-      <div id="ranks"></div>
-      <p class="caption"><b>Green band</b>: the two places that qualify for the runoff. <b>Dashed line</b>: from this
-        day on, the top two in the polls no longer changed.</p>
-    </div>
-    <aside><div class="stats" id="runoff-stats"></div></aside>
-  </div>
-  <div class="chart below">
-    <h4>Gap between second and third place <span>· in points</span></h4>
-    <div id="gap"></div>
-    <p class="caption">Lines: the polls over the campaign. Dots: the actual result. The closer to zero, the more the
-      second runoff place was a toss-up.</p>
-  </div>
-</section>
+<main>
+  <div class="picker"><span class="lbl-txt">Election</span><div class="chips" id="elections" role="radiogroup" aria-label="Election"></div></div>
 
-<section id="last-weeks">
-  <div class="section-head">
-    <p class="eyebrow">3 · The last weeks</p>
-    <h2>On election day, the third-placed candidate gains</h2>
-    <p class="lead">In all five elections, the candidate in third place in the final polls did at least as well on
-      election day, by 2.6 points on average. The candidate in fourth usually did worse.</p>
-    <p>This is what you would expect if some voters switched at the last moment to a candidate who could still reach
-      the runoff, away from one who could not. But polls that underestimated the third-placed candidate every time
-      would produce the same picture, and these data cannot tell which it is.</p>
-  </div>
-  <div class="controls"><div class="chips" data-elections role="radiogroup" aria-label="Election"></div></div>
-  <div class="grid even">
-    <div class="chart">
-      <h4>Result minus the final polls <span>· in points, candidates from left to right</span></h4>
-      <div id="errors"></div>
-      <p class="caption">Above zero: the candidate did better than the final two weeks of polls said. Outlined: the
-        candidates in second and third place in those polls.</p>
-    </div>
-    <div class="chart">
-      <h4>The same, by place in the final polls <span>· all five elections</span></h4>
-      <div id="roles"></div>
-      <p class="caption">One dot per candidate, coloured by election, the selected election outlined. The black bar is
-        the average. Arrows: how many did better ↑ or worse ↓ than polled.</p>
-    </div>
-  </div>
-
-  <h3 class="sub">How accurate was each poll?</h3>
-  <p class="subtext">In the final two weeks, a single poll typically missed a candidate's result by 0.9 points in 2017
-    and by 2.4 points in 2022. The average of all those polls did barely better, 0.8 and 2.3 points: most of the gap
-    is shared by every poll, whether because they all leaned the same way or because voters moved after the last
-    polls. Five elections describe five campaigns; they do not make a trend.</p>
-  <div class="chart">
-    <div id="accuracy"></div>
-    <p class="caption">Each dot is one poll of the final two weeks: how far it was from the result on a typical
-      candidate (the square root of the average squared gap, over the candidates on the ballot). Black bar: the average
-      over polls. Ring: the same measure for the average of all those polls.</p>
-  </div>
-</section>
-
-<section id="concentration">
-  <div class="section-head">
-    <p class="eyebrow">4 · Concentration</p>
-    <h2>Voters gather on fewer candidates at the very end</h2>
-    <p class="lead">Between the final polls and election day, the vote gathered on fewer candidates in every
-      election: barely in 2002 and 2017, clearly in 2007 and 2022. Over the months before, it mostly spread out.</p>
-    <p>Concentration is measured with the Herfindahl–Hirschman index (HHI): add up the squares of every candidate's
-      share. Five candidates on 20% each give 0.20, two candidates on 50% give 0.50. The higher it is, the more the
-      vote is gathered on a few candidates. 2002 stands apart, with a vote as spread out as if it had gone to almost
-      nine equal candidates, against about five in the other elections.</p>
-  </div>
-  <div class="controls">
-    <div class="chips" id="metric-chips" role="radiogroup" aria-label="Measure"></div>
-  </div>
-  <p class="metric-desc" id="metric-desc"></p>
-  <div class="grid">
-    <div class="chart">
+  <!-- ========== Concentration ========== -->
+  <section class="view" id="v-concentration">
+    <p class="eyebrow">Concentration</p>
+    <h2>Do voters gather on fewer candidates?</h2>
+    <p class="lead">Yes, at the very end. Between the final polls and election day, the vote gathered on fewer candidates
+      in every election: barely in 2002 and 2017, clearly in 2007 and 2022. In the months before, it mostly spread out.</p>
+    <div class="fig">
+      <div class="controls"><div class="chips" id="metric-chips" role="radiogroup" aria-label="Measure"></div></div>
+      <p class="metric-desc" id="metric-desc"></p>
       <h4 id="metric-title"></h4>
-      <div id="structure"></div>
+      <div class="chart" id="structure"></div>
     </div>
-    <div class="chart">
+    <div class="fig">
       <h4>Why concentration changed <span>· change in HHI</span></h4>
-      <div id="decomp"></div>
-      <p class="caption">The vote can concentrate for two reasons: voters move to the bigger candidates, or candidates
-        drop out of the race. To tell them apart, concentration is also computed on the same group of candidates all
-        along, those who won at least 2%: changes there are <b>voters moving</b>; the rest comes from <b>candidates
-        dropping out</b>. <b>During the campaign</b>: from the first polls, about eight months before, to the final two
-        weeks. <b>From the final polls to the vote</b>: from the last two weeks of polls to the result.</p>
+      <div class="chart" id="decomp"></div>
     </div>
-  </div>
-</section>
+    <div class="explain">
+      <div>
+        <h3>How it is measured</h3>
+        <p>Concentration is the Herfindahl–Hirschman index (HHI): add up the squares of every candidate's share. Five
+          candidates on 20% each give 0.20, two candidates on 50% give 0.50. The higher it is, the more the vote is
+          gathered on a few candidates.</p>
+        <p class="m">2002 stands apart: its result was as spread out as if the vote had gone to almost nine equal
+          candidates, against about five in the other elections.</p>
+      </div>
+      <div>
+        <h3>Two ways the vote can concentrate</h3>
+        <p>Voters can move to the bigger candidates, or candidates can drop out and leave their voters to others. Both
+          make the vote more concentrated, but they are not the same thing: in the first case voters coordinate, in the
+          second, parties and candidates do it for them.</p>
+        <p class="m">To tell them apart, concentration is also computed on a fixed group of candidates, those who won
+          at least 2% of the vote. That group is the same in every poll and in the result, so a change there comes from
+          voters moving. The rest comes from candidates dropping out.</p>
+      </div>
+      <div>
+        <h3>What it shows</h3>
+        <p>During the campaign, from the first polls about eight months before to the final two weeks, voters spread
+          out rather than gathered, in every election but 2022. The rises in concentration in 2012 and 2022 came from
+          candidates dropping out.</p>
+        <p class="m">From the final polls to the vote, nobody drops out any more: the gathering is voters moving,
+          strongest in 2022, then 2007.</p>
+      </div>
+    </div>
+  </section>
 
-<section id="pollsters">
-  <div class="section-head">
-    <p class="eyebrow">5 · Pollsters and momentum</p>
-    <h2>Pollsters mostly agree, and movement carries on</h2>
-    <p class="lead">Polling companies usually differ by less than a point on a candidate. And candidates who were rising
-      in the polls tended to keep rising, those falling to keep falling, right up to election day.</p>
-    <p>Over the campaign as a whole, a candidate who gained a point over three weeks gained about 0.4 more over the
-      next three, on average.</p>
-  </div>
-  <div class="controls"><div class="chips" data-elections role="radiogroup" aria-label="Election"></div></div>
-  <div class="grid">
-    <div class="chart">
-      <h4>How each company differed from the others <span>· in points, six leading candidates</span></h4>
-      <div id="house"></div>
-      <p class="caption">Each company has its own methods. A cell shows how much higher (red) or lower (blue) that
-        company put the candidate than the other polls taken at the same time, on average. Faint cells: too small to
-        tell from chance. Only companies with at least 5 polls of the candidate are shown.</p>
+  <section class="view" id="v-momentum" hidden>
+    <p class="eyebrow">Concentration</p>
+    <h2>Does a rising candidate keep rising?</h2>
+    <p class="lead">Mostly, yes. Candidates rising in the polls tended to keep rising, and falling ones to keep falling,
+      right up to election day.</p>
+    <div class="fig">
+      <div class="chart" id="momentum"></div>
     </div>
-    <aside><div class="stats" id="noise-stats"></div></aside>
-  </div>
-  <div class="chart below">
-    <h4>Does a rising candidate keep rising?</h4>
-    <div id="momentum"></div>
-    <p class="caption">Each dot is a candidate polling at least 3%. <b>Across</b>: how much their poll average moved
-      from five weeks to one week before the vote. <b>Up</b>: how much more they moved between the last week of polls
-      and the result. Dots along the dashed line mean the movement carried on: for every point gained in the month
-      before, about 0.6 more on election day, on average.</p>
-  </div>
-</section>
+    <div class="explain">
+      <div>
+        <h3>How to read it</h3>
+        <p>Each dot is a candidate polling at least 3% a week before the vote. Across: how much their poll average moved
+          from five weeks to one week before. Up: how much more they moved between the last week of polls and the
+          result.</p>
+        <p class="m">Dots along the dashed line mean the movement carried on. Dots near the horizontal line mean it
+          stopped.</p>
+      </div>
+      <div>
+        <h3>What it shows</h3>
+        <p>For every point a candidate gained in the month before the last week, they gained about 0.6 more by election
+          day, on average. Late movement does not reverse: it carries on after the last polls.</p>
+        <p class="m">Over the whole campaign the same holds, more weakly: a gain over three weeks was followed by about
+          0.4 times as much over the next three (95% interval 0.29 to 0.53).</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== How the races unfolded ========== -->
+  <section class="view" id="v-campaigns" hidden>
+    <p class="eyebrow">How the races unfolded</p>
+    <h2>The campaigns</h2>
+    <p class="lead">Each line is a candidate's average across the polls of the moment, over the eight months before the
+      vote. Hover a line to see that candidate's polls; the dot at the right end is their actual result.</p>
+    <div class="controls">
+      <div class="toggles">
+        <div class="toggle" role="group" aria-label="Candidates shown">
+          <button type="button" data-all="0" aria-pressed="true">Six leading</button>
+          <button type="button" data-all="1" aria-pressed="false">Every candidate</button>
+        </div>
+        <div class="toggle"><button type="button" id="withdrawn-toggle" aria-pressed="true">Candidates who withdrew</button></div>
+      </div>
+    </div>
+    <div class="grid fig">
+      <div class="chart">
+        <div id="traj"></div>
+        <div id="weekly"></div>
+        <p class="key"><span class="sw" style="background:var(--bar-full)"></span>Polls testing every candidate who ended
+          up on the ballot: used for the lines
+          <span class="sw" style="background:var(--bar-other)"></span>Other polls: left out</p>
+      </div>
+      <aside>
+        <div class="stats" id="campaign-stats"></div>
+        <p class="story" id="campaign-story"></p>
+      </aside>
+    </div>
+    <div class="explain">
+      <div>
+        <h3>How to read it</h3>
+        <p><b>Dashed lines</b>: candidates who were polled but did not run in the end. <b>Labels at the top</b>: a
+          candidate replacing others from their party in the polls, or dropping out; hover them for details.</p>
+        <p class="m"><b>Grey area</b>: the final weeks, once the official list of candidates is out. <b>Pale
+          stretches</b>: few polls at the time, so the average is less reliable.</p>
+      </div>
+      <div>
+        <h3>Why some lines start late or break off</h3>
+        <p>Only polls that test every candidate who ended up on the ballot are used (dark bars). A poll without, say,
+          Zemmour would hand his share to the others and make the lines jump.</p>
+        <p class="m">Early in some campaigns, such polls are rare or missing: in 2002 before February, in 2022 in autumn
+          2021. A gap in a line means there were none at the time.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="view" id="v-runoff" hidden>
+    <p class="eyebrow">How the races unfolded</p>
+    <h2>The race for second place</h2>
+    <p class="lead">Only the top two of the first round go through to the runoff. In 2007, 2012 and 2022, every poll of
+      the final two weeks had the right two on top. In 2002, none did: Le Pen beat Jospin to second place by 0.7 points.</p>
+    <div class="grid fig">
+      <div class="chart">
+        <h4>Each candidate's place in the polls <span>· six leading candidates</span></h4>
+        <div id="ranks"></div>
+      </div>
+      <aside><div class="stats" id="runoff-stats"></div></aside>
+    </div>
+    <div class="fig">
+      <h4>Gap between second and third place <span>· in points; dots: the result</span></h4>
+      <div class="chart" id="gap"></div>
+    </div>
+    <div class="explain">
+      <div>
+        <h3>How to read it</h3>
+        <p><b>Top</b>: each candidate's place in the poll average. The green band is the two places that qualify; the
+          dashed line marks the day from which the top two in the polls no longer changed.</p>
+        <p class="m"><b>Bottom</b>: the gap between second and third place in the polls, for every election. The closer
+          to zero, the more the second runoff place was a toss-up.</p>
+      </div>
+      <div>
+        <h3>What it shows</h3>
+        <p>When second and third are far apart, a poll error of a point or two changes nothing, and the polls show the
+          final pair months ahead: about 200 days in 2007 and 2012. When they are close, as in 2002, 2017 and 2022, the
+          same small error can send the wrong candidate through.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== How accurate the polls were ========== -->
+  <section class="view" id="v-last-weeks" hidden>
+    <p class="eyebrow">How accurate the polls were</p>
+    <h2>Who gains on election day?</h2>
+    <p class="lead">The candidate in third place. In all five elections, the third-placed candidate in the final polls
+      did at least as well on election day, by 2.6 points on average. The candidate in fourth usually did worse.</p>
+    <div class="grid even fig">
+      <div class="chart">
+        <h4>Result minus the final polls <span>· in points, candidates from left to right</span></h4>
+        <div id="errors"></div>
+      </div>
+      <div class="chart">
+        <h4>The same, by place in the final polls <span>· all five elections</span></h4>
+        <div id="roles"></div>
+      </div>
+    </div>
+    <div class="explain">
+      <div>
+        <h3>How to read it</h3>
+        <p><b>Left</b>: for the selected election, how much better (above zero) or worse each candidate did than the
+          final two weeks of polls said. Outlined: second and third place in those polls.</p>
+        <p class="m"><b>Right</b>: every candidate of the five elections, grouped by their place in the final polls; the
+          black bar is the average, the arrows count who did better ↑ or worse ↓.</p>
+      </div>
+      <div>
+        <h3>What it shows</h3>
+        <p>This is what you would expect if some voters switched at the last moment to a candidate who could still reach
+          the runoff, away from one who could not.</p>
+        <p class="m">But polls that underestimated the third-placed candidate every time would produce the same picture,
+          and these data cannot tell which it is.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="view" id="v-accuracy" hidden>
+    <p class="eyebrow">How accurate the polls were</p>
+    <h2>How far were the polls from the result?</h2>
+    <p class="lead">In the final two weeks, a single poll typically missed a candidate's result by 0.9 points in 2017,
+      and by 2.4 points in 2022.</p>
+    <div class="fig">
+      <h4>Each poll of the final two weeks <span>· typical miss per candidate, in points</span></h4>
+      <div class="chart" id="accuracy"></div>
+    </div>
+    <div class="explain">
+      <div>
+        <h3>How to read it</h3>
+        <p>Each dot is one poll: how far it was from the result on a typical candidate (the square root of the average
+          squared gap, over the candidates on the ballot). Hover a dot for the candidate it missed most.</p>
+        <p class="m">Black bar: the average over polls. Ring: the same measure for the average of all those polls.</p>
+      </div>
+      <div>
+        <h3>What it shows</h3>
+        <p>Averaging all the polls does barely better than a single one: 0.8 points in 2017, 2.3 in 2022. Most of the gap
+          is shared by every poll, whether because they all leaned the same way or because voters moved after the last
+          polls.</p>
+        <p class="m">Polls of one election miss together, so the five elections describe five campaigns; they do not
+          make a trend.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="view" id="v-pollsters" hidden>
+    <p class="eyebrow">How accurate the polls were</p>
+    <h2>Polling companies compared</h2>
+    <p class="lead">Companies differ little. They usually put a candidate within a point of the other polls, and on average
+      their final poll was within about 0.3 points of that year's typical accuracy.</p>
+    <div class="grid fig">
+      <div class="chart">
+        <h4>How each company differed from the others <span>· in points, six leading candidates</span></h4>
+        <div id="house"></div>
+      </div>
+      <aside><div class="stats" id="noise-stats"></div></aside>
+    </div>
+    <div class="fig">
+      <h4>Each company's final poll <span>· typical miss per candidate, against the average of that year's final polls</span></h4>
+      <div class="chart" id="finals"></div>
+    </div>
+    <div class="explain">
+      <div>
+        <h3>How to read it</h3>
+        <p><b>Top</b>: for the selected election, how much higher (red) or lower (blue) each company put a candidate than
+          the other polls taken at the same time, on average. Faint cells: too small to tell from chance.</p>
+        <p class="m"><b>Bottom</b>: each company's last poll before each election, one dot per election. Left of zero: closer
+          to the result than that year's average final poll. Companies with a final poll in at least three elections.</p>
+      </div>
+      <div>
+        <h3>What it shows</h3>
+        <p>Harris Interactive and Ipsos were slightly closer to the result than the others, Kantar and CSA slightly
+          further, by a few tenths of a point.</p>
+        <p class="m">These gaps are small next to those between elections, rest on three to five elections per company,
+          and with eight companies compared, one or two can stand out by chance. Taking each company's last poll keeps the
+          comparison fair: they all end within 2 to 10 days of the vote, and correcting for that changes almost nothing.</p>
+      </div>
+    </div>
+  </section>
+</main>
+</div>
 
 <footer>
   <p><strong>The data.</strong> The polls come from the French Wikipedia lists of polls, checked against two other
@@ -303,10 +416,8 @@ footer .sig { color: var(--faint); font-size: 12px; margin-top: 14px; }
     136 corrections. Polls repeated daily on overlapping samples are counted once.</p>
   <p><strong>The lines</strong> average the polls around each day, giving more weight to the closest ones (over about
     ten days). Where polls are few, the window widens and the line turns pale; every figure quoted on this page uses
-    the fixed window. Only polls that test every candidate who ended up on the ballot are used: a poll without, say,
-    Zemmour would give his share to the others and make the lines jump. Such polls appear as light bars under the
-    first chart; early in some campaigns (2002 before February, 2022 in autumn 2021) they are all there is, which is
-    why some lines start late or break off. Dates are the last day of fieldwork, or the publication date in 2007 and 2012.</p>
+    the fixed window. Only polls that test every candidate who ended up on the ballot are used. Dates are the last day
+    of fieldwork, or the publication date in 2007 and 2012.</p>
   <p>Data, code and every table: <a href="https://github.com/clarasalas/strategic-voting-polls-2RS">strategic-voting-polls-2RS</a>.</p>
   <p class="sig">Clara Salas (ENS-PSL). Complementary analysis to the agent-based model
     <a href="https://github.com/clarasalas/strategic-voting-abm-2RS">strategic-voting-abm-2RS</a>.</p>
@@ -316,7 +427,8 @@ footer .sig { color: var(--faint); font-size: 12px; margin-top: 14px; }
 
 <script>
 const D = /*__DATA__*/null;
-const state = { e: D.elections[0], all: false, withdrawn: true, metric: "hhi" };
+const VIEWS = ["concentration", "momentum", "campaigns", "runoff", "last-weeks", "accuracy", "pollsters"];
+const state = { view: VIEWS[0], e: D.elections[0], all: false, withdrawn: true, metric: "hhi" };
 const NS = "http://www.w3.org/2000/svg";
 const B = () => D.blocks[state.e];
 const fmt = (x, n = 1) => x == null ? "–" : x.toLocaleString("en-GB", { minimumFractionDigits: n, maximumFractionDigits: n });
@@ -497,7 +609,89 @@ function dayLines(id, { height, series, yDomain, yLabel, yFmt, shade, events, lo
   return { f, x, y };
 }
 
-/* ---------- section 1: the campaigns ---------- */
+/* ---------- concentration ---------- */
+const METRICS = {
+  hhi: { chip: "Concentration (HHI)", title: "Concentration over the campaign <span>· HHI</span>", label: "HHI",
+         desc: "Higher: the vote gathered on fewer candidates. Hover a line for the equivalent number of equal-sized candidates.",
+         fmt: v => `HHI ${fmt(v, 3)}, like ${fmt(1 / v)} equal candidates` },
+  top2_share: { chip: "Share of the top two", title: "Share of the vote of the top two <span>· %</span>", label: "%",
+                desc: "The combined share of the two leading candidates.",
+                fmt: v => `${fmt(v)}% for the top two` },
+  cliff: { chip: "Biggest gap in the ranking", title: "Biggest gap between two candidates next to each other in the ranking <span>· points</span>", label: "points",
+           desc: "Rank the candidates by share: this is the largest gap between two neighbours, where the field splits between the contenders and the rest.",
+           fmt: v => `biggest gap ${fmt(v)} pts` },
+};
+function multiElection(id, metric, height, yLabel, valueFmt) {
+  const series = D.elections.map(e => ({ label: String(e), colour: D.colours[e], result: D.structure[metric][e].result,
+    points: D.structure[metric][e].line }));
+  const vals = series.flatMap(s => s.points.map(p => p[1]).concat([s.result]));
+  let lo = Math.min(...vals), hi = Math.max(...vals); const pad = (hi - lo) * 0.08;
+  lo = metric === "gap_23" ? 0 : lo - pad; hi += pad;
+  return dayLines(id, {
+    height, series, yDomain: [lo, hi], yLabel, ends: true, yFmt: metric === "hhi" ? v => v.toFixed(2) : v => v,
+    onTip: (s, p, day) => head(s.label, s.colour) + (p ? `<div class="v">${valueFmt(p[1])}</div><div class="m">in the polls, ${day} days before${p[2] ? " · few polls" : ""}</div>` : "") +
+      `<div class="v">Result: <b>${valueFmt(s.result)}</b></div>`,
+  });
+}
+function drawStructure() {
+  const m = METRICS[state.metric];
+  document.getElementById("metric-title").innerHTML = m.title + " <span>· dot: the result</span>";
+  document.getElementById("metric-desc").textContent = m.desc;
+  multiElection("structure", state.metric, 380, m.label, m.fmt);
+}
+function drawDecomp() {
+  const groups = [["campaign_voters", "During the campaign: voters moving"], ["campaign_offer", "During the campaign: candidates dropping out"],
+                  ["last_mile_voters", "From the final polls to the vote: voters moving"]];
+  const rowH = 17, titleH = 24, gapH = 14, rows = D.decomposition;
+  const f = frame("decomp", 8 + groups.length * (titleH + rows.length * rowH + gapH) + 30, { t: 8, r: 14, b: 30, l: 40 });
+  const ext = Math.max(...rows.flatMap(r => groups.map(g => Math.abs(r[g[0]])))) * 1.15;
+  const x = lin(-ext, ext, f.m.l, f.m.l + f.iw);
+  const ax = el("g", { class: "axis" }, f.svg);
+  for (const v of niceTicks(-ext, ext, 6)) {
+    el("line", { class: v === 0 ? "zero" : "grid", x1: x(v), x2: x(v), y1: f.m.t, y2: f.m.t + f.ih }, ax);
+    el("text", { x: x(v), y: f.h - f.m.b + 14, "text-anchor": "middle" }, ax).textContent = (v > 0 ? "+" : v < 0 ? "−" : "") + Math.abs(v).toFixed(2);
+  }
+  el("text", { class: "axis-title", x: f.m.l + f.iw / 2, y: f.h - 2, "text-anchor": "middle" }, ax).textContent = "← less concentrated · more concentrated →";
+  let yy = f.m.t;
+  for (const [k, label] of groups) {
+    el("text", { class: "grouptitle", x: f.m.l, y: yy + 15 }, f.svg).textContent = label;
+    yy += titleH;
+    for (const r of rows) {
+      const v = r[k], on = r.election === state.e;
+      el("text", { class: "lbl", x: f.m.l - 6, y: yy + rowH / 2 + 4, "text-anchor": "end", "font-weight": on ? 600 : 400 }, f.svg).textContent = r.election;
+      const g = el("g", {}, f.svg);
+      el("rect", { x: Math.min(x(0), x(v)), width: Math.max(1, Math.abs(x(v) - x(0))), y: yy + 2, height: rowH - 4, rx: 1.5,
+        fill: D.colours[r.election], opacity: on ? 1 : 0.75, stroke: on ? "var(--ink)" : "none" }, g);
+      el("rect", { x: f.m.l, width: f.iw, y: yy, height: rowH, fill: "transparent" }, g);
+      hover(g, head(`${r.election}`, D.colours[r.election]) + `<div class="m">${label}</div><div class="v">HHI ${signed(v, 3)}: ${v > 0.0005 ? "more concentrated" : v < -0.0005 ? "less concentrated" : "about the same"}</div>`);
+      yy += rowH;
+    }
+    yy += gapH;
+  }
+}
+function drawMomentum() {
+  const P = D.momentum.points, f = frame("momentum", 420, { t: 24, r: 14, b: 40, l: 44 });
+  const ex = Math.max(...P.map(p => Math.abs(p.before))) * 1.1, ey = Math.max(...P.map(p => Math.abs(p.after))) * 1.1;
+  const x = lin(-ex, ex, f.m.l, f.m.l + f.iw), y = lin(-ey, ey, f.m.t + f.ih, f.m.t);
+  yAxis(f, niceTicks(-ey, ey, 6), y, "↑ moved further between the last week and election day (points)", v => (v > 0 ? "+" : "") + v);
+  const g = el("g", { class: "axis" }, f.svg);
+  for (const v of niceTicks(-ex, ex, 8)) {
+    el("line", { class: v === 0 ? "zero" : "grid", x1: x(v), x2: x(v), y1: f.m.t, y2: f.m.t + f.ih }, g);
+    el("text", { x: x(v), y: f.h - f.m.b + 16, "text-anchor": "middle" }, g).textContent = (v > 0 ? "+" : "") + v;
+  }
+  el("text", { class: "axis-title", x: f.m.l + f.iw / 2, y: f.h - 4, "text-anchor": "middle" }, g).textContent = "moved in the polls from five weeks to one week before (points) →";
+  const s = D.momentum.slope;
+  el("line", { x1: x(-ex), x2: x(ex), y1: y(-ex * s), y2: y(ex * s), stroke: "var(--ink)", "stroke-width": 1.2, "stroke-dasharray": "5 4" }, f.svg);
+  for (const p of P) {
+    const on = p.election === state.e;
+    const c = el("circle", { cx: x(p.before), cy: y(p.after), r: on ? 6.5 : 5, fill: D.colours[p.election], opacity: on ? 1 : 0.55,
+      stroke: on ? "var(--ink)" : "#fff", "stroke-width": 1 }, f.svg);
+    hover(c, head(`${p.name} · ${p.election}`, D.colours[p.election]) +
+      `<div class="v">${signed(p.before)} pts from five weeks to one week before</div><div class="v">${signed(p.after)} pts more by election day</div><div class="m">polling ${fmt(p.level)}% a week before</div>`);
+  }
+}
+
+/* ---------- how the races unfolded ---------- */
 function shownCandidates() { return B().candidates.filter(c => c.withdrawn ? state.withdrawn : (state.all || c.top6)); }
 function pollsOf(b, idx) {
   const out = [];
@@ -514,7 +708,7 @@ function drawTrajectories() {
   });
   const top = Math.max(...series.flatMap(s => s.points.map(p => p[1])), ...series.map(s => s.result || 0));
   dayLines("traj", {
-    height: 430, series, yDomain: [0, Math.ceil((top + 3) / 5) * 5], yLabel: "share of the vote (%)", shade: b.official_list, ends: true,
+    height: 460, series, yDomain: [0, Math.ceil((top + 3) / 5) * 5], yLabel: "share of the vote (%)", shade: b.official_list, ends: true,
     events: b.events.map(e => ({ day: e.day, label: e.kind === "takeover" ? `${e.name} in` : `${e.name} out`,
       detail: e.kind === "takeover"
         ? `<div class="v"><b>${e.name}</b>, ${e.day} days before</div><div class="m">From here on, the polls test ${e.name} rather than someone else from the same party.</div>`
@@ -547,8 +741,6 @@ function drawTrajectories() {
   ]);
   document.getElementById("campaign-story").innerHTML = STORIES[state.e];
 }
-
-/* ---------- section 2: the runoff ---------- */
 function drawRanks() {
   const b = B(), top = b.candidates.filter(c => c.top6);
   const share = c => new Map(c.traj.map(p => [p[0], p[1]]));
@@ -557,7 +749,7 @@ function drawRanks() {
     finalRank: order.indexOf(c) + 1, result: null,
     points: c.rank.map(p => [p[0], p[1], (c.traj.find(t => t[0] === p[0]) || [])[3]]) }));
   dayLines("ranks", {
-    height: 300, series, yDomain: [0.5, 6.6], inverted: true, yTicks: [1, 2, 3, 4, 5, 6], band: [0.5, 2.5], clip: true,
+    height: 320, series, yDomain: [0.5, 6.6], inverted: true, yTicks: [1, 2, 3, 4, 5, 6], band: [0.5, 2.5], clip: true,
     lock: b.stats.locked_from, ends: true, yLabel: "place in the polls", yFmt: v => ordinal(v),
     onTip: (s, p, day) => head(s.label, s.colour) +
       (p ? `<div class="v">${p[1] <= 6 ? ordinal(p[1]) : "below 6th"} in the polls, ${fmt(s.share.get(day))}%</div><div class="m">${day} days before · ${dateOf(b, day)}</div>` : "") +
@@ -571,24 +763,12 @@ function drawRanks() {
     [`Gap between 2nd (${st.second}) and 3rd (${st.third})`, `${fmt(st.gap_result)}<small> pts in the result, ${fmt(st.gap_polls)} in the final polls</small>`],
   ], "The likelihood is a rough estimate: it lets each candidate's result differ from the final polls by the typical error of the other four elections.");
 }
-function multiElection(id, metric, height, yLabel, valueFmt) {
-  const series = D.elections.map(e => ({ label: String(e), colour: D.colours[e], result: D.structure[metric][e].result,
-    points: D.structure[metric][e].line }));
-  const vals = series.flatMap(s => s.points.map(p => p[1]).concat([s.result]));
-  let lo = Math.min(...vals), hi = Math.max(...vals); const pad = (hi - lo) * 0.08;
-  lo = metric === "gap_23" ? 0 : lo - pad; hi += pad;
-  return dayLines(id, {
-    height, series, yDomain: [lo, hi], yLabel, ends: true, yFmt: metric === "hhi" ? v => v.toFixed(2) : v => v,
-    onTip: (s, p, day) => head(s.label, s.colour) + (p ? `<div class="v">${valueFmt(p[1])}</div><div class="m">in the polls, ${day} days before${p[2] ? " · few polls" : ""}</div>` : "") +
-      `<div class="v">Result: <b>${valueFmt(s.result)}</b></div>`,
-  });
-}
-function drawGap() { multiElection("gap", "gap_23", 260, "points", v => `${fmt(v)} pts between 2nd and 3rd`); }
+function drawGap() { multiElection("gap", "gap_23", 280, "points", v => `${fmt(v)} pts between 2nd and 3rd`); }
 
-/* ---------- section 3: the last weeks ---------- */
+/* ---------- how accurate the polls were ---------- */
 function drawErrors() {
   const b = B(), rows = b.errors;
-  const f = frame("errors", 300, { t: 22, r: 8, b: 64, l: 36 });
+  const f = frame("errors", 320, { t: 22, r: 8, b: 64, l: 36 });
   const ext = Math.max(4, ...rows.map(r => Math.abs(r.error))) + 0.5;
   const y = lin(-ext, ext, f.m.t + f.ih, f.m.t);
   yAxis(f, niceTicks(-ext, ext, 6), y, "points", v => (v > 0 ? "+" : "") + v);
@@ -606,7 +786,7 @@ function drawErrors() {
   });
 }
 function drawRoles() {
-  const f = frame("roles", 300, { t: 22, r: 8, b: 64, l: 36 });
+  const f = frame("roles", 320, { t: 22, r: 8, b: 64, l: 36 });
   const pts = D.elections.flatMap(e => D.blocks[e].errors.map(r => ({ ...r, e })));
   const ext = Math.max(...pts.map(p => Math.abs(p.error))) + 0.5;
   const y = lin(-ext, ext, f.m.t + f.ih, f.m.t);
@@ -628,7 +808,7 @@ function drawRoles() {
   });
 }
 function drawAccuracy() {
-  const f = frame("accuracy", 280, { t: 22, r: 10, b: 30, l: 40 });
+  const f = frame("accuracy", 340, { t: 22, r: 10, b: 30, l: 40 });
   const all = D.elections.flatMap(e => D.blocks[e].accuracy.polls.map(p => p[3]));
   const hi = Math.max(...all) * 1.12, y = lin(0, hi, f.m.t + f.ih, f.m.t);
   yAxis(f, niceTicks(0, hi, 5), y, "typical miss per candidate (points)");
@@ -640,7 +820,7 @@ function drawAccuracy() {
     const mean = acc.polls.reduce((s, p) => s + p[3], 0) / acc.polls.length;
     const bar = el("line", { x1: cx - bw * 0.3, x2: cx + bw * 0.3, y1: y(mean), y2: y(mean), stroke: "var(--ink)", "stroke-width": 2.4 }, f.svg);
     acc.polls.forEach((p, k) => {
-      const c = el("circle", { cx: cx + (((k * 0.618) % 1) - 0.5) * bw * 0.45, cy: y(p[3]), r: 4, fill: D.colours[e], opacity: on ? 0.95 : 0.6,
+      const c = el("circle", { cx: cx + (((k * 0.618) % 1) - 0.5) * bw * 0.45, cy: y(p[3]), r: 4.5, fill: D.colours[e], opacity: on ? 0.95 : 0.6,
         stroke: "#fff", "stroke-width": 1 }, f.svg);
       hover(c, head(`${p[0]} · ${e}`, D.colours[e]) + `<div class="v">Typical miss: <b>${fmt(p[3])} pts</b> per candidate</div>` +
         `<div class="v">Largest: ${p[4]}, ${fmt(Math.abs(p[5]))} pts ${p[5] < 0 ? "below" : "above"} the result</div><div class="m">poll ending ${longDate(p[1])}, ${p[2]} days before</div>`);
@@ -650,62 +830,11 @@ function drawAccuracy() {
     hover(ring, head(String(e), D.colours[e]) + `<div class="v">The average of all ${acc.polls.length} polls missed by <b>${fmt(acc.average)} pts</b> per candidate</div>`);
   });
 }
-
-/* ---------- section 4: concentration ---------- */
-const METRICS = {
-  hhi: { chip: "Concentration (HHI)", title: "Concentration over the campaign <span>· HHI</span>", label: "HHI",
-         desc: "Higher: the vote gathered on fewer candidates. Hover a line for the equivalent number of equal-sized candidates.",
-         fmt: v => `HHI ${fmt(v, 3)}, like ${fmt(1 / v)} equal candidates` },
-  top2_share: { chip: "Share of the top two", title: "Share of the vote of the top two <span>· %</span>", label: "%",
-                desc: "The combined share of the two leading candidates.",
-                fmt: v => `${fmt(v)}% for the top two` },
-  cliff: { chip: "Biggest gap in the ranking", title: "Biggest gap between two candidates next to each other in the ranking <span>· points</span>", label: "points",
-           desc: "Rank the candidates by share: this is the largest gap between two neighbours, where the field splits between the contenders and the rest.",
-           fmt: v => `biggest gap ${fmt(v)} pts` },
-};
-function drawStructure() {
-  const m = METRICS[state.metric];
-  document.getElementById("metric-title").innerHTML = m.title + " <span>· dot: the result</span>";
-  document.getElementById("metric-desc").textContent = m.desc;
-  multiElection("structure", state.metric, 320, m.label, m.fmt);
-}
-function drawDecomp() {
-  const groups = [["campaign_voters", "During the campaign: voters moving"], ["campaign_offer", "During the campaign: candidates dropping out"],
-                  ["last_mile_voters", "From the final polls to the vote: voters moving"]];
-  const rowH = 14, titleH = 22, gapH = 12, rows = D.decomposition;
-  const f = frame("decomp", 8 + groups.length * (titleH + rows.length * rowH + gapH) + 30, { t: 8, r: 14, b: 30, l: 40 });
-  const ext = Math.max(...rows.flatMap(r => groups.map(g => Math.abs(r[g[0]])))) * 1.15;
-  const x = lin(-ext, ext, f.m.l, f.m.l + f.iw);
-  const ax = el("g", { class: "axis" }, f.svg);
-  for (const v of niceTicks(-ext, ext, 4)) {
-    el("line", { class: v === 0 ? "zero" : "grid", x1: x(v), x2: x(v), y1: f.m.t, y2: f.m.t + f.ih }, ax);
-    el("text", { x: x(v), y: f.h - f.m.b + 14, "text-anchor": "middle" }, ax).textContent = (v > 0 ? "+" : v < 0 ? "−" : "") + Math.abs(v).toFixed(2);
-  }
-  el("text", { class: "axis-title", x: f.m.l + f.iw / 2, y: f.h - 2, "text-anchor": "middle" }, ax).textContent = "← less concentrated · more concentrated →";
-  let yy = f.m.t;
-  for (const [k, label] of groups) {
-    el("text", { class: "grouptitle", x: f.m.l, y: yy + 14 }, f.svg).textContent = label;
-    yy += titleH;
-    for (const r of rows) {
-      const v = r[k], on = r.election === state.e;
-      el("text", { class: "lbl", x: f.m.l - 6, y: yy + rowH / 2 + 4, "text-anchor": "end", "font-weight": on ? 600 : 400 }, f.svg).textContent = r.election;
-      const g = el("g", {}, f.svg);
-      el("rect", { x: Math.min(x(0), x(v)), width: Math.max(1, Math.abs(x(v) - x(0))), y: yy + 2, height: rowH - 4, rx: 1.5,
-        fill: D.colours[r.election], opacity: on ? 1 : 0.75, stroke: on ? "var(--ink)" : "none" }, g);
-      el("rect", { x: f.m.l, width: f.iw, y: yy, height: rowH, fill: "transparent" }, g);
-      hover(g, head(`${r.election}`, D.colours[r.election]) + `<div class="m">${label}</div><div class="v">HHI ${signed(v, 3)}: ${v > 0.0005 ? "more concentrated" : v < -0.0005 ? "less concentrated" : "about the same"}</div>`);
-      yy += rowH;
-    }
-    yy += gapH;
-  }
-}
-
-/* ---------- section 5: pollsters and momentum ---------- */
 function drawHouse() {
   const b = B(), h = b.house;
   const cands = b.candidates.filter(c => !c.withdrawn && h.candidates.includes(c.short));
   const cell = new Map(h.cells.map(c => [c[0] + "|" + c[1], c]));
-  const rowH = 30;
+  const rowH = 32;
   const f = frame("house", 64 + rowH * h.pollsters.length, { t: 60, r: 6, b: 4, l: 128 });
   const cw = f.iw / cands.length;
   const colour = v => { const a = Math.min(1, Math.abs(v) / 2.2); return v >= 0 ? `rgba(181,74,42,${0.12 + 0.78 * a})` : `rgba(47,93,138,${0.12 + 0.78 * a})`; };
@@ -732,40 +861,59 @@ function drawHouse() {
     ["Spread of the polls, compared with chance", `${fmt(n.herding, 2)}<small>×</small>`],
   ], "Both over the final two weeks. Below 1×, the polls agree more closely than chance alone allows, as if pollsters leaned toward each other (called herding), as in 2017. Above 1×, they disagree more, as in 2022.");
 }
-function drawMomentum() {
-  const P = D.momentum.points, f = frame("momentum", 300, { t: 24, r: 14, b: 40, l: 44 });
-  const ex = Math.max(...P.map(p => Math.abs(p.before))) * 1.1, ey = Math.max(...P.map(p => Math.abs(p.after))) * 1.1;
-  const x = lin(-ex, ex, f.m.l, f.m.l + f.iw), y = lin(-ey, ey, f.m.t + f.ih, f.m.t);
-  yAxis(f, niceTicks(-ey, ey, 6), y, "↑ moved further between the last week and election day (points)", v => (v > 0 ? "+" : "") + v);
-  const g = el("g", { class: "axis" }, f.svg);
-  for (const v of niceTicks(-ex, ex, 8)) {
-    el("line", { class: v === 0 ? "zero" : "grid", x1: x(v), x2: x(v), y1: f.m.t, y2: f.m.t + f.ih }, g);
-    el("text", { x: x(v), y: f.h - f.m.b + 16, "text-anchor": "middle" }, g).textContent = (v > 0 ? "+" : "") + v;
+function drawFinals() {
+  const rows = D.final_polls;
+  const by = new Map();
+  for (const r of rows) { if (!by.has(r.institute)) by.set(r.institute, []); by.get(r.institute).push(r); }
+  const firms = [...by.entries()].filter(([, v]) => new Set(v.map(r => r.election)).size >= 3)
+    .map(([k, v]) => ({ name: k, rows: v, mean: v.reduce((s, r) => s + r.relative, 0) / v.length })).sort((a, b) => a.mean - b.mean);
+  const rowH = 30, f = frame("finals", 40 + rowH * firms.length + 30, { t: 26, r: 16, b: 34, l: 150 });
+  const ext = Math.max(...firms.flatMap(c => c.rows.map(r => Math.abs(r.relative)))) * 1.12;
+  const x = lin(-ext, ext, f.m.l, f.m.l + f.iw);
+  const ax = el("g", { class: "axis" }, f.svg);
+  for (const v of niceTicks(-ext, ext, 6)) {
+    el("line", { class: v === 0 ? "zero" : "grid", x1: x(v), x2: x(v), y1: f.m.t, y2: f.m.t + f.ih }, ax);
+    el("text", { x: x(v), y: f.h - f.m.b + 14, "text-anchor": "middle" }, ax).textContent = (v > 0 ? "+" : v < 0 ? "−" : "") + +Math.abs(v).toFixed(2);
   }
-  el("text", { class: "axis-title", x: f.m.l + f.iw / 2, y: f.h - 4, "text-anchor": "middle" }, g).textContent = "moved in the polls from five weeks to one week before (points) →";
-  const s = D.momentum.slope;
-  el("line", { x1: x(-ex), x2: x(ex), y1: y(-ex * s), y2: y(ex * s), stroke: "var(--ink)", "stroke-width": 1.2, "stroke-dasharray": "5 4" }, f.svg);
-  for (const p of P) {
-    const on = p.election === state.e;
-    const c = el("circle", { cx: x(p.before), cy: y(p.after), r: on ? 6 : 4.5, fill: D.colours[p.election], opacity: on ? 1 : 0.6,
-      stroke: on ? "var(--ink)" : "#fff", "stroke-width": 1 }, f.svg);
-    hover(c, head(`${p.name} · ${p.election}`, D.colours[p.election]) +
-      `<div class="v">${signed(p.before)} pts from five weeks to one week before</div><div class="v">${signed(p.after)} pts more by election day</div><div class="m">polling ${fmt(p.level)}% a week before</div>`);
-  }
-}
-
-/* ---------- controls ---------- */
-function chips() {
-  document.querySelectorAll("[data-elections]").forEach(box => {
-    box.innerHTML = "";
-    for (const e of D.elections) {
-      const b = document.createElement("button");
-      b.type = "button"; b.className = "chip"; b.textContent = e; b.setAttribute("role", "radio");
-      b.setAttribute("aria-checked", e === state.e);
-      b.addEventListener("click", () => { state.e = e; draw(); });
-      box.appendChild(b);
+  el("text", { class: "axis-title", x: f.m.l + f.iw / 2, y: f.h - 4, "text-anchor": "middle" }, ax).textContent = "← closer to the result · further from it → (points, against that year's average final poll)";
+  firms.forEach((c, i) => {
+    const yy = f.m.t + i * rowH + rowH / 2;
+    const better = c.rows.filter(r => r.relative < 0).length;
+    el("text", { class: "lbl", x: f.m.l - 10, y: yy + 4, "text-anchor": "end", fill: "var(--ink)" }, f.svg).textContent = c.name;
+    el("line", { x1: f.m.l, x2: f.m.l + f.iw, y1: yy, y2: yy, stroke: "var(--rule)" }, f.svg);
+    const bar = el("line", { x1: x(c.mean), x2: x(c.mean), y1: yy - 10, y2: yy + 10, stroke: "var(--ink)", "stroke-width": 2.6 }, f.svg);
+    hover(bar, `<div class="t">${c.name}</div><div class="v">On average ${fmt(Math.abs(c.mean), 2)} pts ${c.mean < 0 ? "closer to" : "further from"} the result than that year's average final poll</div><div class="m">closer in ${better} of ${c.rows.length} elections</div>`);
+    for (const r of c.rows) {
+      const on = r.election === state.e;
+      const dot = el("circle", { cx: x(r.relative), cy: yy, r: on ? 6 : 4.8, fill: D.colours[r.election], opacity: on ? 1 : 0.7,
+        stroke: on ? "var(--ink)" : "#fff", "stroke-width": 1 }, f.svg);
+      hover(dot, head(`${c.name} · ${r.election}`, D.colours[r.election]) +
+        `<div class="v">Typical miss ${fmt(r.rmse)} pts per candidate, ${fmt(Math.abs(r.relative))} ${r.relative < 0 ? "better" : "worse"} than that year's average final poll</div>` +
+        `<div class="m">final poll ending ${longDate(r.date)}, ${r.days} days before</div>`);
     }
   });
+  const lg = el("g", {}, f.svg);
+  D.elections.forEach((e, i) => {
+    el("circle", { cx: f.m.l + 6 + i * 50, cy: 10, r: 4.5, fill: D.colours[e] }, lg);
+    el("text", { class: "lbl", x: f.m.l + 14 + i * 50, y: 14 }, lg).textContent = e;
+  });
+}
+
+/* ---------- views and controls ---------- */
+const DRAW = {
+  concentration: [drawStructure, drawDecomp], momentum: [drawMomentum],
+  campaigns: [drawTrajectories], runoff: [drawRanks, drawGap],
+  "last-weeks": [drawErrors, drawRoles], accuracy: [drawAccuracy], pollsters: [drawHouse, drawFinals],
+};
+function chips() {
+  const box = document.getElementById("elections"); box.innerHTML = "";
+  for (const e of D.elections) {
+    const b = document.createElement("button");
+    b.type = "button"; b.className = "chip"; b.textContent = e; b.setAttribute("role", "radio");
+    b.setAttribute("aria-checked", e === state.e);
+    b.addEventListener("click", () => { state.e = e; chips(); draw(); });
+    box.appendChild(b);
+  }
   const mc = document.getElementById("metric-chips"); mc.innerHTML = "";
   for (const k in METRICS) {
     const b = document.createElement("button");
@@ -777,13 +925,25 @@ function chips() {
   document.querySelectorAll("[data-all]").forEach(b => b.setAttribute("aria-pressed", String(+b.dataset.all === +state.all)));
   document.getElementById("withdrawn-toggle").setAttribute("aria-pressed", String(state.withdrawn));
 }
+function draw() { hideTip(); for (const fn of DRAW[state.view]) fn(); }
+function show(view) {
+  if (!VIEWS.includes(view)) view = VIEWS[0];
+  state.view = view;
+  for (const v of VIEWS) document.getElementById("v-" + v).hidden = v !== view;
+  document.querySelectorAll("nav.side a").forEach(a => a.setAttribute("aria-current", a.getAttribute("href") === "#" + view ? "page" : "false"));
+  draw();
+}
 document.querySelectorAll("[data-all]").forEach(b => b.addEventListener("click", () => { state.all = b.dataset.all === "1"; chips(); drawTrajectories(); }));
 document.getElementById("withdrawn-toggle").addEventListener("click", () => { state.withdrawn = !state.withdrawn; chips(); drawTrajectories(); });
-function draw() {
-  chips(); hideTip();
-  drawTrajectories(); drawRanks(); drawGap(); drawErrors(); drawRoles(); drawAccuracy(); drawStructure(); drawDecomp(); drawHouse(); drawMomentum();
-}
-draw();
+document.querySelectorAll("nav.side a").forEach(a => a.addEventListener("click", ev => {
+  ev.preventDefault();
+  const v = a.getAttribute("href").slice(1);
+  history.pushState(null, "", "#" + v); show(v);
+  if (innerWidth <= 900) document.querySelector(".picker").scrollIntoView({ block: "start", behavior: "smooth" });
+}));
+addEventListener("popstate", () => show(location.hash.slice(1)));
+chips();
+show(location.hash.slice(1));
 let rt, lastW = innerWidth;
 addEventListener("resize", () => { if (innerWidth === lastW) return; lastW = innerWidth; clearTimeout(rt); rt = setTimeout(draw, 150); });
 </script>

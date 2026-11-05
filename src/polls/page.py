@@ -212,6 +212,9 @@ def build() -> Path:
                       campaign=dict(slope=_r(mom_c.loc["slope", "all"]), low=_r(mom_c.loc["low", "all"]),
                                     high=_r(mom_c.loc["high", "all"]))),
         noise={int(e): dict(n_eff=_r(noise.loc[e, "n_eff"], 0), herding=_r(herd.loc[e, "ratio"])) for e in elections},
+        final_polls=[dict(election=int(r.election), institute=r.institute, date=str(r.date)[:10], days=int(r.days_before),
+                          rmse=_r(r.rmse), relative=_r(r.relative))
+                     for r in table("error_final_poll_by_pollster").itertuples()],
     )
     html = TEMPLATE.read_text().replace("/*__DATA__*/null", json.dumps(data, ensure_ascii=False, separators=(",", ":")))
     OUT.write_text(html)

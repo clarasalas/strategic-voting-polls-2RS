@@ -1,0 +1,41 @@
+election,poll_id,candidates,rmse,mae,institute,date,days_before,largest_miss,largest_miss_error,relative,relative_timing_adjusted
+2022,2022_wp_atlas-politico_2022-04-06_1,12,1.914,1.235,AtlasIntel,2022-04-06,4,Éric Zemmour,4.93,-0.104,-0.096
+2002,2002_wp_bva_2002-04-18_1,16,1.229,0.941,BVA,2002-04-18,3,Jean-Marie Le Pen,-2.86,-0.206,-0.164
+2007,2007_wp_bva_2007-04-19_1,12,1.557,1.222,BVA,2007-04-19,3,François Bayrou,-3.57,-0.138,-0.097
+2012,2012_wp_bva_2012-04-12_1,10,1.403,1.078,BVA,2012-04-12,10,Marine Le Pen,-2.9,0.015,-0.176
+2017,2017_wp_bva_2017-04-21_1,11,0.881,0.672,BVA,2017-04-21,2,Marine Le Pen,1.7,0.091,0.166
+2022,2022_wp_bva_2022-04-07_1,12,1.916,1.223,BVA,2022-04-07,3,Jean-Luc Mélenchon,-4.45,-0.102,-0.06
+2002,2002_wp_csa_2002-04-18_1,16,1.122,0.824,CSA,2002-04-18,3,Jean-Marie Le Pen,-2.86,-0.313,-0.271
+2007,2007_wp_csa_2007-04-19_1,11,2.264,1.477,CSA,2007-04-19,3,Jean-Marie Le Pen,5.56,0.568,0.61
+2012,2012_wp_csa_2012-04-17_1,10,1.731,1.103,CSA,2012-04-17,5,Jean-Luc Mélenchon,3.9,0.344,0.319
+2022,2022_wp_cluster-17_2022-04-08_1,12,2.107,1.463,Cluster17,2022-04-08,2,Valérie Pécresse,4.72,0.089,0.164
+2017,2017_wp_elabe_2017-04-20_1,11,0.329,0.232,Elabe,2017-04-20,3,Nicolas Dupont-Aignan,-0.7,-0.461,-0.419
+2022,2022_wp_elabe_2022-04-08_1,12,1.831,1.272,Elabe,2022-04-08,2,Jean-Luc Mélenchon,-4.45,-0.188,-0.113
+2012,2012_wp_harris_2012-04-17_1,10,0.93,0.693,Harris Interactive,2012-04-17,5,François Bayrou,1.87,-0.457,-0.482
+2017,2017_wp_harris-interactive_2017-04-19_1,11,0.676,0.579,Harris Interactive,2017-04-19,4,Benoît Hamon,1.14,-0.114,-0.105
+2022,2022_wp_harris-interractive_2022-04-08_1,12,1.605,1.032,Harris Interactive,2022-04-08,2,Jean-Luc Mélenchon,-3.95,-0.413,-0.338
+2002,2002_wp_ifop_2002-04-13_1,16,1.942,1.136,Ifop,2002-04-13,8,Jean-Marie Le Pen,-6.36,0.507,0.382
+2007,2007_wp_ifop_2007-04-18_1,12,1.631,1.116,Ifop,2007-04-18,4,Ségolène Royal,-3.37,-0.064,-0.056
+2012,2012_wp_ifop_2012-04-16_1,10,1.379,0.867,Ifop,2012-04-16,6,Jean-Luc Mélenchon,3.4,-0.009,-0.067
+2017,2017_wp_ifop-fiducial_2017-04-21_1,11,0.624,0.513,Ifop,2017-04-21,2,Marine Le Pen,1.2,-0.166,-0.091
+2022,2022_wp_ifop_2022-04-07_1,12,1.895,1.198,Ifop,2022-04-07,3,Jean-Luc Mélenchon,-4.45,-0.123,-0.082
+2002,2002_wp_ipsos_2002-04-18_1,16,1.215,0.945,Ipsos,2002-04-18,3,Jean-Marie Le Pen,-2.86,-0.221,-0.179
+2007,2007_wp_ipsos_2007-04-20_1,12,1.215,0.794,Ipsos,2007-04-20,2,Ségolène Royal,-2.87,-0.48,-0.405
+2012,2012_wp_ipsos_2012-04-17_1,10,1.473,1.03,Ipsos,2012-04-17,5,Jean-Luc Mélenchon,3.4,0.086,0.061
+2017,2017_wp_ipsos-sopra-steria_2017-04-20_1,11,0.597,0.466,Ipsos,2017-04-20,3,Benoît Hamon,1.14,-0.193,-0.151
+2022,2022_wp_ipsos_2022-04-08_1,12,1.868,1.275,Ipsos,2022-04-08,2,Jean-Luc Mélenchon,-4.45,-0.151,-0.076
+2002,2002_wp_sofres_2002-04-18_1,16,1.504,1.074,Kantar (Sofres),2002-04-18,3,Jean-Marie Le Pen,-4.36,0.069,0.11
+2007,2007_wp_sofres_2007-04-19_1,11,1.634,1.185,Kantar (Sofres),2007-04-19,3,Jean-Marie Le Pen,3.56,-0.062,-0.02
+2012,2012_wp_sofres_2012-04-13_1,10,1.752,1.081,Kantar (Sofres),2012-04-13,9,Jean-Luc Mélenchon,4.9,0.365,0.206
+2017,2017_wp_kantar-sofres-onepoint_2017-04-17_1,11,1.033,0.777,Kantar (Sofres),2017-04-17,6,Marine Le Pen,1.7,0.244,0.185
+2022,2022_wp_kantar_2022-04-05_1,12,2.427,1.535,Kantar (Sofres),2022-04-05,5,Jean-Luc Mélenchon,-5.95,0.408,0.383
+2002,2002_wp_louis-harris_2002-04-17_1,16,1.599,1.292,LH2 (Louis Harris),2002-04-17,4,Jean-Marie Le Pen,-3.86,0.164,0.172
+2007,2007_wp_lh2_2007-04-16_1,12,1.871,1.296,LH2 (Louis Harris),2007-04-16,6,Nicolas Sarkozy,-4.18,0.176,0.117
+2012,2012_wp_lh2_2012-04-12_1,10,1.477,0.929,LH2 (Louis Harris),2012-04-12,10,Marine Le Pen,-3.9,0.09,-0.102
+2017,2017_wp_odoxa_2017-04-21_1,11,0.785,0.62,Odoxa,2017-04-21,2,Marine Le Pen,1.7,-0.004,0.071
+2022,2022_wp_odoxa_2022-04-06_1,12,1.891,1.025,Odoxa,2022-04-06,4,Jean-Luc Mélenchon,-5.95,-0.127,-0.119
+2012,2012_wp_opinionway_2012-04-12_1,10,0.954,0.697,OpinionWay,2012-04-12,10,Jean-Luc Mélenchon,1.9,-0.433,-0.625
+2017,2017_wp_opinionway_2017-04-21_1,11,0.929,0.785,OpinionWay,2017-04-21,2,Benoît Hamon,1.64,0.139,0.214
+2022,2022_wp_opinionway_2022-04-07_1,12,2.221,1.608,OpinionWay,2022-04-07,3,Jean-Luc Mélenchon,-4.95,0.203,0.245
+2017,2017_wp_scan-research-le-terrain_2017-04-15_1,11,1.255,0.915,Scan Research - Le Terrain,2017-04-15,8,François Fillon,-2.51,0.466,0.341
+2022,2022_wp_yougov_2022-04-07_1,12,2.526,1.447,YouGov,2022-04-07,3,Jean-Luc Mélenchon,-5.95,0.507,0.549

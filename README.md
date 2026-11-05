@@ -12,8 +12,8 @@ documents, and what they say about how voters coordinate before the vote.
 </p>
 
 <p align="center">
-The interactive page tells the story of the five campaigns: every candidate's poll average and polls, who seemed
-headed for the runoff, who gained in the last weeks, how concentrated the vote was, and how pollsters differed.
+The interactive page takes the results topic by topic: whether voters gathered on fewer candidates, how each race
+unfolded and who reached the runoff, and how accurate the polls and the polling companies were.
 </p>
 
 ## About
@@ -96,7 +96,12 @@ candidate (root mean square error over the candidates on the ballot). The averag
 (0.8 to 2.25): most of the error is common to all polls, from a shared bias or from late movement. Polls of one
 election are not independent, so the differences between elections are five cases, not a trend.
 
-Tables: `error_by_role.csv`, `error_by_candidate.csv`, `error_by_poll.csv`.
+**Polling companies.** Taking each company's last poll before each election (all within 2 to 10 days of the vote),
+the eight companies with a final poll in at least three elections differ from that year's average by at most about
+0.3 points on average: Harris Interactive and Ipsos slightly closer to the result, Kantar and CSA slightly further.
+With three to five elections each, these differences could be chance.
+
+Tables: `error_by_role.csv`, `error_by_candidate.csv`, `error_by_poll.csv`, `error_final_poll_by_pollster.csv`.
 
 </details>
 

@@ -58,7 +58,8 @@ coloured left to right in the order of Wikipedia's poll-table columns (`src/poll
       within a fixed set (voter coordination)
 - [x] **Poll error by role**, signed: do candidates near the cliff do worse than their polls, their neighbours better?
 - [x] **Accuracy of single polls**: each poll of the last two weeks against the result (root mean square error over
-      the candidates on the ballot), against the same for the poll average
+      the candidates on the ballot), against the same for the poll average; each company's final poll against that
+      year's average final poll
 - [x] **The cliff**: size in polls against the result; predictability of the runoff pair at each horizon
 - [x] ~~**Who gains in the last weeks**, for 2002 and 2022 with the ABM's candidate positions~~ covered by the error
       along the left-right axis (section 3 of notebook 06); measured distances not needed
