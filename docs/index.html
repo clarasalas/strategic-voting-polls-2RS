@@ -85,6 +85,12 @@ nav.side a[aria-current="page"] { background: var(--ink); color: #fff; font-weig
 .key .sw:first-child { margin-left: 0; }
 .metric-desc { font-size: 13px; color: var(--muted); margin: 0 0 8px; max-width: 72ch; }
 
+.side-text { display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(240px, 1fr); gap: 36px; align-items: start; }
+@media (max-width: 1080px) { .side-text { grid-template-columns: 1fr; gap: 18px; } }
+.explain-side { padding-top: 26px; }
+.explain-side h3 { font-size: 12px; font-weight: 600; letter-spacing: .07em; text-transform: uppercase; color: var(--faint); margin: 0 0 6px; }
+.explain-side p { font-size: 15px; margin: 0 0 10px; }
+.explain-side p.m { color: var(--muted); font-size: 14px; }
 .explain { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 18px 36px;
            border-top: 1px solid var(--rule); padding-top: 20px; margin-top: 4px; }
 .explain h3 { font-size: 12px; font-weight: 600; letter-spacing: .07em; text-transform: uppercase; color: var(--faint); margin: 0 0 6px; }
@@ -224,12 +230,12 @@ footer .sig { color: var(--faint); font-size: 12px; margin-top: 14px; }
         higher it is, the more the vote is gathered on a few candidates. 2002 stands apart: its result was as spread out
         as if the vote had gone to almost nine equal candidates, against about five in the other elections.</p>
     </div>
-    <div class="fig">
-      <h4>Why concentration changed <span>· change in HHI</span></h4>
-      <div class="chart" id="decomp"></div>
-    </div>
-    <div class="explain">
+    <div class="fig side-text">
       <div>
+        <h4>Why concentration changed <span>· change in HHI</span></h4>
+        <div class="chart" id="decomp"></div>
+      </div>
+      <div class="explain-side">
         <h3>Two ways the vote can concentrate</h3>
         <p>Voters can move to the bigger candidates, or candidates can drop out and leave their voters to others. Both
           make the vote more concentrated, but they are not the same thing: in the first case voters coordinate, in the
@@ -238,6 +244,8 @@ footer .sig { color: var(--faint); font-size: 12px; margin-top: 14px; }
           at least 2% of the vote. That group is the same in every poll and in the result, so a change there comes from
           voters moving. The rest comes from candidates dropping out.</p>
       </div>
+    </div>
+    <div class="explain">
       <div>
         <h3>What it shows</h3>
         <p>During the campaign, from the first polls about eight months before to the final two weeks, voters spread
