@@ -73,6 +73,9 @@ aside { min-width: 0; }
 .story strong { font-weight: 600; }
 .below { margin-top: 30px; }
 .note { font-size: 13px; color: var(--muted); margin: 0; grid-column: 1 / -1; }
+.key { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 8px; font-size: 12.5px; color: var(--muted); margin: 2px 0 0; }
+.key .sw { display: inline-block; width: 12px; height: 10px; border-radius: 2px; margin-left: 4px; }
+.key .sw:first-child { margin-left: 0; }
 .metric-desc { font-size: 13px; color: var(--muted); margin: 0 0 10px; max-width: 70ch; }
 
 /* charts */
@@ -147,12 +150,15 @@ footer .sig { color: var(--faint); font-size: 12px; margin-top: 14px; }
     <div class="chart">
       <div id="traj"></div>
       <div id="weekly"></div>
+      <p class="key"><span class="sw" style="background:var(--bar-full)"></span>Polls testing every candidate who ended
+        up on the ballot: used for the lines
+        <span class="sw" style="background:var(--bar-other)"></span>Other polls: left out</p>
       <p class="caption"><b>Grey area</b>: the final weeks, once the official list of candidates is out.
         <b>Pale stretches</b>: few polls at the time, so the average is less reliable. <b>Labels at the top</b>: a
         candidate replacing others from their party in the polls, or dropping out; hover them for details.
-        <b>Bars</b>: polls published each week. Only the dark ones, which test every candidate who ended up on the
-        ballot, are used for the lines: a poll without one candidate gives the others more. A gap in a line means
-        there were no such polls at the time.</p>
+        <b>Bars</b>: polls published each week. Only the dark ones feed the lines, because a poll that leaves out a
+        candidate who later ran hands that candidate's share to the others. A gap in a line means there were no such
+        polls at the time.</p>
     </div>
     <aside>
       <div class="stats" id="campaign-stats"></div>
@@ -297,7 +303,10 @@ footer .sig { color: var(--faint); font-size: 12px; margin-top: 14px; }
     136 corrections. Polls repeated daily on overlapping samples are counted once.</p>
   <p><strong>The lines</strong> average the polls around each day, giving more weight to the closest ones (over about
     ten days). Where polls are few, the window widens and the line turns pale; every figure quoted on this page uses
-    the fixed window. Dates are the last day of fieldwork, or the publication date in 2007 and 2012.</p>
+    the fixed window. Only polls that test every candidate who ended up on the ballot are used: a poll without, say,
+    Zemmour would give his share to the others and make the lines jump. Such polls appear as light bars under the
+    first chart; early in some campaigns (2002 before February, 2022 in autumn 2021) they are all there is, which is
+    why some lines start late or break off. Dates are the last day of fieldwork, or the publication date in 2007 and 2012.</p>
   <p>Data, code and every table: <a href="https://github.com/clarasalas/strategic-voting-polls-2RS">strategic-voting-polls-2RS</a>.</p>
   <p class="sig">Clara Salas (ENS-PSL). Complementary analysis to the agent-based model
     <a href="https://github.com/clarasalas/strategic-voting-abm-2RS">strategic-voting-abm-2RS</a>.</p>
