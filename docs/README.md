@@ -29,7 +29,8 @@ PYTHONPATH=src python -m polls.page
 ```
 
 The file is standalone (data and charts embedded; only the font is loaded from Google Fonts), so it also opens
-directly in a browser. It shows one topic at a time, chosen in a sidebar (a row of buttons on a phone), in three groups: concentration,
+directly in a browser. It opens on a short introduction, then shows one topic at a time, chosen in a sidebar (a row of buttons on a phone),
+in three groups: concentration,
 how the races unfolded, how accurate the polls were. Each topic has its own link (`#concentration`, `#runoff`…). The
 parameters of notebook 07 are left out. Candidates who withdrew are drawn
 when they have at least 5 polls with the full ballot in the window and a poll average reaching 2%.

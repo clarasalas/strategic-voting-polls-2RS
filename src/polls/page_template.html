@@ -51,6 +51,7 @@ nav.side a[aria-current="page"] { background: var(--ink); color: #fff; font-weig
 }
 
 .picker { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 10px; margin: 0 0 22px; }
+.picker[hidden] { display: none; }
 .picker .lbl-txt { font-size: 13px; color: var(--muted); }
 .chip {
   font: inherit; font-size: 13px; padding: 6px 12px; border-radius: 999px; border: 1px solid var(--rule);
@@ -98,6 +99,21 @@ nav.side a[aria-current="page"] { background: var(--ink); color: #fff; font-weig
 .story { font-size: 15px; margin: 18px 0 0; padding: 14px 16px; background: var(--soft); border-radius: 8px; }
 .story strong { font-weight: 600; }
 
+/* introduction */
+.cards { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; margin: 8px 0 26px; }
+@media (max-width: 1080px) { .cards { grid-template-columns: 1fr; } }
+.card { display: flex; flex-direction: column; gap: 8px; padding: 18px 18px 16px; border: 1px solid var(--rule);
+        border-radius: 12px; color: var(--ink); text-decoration: none; background: var(--bg);
+        transition: border-color .15s, box-shadow .15s, transform .15s; }
+.card:hover { border-color: var(--rule-firm); box-shadow: var(--shadow); transform: translateY(-2px); }
+.card .kicker { font-size: 12px; font-weight: 600; letter-spacing: .07em; text-transform: uppercase; color: var(--faint); }
+.card strong { font-size: 17px; line-height: 1.3; letter-spacing: -0.01em; font-weight: 600; }
+.card svg.mini { width: 100%; height: 74px; margin: 6px 0 2px; overflow: visible; }
+.card .more { font-size: 13px; color: var(--accent); margin-top: auto; }
+.howto { border-top: 1px solid var(--rule); padding-top: 18px; max-width: 76ch; }
+.howto p { margin: 0 0 8px; font-size: 15px; }
+.howto p.m { color: var(--muted); font-size: 14px; }
+
 /* charts */
 .axis text, .lbl { font-size: 11px; fill: var(--faint); font-variant-numeric: tabular-nums; }
 .axis line.grid { stroke: var(--rule); }
@@ -133,16 +149,13 @@ footer .sig { color: var(--faint); font-size: 12px; margin-top: 14px; }
 
 <header>
   <p class="eyebrow">French presidential elections · 2002–2022</p>
-  <h1>What the polls said before the first round</h1>
-  <p class="subtitle">Every first-round poll of five presidential elections, set against what happened on election day:
-    whether voters gathered on fewer candidates, how each race unfolded, and how accurate the polls were.</p>
-  <p class="disclaimer">A poll measures how people say they will vote on the day it is taken; it is not a forecast.
-    When the result differs from the last polls, either the polls were off, or voters changed their minds at the last
-    minute, for instance to help a candidate reach the runoff. These data cannot tell the two apart.</p>
+  <h1>What the polls said</h1>
+  <p class="subtitle">Every first-round poll of five presidential elections, compared with the result.</p>
 </header>
 
 <div class="layout">
 <nav class="side" aria-label="Topics">
+  <div class="group"><a href="#intro">Introduction</a></div>
   <div class="group"><p>Concentration</p>
     <a href="#concentration">Do voters gather on fewer candidates?</a>
     <a href="#momentum">Does a rising candidate keep rising?</a>
@@ -159,10 +172,45 @@ footer .sig { color: var(--faint); font-size: 12px; margin-top: 14px; }
 </nav>
 
 <main>
-  <div class="picker"><span class="lbl-txt">Election</span><div class="chips" id="elections" role="radiogroup" aria-label="Election"></div></div>
+  <div class="picker" id="picker"><span class="lbl-txt">Election</span><div class="chips" id="elections" role="radiogroup" aria-label="Election"></div></div>
+
+  <!-- ========== Introduction ========== -->
+  <section class="view" id="v-intro" hidden>
+    <p class="eyebrow">Introduction</p>
+    <h2>Do voters rally behind fewer candidates before the first round?</h2>
+    <p class="lead">Only the top two of the first round reach the runoff. Voters whose favourite looks out of reach may
+      switch to a candidate who can make it, and polls are how they know who can. This page follows every poll from
+      2002 to 2022 to see what they showed, and how far the result moved from them.</p>
+    <div class="cards">
+      <a class="card" href="#concentration">
+        <span class="kicker">Concentration</span>
+        <strong>Did the vote gather on fewer candidates, and when?</strong>
+        <svg class="mini" id="mini-concentration" aria-hidden="true"></svg>
+        <span class="more">2 topics →</span>
+      </a>
+      <a class="card" href="#campaigns">
+        <span class="kicker">How the races unfolded</span>
+        <strong>Each campaign poll by poll, and the race for a runoff place.</strong>
+        <svg class="mini" id="mini-campaigns" aria-hidden="true"></svg>
+        <span class="more">2 topics →</span>
+      </a>
+      <a class="card" href="#last-weeks">
+        <span class="kicker">How accurate the polls were</span>
+        <strong>How far the final polls were from the result, and who gained.</strong>
+        <svg class="mini" id="mini-accuracy" aria-hidden="true"></svg>
+        <span class="more">3 topics →</span>
+      </a>
+    </div>
+    <div class="howto">
+      <p><b>How to use it.</b> Pick a topic in the list (along the top on a phone) and an election above the charts.
+        Hover over or tap any line, bar or dot to see its details.</p>
+      <p class="m">Polls are not forecasts: when the result differs, either the polls were off or voters changed their
+        minds late, and these data cannot tell which.</p>
+    </div>
+  </section>
 
   <!-- ========== Concentration ========== -->
-  <section class="view" id="v-concentration">
+  <section class="view" id="v-concentration" hidden>
     <p class="eyebrow">Concentration</p>
     <h2>Do voters gather on fewer candidates?</h2>
     <p class="lead">Yes, at the very end. Between the final polls and election day, the vote gathered on fewer candidates
@@ -427,7 +475,7 @@ footer .sig { color: var(--faint); font-size: 12px; margin-top: 14px; }
 
 <script>
 const D = /*__DATA__*/null;
-const VIEWS = ["concentration", "momentum", "campaigns", "runoff", "last-weeks", "accuracy", "pollsters"];
+const VIEWS = ["intro", "concentration", "momentum", "campaigns", "runoff", "last-weeks", "accuracy", "pollsters"];
 const state = { view: VIEWS[0], e: D.elections[0], all: false, withdrawn: true, metric: "hhi" };
 const NS = "http://www.w3.org/2000/svg";
 const B = () => D.blocks[state.e];
@@ -899,9 +947,36 @@ function drawFinals() {
   });
 }
 
+/* ---------- the small previews of the introduction ---------- */
+function drawMinis() {
+  const prep = id => { const svg = document.getElementById(id); svg.innerHTML = "";
+    const w = Math.max(200, svg.clientWidth || 300), h = 74; svg.setAttribute("viewBox", `0 0 ${w} ${h}`); return { svg, w, h }; };
+  const line = (svg, pts, x, y, colour, width = 1.8) => el("path", { d: pathOf(pts, x, y), fill: "none", stroke: colour,
+    "stroke-width": width, "stroke-linejoin": "round", "stroke-linecap": "round" }, svg);
+  {   // concentration: HHI over the campaign, five elections
+    const { svg, w, h } = prep("mini-concentration"), S = D.structure.hhi;
+    const vals = D.elections.flatMap(e => S[e].line.map(p => p[1]).concat([S[e].result]));
+    const x = lin(D.window, 0, 2, w - 8), y = lin(Math.min(...vals), Math.max(...vals), h - 4, 4);
+    for (const e of D.elections) { line(svg, S[e].line, x, y, D.colours[e]); el("circle", { cx: x(0), cy: y(S[e].result), r: 3, fill: D.colours[e] }, svg); }
+  }
+  {   // the races: 2017, six leading candidates
+    const { svg, w, h } = prep("mini-campaigns"), b = D.blocks[2017], cs = b.candidates.filter(c => c.top6);
+    const top = Math.max(...cs.flatMap(c => c.traj.map(p => p[1])));
+    const x = lin(D.window, 0, 2, w - 8), y = lin(0, top, h - 4, 4);
+    for (const c of cs) line(svg, c.traj, x, y, c.colour);
+  }
+  {   // accuracy: each poll of the final two weeks, five elections
+    const { svg, w, h } = prep("mini-accuracy");
+    const all = D.elections.flatMap(e => D.blocks[e].accuracy.polls.map(p => p[3]));
+    const y = lin(0, Math.max(...all), h - 4, 4), bw = (w - 8) / D.elections.length;
+    D.elections.forEach((e, i) => D.blocks[e].accuracy.polls.forEach((p, k) =>
+      el("circle", { cx: 4 + bw * (i + 0.5) + (((k * 0.618) % 1) - 0.5) * bw * 0.5, cy: y(p[3]), r: 3, fill: D.colours[e], opacity: 0.8 }, svg)));
+  }
+}
+
 /* ---------- views and controls ---------- */
 const DRAW = {
-  concentration: [drawStructure, drawDecomp], momentum: [drawMomentum],
+  intro: [drawMinis], concentration: [drawStructure, drawDecomp], momentum: [drawMomentum],
   campaigns: [drawTrajectories], runoff: [drawRanks, drawGap],
   "last-weeks": [drawErrors, drawRoles], accuracy: [drawAccuracy], pollsters: [drawHouse, drawFinals],
 };
@@ -930,12 +1005,13 @@ function show(view) {
   if (!VIEWS.includes(view)) view = VIEWS[0];
   state.view = view;
   for (const v of VIEWS) document.getElementById("v-" + v).hidden = v !== view;
+  document.getElementById("picker").hidden = view === "intro";
   document.querySelectorAll("nav.side a").forEach(a => a.setAttribute("aria-current", a.getAttribute("href") === "#" + view ? "page" : "false"));
   draw();
 }
 document.querySelectorAll("[data-all]").forEach(b => b.addEventListener("click", () => { state.all = b.dataset.all === "1"; chips(); drawTrajectories(); }));
 document.getElementById("withdrawn-toggle").addEventListener("click", () => { state.withdrawn = !state.withdrawn; chips(); drawTrajectories(); });
-document.querySelectorAll("nav.side a").forEach(a => a.addEventListener("click", ev => {
+document.querySelectorAll("nav.side a, .card").forEach(a => a.addEventListener("click", ev => {
   ev.preventDefault();
   const v = a.getAttribute("href").slice(1);
   history.pushState(null, "", "#" + v); show(v);
