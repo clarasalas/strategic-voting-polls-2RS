@@ -106,12 +106,15 @@ def election_block(e, calendar, rows, results, slot_polls, extra_polls, all_poll
     ok = traj.dropna(subset=["mean"]).copy()
     ok["rank"] = ok.groupby("days_before")["mean"].rank(ascending=False, method="first")
 
+    # party label at the time: the candidate's label in their last poll (the results file uses current names)
+    tested = rows[(rows["election"] == e) & (rows["share_status"] != "not_tested")]
+    party_then = tested.sort_values("date").groupby("candidate")["party"].last()
     candidates = []
     for c in cands:
         t = ok[ok["slot"] == c].sort_values("days_before")
         r = res.set_index("candidate").loc[c]
         candidates.append(dict(
-            name=c, short=surname(c), party=r["party"], result=_r(r["share"]), colour=colour[c], top6=c in top6,
+            name=c, short=surname(c), party=party_then.get(c, r["party"]), result=_r(r["share"]), colour=colour[c], top6=c in top6,
             traj=[[int(d), _r(m, 2), _r(s, 2), int(sp_)] for d, m, s, sp_ in
                   zip(t["days_before"], t["mean"], t["sd"], t["sparse"])],
             rank=[[int(d), int(k)] for d, k in zip(t["days_before"], t["rank"])]))

@@ -1,8 +1,8 @@
 <h1 align="center">French presidential polls, 2002–2022</h1>
 
 <p align="center">
-Every first-round poll of the five French presidential elections from 2002 to 2022, checked against the original
-documents, and what they say about how voters coordinate before the vote.
+How the first-round polls of five French presidential elections compare with the vote, and what they say about
+strategic voting.
 </p>
 
 <p align="center">
@@ -12,179 +12,89 @@ documents, and what they say about how voters coordinate before the vote.
 </p>
 
 <p align="center">
-The interactive page takes the results topic by topic: whether voters gathered on fewer candidates, how each race
-unfolded and who reached the runoff, and how accurate the polls and the polling companies were.
+  <a href="https://clarasalas.github.io/strategic-voting-polls-2RS/">
+    <img src="docs/preview.png" width="760" alt="The interactive page: the 2017 campaign, poll by poll, with Macron's polls highlighted">
+  </a>
+</p>
+
+<p align="center">
+Click the image to explore every campaign poll by poll: hover a line to see a candidate's polls, and compare the
+polls with the result.
 </p>
 
 ## About
 
-In a two-round election, voters who expect their preferred candidate to be eliminated can move to a candidate with a
-real chance of reaching the runoff. What they expect comes largely from the polls. This project builds a validated
-dataset of the first-round polls of 2002, 2007, 2012, 2017 and 2022, and studies it: how accurate the polls are, how
-much coordination they show, and toward whom.
+In a two-round election, only the top two candidates of the first round reach the runoff. Voters whose favourite
+looks out of reach may switch to a candidate who can make it: this is strategic voting. This project is one of three
+that study how it works, with an agent-based model,
+[strategic-voting-abm-2RS](https://github.com/clarasalas/strategic-voting-abm-2RS), and a geographic study,
+[strategic-voting-geo-2RS](https://github.com/clarasalas/strategic-voting-geo-2RS). Polls are voters' main source of
+information about who can make it, so this one studies the polls themselves, in three parts:
 
-It is the poll side of [strategic-voting-abm-2RS](https://github.com/clarasalas/strategic-voting-abm-2RS), an
-agent-based model of voters who switch to a compromise candidate when nobody they can tolerate looks likely to reach
-the runoff. The model reads polls as its voters' information; this project describes what real polls looked like, and
-gives realistic ranges for the model's poll parameters. Nothing here runs the model. A companion project,
-[strategic-voting-geo-2RS](https://github.com/clarasalas/strategic-voting-geo-2RS), maps where the vote concentrated.
+1. **Concentration.** Does the vote gather on fewer candidates, and when: over the campaign, or at the very end?
+2. **How the races unfolded.** Each campaign poll by poll, and how early the polls showed who would reach the runoff.
+3. **How accurate the polls were.** How far the final polls were from the result, who gained on election day, and how
+   the polling companies compare.
 
-**The data.** The polls come from the French Wikipedia lists of polls, at fixed revisions, with france-politique.fr
-for 2002 and NSPPolls for 2022 as second sources. Rolling polls are thinned so that each interview counts once. Where
-two sources cover the same poll they are compared share by share, and every disagreement was settled by hand against
-the pollster's report or the Commission des sondages notice; a random sample of 30 polls per election was checked
-the same way. The result, `data/final/polls.csv`, holds 693 polls and 1,149 scenarios, with 136 corrections applied.
-
-**What is measured.** Each poll is read through its *ballot scenario*: the hypothesis that tests every candidate who
-will win at least 2% of the vote, as voters saw it. Concentration is the Herfindahl–Hirschman index (HHI, the sum of
-squared shares; 1/HHI is the effective number of candidates, ENP, as in the model). The *cliff* is the model's: the
-largest drop between consecutive sorted shares. The runoff is decided by the gap between the 2nd and the 3rd.
-
-Polls are not voters' expectations, and the result is not the polls' target: it also contains the late switching
-the model is meant to produce. A gap between the last polls and the result therefore mixes poll error and real late
-movement, which these data cannot separate. All results are descriptive, over five elections.
+Concentration is measured with the Herfindahl–Hirschman index (HHI), the sum of the squared vote shares: the higher
+it is, the more the vote is gathered on a few candidates. All results are descriptive: when the result differs from
+the polls, either the polls were off or voters changed their minds late, and these data cannot tell which.
 
 ## Main findings
 
-**When the 2nd and the 3rd are far apart, the polls name the runoff pair months ahead; when they are close, the polls
-cannot.** In the last two weeks, every poll had the real runoff pair as its top two in 2007, 2012 and 2022, 95% in
-2017, none in 2002. In the poll average, the pair stopped changing about 200 days before the vote in 2007 and 2012,
-and about 90 days before in 2017 and 2022. It never settled in 2002, when Le Pen finished 0.7 points ahead of Jospin.
+**Voters gather on fewer candidates at the very end, not during the campaign.** Over the months before the vote, the
+polls mostly spread out across more candidates; when they did concentrate, it was because candidates dropped out.
+Between the final polls and election day, the vote gathered on fewer candidates in every election, clearly so in 2007
+and 2022.
 
 <details>
-<summary>Supporting evidence: the gap for qualification and how predictable the pair was</summary>
+<summary>Supporting evidence: telling voters apart from candidates dropping out</summary>
 
 <br>
 
-* **Close results, wider polls.** The gap between the 2nd and the 3rd was 0.7 points in the 2002 result, 1.3 in 2017
-  and 1.2 in 2022. The last two weeks of polls had put it at 5.3, 3.0 and 6.0 points.
-* **How likely the polls made the real pair, one week before**, allowing for the typical poll error of the other four
-  elections: 4% in 2002, 72% in 2017, 94% in 2007, 98% in 2022, almost 100% in 2012. A rough gauge, not a forecast
-  model (candidates' errors drawn independently).
-* **The leader** was right in every poll of the last two weeks in 2002, 2007 and 2022, in 91% in 2017 and 67% in
-  2012 (Hollande and Sarkozy about a point apart).
-
-Tables: `ranks_right_pair_by_phase.csv`, `ranks_lockin.csv`, `cliff_predictability.csv`,
-`structure_last_polls_vs_result.csv`.
-
-</details>
-
-**Near the threshold, the result tilts toward the candidate polled 3rd and away from the 4th.** The candidate 3rd in
-the last two weeks of polls did at least as well as polled in all five elections, by 2.6 points on average (Le Pen
-+4.2 in 2002, Mélenchon +5.8 in 2022); the 4th did worse in four of five, by 2.1 points on average. This is the
-direction the model's mechanism predicts, voters leaving a candidate out of reach for one within reach of the runoff,
-but it is also what a poll bias would produce: the two cannot be told apart here.
-
-<details>
-<summary>Supporting evidence: error by role and overall accuracy</summary>
-
-<br>
-
-| Role in the last polls | Mean error (points) | Did better | Did worse |
-|---|---|---|---|
-| 1st | +0.9 | 4 | 1 |
-| 2nd | 0.0 | 3 | 2 |
-| 3rd | +2.6 | 5 | 0 |
-| 4th | −2.1 | 1 | 4 |
-| 5th and below | −0.2 | 19 | 22 |
-
-Error = result − mean of the last two weeks of polls; roles come from that mean. The mean absolute error for the
-candidates polled at 5% or more is 1.0 to 2.5 points per election.
-
-**Single polls.** A poll of the last two weeks missed the result by 0.9 (2017) to 2.4 points (2022) on a typical
-candidate (root mean square error over the candidates on the ballot). The average of those polls does barely better
-(0.8 to 2.25): most of the error is common to all polls, from a shared bias or from late movement. Polls of one
-election are not independent, so the differences between elections are five cases, not a trend.
-
-**Polling companies.** Taking each company's last poll before each election (all within 2 to 10 days of the vote),
-the eight companies with a final poll in at least three elections differ from that year's average by at most about
-0.3 points on average: Harris Interactive and Ipsos slightly closer to the result, Kantar and CSA slightly further.
-With three to five elections each, these differences could be chance.
-
-Tables: `error_by_role.csv`, `error_by_candidate.csv`, `error_by_poll.csv`, `error_final_poll_by_pollster.csv`.
-
-</details>
-
-**The vote concentrates at the end, not over the campaign.** Within a fixed set of candidates, the polls spread out
-over the campaign in 2002, 2007, 2012 and 2017 (HHI down by 0.01 to 0.04 from the opening polls to the last ones);
-the rises in 2012 and 2022 come mostly from the offer narrowing, as candidates withdrew. Between the last polls and the result, the vote
-concentrates in all five elections, by voters moving, most in 2007 and 2022 (HHI +0.016 and +0.020). 2002 is the
-most fragmented result by far: 8.7 effective candidates, against 4.7 to 5.3 in the other four.
-
-<details>
-<summary>Supporting evidence: splitting the change in concentration</summary>
-
-<br>
-
-HHI is computed twice for every ballot poll and for the result: over every candidate tested, and over the *core*,
-the candidates who will win at least 2%, rescaled among themselves. The core is the same set throughout, so its
-changes are voters moving; the difference between the two is the offer (candidates tested, then withdrawing).
+Concentration rises either because voters move to the bigger candidates or because candidates drop out. To separate
+the two, the HHI is also computed on a fixed group, the candidates who won at least 2% of the vote: changes there
+are voters moving, the rest is candidates dropping out. Change in HHI:
 
 | | 2002 | 2007 | 2012 | 2017 | 2022 |
 |---|---|---|---|---|---|
-| Campaign: voters (core) | −0.032 | −0.041 | −0.020 | −0.009 | +0.006 |
-| Campaign: offer | +0.004 | −0.002 | +0.042 | +0.006 | +0.020 |
-| Last mile: voters (core) | +0.002 | +0.011 | +0.007 | +0.001 | +0.020 |
+| During the campaign: voters moving | −0.032 | −0.041 | −0.020 | −0.009 | +0.006 |
+| During the campaign: candidates dropping out | +0.004 | −0.002 | +0.042 | +0.006 | +0.020 |
+| From the final polls to the vote: voters moving | +0.002 | +0.011 | +0.007 | +0.001 | +0.020 |
 
-Table: `concentration_decomposition.csv`. Figure: `results/figures/structure_over_campaign.png`.
+Table: `results/tables/concentration_decomposition.csv`.
 
 </details>
 
-**Single polls are about as precise as random samples of one to two thousand people, house effects are small, and
-movement partly carries on.** In the last two weeks, the scatter of single polls around the poll average is what
-simple random samples of 860 to 1,800 people would give. Pollsters' house effects are typically 0.3 to 0.5 points, at most
-about 2. A rise in the poll average over three weeks is followed by a further rise of about 0.4 times as much over the
-next three.
+**The polls come close, but they miss together.** In the final two weeks, a single poll typically missed a
+candidate's result by about one to two and a half points, closest in 2017 and furthest in 2022. Averaging all the
+polls barely helps, so the gap is not noise in individual polls: either they all leaned the same way, or voters moved
+after the last polls. One pattern repeats in all five elections: the candidate in third place in the final polls did
+at least as well on election day, as late strategic voting would produce. Polling companies differ little from each
+other.
 
 <details>
-<summary>Supporting evidence: noise, herding, house effects and momentum</summary>
+<summary>Supporting evidence: accuracy by election, the third place, the companies</summary>
 
 <br>
 
-* **Herding.** Polls agreed more than sampling allows in the last two weeks of 2017 (scatter 0.73 of sampling noise),
-  and much less in 2022 (2.1). Against the bases they report (given only from 2017), polls were slightly more precise
-  than their samples in 2017 and about half as precise in 2022.
-* **House effects** (pollster × candidate, against the leave-one-out poll average): largest for Cluster17 on
-  Mélenchon in 2022 (+2.2) and CSA on Le Pen and Sarkozy in 2007 (+2.2, −2.1).
-* **Momentum.** Pooled slope 0.40 (95% interval 0.29–0.53), from 0.27 to 0.55 per election, with 2002 alone near 1
-  and very uncertain. The trend of the last month also carries on into the result (slope 0.62 over 33 candidates).
+* **Typical miss per candidate**, polls of the last two weeks (root mean square error over the candidates on the
+  ballot), with the same measure for the average of those polls in brackets: 1.6 (1.5) in 2002, 1.6 (1.4) in 2007,
+  1.5 (1.3) in 2012, 0.9 (0.8) in 2017, 2.4 (2.3) in 2022 points. Polls of one election miss together, so these are
+  five cases, not a trend.
+* **Third place**: on average 2.6 points better than polled (Le Pen in 2002, Mélenchon in 2022), and the fourth 2.1
+  points worse in four elections of five. Poll bias would produce the same pattern.
+* **Companies**, each one's last poll before each election: the eight with a final poll in at least three elections
+  are within about 0.3 points of that year's average. Harris Interactive and Ipsos come out slightly closer to the
+  result, Kantar and CSA slightly further, which could be chance.
 
-Tables: `noise_effective_sample_size.csv`, `pollsters_herding.csv`, `pollsters_house_effects.csv`,
-`momentum_campaign.csv`, `momentum_into_the_vote.csv`.
-
-</details>
-
-**Real polls are much less noisy than the model's synthetic polls, and about as steep as the results.** The model
-draws synthetic polls with a noise ρ<sub>s</sub> between 10 and 200 and a temperature θ between 0.3 and 3. Single
-real polls correspond to ρ<sub>s</sub> of about 500 to 1,800, and θ comes out at 0.94 to 1.12. Real polls test 9 to
-16 candidates (median 12), against 6, 8 and 9 in the synthetic runs.
-
-<details>
-<summary>Supporting evidence: the model's parameters</summary>
-
-<br>
-
-* **Poll noise ρ<sub>s</sub>.** 490 to 880 for single polls over the campaign, 860 to 1,810 in the last two weeks. A
-  lower bound, the poll average a week out against the result (noise, common bias and late movement together), gives
-  105 to 730: only the top of the current range reaches it.
-* **Temperature θ**, two ways: candidate by candidate (0.94 to 1.12) and from the slope of shares by rank (0.95 to
-  1.08). Polls neither sharpen nor flatten the result much, though the result itself contains late switching.
-* **Prior spread ρ<sub>π</sub>**, how much the opening polls disagree: 290 to 1,410. An upper bound: voters' beliefs
-  are surely more spread out than the polls they could read.
-* **Tolerance τ̂.** Two hypotheses of the same poll that differ by one candidate show where that candidate's voters go
-  when not offered. For candidates polling 3% or more, about half go to a neighbour on the left-right axis, and on
-  average 1.8 to 2.6 places away, inside the model's range τ̂ ∈ [0.5, 3]. Few pairs outside Bayrou and Macron in
-  2017 and Zemmour and Taubira in 2022.
-* **α**, how far voters follow the latest poll, is left out: the mechanism will change, and survey data on
-  expectations would measure it better than polls.
-
-Tables: `parameters_*.csv`. A poll input for the model's empirical mode is prepared in
-[`data/abm_input/`](data/abm_input/README.md), not used.
+Tables: `error_by_poll.csv`, `error_by_role.csv`, `error_final_poll_by_pollster.csv`.
 
 </details>
 
-The study is in `notebooks/05_polls_descriptive.ipynb`, `06_polls_vs_results.ipynb` and `07_parameters.ipynb`; every
-decision behind it is in [`docs/study_plan.md`](docs/study_plan.md), and every number above comes from a table in
+More in the [interactive page](https://clarasalas.github.io/strategic-voting-polls-2RS/): each campaign poll by poll,
+the race for the runoff, momentum and the polling companies. The study itself is in notebooks 05 to 07, every
+decision behind it in [`docs/study_plan.md`](docs/study_plan.md), and every number in a table in
 [`results/tables/`](results/README.md).
 
 ## Reproduce
@@ -248,9 +158,16 @@ Each folder has its own README.
 </details>
 
 <details>
-<summary><strong>Data sources</strong></summary>
+<summary><strong>The data and its sources</strong></summary>
 
 <br>
+
+The polls come from the French Wikipedia lists of polls, at fixed revisions, with france-politique.fr for 2002 and
+NSPPolls for 2022 as second sources. Rolling polls are thinned so that each interview counts once. Where two sources
+cover the same poll they are compared share by share, and every disagreement was settled by hand against the
+pollster's report or the Commission des sondages notice; a random sample of 30 polls per election was checked the
+same way. The result, `data/final/polls.csv`, holds 693 polls and 1,149 scenarios, with 136 corrections applied
+(see [`data/`](data/README.md) and [`validation/`](validation/README.md)).
 
 * **Polls, 2002–2022**: the French Wikipedia lists of polls, at fixed revisions for
   [2002](https://fr.wikipedia.org/w/index.php?oldid=236399441),
