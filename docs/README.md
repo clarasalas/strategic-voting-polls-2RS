@@ -34,6 +34,8 @@ how the races unfolded, how accurate the polls were. Each topic has its own link
 parameters of notebook 07 are left out. Candidates who withdrew are drawn
 when they have at least 5 polls with the full ballot in the window and a poll average reaching 2%.
 
+`.nojekyll` tells GitHub Pages to publish the folder as it is, without running it through Jekyll.
+
 **Publish.** On GitHub, open **Settings → Pages**, set **Source** to **Deploy from a branch**, select `main` and
 `/docs`, and save. The page is then live at <https://clarasalas.github.io/strategic-voting-polls-2RS/>, and every
 push of a rebuilt `docs/index.html` to `main` redeploys it.
