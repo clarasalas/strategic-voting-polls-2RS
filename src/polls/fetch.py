@@ -156,11 +156,15 @@ def raw_paths(cfg: dict, raw_dir: Path) -> dict:
     parsing, so parsing can locate files without any network access."""
     fp, nsp, res = cfg["france_politique"], cfg["nsppolls"], cfg["results"]
     ts = fp.get("wayback_timestamp")
+    fp_live = raw_dir / "france_politique" / fp["filename"]
+    fp_wayback = raw_dir / "france_politique" / f"wayback_{ts}_{fp['filename']}" if ts else None
     return {
         "wikipedia": {int(y): raw_dir / "wikipedia" / f"{y}_rev{e['revision_id']}.json"
                       for y, e in cfg["wikipedia"].items()},
-        "france_politique": raw_dir / "france_politique" / fp["filename"],
-        "france_politique_wayback": raw_dir / "france_politique" / f"wayback_{ts}_{fp['filename']}" if ts else None,
+        # What is parsed: the pinned Wayback capture, which does not change, once a capture is pinned
+        "france_politique": fp_wayback or fp_live,
+        "france_politique_live": fp_live,
+        "france_politique_wayback": fp_wayback,
         "nsppolls": raw_dir / "nsppolls" / f"{nsp['commit'][:12]}_{Path(nsp['path']).name}",
         "results": raw_dir / "results" / f"{res['commit'][:12]}_{Path(res['path']).name}",
     }
@@ -197,27 +201,39 @@ def wayback_url(ts: str, url: str, raw: bool = False) -> str:
 
 
 def fetch_france_politique(cfg, http, raw_dir, manifest, root) -> dict[str, Path | None]:
-    """Live page, plus the Wayback capture of it (pinned by its timestamp in sources.yaml).
+    """The Wayback capture of the page pinned in sources.yaml, which is what is parsed.
 
-    If no timestamp is pinned yet, a capture is requested and its timestamp written to
-    cfg (the caller saves sources.yaml). The capture may take a few minutes to become
-    downloadable; until then its copy is skipped and retried on the next run.
+    The page is not stored in the repository: it is downloaded from the Wayback Machine,
+    whose capture does not change, and checked against the `sha256` pinned beside its
+    timestamp. If no timestamp is pinned yet, the live page is downloaded, a capture is
+    requested and its timestamp written to cfg (the caller saves sources.yaml). The capture
+    may take a few minutes to become downloadable; until then it is reported missing, and
+    retried on the next run.
     """
     entry = cfg["france_politique"]
     if not entry.get("wayback_timestamp"):
+        _download(http, entry["url"], raw_paths(cfg, raw_dir)["france_politique_live"],
+                  source="france_politique_2002", pinned_id="", manifest=manifest, root=root)
         entry["wayback_timestamp"] = request_wayback_snapshot(http, entry["url"])
+        entry["sha256"] = None
     ts = entry.get("wayback_timestamp")
     paths = raw_paths(cfg, raw_dir)
-    archive = wayback_url(ts, entry["url"]) if ts else ""
-    _download(http, entry["url"], paths["france_politique"], source="france_politique_2002",
-              pinned_id=f"wayback:{ts}" if ts else "", manifest=manifest, root=root, archive_url=archive)
     if ts and not paths["france_politique_wayback"].exists():
         try:
             _download(http, wayback_url(ts, entry["url"], raw=True), paths["france_politique_wayback"],
                       source="france_politique_2002_wayback", pinned_id=f"wayback:{ts}",
-                      manifest=manifest, root=root, archive_url=archive, require_content=True)
+                      manifest=manifest, root=root, archive_url=wayback_url(ts, entry["url"]),
+                      require_content=True)
         except (requests.RequestException, EmptyResponse) as e:
             print(f"Wayback capture {ts} not downloadable yet ({e}); will retry on the next run.")
+    capture = paths["france_politique_wayback"]
+    if capture is not None and capture.exists():
+        actual = sha256(capture)
+        if not entry.get("sha256"):
+            entry["sha256"] = actual
+        elif actual != entry["sha256"]:
+            raise ValueError(f"{capture}: sha256 {actual} differs from the pinned {entry['sha256']} "
+                             f"(delete the file to download it again from {wayback_url(ts, entry['url'], raw=True)})")
     return {k: v for k, v in paths.items() if k.startswith("france_politique")}
 
 

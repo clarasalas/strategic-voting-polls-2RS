@@ -11,7 +11,7 @@ from names in the sources to candidates, pollsters and parties.
 
 | File | What it holds | Used by |
 |---|---|---|
-| `sources.yaml` | the pins: a Wikipedia revision per election, the NSPPolls and results commits, the france-politique Wayback capture | notebook 01 |
+| `sources.yaml` | the pins: a Wikipedia revision per election, the NSPPolls and results commits, the france-politique Wayback capture and its SHA-256 | notebook 01 |
 | `elections.yaml` | first-round dates and the publication of the official list of candidates | the time axis and campaign phases (`src/polls/timeline.py`) |
 | `candidates.csv` | (election, name as written in the source) → candidate, 263 rows | notebook 01 |
 | `institutes.csv` | name as written → pollster at the time and company (`institute_family`), 38 rows | notebook 01 |
@@ -60,8 +60,8 @@ founded on 5 December 2021.
   on the next run, or write a specific revision id.
 * **NSPPolls, results file**: set `commit` to `null` (pins the latest commit: on `master` for NSPPolls, the latest
   commit that modified the file for the results), or write a specific hash.
-* **france-politique**: set `wayback_timestamp` to `null` and delete the local copy in `data/raw/france_politique/`
-  to download the page again and request a new Wayback capture.
+* **france-politique**: set `wayback_timestamp` and `sha256` to `null` to download the live page, request a new
+  Wayback capture and pin it with its SHA-256. The capture, not the live page, is what is parsed.
 
 Old raw files stay in `data/raw/` and in the manifest; parsing uses only the files the current pins point to. A new
 pin changes the polls, so the validation worklists may no longer match: notebook 03 reports it.

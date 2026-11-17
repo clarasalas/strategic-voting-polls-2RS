@@ -2,3 +2,6 @@ __pycache__/
 .ipynb_checkpoints/
 .DS_Store
 .idea/
+
+# france-politique.fr pages: not redistributed; notebook 01 downloads the pinned Wayback capture
+data/raw/france_politique/
