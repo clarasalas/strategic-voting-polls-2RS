@@ -88,7 +88,7 @@ the source, or the NSPPolls poll id).
 |---|---|
 | `raw/manifest.csv` | one row per download: source, url, pinned id, time retrieved (UTC), SHA-256, local path, archive url |
 | `raw/wikipedia/` | the MediaWiki API response for each pinned revision |
-| `raw/france_politique/` | the 2002 page, live copy and Wayback copy |
+| `raw/france_politique/` | the 2002 page: the pinned Wayback capture, downloaded by notebook 01 (not in the repository) |
 | `raw/nsppolls/` | `presidentielle.json` at the pinned commit |
 | `raw/results/` | `FR-electoral_data.csv` at the pinned commit (the older file is kept, unused) |
 | `interim/polls_*.csv` | the parsed polls of each source |

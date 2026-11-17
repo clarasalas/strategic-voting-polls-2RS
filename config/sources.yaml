@@ -25,6 +25,7 @@ france_politique:
   url: https://www.france-politique.fr/sondages-electoraux-presidentielle-2002.htm
   filename: sondages-electoraux-presidentielle-2002.htm
   wayback_timestamp: '20261001163732'
+  sha256: 5c712381523b29302213f4f429a117578789597f5715a109e220d9eab9a68b20
 nsppolls:
   repo: nsppolls/nsppolls
   path: presidentielle.json

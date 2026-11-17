@@ -176,7 +176,9 @@ same way. The result, `data/final/polls.csv`, holds 693 polls and 1,149 scenario
   [2017](https://fr.wikipedia.org/w/index.php?oldid=239719711) and
   [2022](https://fr.wikipedia.org/w/index.php?oldid=239942428).
 * **Polls, 2002**: [france-politique.fr](https://www.france-politique.fr/sondages-electoraux-presidentielle-2002.htm),
-  live copy and Wayback capture of 1 October 2026. It gives the client of each poll.
+  [Wayback capture of 1 October 2026](https://web.archive.org/web/20261001163732/https://www.france-politique.fr/sondages-electoraux-presidentielle-2002.htm).
+  It gives the client of each poll. The page is not stored in the repository: notebook 01 downloads the capture and
+  checks it against its SHA-256.
 * **Polls, 2022**: [NSPPolls](https://github.com/nsppolls/nsppolls), `presidentielle.json` at commit `ddcd5ce`. It
   gives the client, the rolling flag and the Commission des sondages notice.
 * **Official first-round results**: `data/FR-electoral_data.csv` in
